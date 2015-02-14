@@ -19,7 +19,8 @@ class Solution:
         for i in xrange(1, len(A)):
             if A[i] != A[last]:
                 last += 1
-                A[last] = A[i]
+                if last != i:
+                    A[last] = A[i]
         return (last + 1)
 
 def main():
