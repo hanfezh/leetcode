@@ -50,13 +50,18 @@ class Solution(object):
             return
 
         sum -= root.val
-        ilist.append(root.val)
         if sum == 0 and not root.left and not root.right:
-            llist.append(ilist)
+            nlist = list(ilist)
+            nlist.append(root.val)
+            llist.append(nlist)
         if root.left:
-            self.__pathSum(root.left, sum, llist, list(ilist))
+            ilist.append(root.val)
+            self.__pathSum(root.left, sum, llist, ilist)
+            del ilist[len(ilist) - 1:]
         if root.right:
-            self.__pathSum(root.right, sum, llist, list(ilist))
+            ilist.append(root.val)
+            self.__pathSum(root.right, sum, llist, ilist)
+            del ilist[len(ilist) - 1:]
 
     def pathSum(self, root, sum):
         """
