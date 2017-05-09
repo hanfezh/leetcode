@@ -2,7 +2,8 @@
 
 | # | Title | Difficulty | Solutions |
 | - | ----- | ---------- | --------- |
-| 2	| [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) | Medium | [Python](./add_two_numbers.py)|
+| 1 | [Two Sum](https://leetcode.com/problems/two-sum) | Easy | [Go](./two_sum.go) |
+| 2	| [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) | Medium | [Python](./add_two_numbers.py) |
 | 3	| [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters) | Medium | [Python](./longest_substring.py) |
 | 7 | [Reverse Integer](https://leetcode.com/problems/reverse-integer) | Easy | [Python](./reverse_integer.py) |
 | 8 | [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi) | Medium | [Python](./atoi.py) |
