@@ -16,9 +16,9 @@
  *
  * =====================================================================================
  */
-#include <math.h>
 #include <stdio.h>
 #include <string>
+#include <vector>
 
 class Solution
 {
@@ -30,115 +30,35 @@ public:
             return "";
         }
 
-        std::string roman;
-        int idx = 0;
-        while (num > 0)
-        {
-            int digit = num % 10;
-            digit *= pow(10, idx);
-            if (digit == 0)
-            {
-                ; // Ignore
-            }
-            else if (digit < 10)
-            {
-                if (digit < 4)
-                {
-                    while (digit-- > 0)
-                    {
-                        roman += "I";
-                    }
-                }
-                else if (digit == 4)
-                {
-                    roman = "IV";
-                }
-                else if (digit < 9)
-                {
-                    roman = "V";
-                    while (digit-- > 5)
-                    {
-                        roman += "I";
-                    }
-                }
-                else
-                {
-                    // digit == 9
-                    roman = "IX";
-                }
-            }
-            else if (digit < 100)
-            {
-                if (digit < 40)
-                {
-                    while (digit > 0)
-                    {
-                        roman = "X" + roman;
-                        digit -= 10;
-                    }
-                }
-                else if (digit == 40)
-                {
-                    roman = "XL" + roman;
-                }
-                else if (digit < 90)
-                {
-                    std::string tmp = "L";
-                    while (digit > 50)
-                    {
-                        tmp += "X";
-                        digit -= 10;
-                    }
-                    roman = tmp + roman;
-                }
-                else
-                {
-                    // digit == 90
-                    roman = "XC" + roman;
-                }
-            }
-            else if (digit < 1000)
-            {
-                if (digit < 400)
-                {
-                    while (digit > 0)
-                    {
-                        roman = "C" + roman;
-                        digit -= 100;
-                    }
-                }
-                else if (digit == 400)
-                {
-                    roman = "CD" + roman;
-                }
-                else if (digit < 900)
-                {
-                    std::string tmp = "D";
-                    while (digit > 500)
-                    {
-                        tmp += "C";
-                        digit -= 100;
-                    }
-                    roman = tmp + roman;
-                }
-                else
-                {
-                    // digit == 900
-                    roman = "CM" + roman;
-                }
-            }
-            else 
-            {
-                // 1000 ~ 3000
-                while (digit > 0)
-                {
-                    roman = "M" + roman;
-                    digit -= 1000;
-                }
-            }
+        using sym_pair = std::pair<int, std::string>;
+        std::vector<sym_pair> symbols = {
+            {1, "I"},
+            {4, "IV"},
+            {5, "V"},
+            {9, "IX"},
+            {10, "X"},
+            {40, "XL"},
+            {50, "L"},
+            {90, "XC"},
+            {100, "C"},
+            {400, "CD"},
+            {500, "D"},
+            {900, "CM"},
+            {1000, "M"},
+        };
 
-            idx += 1;
-            num /= 10;
+        std::string roman;
+        for (auto iter = symbols.rbegin(); iter != symbols.rend(); iter++)
+        {
+            while (num >= iter->first)
+            {
+                roman += iter->second;
+                num -= iter->first;
+            }
+            if (num < 1)
+            {
+                break;
+            }
         }
 
         return roman;
