@@ -68,6 +68,10 @@ public:
 int main(int argc, char* argv[])
 {
     int num = 2398;
+    if (argc > 1)
+    {
+        num = std::atoi(argv[1]);
+    }
     std::string roman = Solution().intToRoman(num);
     printf("%d -> %s\n", num, roman.c_str());
 
