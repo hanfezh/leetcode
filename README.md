@@ -12,7 +12,8 @@
 | 8 | [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi) | Medium | [Python](./algorithms/atoi.py) |
 | 9 | [Palindrome Number](https://leetcode.com/problems/palindrome-number) | Easy | [Python](./algorithms/palindrome_number.py) |
 | 11 | [Container With Most Water](https://leetcode.com/problems/container-with-most-water) | Medium | [C++](./algorithms/container_with_most_water.cpp) |
-| 12 | [Integer to Roman](https://oj.leetcode.com/problems/integer-to-roman) | Medium | [C++](./algorithms/integer_to_roman.cpp) |
+| 12 | [Integer to Roman](https://leetcode.com/problems/integer-to-roman) | Medium | [C++](./algorithms/integer_to_roman.cpp) |
+| 13 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer) | Easy | [C++](./algorithms/roman_to_integer.cpp) |
 | 15 | [3Sum](https://leetcode.com/problems/3sum) | Medium | [C](./algorithms/three_sum.c) |
 | 20 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses) | Easy | [Python](./algorithms/valid_parentheses.py) |
 | 21 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists) | Easy | [C](./algorithms/merge_two_lists.c) |
