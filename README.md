@@ -32,4 +32,5 @@
 | 179 | [Largest Number](https://leetcode.com/problems/largest-number) | Medium | [Python](./algorithms/largest_number.py) |
 | 189 | [Rotate Array](https://leetcode.com/problems/rotate-array) | Easy | [C](./algorithms/rotate_array.c) |
 | 263 | [Ugly Number](https://leetcode.com/problems/ugly-number) | Easy | [Python](./algorithms/ugly_number.py) |
+| 437 | [Path Sum III](https://leetcode.com/problems/path-sum-iii) | Easy | [C++](./algorithms/path_sum3.cpp) |
 
