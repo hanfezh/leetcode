@@ -20,6 +20,7 @@
  */
 #include <stdio.h>
 #include <stdlib.h>
+#include <set>
 #include <vector>
 
 class Solution
@@ -27,79 +28,45 @@ class Solution
 public:
     std::vector<std::vector<int> > findSubsequences(const std::vector<int>& nums)
     {
-        std::vector<std::vector<int> > sub_nums;
-        if (nums.size() < 2)
+        if (nums.size() == 0)
         {
-            return sub_nums;
-        }
-        if (nums.size() == 2)
-        {
-            if (nums[0] <= nums[1])
-            {
-                sub_nums.push_back(nums);
-            }
-            return sub_nums;
+            return std::vector<std::vector<int> >{};
         }
 
-        auto iter = nums.begin();
-        int first = *iter;
-        std::vector<int> new_nums(++iter, nums.end());
-        sub_nums = findSubsequences(new_nums);
+        std::vector<int> tmp_nums;
+        std::set<std::vector<int> > sub_nums;
+        dfs(nums, 0, &tmp_nums, &sub_nums);
+        return std::vector<std::vector<int> >(sub_nums.begin(), sub_nums.end());
+    }
 
-        size_t sub_size = sub_nums.size();
-        for (size_t i = 0; i < sub_size; i++)
+private:
+    void dfs(const std::vector<int>& nums, int idx, std::vector<int>* tmp_nums, std::set<std::vector<int> >* sub_nums)
+    {
+        if (idx >= nums.size())
         {
-            auto tmp_nums = sub_nums[i];
-            if (first > tmp_nums[0])
-            {
-                continue;
-            }
-            tmp_nums.insert(tmp_nums.begin(), first);
-
-            bool found = false;
-            for (size_t j = 0; j < sub_nums.size(); j++)
-            {
-                if (tmp_nums == sub_nums[j])
-                {
-                    found = true;
-                    break;
-                }
-            }
-
-            if (!found)
-            {
-                sub_nums.push_back(tmp_nums);
-            }
+            return;
         }
 
-        for (size_t i = 0; i < new_nums.size(); i++)
+        dfs(nums, idx + 1, tmp_nums, sub_nums);
+
+        bool pushed = false;
+        if ((tmp_nums->size() == 0) || (*(tmp_nums->rbegin()) <= nums[idx]))
         {
-            if (first > new_nums[i])
-            {
-                continue;
-            }
-
-            std::vector<int> tmp_nums;
-            tmp_nums.push_back(first);
-            tmp_nums.push_back(new_nums[i]);
-
-            bool found = false;
-            for (size_t j = 0; j < sub_nums.size(); j++)
-            {
-                if (tmp_nums == sub_nums[j])
-                {
-                    found = true;
-                    break;
-                }
-            }
-
-            if (!found)
-            {
-                sub_nums.push_back(tmp_nums);
-            }
+            pushed = true;
+            tmp_nums->push_back(nums[idx]);
         }
 
-        return sub_nums;
+        dfs(nums, idx + 1, tmp_nums, sub_nums);
+
+        if (tmp_nums->size() > 1)
+        {
+            std::vector<int> new_nums(*tmp_nums);
+            sub_nums->insert(new_nums);
+        }
+        if (pushed)
+        {
+            tmp_nums->pop_back();
+        }
     }
 };
 
