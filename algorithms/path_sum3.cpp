@@ -78,7 +78,7 @@ private:
     }
 };
 
-TreeNode* CreateTree(const std::vector<std::string>& strs)
+TreeNode* createTree(const std::vector<std::string>& strs)
 {
     TreeNode** nodes = new TreeNode*[strs.size()];
     for (size_t i = 0; i < strs.size(); i++)
@@ -117,15 +117,15 @@ TreeNode* CreateTree(const std::vector<std::string>& strs)
     return root;
 }
 
-void DeleteTree(TreeNode* root)
+void deleteTree(TreeNode* root)
 {
     if (root->left != NULL)
     {
-        DeleteTree(root->left);
+        deleteTree(root->left);
     }
     if (root->right != NULL)
     {
-        DeleteTree(root->right);
+        deleteTree(root->right);
     }
 
     delete root;
@@ -143,11 +143,11 @@ int main(int argc, char* argv[])
         }
     }
 
-    TreeNode* root = CreateTree(strs);
+    TreeNode* root = createTree(strs);
     int count = Solution().pathSum(root, 8);
     printf("count of path: %d\n", count);
 
-    DeleteTree(root);
+    deleteTree(root);
     return 0;
 }
 
