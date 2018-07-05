@@ -22,6 +22,7 @@
 | 27 | [Remove Element](https://leetcode.com/problems/remove-element) | Easy | [Python](./algorithms/remove_element.py) |
 | 28 | [Implement strStr()](https://leetcode.com/problems/implement-strstr) | Easy | [C++](./algorithms/str_str.cpp) |
 | 78 | [Subsets](https://leetcode.com/problems/subsets) | Medium | [C++](./algorithms/subsets.cpp) |
+| 90 | [Subsets II](https://leetcode.com/problems/subsets-ii) | Medium | [C++](./algorithms/subsets2.cpp) |
 | 112 | [Path Sum](https://leetcode.com/problems/path-sum) | Easy | [Python](./algorithms/path_sum.py) |
 | 113 | [Path Sum II](https://leetcode.com/problems/path-sum-ii) | Medium | [Python](./algorithms/path_sum2.py) |
 | 136 | [Single Number](https://leetcode.com/problems/single-number) | Easy | [Python](./algorithms/single_number.py) |
