@@ -34,6 +34,7 @@
 | 155 | [Min Stack](https://leetcode.com/problems/min-stack) | Easy | [Python](./algorithms/min_stack.py) |
 | 179 | [Largest Number](https://leetcode.com/problems/largest-number) | Medium | [Python](./algorithms/largest_number.py) |
 | 189 | [Rotate Array](https://leetcode.com/problems/rotate-array) | Easy | [C](./algorithms/rotate_array.c) |
+| 197 | [Rising Temperature](https://leetcode.com/problems/rising-temperature) | Easy | [MySQL](./database/rising_temperature.sql) |
 | 263 | [Ugly Number](https://leetcode.com/problems/ugly-number) | Easy | [Python](./algorithms/ugly_number.py) |
 | 386 | [Lexicographical Numbers](https://leetcode.com/problems/lexicographical-numbers) | Medium | [C++](./algorithms/lexicographical_numbers.cpp) |
 | 437 | [Path Sum III](https://leetcode.com/problems/path-sum-iii) | Easy | [C++](./algorithms/path_sum3.cpp) |
