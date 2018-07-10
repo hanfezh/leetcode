@@ -18,6 +18,7 @@
 | 15 | [3Sum](https://leetcode.com/problems/3sum) | Medium | [C](./algorithms/three_sum.c) |
 | 20 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses) | Easy | [Python](./algorithms/valid_parentheses.py) |
 | 21 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists) | Easy | [C](./algorithms/merge_two_lists.c) |
+| 22 | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses) | Medium | [C++](./algorithms/generate_parentheses.cpp) |
 | 26 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array) | Easy | [Python](./algorithms/remove_duplicates.py) |
 | 27 | [Remove Element](https://leetcode.com/problems/remove-element) | Easy | [Python](./algorithms/remove_element.py) |
 | 28 | [Implement strStr()](https://leetcode.com/problems/implement-strstr) | Easy | [C++](./algorithms/str_str.cpp) |
