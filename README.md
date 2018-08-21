@@ -27,6 +27,7 @@
 | 27 | [Remove Element](https://leetcode.com/problems/remove-element) | Easy | [Python](./algorithms/remove_element.py) |
 | 28 | [Implement strStr()](https://leetcode.com/problems/implement-strstr) | Easy | [C++](./algorithms/str_str.cpp) |
 | 29 | [Divide Two Integers](https://leetcode.com/problems/divide-two-integers) | Medium | [C++](./algorithms/divide_two_integers.cpp) |
+| 36 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku) | Medium | [C++](./algorithms/valid_sudoku.cpp) |
 | 41 | [First Missing Positive](https://leetcode.com/problems/first-missing-positive) | Hard | [C++](./algorithms/first_missing_positive.cpp) |
 | 50 | [Pow(x, n)](https://leetcode.com/problems/powx-n) | Medium | [C++](./algorithms/pow.cpp) |
 | 78 | [Subsets](https://leetcode.com/problems/subsets) | Medium | [C++](./algorithms/subsets.cpp) |
