@@ -28,6 +28,7 @@
 | 28 | [Implement strStr()](https://leetcode.com/problems/implement-strstr) | Easy | [C++](./algorithms/str_str.cpp) |
 | 29 | [Divide Two Integers](https://leetcode.com/problems/divide-two-integers) | Medium | [C++](./algorithms/divide_two_integers.cpp) |
 | 31 | [Next Permutation](https://leetcode.com/problems/next-permutation) | Medium | [C++](./algorithms/next_permutation.cpp) |
+| 35 | [Search Insert Position](https://leetcode.com/problems/search-insert-position) | Easy | [C++](./algorithms/search_insert_position.cpp) |
 | 36 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku) | Medium | [C++](./algorithms/valid_sudoku.cpp) |
 | 41 | [First Missing Positive](https://leetcode.com/problems/first-missing-positive) | Hard | [C++](./algorithms/first_missing_positive.cpp) |
 | 50 | [Pow(x, n)](https://leetcode.com/problems/powx-n) | Medium | [C++](./algorithms/pow.cpp) |
