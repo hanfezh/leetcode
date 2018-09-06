@@ -34,12 +34,12 @@
 | 41 | [First Missing Positive](https://leetcode.com/problems/first-missing-positive) | Hard | [C++](./algorithms/first_missing_positive.cpp) |
 | 46 | [Permutations](https://leetcode.com/problems/permutations) | Medium | [C++](./algorithms/permutations.cpp) |
 | 50 | [Pow(x, n)](https://leetcode.com/problems/powx-n) | Medium | [C++](./algorithms/pow.cpp) |
-| 53 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray) | Medium | [C++](./algorithms/maximum_subarray.cpp) |
+| 53 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray) | Easy | [C++](./algorithms/maximum_subarray.cpp) |
 | 78 | [Subsets](https://leetcode.com/problems/subsets) | Medium | [C++](./algorithms/subsets.cpp) |
 | 90 | [Subsets II](https://leetcode.com/problems/subsets-ii) | Medium | [C++](./algorithms/subsets2.cpp) |
 | 112 | [Path Sum](https://leetcode.com/problems/path-sum) | Easy | [Python](./algorithms/path_sum.py) |
 | 113 | [Path Sum II](https://leetcode.com/problems/path-sum-ii) | Medium | [Python](./algorithms/path_sum2.py) |
-| 121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) | Medium | [C++](./algorithms/maximum_profit.cpp) |
+| 121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) | Easy | [C++](./algorithms/maximum_profit.cpp) |
 | 136 | [Single Number](https://leetcode.com/problems/single-number) | Easy | [Python](./algorithms/single_number.py) |
 | 143 | [Reorder List](https://leetcode.com/problems/reorder-list) | Medium | [C](./algorithms/reorder_list.c) |
 | 147 | [Insertion Sort List](https://leetcode.com/problems/insertion-sort-list) | Medium | [C](./algorithms/insertion_sort_list.c) |
