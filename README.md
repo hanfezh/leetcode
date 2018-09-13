@@ -60,5 +60,6 @@
 | 278 | [First Bad Version](https://leetcode.com/problems/first-bad-version) | Easy | [C++](./algorithms/first_bad_version.cpp) |
 | 386 | [Lexicographical Numbers](https://leetcode.com/problems/lexicographical-numbers) | Medium | [C++](./algorithms/lexicographical_numbers.cpp) |
 | 437 | [Path Sum III](https://leetcode.com/problems/path-sum-iii) | Easy | [C++](./algorithms/path_sum3.cpp) |
+| 443 | [String Compression](https://leetcode.com/problems/string-compression) | Easy | [C++](./algorithms/string_compression.cpp) |
 | 491 | [Increasing Subsequences](https://leetcode.com/problems/increasing-subsequences) | Medium | [C++](./algorithms/increasing_subsequences.cpp) |
 
