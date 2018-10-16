@@ -1,7 +1,7 @@
 /*
  * =====================================================================================
  *
- *       Filename:  unique_paths.cpp
+ *       Filename:  unique_paths.c
  *
  *    Description:  Unique Paths: A robot is located at the top-left corner of a m x n 
  *                  grid (marked 'Start' in the diagram below). The robot can only move 
@@ -10,7 +10,7 @@
  *                  diagram below). How many possible unique paths are there?
  *
  *        Version:  1.0
- *        Created:  09/14/18 08:25:14
+ *        Created:  09/27/18 06:42:58
  *       Revision:  none
  *       Compiler:  gcc
  *
@@ -22,52 +22,42 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
-#include <vector>
 
-class Solution
+int uniquePaths(int m, int n)
 {
-public:
-    int uniquePaths(int m, int n)
+    if (m < 1 || n < 1)
     {
-        if (m < 1 || n < 1)
-        {
-            // Invalid
-            return 0;
-        }
-        else if (m < 2 || n < 2)
-        {
-            return 1;
-        }
-
-        std::vector<std::vector<int>> dp(m, std::vector<int>(n, -1));
-        dp[0][0] = 0;
-        dp[1][0] = 1;
-        dp[0][1] = 1;
-
-        return uniquePaths(m - 1, n - 1, dp);
+        // Invalid
+        return 0;
+    }
+    else if (m == 1 || n == 1)
+    {
+        return 1;
     }
 
-private:
-    int uniquePaths(int m, int n, std::vector<std::vector<int>>& dp)
-    {
-        if (m < 0 || n < 0)
-        {
-            return 0;
-        }
-        else if (m == 0 || n == 0)
-        {
-            return 1;
-        }
-        if (dp[m][n] != -1)
-        {
-            return dp[m][n];
-        }
+    // Calc permutations: [3, 7] -> [2, 6] -> C8,2
 
-        dp[m][n] = uniquePaths(m - 1, n, dp) + uniquePaths(m, n - 1, dp);
-        printf("%d %d -> %d\n", m, n, dp[m][n]);
-        return dp[m][n];
+    m -= 1;
+    n -= 1;
+
+    if (n < m)
+    {
+        int x = n;
+        n = m;
+        m = x;
     }
-};
+
+    uint64_t sum = 1;
+    int i = 1;
+    int j = n + 1;
+    for ( ; i <= m; i++, j++)
+    {
+        sum *= j;
+        sum /= i;
+    }
+
+    return sum;
+}
 
 int main(int argc, char* argv[])
 {
@@ -80,7 +70,7 @@ int main(int argc, char* argv[])
         n = atoi(argv[2]);
     }
 
-    int sum = Solution().uniquePaths(m, n);
+    int sum = uniquePaths(m, n);
     printf("[%d, %d] -> %d\n", m, n, sum);
 
     return 0;
