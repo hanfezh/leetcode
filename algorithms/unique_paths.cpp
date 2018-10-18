@@ -64,7 +64,6 @@ private:
         }
 
         dp[m][n] = uniquePaths(m - 1, n, dp) + uniquePaths(m, n - 1, dp);
-        printf("%d %d -> %d\n", m, n, dp[m][n]);
         return dp[m][n];
     }
 };
