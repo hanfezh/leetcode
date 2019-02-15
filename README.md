@@ -34,6 +34,7 @@
 | 36 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku) | Medium | [C++](./algorithms/valid_sudoku.cpp) |
 | 38 | [Count and Say](https://leetcode.com/problems/count-and-say) | Medium | [C++](./algorithms/count_and_say.cpp) |
 | 41 | [First Missing Positive](https://leetcode.com/problems/first-missing-positive) | Hard | [C++](./algorithms/first_missing_positive.cpp) |
+| 43 | [Multiply Strings](https://leetcode.com/problems/multiply-strings/) | Medium | [C++](./algorithms/multiply_strings.cpp) |
 | 46 | [Permutations](https://leetcode.com/problems/permutations) | Medium | [C++](./algorithms/permutations.cpp) |
 | 50 | [Pow(x, n)](https://leetcode.com/problems/powx-n) | Medium | [C++](./algorithms/pow.cpp) |
 | 53 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray) | Easy | [C++](./algorithms/maximum_subarray.cpp) |
