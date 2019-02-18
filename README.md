@@ -43,6 +43,7 @@
 | 63 | [Unique Paths II](https://leetcode.com/problems/unique-paths-ii) | Medium | [C++](./algorithms/unique_paths2.cpp) |
 | 66 | [Plus One](https://leetcode.com/problems/plus-one) | Easy | [C++](./algorithms/plus_one.cpp) |
 | 67 | [Add Binary](https://leetcode.com/problems/add-binary/) | Easy | [C++](./algorithms/add_binary.cpp) |
+| 70 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | Easy | [C++](./algorithms/climbing_stairs.cpp) |
 | 78 | [Subsets](https://leetcode.com/problems/subsets) | Medium | [C++](./algorithms/subsets.cpp) |
 | 90 | [Subsets II](https://leetcode.com/problems/subsets-ii) | Medium | [C++](./algorithms/subsets2.cpp) |
 | 112 | [Path Sum](https://leetcode.com/problems/path-sum) | Easy | [Python](./algorithms/path_sum.py) |
