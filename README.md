@@ -45,6 +45,7 @@
 | 67 | [Add Binary](https://leetcode.com/problems/add-binary/) | Easy | [C++](./algorithms/add_binary.cpp) |
 | 70 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | Easy | [C++](./algorithms/climbing_stairs.cpp) |
 | 78 | [Subsets](https://leetcode.com/problems/subsets) | Medium | [C++](./algorithms/subsets.cpp) |
+| 88 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | Easy | [C++](./algorithms/merge_sorted_array.cpp) |
 | 90 | [Subsets II](https://leetcode.com/problems/subsets-ii) | Medium | [C++](./algorithms/subsets2.cpp) |
 | 112 | [Path Sum](https://leetcode.com/problems/path-sum) | Easy | [Python](./algorithms/path_sum.py) |
 | 113 | [Path Sum II](https://leetcode.com/problems/path-sum-ii) | Medium | [Python](./algorithms/path_sum2.py) |
