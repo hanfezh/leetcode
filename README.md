@@ -80,4 +80,5 @@
 | 443 | [String Compression](https://leetcode.com/problems/string-compression) | Easy | [C++](./algorithms/string_compression.cpp) |
 | 448 | [Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/) | Easy | [C++](./algorithms/find_disappeared_numbers.cpp) |
 | 491 | [Increasing Subsequences](https://leetcode.com/problems/increasing-subsequences) | Medium | [C++](./algorithms/increasing_subsequences.cpp) |
+| 623 | [Add One Row to Tree](https://leetcode.com/problems/add-one-row-to-tree) | Medium | [C++](./algorithms/add_one_row_to_tree.cpp) |
 | 788 | [Rotated Digits](https://leetcode.com/problems/rotated-digits) | Easy | [C++](./algorithms/rotated_digits.cpp) |
