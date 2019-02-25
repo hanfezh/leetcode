@@ -45,8 +45,8 @@ public:
 
 int main(int argc, char* argv[])
 {
-    ListNode* root = NULL;
-    Solution().deleteNode(root);
+    ListNode* head = NULL;
+    Solution().deleteNode(head);
 
     return 0;
 }
