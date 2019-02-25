@@ -18,38 +18,43 @@
 #include <stdio.h>
 #include <string>
 #include <vector>
+#include <unordered_map>
 
 class Solution
 {
 public:
     std::vector<std::string> findRestaurant(const std::vector<std::string>& list1, const std::vector<std::string>& list2)
     {
+        std::unordered_map<std::string, int> indexes;
         std::vector<std::string> rests;
         int least = list1.size() + list2.size();
 
         for (size_t i = 0; i < list1.size(); i++)
         {
-            for (size_t j = 0; j < list2.size(); j++)
+            indexes[list1[i]] = i;
+        }
+
+        for (size_t j = 0; j < list2.size(); j++)
+        {
+            auto iter = indexes.find(list2[j]);
+            if (iter == indexes.end())
             {
-                if (list1[i] != list2[j])
-                {
-                    continue;
-                }
-
-                int sum = i + j;
-                if (sum > least)
-                {
-                    continue;
-                }
-                else if (sum < least)
-                {
-                    rests.clear();
-                }
-
-                // sum <= least
-                rests.push_back(list1[i]);
-                least = sum;
+                continue;
             }
+
+            int sum = iter->second + j;
+            if (sum > least)
+            {
+                continue;
+            }
+            else if (sum < least)
+            {
+                rests.clear();
+            }
+
+            // sum <= least
+            rests.push_back(list2[j]);
+            least = sum;
         }
 
         return rests;
