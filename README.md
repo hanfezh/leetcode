@@ -88,4 +88,5 @@
 | 491 | [Increasing Subsequences](https://leetcode.com/problems/increasing-subsequences) | Medium | [C++](./algorithms/increasing_subsequences.cpp) |
 | 599 | [Minimum Index Sum of Two Lists](https://leetcode.com/problems/minimum-index-sum-of-two-lists) | Easy | [C++](./algorithms/minimum_index_sum.cpp) |
 | 623 | [Add One Row to Tree](https://leetcode.com/problems/add-one-row-to-tree) | Medium | [C++](./algorithms/add_one_row_to_tree.cpp) |
+| 705 | [Design HashSet](https://leetcode.com/problems/design-hashset) | Easy | [C++](./algorithms/design_hashset.cpp) |
 | 788 | [Rotated Digits](https://leetcode.com/problems/rotated-digits) | Easy | [C++](./algorithms/rotated_digits.cpp) |
