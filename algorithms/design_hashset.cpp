@@ -19,11 +19,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-class MyHashSet {
+class MyHashSet
+{
 public:
     MyHashSet()
     {
-        size_ = (1000000 + 31) / 32;
+        size_ = (1000000 + 1 + 31) / 32;
         buf_ = new int[size_]();
     }
 
