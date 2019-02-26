@@ -74,6 +74,7 @@
 | 194 | [Transpose File](https://leetcode.com/problems/transpose-file) | Medium | [Bash](./shell/transpose_file.sh) |
 | 195 | [Tenth Line](https://leetcode.com/problems/tenth-line) | Easy | [Bash](./shell/tenth_line.sh) |
 | 203 | [Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements) | Easy | [C++](./algorithms/remove_linked_list_elements.cpp) |
+| 217 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate) | Easy | [C++](./algorithms/contains_duplicate.cpp) |
 | 257 | [Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths) | Easy | [C++](./algorithms/binary_tree_paths.cpp) |
 | 263 | [Ugly Number](https://leetcode.com/problems/ugly-number) | Easy | [Python](./algorithms/ugly_number.py) |
 | 273 | [Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list) | Easy | [C++](./algorithms/delete_node_in_linked_list.cpp) |
