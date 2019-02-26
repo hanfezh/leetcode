@@ -22,12 +22,34 @@
 #include <stdlib.h>
 #include <algorithm>
 #include <vector>
+#include <unordered_map>
 
 class Solution
 {
 public:
     bool containsNearbyDuplicate(std::vector<int>& nums, int k)
     {
+#define __UNORDERED_MAP__
+#ifdef __UNORDERED_MAP__
+        std::unordered_map<int, size_t> indexes;
+        for (size_t i = 0; i < nums.size(); i++)
+        {
+            auto iter = indexes.find(nums[i]);
+            if (iter != indexes.end())
+            {
+                if (i - iter->second <= k)
+                {
+                    return true;
+                }
+            }
+
+            // Update index
+            indexes[nums[i]] = i;
+        }
+
+        return false;
+
+#else
         if (k < 1 || nums.size() < 2)
         {
             return false; 
@@ -58,6 +80,7 @@ public:
         }
 
         return false;
+#endif
     }
 };
 
