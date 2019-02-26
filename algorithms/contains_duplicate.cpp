@@ -96,10 +96,14 @@ private:
 
 int main(int argc, char* argv[])
 {
-    std::vector<int> nums = {10, 7, 8, 9, 1, 5};
+    std::vector<int> nums = {10, 7, 8, 9, 1, 5, 1};
     if (argc > 2)
     {
-
+        nums.clear();
+        for (int i = 1; i < argc; i++)
+        {
+            nums.push_back(atoi(argv[i]));
+        }
     }
     auto is_dup = Solution().containsDuplicate(nums);
     printf("Contains duplicate? %s\n", (is_dup ? "Yes" : "No"));
