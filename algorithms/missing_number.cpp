@@ -26,6 +26,30 @@ class Solution
 public:
     int missingNumber(std::vector<int>& nums)
     {
+#define __XOR__
+#ifdef __XOR__
+        return xorMissing(nums);
+#else
+        return sortMissing(nums);
+#endif
+    }
+
+private:
+    int xorMissing(std::vector<int>& nums)
+    {
+        int supposed = 0;
+        for (size_t i = 0; i < nums.size(); i++)
+        {
+            supposed ^= i;
+            supposed ^= nums[i];
+        }
+
+        supposed ^= nums.size();
+        return supposed;
+    }
+
+    int sortMissing(std::vector<int>& nums)
+    {
 #ifdef __STD_SORT__
         std::sort(nums.begin(), nums.end());
 #else
@@ -46,7 +70,6 @@ public:
         return supposed;
     }
 
-private:
     void quickSort(std::vector<int>& nums, int left, int right)
     {
         if (left < right)
