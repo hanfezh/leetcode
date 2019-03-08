@@ -25,6 +25,57 @@ class Solution
 public:
     std::vector<int> findErrorNums(std::vector<int>& nums)
     {
+#ifdef __XOR__
+        return findByXor(nums);
+#else
+        return findByTag(nums);
+#endif
+    }
+
+private:
+    std::vector<int> findByTag(std::vector<int>& nums)
+    {
+        int dup = 0;
+        int mis = 0;
+
+        for (size_t i = 0; i < nums.size(); i++)
+        {
+            int j = std::abs(nums[i]) - 1;
+            if (j < 0 || j >= nums.size() || nums[j] == 0)
+            {
+                // Invalid
+                break;
+            }
+            if (nums[j] > 0)
+            {
+                // Mark as nagative
+                nums[j] = -nums[j];
+            }
+            else
+            {
+                // Duplicate
+                dup = j + 1;
+            }
+        }
+
+        for (size_t i = 0; i < nums.size(); i++)
+        {
+            if (nums[i] > 0)
+            {
+                // Found missing
+                mis = i + 1;
+            }
+        }
+
+        if (dup > 0 && mis > 0)
+        {
+            return std::vector<int>({dup, mis});
+        }
+        return std::vector<int>();
+    }
+
+    std::vector<int> findByXor(std::vector<int>& nums)
+    {
         /**
          * index: a b c d e
          * value: a b c c e
@@ -37,12 +88,12 @@ public:
         int mis = 0;
         for (size_t i = 0; i < nums.size(); i++)
         {
-            if (s.count(nums[i]) > 0)
+            if (dup == 0)
             {
-                dup = nums[i];
-            }
-            else
-            {
+                if (s.count(nums[i]) > 0)
+                {
+                    dup = nums[i];
+                }
                 s.insert(nums[i]);
             }
             mis ^= (i + 1) ^ nums[i];
