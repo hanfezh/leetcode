@@ -79,6 +79,7 @@
 | 203 | [Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements) | Easy | [C++](./algorithms/remove_linked_list_elements.cpp) |
 | 217 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate) | Easy | [C++](./algorithms/contains_duplicate.cpp) |
 | 219 | [Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii) | Easy | [C++](./algorithms/contains_duplicate2.cpp) |
+| 220 | [Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii) | Medium | [C++](./algorithms/contains_duplicate3.cpp) |
 | 257 | [Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths) | Easy | [C++](./algorithms/binary_tree_paths.cpp) |
 | 263 | [Ugly Number](https://leetcode.com/problems/ugly-number) | Easy | [Python](./algorithms/ugly_number.py) |
 | 268 | [Missing Number](https://leetcode.com/problems/missing-number) | Easy | [C++](./algorithms/missing_number.cpp) |
