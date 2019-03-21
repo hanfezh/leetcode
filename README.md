@@ -30,7 +30,7 @@
 | 28 | [Implement strStr()](https://leetcode.com/problems/implement-strstr) | Easy | [C++](./algorithms/str_str.cpp) |
 | 29 | [Divide Two Integers](https://leetcode.com/problems/divide-two-integers) | Medium | [C++](./algorithms/divide_two_integers.cpp) |
 | 31 | [Next Permutation](https://leetcode.com/problems/next-permutation) | Medium | [C++](./algorithms/next_permutation.cpp) |
-| 33 | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array) | Medium | [C++](./algorithms/search_in_rotated_sorted_array.cpp) |
+| 33 | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array) | Medium | [C++](./algorithms/search_in_rotated_sorted_array.cpp) [Go](./algorithms/search_in_rotated_sorted_array.go) |
 | 34 | [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array) | Medium | [C++](./algorithms/position_in_sorted_array.cpp) |
 | 35 | [Search Insert Position](https://leetcode.com/problems/search-insert-position) | Easy | [C++](./algorithms/search_insert_position.cpp) |
 | 36 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku) | Medium | [C++](./algorithms/valid_sudoku.cpp) |
