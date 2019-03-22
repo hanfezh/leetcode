@@ -29,42 +29,45 @@ class Solution
 public:
     int search(const std::vector<int>& nums, int target)
     {
-        return lookup(nums, 0, nums.size() - 1, target);
-    }
+        int start = 0;
+        int end = nums.size() - 1;
 
-private:
-    int lookup(const std::vector<int>& nums, int start, int end, int target)
-    {
-        if (start > end)
+        while (start <= end)
         {
-            return -1;
+            int pivot = (start + end) / 2;
+            if (nums[pivot] == target)
+            {
+                // Found target
+                return pivot;
+            }
+            if (nums[pivot] < nums[end])
+            {
+                // Right half is ascending
+                if (nums[pivot] > target || nums[end] < target)
+                {
+                    end = pivot - 1;
+                }
+                else
+                {
+                    start = pivot + 1;
+                }
+            }
+            else
+            {
+                // Left half is ascending
+                // nums[pivot] > nums[end], assume no duplicate
+                if (nums[start] > target || nums[pivot] < target)
+                {
+                    start = pivot + 1;
+                }
+                else
+                {
+                    end = pivot - 1;
+                }
+            }
         }
 
-        int pivot = (start + end) / 2;
-        if (nums[pivot] == target)
-        {
-            // Found target
-            return pivot;
-        }
-        if (nums[pivot] < nums[end])
-        {
-            // Right half is ascending
-            if (nums[pivot] > target || nums[end] < target)
-            {
-                return lookup(nums, start, pivot - 1, target);
-            }
-            return lookup(nums, pivot + 1, end, target);
-        }
-        else
-        {
-            // Left half is ascending
-            // nums[pivot] > nums[end], assume no duplicate
-            if (nums[start] > target || nums[pivot] < target)
-            {
-                return lookup(nums, pivot + 1, end, target);
-            }
-            return lookup(nums, start, pivot - 1, target);
-        }
+        return -1;
     }
 };
 
