@@ -35,6 +35,7 @@
 | 35 | [Search Insert Position](https://leetcode.com/problems/search-insert-position) | Easy | [C++](./algorithms/search_insert_position.cpp) |
 | 36 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku) | Medium | [C++](./algorithms/valid_sudoku.cpp) |
 | 38 | [Count and Say](https://leetcode.com/problems/count-and-say) | Medium | [C++](./algorithms/count_and_say.cpp) |
+| 39 | [Combination Sum](https://leetcode.com/problems/combination-sum) | Medium | [C++](./algorithms/combination_sum.cpp) |
 | 41 | [First Missing Positive](https://leetcode.com/problems/first-missing-positive) | Hard | [C++](./algorithms/first_missing_positive.cpp) |
 | 43 | [Multiply Strings](https://leetcode.com/problems/multiply-strings/) | Medium | [C++](./algorithms/multiply_strings.cpp) |
 | 46 | [Permutations](https://leetcode.com/problems/permutations) | Medium | [C++](./algorithms/permutations.cpp) |
