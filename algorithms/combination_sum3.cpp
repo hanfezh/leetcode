@@ -1,14 +1,14 @@
 /*
  * =====================================================================================
  *
- *       Filename:  combination_sum.cpp
+ *       Filename:  combination_sum3.cpp
  *
- *    Description:  39. Combination Sum. Given a set of candidate numbers (candidates) 
- *                  (without duplicates) and a target number (target), find all unique 
- *                  combinations in candidates where the candidate numbers sums to target.
+ *    Description:  216. Combination Sum III. Find all possible combinations of k 
+ *                  numbers that add up to a number n, given that only numbers from 1 to 
+ *                  9 can be used and each combination should be a unique set of numbers.
  *
  *        Version:  1.0
- *        Created:  03/26/19 02:01:38
+ *        Created:  03/28/19 02:22:17
  *       Revision:  none
  *       Compiler:  gcc
  *
@@ -24,20 +24,22 @@
 class Solution
 {
 public:
-    std::vector<std::vector<int>> combinationSum(const std::vector<int>& candidates, int target)
+    std::vector<std::vector<int>> combinationSum3(int k, int n)
     {
+        std::vector<int> candidates = {1, 2, 3, 4, 5, 6, 7, 8, 9};
         std::vector<std::vector<int>> combx;
         std::vector<int> current;
-        combine(candidates, 0, target, &current, &combx);
+        combine(candidates, 0, k, n, &current, &combx);
         return combx;
     }
 
 private:
-    void combine(const std::vector<int>& candidates, int start, int remain, std::vector<int>* current, std::vector<std::vector<int>>* combx)
+    void combine(const std::vector<int>& candidates, int start, int count, int remain, 
+                 std::vector<int>* current, std::vector<std::vector<int>>* combx)
     {
         if (remain == 0)
         {
-            if (current->size() > 0)
+            if (current->size() > 0 && current->size() == count)
             {
                 combx->push_back(*current);
             }
@@ -51,7 +53,7 @@ private:
         for (int i = start; i < candidates.size(); i++)
         {
             current->push_back(candidates[i]);
-            combine(candidates, i, remain - candidates[i], current, combx);
+            combine(candidates, i + 1, count, remain - candidates[i], current, combx);
             current->pop_back();
         }
     }
@@ -59,15 +61,15 @@ private:
 
 int main(int argc, char* argv[])
 {
-    std::vector<int> nums = {2, 3, 5};
-    int target = 8;
-    auto combx = Solution().combinationSum(nums, target);
+    int k = 3;
+    int n = 9;
+    auto combx = Solution().combinationSum3(k, n);
     printf("Number of combinations: %lu\n", combx.size());
     for (const auto& item: combx)
     {
-        for (auto n: item)
+        for (auto num: item)
         {
-            printf("%d ", n);
+            printf("%d ", num);
         }
         printf("\n");
     }

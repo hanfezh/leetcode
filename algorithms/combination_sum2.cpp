@@ -44,23 +44,22 @@ private:
             {
                 combx->push_back(*current);
             }
+            return;
         }
         else if (remain < 0)
         {
             return;
         }
-        else
+
+        for (int i = start; i < candidates.size(); i++)
         {
-            for (int i = start; i < candidates.size(); i++)
+            if (i > start && candidates[i] == candidates[i - 1])
             {
-                if (i > start && candidates[i] == candidates[i - 1])
-                {
-                    continue;
-                }
-                current->push_back(candidates[i]);
-                combine(candidates, i + 1, remain - candidates[i], current, combx);
-                current->pop_back();
+                continue;
             }
+            current->push_back(candidates[i]);
+            combine(candidates, i + 1, remain - candidates[i], current, combx);
+            current->pop_back();
         }
     }
 };

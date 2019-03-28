@@ -83,6 +83,7 @@
 | 195 | [Tenth Line](https://leetcode.com/problems/tenth-line) | Easy | [Bash](./shell/tenth_line.sh) |
 | 196 | [Delete Duplicate Emails](https://leetcode.com/problems/delete-duplicate-emails) | Easy | [MySQL](./database/delete_duplicate_emails.sql) |
 | 203 | [Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements) | Easy | [C++](./algorithms/remove_linked_list_elements.cpp) |
+| 216 | [Combination Sum III](https://leetcode.com/problems/combination-sum-iii) | Medium | [C++](./algorithms/combination_sum3.cpp) |
 | 217 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate) | Easy | [C++](./algorithms/contains_duplicate.cpp) |
 | 219 | [Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii) | Easy | [C++](./algorithms/contains_duplicate2.cpp) |
 | 220 | [Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii) | Medium | [C++](./algorithms/contains_duplicate3.cpp) |
