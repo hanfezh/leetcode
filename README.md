@@ -1,7 +1,7 @@
 # LeetCode
 
-| # | Title | Difficulty | Solutions |
-| - | ----- | ---------- | --------- |
+| # | Title | Difficulty | Solutions | Tags |
+| - | ----- | ---------- | --------- | ---- |
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum) | Easy | [Go](./algorithms/two_sum.go) |
 | 2	| [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) | Medium | [Python](./algorithms/add_two_numbers.py) |
 | 3	| [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters) | Medium | [Python](./algorithms/longest_substring.py) |
@@ -69,6 +69,7 @@
 | 141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle) | Easy | [C++](./algorithms/linked_list_cycle.cpp) |
 | 143 | [Reorder List](https://leetcode.com/problems/reorder-list) | Medium | [C](./algorithms/reorder_list.c) |
 | 147 | [Insertion Sort List](https://leetcode.com/problems/insertion-sort-list) | Medium | [C](./algorithms/insertion_sort_list.c) |
+| 152 | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray) | Medium | [C++](./algorithms/maximum_product_subarray.cpp) | _Dynamic Programming_ |
 | 153 | [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array) | Medium | [C](./algorithms/find_minimum.c) |
 | 154 | [Find Minimum in Rotated Sorted Array II](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii) | Hard | [C](./algorithms/find_minimum2.c) |
 | 155 | [Min Stack](https://leetcode.com/problems/min-stack) | Easy | [Python](./algorithms/min_stack.py) |
