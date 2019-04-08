@@ -31,8 +31,8 @@ public:
         {
             if (s.at(i) != s.at(j))
             {
-                return isPalindrome(s.substr(i, j - i)) || 
-                       isPalindrome(s.substr(i + 1, j - i));
+                return isPalindrome(s, i + 1, j) || 
+                       isPalindrome(s, i, j - 1);
             }
             i++;
             j--;
@@ -42,10 +42,8 @@ public:
     }
 
 private:
-    bool isPalindrome(const std::string &s)
+    bool isPalindrome(const std::string &s, int i, int j)
     {
-        int i = 0;
-        int j = s.size() - 1;
         while (i < j)
         {
             if (s.at(i) != s.at(j))
