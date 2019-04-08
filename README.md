@@ -44,6 +44,7 @@
 | 50 | [Pow(x, n)](https://leetcode.com/problems/powx-n) | Medium | [C++](./algorithms/pow.cpp) |
 | 53 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray) | Easy | [C++](./algorithms/maximum_subarray.cpp) |
 | 58 | [Length of Last Word](https://leetcode.com/problems/length-of-last-word) | Easy | [C++](./algorithms/length_of_last_word.cpp) |
+| 60 | [Permutation Sequence](https://leetcode.com/problems/permutation-sequence) | Medium | [C++] | |
 | 61 | [Rotate List](https://leetcode.com/problems/rotate-list/) | Medium | [C++](./algorithms/rotate_list.cpp) |
 | 62 | [Unique Paths](https://leetcode.com/problems/unique-paths) | Medium | [C](./algorithms/unique_paths.c) [C++](./algorithms/unique_paths.cpp) |
 | 63 | [Unique Paths II](https://leetcode.com/problems/unique-paths-ii) | Medium | [C++](./algorithms/unique_paths2.cpp) |
