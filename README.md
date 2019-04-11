@@ -59,6 +59,7 @@
 | 83 | [Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list) | Easy | [C++](./algorithms/remove_duplicates_from_list.cpp) |
 | 88 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | Easy | [C++](./algorithms/merge_sorted_array.cpp) |
 | 90 | [Subsets II](https://leetcode.com/problems/subsets-ii) | Medium | [C++](./algorithms/subsets2.cpp) |
+| 92 | [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii) | Medium | [C++](./algorithms/reverse_linked_list2.cpp) | |
 | 98 | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree) | Medium | [C++](./algorithms/validate_binary_search_tree.cpp) |
 | 100 | [Same Tree](https://leetcode.com/problems/same-tree) | Easy | [C++](./algorithms/same_tree.cpp) |
 | 101 | [Symmtric Tree](https://leetcode.com/problems/symmetric-tree) | Easy | [C++](./algorithms/symmetric_tree.cpp) |
