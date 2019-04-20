@@ -41,6 +41,7 @@
 | 39 | [Combination Sum](https://leetcode.com/problems/combination-sum) | Medium | [C++](./algorithms/combination_sum.cpp) |
 | 40 | [Combination Sum II](https://leetcode.com/problems/combination-sum-ii) | Medium | [C++](./algorithms/combination_sum2.cpp) |
 | 41 | [First Missing Positive](https://leetcode.com/problems/first-missing-positive) | Hard | [C++](./algorithms/first_missing_positive.cpp) |
+| 42 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water) | Hard | [C++](./algorithms/trapping_rain_water.cpp) | _DP_ |
 | 43 | [Multiply Strings](https://leetcode.com/problems/multiply-strings/) | Medium | [C++](./algorithms/multiply_strings.cpp) |
 | 46 | [Permutations](https://leetcode.com/problems/permutations) | Medium | [C++](./algorithms/permutations.cpp) |
 | 47 | [Permutations II](https://leetcode.com/problems/permutations-ii) | Medium | [C++](./algorithms/permutations2.cpp) | _DFS_ |
