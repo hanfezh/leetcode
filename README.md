@@ -53,6 +53,7 @@
 | 61 | [Rotate List](https://leetcode.com/problems/rotate-list/) | Medium | [C++](./algorithms/rotate_list.cpp) |
 | 62 | [Unique Paths](https://leetcode.com/problems/unique-paths) | Medium | [C](./algorithms/unique_paths.c) [C++](./algorithms/unique_paths.cpp) |
 | 63 | [Unique Paths II](https://leetcode.com/problems/unique-paths-ii) | Medium | [C++](./algorithms/unique_paths2.cpp) |
+| 64 | [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum) | Medium | [C++](./algorithms/minimum_path_sum.cpp) | _DP_ |
 | 66 | [Plus One](https://leetcode.com/problems/plus-one) | Easy | [C++](./algorithms/plus_one.cpp) |
 | 67 | [Add Binary](https://leetcode.com/problems/add-binary/) | Easy | [C++](./algorithms/add_binary.cpp) |
 | 70 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | Easy | [C++](./algorithms/climbing_stairs.cpp) |
