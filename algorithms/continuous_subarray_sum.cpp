@@ -20,9 +20,10 @@
  */
 #include <stdio.h>
 #include <stdlib.h>
+#include <unordered_map>
 #include <vector>
 
-class Solution
+class Solution1
 {
 public:
     bool checkSubarraySum(std::vector<int>& nums, int k)
@@ -32,7 +33,7 @@ public:
             nums[i] += nums[i - 1];
         }
 
-        for (int i = 0; i < nums.size() - 1; i ++)
+        for (int i = 0; i < nums.size() - 1; i++)
         {
             for (int j = i + 1 ; j < nums.size(); j++)
             {
@@ -48,6 +49,41 @@ public:
         return false;
     }
 };
+
+class Solution2
+{
+public:
+    bool checkSubarraySum(std::vector<int>& nums, int k)
+    {
+        std::unordered_map<int, int> idxes = {{0, -1},};
+        int sum = 0;
+        for (int i = 0; i < nums.size(); i++)
+        {
+            sum += nums[i];
+            if (k != 0)
+            {
+                sum %= k;
+            }
+
+            auto it = idxes.find(sum);
+            if (it != idxes.end())
+            {
+                if ((i - it->second) > 1)
+                {
+                    return true;
+                }
+            }
+            else
+            {
+                idxes[sum] = i;
+            }
+        }
+
+        return false;
+    }
+};
+
+using Solution = Solution2;
 
 int main(int argc, char* argv[])
 {
