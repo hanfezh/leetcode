@@ -20,8 +20,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <vector>
+#include<unordered_map>
 
-class Solution
+class Solution1
 {
 public:
     int subarraySum(std::vector<int>& nums, int k)
@@ -51,6 +52,32 @@ public:
         return sum;
     }
 };
+
+class Solution2
+{
+public:
+    int subarraySum(std::vector<int>& nums, int k)
+    {
+        std::unordered_map<int, int> pre_sums  = {{0, 1},};
+        int sum = 0;
+        int cnt = 0;
+        for (int i = 0; i < nums.size(); i++)
+        {
+            sum += nums[i];
+            int sub = sum - k;
+            auto it = pre_sums.find(sub);
+            if (it != pre_sums.end())
+            {
+                cnt += it->second;
+            }
+            pre_sums[sum]++;
+        }
+
+        return cnt;
+    }
+};
+
+using Solution = Solution2;
 
 int main(int argc, char* argv[])
 {
