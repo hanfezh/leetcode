@@ -45,6 +45,7 @@
 | 43 | [Multiply Strings](https://leetcode.com/problems/multiply-strings/) | Medium | [C++](./algorithms/multiply_strings.cpp) |
 | 46 | [Permutations](https://leetcode.com/problems/permutations) | Medium | [C++](./algorithms/permutations.cpp) |
 | 47 | [Permutations II](https://leetcode.com/problems/permutations-ii) | Medium | [C++](./algorithms/permutations2.cpp) | _DFS_ |
+| 49 | [Group Anagrams](https://leetcode.com/problems/group-anagrams) | Medium | [C++](./algorithms/group_anagrams.cpp) | _String_ |
 | 50 | [Pow(x, n)](https://leetcode.com/problems/powx-n) | Medium | [C++](./algorithms/pow.cpp) |
 | 53 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray) | Easy | [C++](./algorithms/maximum_subarray.cpp) |
 | 56 | [Merge Intervals](https://leetcode.com/problems/merge-intervals) | Medium | [C++](./algorithms/merge_intervals.cpp) | |
