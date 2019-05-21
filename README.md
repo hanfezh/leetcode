@@ -62,6 +62,7 @@
 | 75 | [Sort Colors](https://leetcode.com/problems/sort-colors) | Medium | [C++](./algorithms/sort_colors.cpp) | _Sort_ |
 | 77 | [Combinations](https://leetcode.com/problems/combinations) | Medium | [C++](./algorithms/combinations.cpp) |
 | 78 | [Subsets](https://leetcode.com/problems/subsets) | Medium | [C++](./algorithms/subsets.cpp) |
+| 80 | [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii) | Medium | [C++](./algorithms/remove_duplicates_from_array2.cpp) | _Array_ |
 | 81 | [Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii) | Medium | [C++](./algorithms/search_in_rotated_sorted_array2.cpp) |
 | 82 | [Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii) | Medium | [C++](./algorithms/remove_duplicates_from_list2.cpp) |
 | 83 | [Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list) | Easy | [C++](./algorithms/remove_duplicates_from_list.cpp) |
