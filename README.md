@@ -69,6 +69,7 @@
 | 86 | [Partition List](https://leetcode.com/problems/partition-list) | Medium | [C++](./algorithms/partition_list.cpp) | |
 | 88 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | Easy | [C++](./algorithms/merge_sorted_array.cpp) |
 | 90 | [Subsets II](https://leetcode.com/problems/subsets-ii) | Medium | [C++](./algorithms/subsets2.cpp) |
+| 91 | [Decode Ways](https://leetcode.com/problems/decode-ways) | Medium | [C++](./algorithms/decode_ways.cpp) | _DP_ |
 | 92 | [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii) | Medium | [C++](./algorithms/reverse_linked_list2.cpp) | |
 | 94 | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal) | Medium | [C++](./algorithms/binary_tree_inorder_traversal.cpp) [Go](./algorithms/binary_tree_inorder_traversal.go) | _Tree_ |
 | 95 | [Unique Binary Search Trees II](https://leetcode.com/problems/unique-binary-search-trees-ii) | Medium | [C++](./algorithms/unique_binary_search_trees2.cpp) | _Tree_ |
