@@ -70,6 +70,7 @@
 | 88 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | Easy | [C++](./algorithms/merge_sorted_array.cpp) |
 | 90 | [Subsets II](https://leetcode.com/problems/subsets-ii) | Medium | [C++](./algorithms/subsets2.cpp) |
 | 92 | [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii) | Medium | [C++](./algorithms/reverse_linked_list2.cpp) | |
+| 94 | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal) | Medium | [C++](./algorithms/binary_tree_inorder_traversal.cpp) | _Tree_ |
 | 95 | [Unique Binary Search Trees II](https://leetcode.com/problems/unique-binary-search-trees-ii) | Medium | [C++](./algorithms/unique_binary_search_trees2.cpp) | _Tree_ |
 | 96 | [Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees) | Medium | [C++](./algorithms/unique_binary_search_trees.cpp) | _DP_ |
 | 98 | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree) | Medium | [C++](./algorithms/validate_binary_search_tree.cpp) |
