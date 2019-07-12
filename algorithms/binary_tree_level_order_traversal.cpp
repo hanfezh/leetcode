@@ -41,35 +41,38 @@ public:
             return values;
         }
 
-        levelOrder(vector<TreeNode*>(1, root), &values);
+        vector<TreeNode*> parents(1, root);
+        levelOrder(&parents, &values);
         return values;
     }
 
 private:
-    void levelOrder(const vector<TreeNode*>& parents, vector<vector<int>>* values)
+    void levelOrder(vector<TreeNode*>* parents, vector<vector<int>>* values)
     {
-        if (parents.size() == 0)
+        if (parents->size() == 0)
         {
             return;
         }
 
-        vector<TreeNode*> children;
         vector<int> nums;
-        for (auto node: parents)
+        int len = parents->size();
+        for (int i = 0; i < len; i++)
         {
+            auto node = parents->at(0);
             nums.push_back(node->val);
             if (node->left != NULL)
             {
-                children.push_back(node->left);
+                parents->push_back(node->left);
             }
             if (node->right != NULL)
             {
-                children.push_back(node->right);
+                parents->push_back(node->right);
             }
+            parents->erase(parents->begin());
         }
 
         values->push_back(nums);
-        levelOrder(children, values);
+        levelOrder(parents, values);
     }
 };
 
