@@ -30,7 +30,7 @@ struct TreeNode
     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
 };
 
-class Solution
+class Solution1
 {
 public:
     TreeNode* sortedListToBST(ListNode* head)
@@ -61,6 +61,54 @@ private:
         return root;
     }
 };
+
+class Solution2
+{
+public:
+    TreeNode* sortedListToBST(ListNode* head)
+    {
+        auto* ptr = head;
+        int size = getLinkListSize(ptr);
+        return sortedListToBST(&ptr, 0, size - 1);
+    }
+
+private:
+    int getLinkListSize(ListNode* node)
+    {
+        int size = 0;
+        while (node != nullptr)
+        {
+            node = node->next;
+            size += 1;
+        }
+        return size;
+    }
+
+    TreeNode* sortedListToBST(ListNode** node, int start, int end)
+    {
+        if (start > end)
+        {
+            return nullptr;
+        }
+
+        // Traverse left hand size
+        int mid = (start + end) / 2;
+        auto* left = sortedListToBST(node, start, mid - 1);
+
+        // Create root
+        auto* root = new TreeNode((*node)->val);
+        root->left = left;
+
+        // Move to next node
+        *node = (*node)->next;
+
+        // Traverse right hand side
+        root->right = sortedListToBST(node, mid + 1, end);
+        return root;
+    }
+};
+
+using Solution = Solution2;
 
 int main(int argc, char* argv[])
 {
