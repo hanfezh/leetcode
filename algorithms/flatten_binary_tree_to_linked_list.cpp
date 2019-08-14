@@ -9,8 +9,8 @@
 //       Revision:  none
 //       Compiler:  g++
 //
-//         Author:  Zhu Xianfeng (), xianfengzhu@tencent.com
-//   Organization:  Tencent Tech. Co., Ltd.
+//         Author:  Zhu Xianfeng (), xianfeng.zhu@gmail.com
+//   Organization:  
 //
 // =====================================================================================
 #include <stdio.h>
