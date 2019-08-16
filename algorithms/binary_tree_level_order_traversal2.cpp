@@ -11,7 +11,7 @@
 //       Revision:  none
 //       Compiler:  g++
 //
-//         Author:  Zhu Xianfeng (), xianfengzhu@tencent.com
+//         Author:  Zhu Xianfeng (), xianfeng.zhu@gmail.com
 //   Organization:  
 //
 // =====================================================================================
