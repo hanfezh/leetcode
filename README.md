@@ -95,6 +95,7 @@
 | 117 | [Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii) | Medium | [C++](./algorithms/populating_next_right_pointers2.cpp) | _Tree_ |
 | 118 | [Pascal's Triangle](https://leetcode.com/problems/pascals-triangle) | Easy | [C++](./algorithms/pascal_triangle.cpp) | _Array_ |
 | 119 | [Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii) | Easy | [C++](./algorithms/pascal_triangle2.cpp) | _Array_ |
+| 120 | [Triangle](https://leetcode.com/problems/triangle) | Medium | [C++](./algorithms/triangle.cpp) | _DP_ |
 | 121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) | Easy | [C++](./algorithms/maximum_profit.cpp) |
 | 122 | [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii) | Easy | [C++](./algorithms/maximum_profit2.cpp) |
 | 123 | [Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii) | Hard | [C++](./algorithms/maximum_profit3.cpp) |
