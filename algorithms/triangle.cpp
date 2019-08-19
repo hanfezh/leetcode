@@ -21,7 +21,7 @@
 
 using std::vector;
 
-class Solution
+class Solution1
 {
 public:
     int minimumTotal(vector<vector<int>>& triangle)
@@ -60,6 +60,32 @@ public:
         return min_sum;
     }
 };
+
+class Solution2
+{
+public:
+    int minimumTotal(vector<vector<int>>& triangle)
+    {
+        if (triangle.size() == 0 || triangle[0].size() == 0)
+        {
+            return 0;
+        }
+
+        vector<int> sums(triangle.back());
+        for (int i = triangle.size() - 2; i >= 0; i--)
+        {
+            const auto& row = triangle[i];
+            for (int j = 0; j < row.size(); j++)
+            {
+                sums[j] = std::min(sums[j], sums[j + 1]) + row[j];
+            }
+        }
+
+        return sums[0];
+    }
+};
+
+using Solution = Solution2;
 
 int main(int argc, char* argv[])
 {
