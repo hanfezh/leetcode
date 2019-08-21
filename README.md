@@ -120,6 +120,7 @@
 | 179 | [Largest Number](https://leetcode.com/problems/largest-number) | Medium | [Python](./algorithms/largest_number.py) |
 | 189 | [Rotate Array](https://leetcode.com/problems/rotate-array) | Easy | [C](./algorithms/rotate_array.c) |
 | 197 | [Rising Temperature](https://leetcode.com/problems/rising-temperature) | Easy | [MySQL](./database/rising_temperature.sql) |
+| 190 | [Reverse Bits](https://leetcode.com/problems/reverse-bits) | Easy | [C++](./algorithms/reverse_bits.cpp) | |
 | 192 | [Word Frequency](https://leetcode.com/problems/word-frequency) | Medium | [Bash](./shell/word_frequency.sh) |
 | 193 | [Valid Phone Numbers](https://leetcode.com/problems/valid-phone-numbers) | Easy | [Bash](./shell/valid_phone_numbers.sh) |
 | 194 | [Transpose File](https://leetcode.com/problems/transpose-file) | Medium | [Bash](./shell/transpose_file.sh) |
