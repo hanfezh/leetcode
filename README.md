@@ -101,6 +101,7 @@
 | 123 | [Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii) | Hard | [C++](./algorithms/maximum_profit3.cpp) |
 | 124 | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum) | Hard | [C++](./algorithms/binary_tree_maximum_path_sum.cpp) | _Tree_ _DFS_ |
 | 125 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome) | Easy | [C++](./algorithms/valid_palindrome.cpp) | |
+| 126 | [Word Ladder II](https://leetcode.com/problems/word-ladder-ii) | Hard | [C++](./algorithms/word_ladder2.cpp) | _BFS_ |
 | 127 | [Word Ladder](https://leetcode.com/problems/word-ladder) | Medium | [C++](./algorithms/word_ladder.cpp) | _BFS_ |
 | 136 | [Single Number](https://leetcode.com/problems/single-number) | Easy | [Python](./algorithms/single_number.py) |
 | 141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle) | Easy | [C++](./algorithms/linked_list_cycle.cpp) |

@@ -1,11 +1,11 @@
 // =====================================================================================
 //
-//       Filename:  word_ladder.cpp
+//       Filename:  word_ladder2.cpp
 //
-//    Description:  127. Word Ladder.
+//    Description:  126. Word Ladder II.
 //
 //        Version:  1.0
-//        Created:  08/20/2019 04:48:30 PM
+//        Created:  08/21/2019 04:31:52 PM
 //       Revision:  none
 //       Compiler:  g++
 //
@@ -14,9 +14,9 @@
 //
 // =====================================================================================
 #include <stdio.h>
-#include <queue>
 #include <string>
 #include <vector>
+#include <utility>
 #include <unordered_set>
 
 using namespace std;
@@ -24,29 +24,29 @@ using namespace std;
 class Solution
 {
 public:
-    int ladderLength(const string& begin_word, const string& end_word, vector<string>& word_list)
+    vector<vector<string>> findLadders(const string& begin_word, const string& end_word, vector<string>& word_list)
     {
         unordered_set<string> words(word_list.begin(), word_list.end());
-        queue<string> bfs_queue;
-        int ladders = 0;
+        vector<pair<string, int>> bfs_queue;
+        vector<int> found_list;
+        int index = 0;
 
         // Push first node
-        bfs_queue.push(begin_word);
+        bfs_queue.push_back(make_pair(begin_word, -1));
 
         // Breadth first search
-        while (!bfs_queue.empty())
+        while (index < bfs_queue.size())
         {
-            ladders++;
             int bfs_size = bfs_queue.size();
-            while (bfs_size-- > 0)
+            for (int k = index; k < bfs_size; k++)
             {
-                auto node = bfs_queue.front();
-                bfs_queue.pop();
+                const auto& item = bfs_queue[k];
+                string node = item.first;
 
                 if (node == end_word)
                 {
-                    // Found and return
-                    return ladders;
+                    // Found desitination
+                    found_list.push_back(k);
                 }
 
                 // Erase node from set, mark as visited
@@ -65,7 +65,7 @@ public:
                         if (words.count(node) > 0)
                         {
                             // Found adjacent node
-                            bfs_queue.push(node);
+                            bfs_queue.push_back(make_pair(node, k));
                         }
                     }
 
@@ -73,17 +73,45 @@ public:
                     node[i] = c;
                 }
             }
+
+            if (!found_list.empty())
+            {
+                break;
+            }
+
+            index = bfs_size;
         }
 
-        // Doesn't find
-        return 0;
+        // Collect ladders
+        vector<vector<string>> ladders;
+        for (auto idx: found_list)
+        {
+            int pre = idx;
+            int cur = ladders.size();
+            ladders.push_back(vector<string>());
+
+            while (pre != -1)
+            {
+                ladders[cur].insert(ladders[cur].begin(), bfs_queue[pre].first);
+                pre = bfs_queue[pre].second;
+            }
+        }
+
+        return ladders;
     }
 };
 
 int main(int argc, char* argv[])
 {
     vector<string> word_list = {"hot", "dot", "dog", "lot", "log", "cog"};
-    int ladders = Solution().ladderLength("hit", "cog", word_list);
-    printf("%d\n", ladders);
+    auto ladders = Solution().findLadders("hit", "cog", word_list);
+    for (const auto& item: ladders)
+    {
+        for (const auto& node: item)
+        {
+            printf("%s ", node.c_str());
+        }
+        printf("\n");
+    }
     return 0;
 }
