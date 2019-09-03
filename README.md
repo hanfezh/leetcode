@@ -108,6 +108,7 @@
 | 130 | [Surrounded Regions](https://leetcode.com/problems/surrounded-regions) | Medium | [C++](./algorithms/surrounded_regions.cpp) | `Union Find` |
 | 131 | [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning) | Medium | [C++](./algorithms/palindrome_partitioning.cpp) | `DFS` |
 | 136 | [Single Number](https://leetcode.com/problems/single-number) | Easy | [Python](./algorithms/single_number.py) |
+| 139 | [Word Break](https://leetcode.com/problems/word-break/submissions) | Medium | [C++](./algorithms/word_break.cpp) | `DP` |
 | 141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle) | Easy | [C++](./algorithms/linked_list_cycle.cpp) |
 | 142 | [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii) | Medium | [C++](./algorithms/linked_list_cycle2.cpp) | |
 | 143 | [Reorder List](https://leetcode.com/problems/reorder-list) | Medium | [C](./algorithms/reorder_list.c) |
