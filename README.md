@@ -109,10 +109,11 @@
 | 131 | [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning) | Medium | [C++](./algorithms/palindrome_partitioning.cpp) | `DFS` |
 | 136 | [Single Number](https://leetcode.com/problems/single-number) | Easy | [Python](./algorithms/single_number.py) |
 | 139 | [Word Break](https://leetcode.com/problems/word-break/submissions) | Medium | [C++](./algorithms/word_break.cpp) | `DP` |
-| 140 | [Word Break II](https://leetcode.com/problems/word-break-ii) | Hard | [C++](./algorithms/word_break2.cpp) | `DFS`, `DP` |
+| 140 | [Word Break II](https://leetcode.com/problems/word-break-ii) | Hard | [C++](./algorithms/word_break2.cpp) | `DFS` `DP` |
 | 141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle) | Easy | [C++](./algorithms/linked_list_cycle.cpp) |
 | 142 | [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii) | Medium | [C++](./algorithms/linked_list_cycle2.cpp) | |
 | 143 | [Reorder List](https://leetcode.com/problems/reorder-list) | Medium | [C](./algorithms/reorder_list.c) |
+| 144 | [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal) | Medium | [C++](./algorithms/binary_tree_preorder_traversal.cpp) | `Tree` `Stack` |
 | 147 | [Insertion Sort List](https://leetcode.com/problems/insertion-sort-list) | Medium | [C](./algorithms/insertion_sort_list.c) |
 | 148 | [Sort List](https://leetcode.com/problems/sort-list) | Medium | [C++](./algorithms/sort_list.cpp) | `Sort` |
 | 151 | [Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string) | Medium | [C++](./algorithms/reverse_words.cpp) | |
