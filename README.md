@@ -140,6 +140,7 @@
 | 195 | [Tenth Line](https://leetcode.com/problems/tenth-line) | Easy | [Bash](./shell/tenth_line.sh) |
 | 196 | [Delete Duplicate Emails](https://leetcode.com/problems/delete-duplicate-emails) | Easy | [MySQL](./database/delete_duplicate_emails.sql) |
 | 198 | [House Robber](https://leetcode.com/problems/house-robber) | Easy | [C++](./algorithms/house_robber.cpp) |
+| 199 | [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view) | Medium | [C++](./algorithms/binary_tree_right_side_view.cpp) | `BFS` |
 | 203 | [Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements) | Easy | [C++](./algorithms/remove_linked_list_elements.cpp) |
 | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list) | Easy | [C++](./algorithms/reverse_linked_list.cpp) | |
 | 216 | [Combination Sum III](https://leetcode.com/problems/combination-sum-iii) | Medium | [C++](./algorithms/combination_sum3.cpp) |
