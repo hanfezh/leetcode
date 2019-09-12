@@ -125,6 +125,7 @@
 | 154 | [Find Minimum in Rotated Sorted Array II](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii) | Hard | [C](./algorithms/find_minimum2.c) |
 | 155 | [Min Stack](https://leetcode.com/problems/min-stack) | Easy | [Python](./algorithms/min_stack.py) |
 | 160 | [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists) | Easy | [C++](./algorithms/intersection_of_linked_lists.cpp) |
+| 162 | [Find Peak Element](https://leetcode.com/problems/find-peak-element) | Medium | [C++](./algorithms/find_peak_element.cpp) | `Binary Search` |
 | 165 | [Compare Version Numbers](https://leetcode.com/problems/compare-version-numbers) | Medium | [C++](./algorithms/compare_version_numbers.cpp) | `String` |
 | 167 | [Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted) | Easy | [C++](./algorithms/two_sum2.cpp) |
 | 175 | [Combine Two Tables](https://leetcode.com/problems/combine-two-tables) | Easy | [MySQL](./database/combine_two_tables.sql) | |
