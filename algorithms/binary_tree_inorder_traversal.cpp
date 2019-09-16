@@ -11,12 +11,13 @@
  *       Revision:  none
  *       Compiler:  gcc
  *
- *         Author:  YOUR NAME (), 
+ *         Author:  xianfeng.zhu@gmail.com
  *   Organization:  
  *
  * =====================================================================================
  */
 #include <stdio.h>
+#include <stack>
 #include <vector>
 
 struct TreeNode
@@ -24,10 +25,11 @@ struct TreeNode
     int val;
     TreeNode* left;
     TreeNode* right;
-    TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+    TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
 };
 
-class Solution
+// Recursive
+class Solution1
 {
 public:
     std::vector<int> inorderTraversal(TreeNode* root)
@@ -40,7 +42,7 @@ public:
 private:
     void inorderTraversal(TreeNode* node, std::vector<int>* values)
     {
-        if (node == NULL)
+        if (node == nullptr)
         {
             return;
         }
@@ -51,9 +53,40 @@ private:
     }
 };
 
+// Non-recursive
+class Solution2
+{
+public:
+    std::vector<int> inorderTraversal(TreeNode* root)
+    {
+        std::vector<int> values;
+        std::stack<TreeNode*> nodes;
+        TreeNode* ptr = root;
+
+        while (ptr != nullptr || !nodes.empty())
+        {
+            while (ptr != nullptr)
+            {
+                nodes.push(ptr);
+                ptr = ptr->left;
+            }
+
+            // Visit current node
+            ptr = nodes.top();
+            values.push_back(ptr->val);
+            ptr = ptr->right;
+            nodes.pop();
+        }
+
+        return values;
+    }
+};
+
+using Solution = Solution2;
+
 int main(int argc, char* argv[])
 {
-    TreeNode* root = NULL;
+    TreeNode* root = nullptr;
     auto values = Solution().inorderTraversal(root);
     printf("Size: %ld\n", values.size());
     return 0;
