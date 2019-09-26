@@ -107,7 +107,8 @@
 | 129 | [Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers) | Medium | [C++](./algorithms/sum_root_to_leaf_numbers.cpp) | `DFS` |
 | 130 | [Surrounded Regions](https://leetcode.com/problems/surrounded-regions) | Medium | [C++](./algorithms/surrounded_regions.cpp) | `Union Find` |
 | 131 | [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning) | Medium | [C++](./algorithms/palindrome_partitioning.cpp) | `DFS` |
-| 136 | [Single Number](https://leetcode.com/problems/single-number) | Easy | [Python](./algorithms/single_number.py) |
+| 136 | [Single Number](https://leetcode.com/problems/single-number) | Easy | [Python](./algorithms/single_number.py) | `Bit Manipulation` |
+| 137 | [Single Number II](https://leetcode.com/problems/single-number-ii) | Medium | [C++](./algorithms/single_number2.cpp) | `Bit Manipulation` |
 | 138 | [Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer) | Medium | [C++](./algorithms/copy_list_with_random_pointer.cpp) | `Linked List` |
 | 139 | [Word Break](https://leetcode.com/problems/word-break/submissions) | Medium | [C++](./algorithms/word_break.cpp) | `DP` |
 | 140 | [Word Break II](https://leetcode.com/problems/word-break-ii) | Hard | [C++](./algorithms/word_break2.cpp) | `DFS` `DP` |
