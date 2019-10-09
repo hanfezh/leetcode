@@ -31,6 +31,7 @@
 | 27 | [Remove Element](https://leetcode.com/problems/remove-element) | Easy | [Python](./algorithms/remove_element.py) |
 | 28 | [Implement strStr()](https://leetcode.com/problems/implement-strstr) | Easy | [C++](./algorithms/str_str.cpp) |
 | 29 | [Divide Two Integers](https://leetcode.com/problems/divide-two-integers) | Medium | [C++](./algorithms/divide_two_integers.cpp) |
+| 30 | [Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words) | Hard | [C++](./algorithms/substring_with_concatenation_words.cpp) | `Hash Table` |
 | 31 | [Next Permutation](https://leetcode.com/problems/next-permutation) | Medium | [C++](./algorithms/next_permutation.cpp) |
 | 32 | [Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses) | Hard | [C++](./algorithms/longest_valid_parentheses.cpp) | `Stack` |
 | 33 | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array) | Medium | [C++](./algorithms/search_in_rotated_sorted_array.cpp) [Go](./algorithms/search_in_rotated_sorted_array.go) |
