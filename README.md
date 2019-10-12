@@ -43,7 +43,8 @@
 | 40 | [Combination Sum II](https://leetcode.com/problems/combination-sum-ii) | Medium | [C++](./algorithms/combination_sum2.cpp) |
 | 41 | [First Missing Positive](https://leetcode.com/problems/first-missing-positive) | Hard | [C++](./algorithms/first_missing_positive.cpp) |
 | 42 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water) | Hard | [C++](./algorithms/trapping_rain_water.cpp) | `DP` |
-| 43 | [Multiply Strings](https://leetcode.com/problems/multiply-strings/) | Medium | [C++](./algorithms/multiply_strings.cpp) |
+| 43 | [Multiply Strings](https://leetcode.com/problems/multiply-strings) | Medium | [C++](./algorithms/multiply_strings.cpp) |
+| 44 | [Wildcard Matching](https://leetcode.com/problems/wildcard-matching) | Hard | [C++](./algorithms/wildcard_matching.cpp) | `Backtracking` |
 | 46 | [Permutations](https://leetcode.com/problems/permutations) | Medium | [C++](./algorithms/permutations.cpp) |
 | 47 | [Permutations II](https://leetcode.com/problems/permutations-ii) | Medium | [C++](./algorithms/permutations2.cpp) | `DFS` |
 | 49 | [Group Anagrams](https://leetcode.com/problems/group-anagrams) | Medium | [C++](./algorithms/group_anagrams.cpp) | `String` |
