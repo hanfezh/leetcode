@@ -2,7 +2,7 @@
 
 | # | Title | Difficulty | Solutions | Topics |
 | - | ----- | ---------- | --------- | ---- |
-| 1 | [Two Sum](https://leetcode.com/problems/two-sum) | Easy | [Go](./algorithms/two_sum.go) |
+| 1 | [Two Sum](https://leetcode.com/problems/two-sum) | Easy | [C++](./algorithms/two_sum.cpp) [Go](./algorithms/two_sum.go) | `Hash Table` |
 | 2	| [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) | Medium | [Python](./algorithms/add_two_numbers.py) |
 | 3	| [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters) | Medium | [Python](./algorithms/longest_substring.py) |
 | 4 | [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays) | Hard | [Go](./algorithms/median_sorted_arrays.go) |
