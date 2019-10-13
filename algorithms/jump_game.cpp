@@ -71,7 +71,31 @@ public:
     }
 };
 
-using Solution = Solution2;
+// Greedy
+class Solution3
+{
+public:
+    bool canJump(std::vector<int>& nums)
+    {
+        if (nums.size() == 0)
+        {
+            return true;
+        }
+
+        int last_idx = nums.size() - 1;
+        for (int i = nums.size() - 1; i >= 0; i--)
+        {
+            if (nums[i] + i >= last_idx)
+            {
+                last_idx = i;
+            }
+        }
+
+        return (last_idx == 0);
+    }
+};
+
+using Solution = Solution3;
 
 int main(int argc, char* argv[])
 {
