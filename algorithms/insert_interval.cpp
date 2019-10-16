@@ -28,44 +28,37 @@ public:
     {
         vector<vector<int>> merged_intervals;
         bool not_pushed = true;
+        int start = new_interval[0];
+        int end = new_interval[1];
 
         for (const auto& item: intervals)
         {
-            if (item[0] > new_interval[1])
+            if (item[1] < new_interval[0])
             {
-                // Current item if at right of new_interval
-                if (not_pushed)
-                {
-                    merged_intervals.push_back(new_interval);
-                    not_pushed = false;
-                }
+                // Current item if at left of new_interval
                 merged_intervals.push_back(item);
             }
-            else if (item[1] < new_interval[0])
+            else if (item[0] > new_interval[1])
             {
-                // Current item is at left of new_interval
+                // Current item is at right of new_interval
+                if (not_pushed)
+                {
+                    merged_intervals.push_back(vector<int>({start, end}));
+                    not_pushed = false;
+                }
                 merged_intervals.push_back(item);
             }
             else
             {
                 // Current item is overlapping with new_interval
-                if (not_pushed)
-                {
-                    int start = std::min(item[0], new_interval[0]);
-                    int end = std::max(item[1], new_interval[1]);
-                    merged_intervals.push_back(vector<int>({start, end}));
-                    not_pushed = false;
-                }
-                else if (item[0] <= new_interval[1] && item[1] > new_interval[1])
-                {
-                    merged_intervals.back()[1] = item[1];
-                }
+                start = std::min(start, item[0]);
+                end = std::max(end, item[1]);
             }
         }
 
         if (not_pushed)
         {
-            merged_intervals.push_back(new_interval);
+            merged_intervals.push_back(vector<int>({start, end}));
         }
         return merged_intervals;
     }
