@@ -54,6 +54,7 @@
 | 55 | [Jump Game](https://leetcode.com/problems/jump-game) | Medium | [C++](./algorithms/jump_game.cpp) | `DP` |
 | 56 | [Merge Intervals](https://leetcode.com/problems/merge-intervals) | Medium | [C++](./algorithms/merge_intervals.cpp) | |
 | 58 | [Length of Last Word](https://leetcode.com/problems/length-of-last-word) | Easy | [C++](./algorithms/length_of_last_word.cpp) |
+| 59 | [Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii) | Medium | [C++](./algorithms/spiral_matrix2.cpp) | `Array` |
 | 60 | [Permutation Sequence](https://leetcode.com/problems/permutation-sequence) | Medium | [C++](./algorithms/permutation_sequence.cpp) | |
 | 61 | [Rotate List](https://leetcode.com/problems/rotate-list/) | Medium | [C++](./algorithms/rotate_list.cpp) |
 | 62 | [Unique Paths](https://leetcode.com/problems/unique-paths) | Medium | [C](./algorithms/unique_paths.c) [C++](./algorithms/unique_paths.cpp) |
