@@ -65,9 +65,11 @@
 | 67 | [Add Binary](https://leetcode.com/problems/add-binary/) | Easy | [C++](./algorithms/add_binary.cpp) |
 | 70 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | Easy | [C++](./algorithms/climbing_stairs.cpp) |
 | 71 | [Simplify Path](https://leetcode.com/problems/simplify-path) | Medium | [C++](./algorithms/simplify_path.cpp) | |
+| 74 | [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix) | Medium | [C++](./algorithms/search_2d_matrix.cpp) | `Binary Search` |
 | 75 | [Sort Colors](https://leetcode.com/problems/sort-colors) | Medium | [C++](./algorithms/sort_colors.cpp) | `Sort` |
 | 77 | [Combinations](https://leetcode.com/problems/combinations) | Medium | [C++](./algorithms/combinations.cpp) |
 | 78 | [Subsets](https://leetcode.com/problems/subsets) | Medium | [C++](./algorithms/subsets.cpp) |
+| 79 | [Word Search](https://leetcode.com/problems/word-search) | Medium | [C++](./algorithms/word_search.cpp) | `Backtracking` |
 | 80 | [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii) | Medium | [C++](./algorithms/remove_duplicates_from_array2.cpp) | `Array` |
 | 81 | [Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii) | Medium | [C++](./algorithms/search_in_rotated_sorted_array2.cpp) |
 | 82 | [Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii) | Medium | [C++](./algorithms/remove_duplicates_from_list2.cpp) |
