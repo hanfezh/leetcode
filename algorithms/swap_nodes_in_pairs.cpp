@@ -79,7 +79,8 @@ void printList(ListNode* head)
     printf("\n");
 }
  
-class Solution
+// Non-recursive
+class Solution1
 {
 public:
     ListNode* swapPairs(ListNode* head)
@@ -110,6 +111,26 @@ public:
         return fake.next;
     }
 };
+
+// Recursive
+class Solution2
+{
+public:
+    ListNode* swapPairs(ListNode* head)
+    {
+        if (head == nullptr || head->next == nullptr)
+        {
+            return head;
+        }
+
+        auto* ptr = head->next;
+        head->next = swapPairs(head->next->next);
+        ptr->next = head;
+        return ptr;
+    }
+};
+
+using Solution = Solution2;
 
 int main(int argc, char* argv[])
 {
