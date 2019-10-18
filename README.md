@@ -79,6 +79,7 @@
 | 90 | [Subsets II](https://leetcode.com/problems/subsets-ii) | Medium | [C++](./algorithms/subsets2.cpp) |
 | 91 | [Decode Ways](https://leetcode.com/problems/decode-ways) | Medium | [C++](./algorithms/decode_ways.cpp) | `DP` |
 | 92 | [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii) | Medium | [C++](./algorithms/reverse_linked_list2.cpp) | |
+| 93 | [Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses) | Medium | [C++](./algorithms/restore_ip_addresses.cpp) | `DFS` |
 | 94 | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal) | Medium | [C++](./algorithms/binary_tree_inorder_traversal.cpp) [Go](./algorithms/binary_tree_inorder_traversal.go) | `Tree` `Stack` |
 | 95 | [Unique Binary Search Trees II](https://leetcode.com/problems/unique-binary-search-trees-ii) | Medium | [C++](./algorithms/unique_binary_search_trees2.cpp) | `Tree` |
 | 96 | [Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees) | Medium | [C++](./algorithms/unique_binary_search_trees.cpp) | `DP` |
