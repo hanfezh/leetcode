@@ -63,7 +63,7 @@
 | 64 | [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum) | Medium | [C++](./algorithms/minimum_path_sum.cpp) | `DP` |
 | 66 | [Plus One](https://leetcode.com/problems/plus-one) | Easy | [C++](./algorithms/plus_one.cpp) |
 | 67 | [Add Binary](https://leetcode.com/problems/add-binary/) | Easy | [C++](./algorithms/add_binary.cpp) |
-| 70 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | Easy | [C++](./algorithms/climbing_stairs.cpp) |
+| 70 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | Easy | [C++](./algorithms/climbing_stairs.cpp) | `DP` |
 | 71 | [Simplify Path](https://leetcode.com/problems/simplify-path) | Medium | [C++](./algorithms/simplify_path.cpp) | |
 | 73 | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes) | Medium | [C++](./algorithms/set_matrix_zeroes.cpp) | `Array` |
 | 74 | [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix) | Medium | [C++](./algorithms/search_2d_matrix.cpp) | `Binary Search` |
@@ -186,6 +186,7 @@
 | 448 | [Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/) | Easy | [C++](./algorithms/find_disappeared_numbers.cpp) |
 | 491 | [Increasing Subsequences](https://leetcode.com/problems/increasing-subsequences) | Medium | [C++](./algorithms/increasing_subsequences.cpp) |
 | 501 | [Find Mode in Binary Search Tree](https://leetcode.com/problems/find-mode-in-binary-search-tree) | Easy | [C++](./algorithms/find_mode_in_binary_search_tree.cpp) |
+| 509 | [Fibonacci Number](https://leetcode.com/problems/fibonacci-number) | Easy | [C++](./algorithms/fibonacci_number.cpp) | `Array` |
 | 523 | [Continuous Subarray Sum](https://leetcode.com/problems/continuous-subarray-sum) | Medium | [C++](./algorithms/continuous_subarray_sum.cpp) | |
 | 541 | [Reverse String II](https://leetcode.com/problems/reverse-string-ii) | Easy | [C++](./algorithms/reverse_string2.cpp) | |
 | 560 | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k) | Medium | [C++](./algorithms/subarray_sum_equals_k.cpp) | `Array` |
