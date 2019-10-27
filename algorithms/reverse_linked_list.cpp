@@ -25,7 +25,8 @@ struct ListNode
     ListNode(int x) : val(x), next(NULL) {}
 };
 
-class Solution
+// Iterative
+class Solution1
 {
 public:
     ListNode* reverseList(ListNode* head)
@@ -44,6 +45,35 @@ public:
         return fake.next;
     }
 };
+
+// Recursive
+class Solution2
+{
+public:
+    ListNode* reverseList(ListNode* head)
+    {
+        ListNode* tail = NULL;
+        return reverseList(head, &tail);
+    }
+
+private:
+    ListNode* reverseList(ListNode* head, ListNode** tail)
+    {
+        if (head == NULL ||  head->next == NULL)
+        {
+            *tail = head;
+            return head;
+        }
+
+        ListNode* ptr = reverseList(head->next, tail);
+        (*tail)->next = head;
+        head->next = NULL;
+        *tail = head;
+        return ptr;
+    }
+};
+
+using Solution = Solution2;
 
 int main(int argc, char* argv[])
 {
