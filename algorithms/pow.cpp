@@ -20,7 +20,8 @@
 #include <stdlib.h>
 #include <limits.h>
 
-class Solution
+// Non-recursive
+class Solution1
 {
 public:
     double myPow(double x, int n)
@@ -64,6 +65,43 @@ public:
         return k;
     }
 };
+
+// Recursive
+class Solution2
+{
+public:
+    double myPow(double x, int n)
+    {
+        return myPow(x, n, 1.0);
+    }
+
+private:
+    double myPow(double x, int n, double val)
+    {
+        if (x == 0 || val == 0.0)
+        {
+            return 0.0;
+        }
+        if (abs(x) == 1)
+        {
+            return (n & 0x1) ? (x * val) : val;
+        }
+        if (n == 0)
+        {
+            return val;
+        }
+        if (n > 0)
+        {
+            return myPow(x, n - 1, x * val);
+        }
+        else
+        {
+            return myPow(x, n + 1, (1.0 / (double)x * val));
+        }
+    }
+};
+
+using Solution = Solution2;
 
 int main(int argc, char* argv[])
 {
