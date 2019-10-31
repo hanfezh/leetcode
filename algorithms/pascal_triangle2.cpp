@@ -19,7 +19,8 @@
 
 using std::vector;
 
-class Solution
+// Non-recursive
+class Solution1
 {
 public:
     vector<int> getRow(int row_idx)
@@ -37,6 +38,40 @@ public:
         return nums;
     }
 };
+
+// Recursive
+class Solution2
+{
+public:
+    vector<int> getRow(int row_idx)
+    {
+        vector<int> nums(row_idx + 1, 0);
+        generate(nums, row_idx);
+        return nums;
+    }
+
+private:
+    void generate(vector<int>& nums, int  row_idx)
+    {
+        if (row_idx == 0)
+        {
+            nums[0] = 1;
+            return;
+        }
+
+        generate(nums, row_idx - 1);
+        for (int i = row_idx; i >= 0; i--)
+        {
+            nums[i] = nums[i];
+            if (i > 0)
+            {
+                nums[i] += nums[i - 1];
+            }
+        }
+    }
+};
+
+using Solution = Solution2;
 
 int main(int argc, char* argv[])
 {

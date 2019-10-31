@@ -20,8 +20,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <vector>
+#include <unordered_map>
 
-class Solution
+// Iteractive
+class Solution1
 {
 public:
     int climbStairs(int n)
@@ -43,6 +45,36 @@ public:
         return ways[n - 1];
     }
 };
+
+// Recursive
+class Solution2
+{
+public:
+    int climbStairs(int n)
+    {
+        std::unordered_map<int, int> cache;
+        cache[0] = 0;
+        cache[1] = 1;
+        cache[2] = 2;
+        return climbStairs(n, cache);
+    }
+
+private:
+    int climbStairs(int n, std::unordered_map<int, int>& cache)
+    {
+        auto iter = cache.find(n);
+        if (iter != cache.end())
+        {
+            return iter->second;
+        }
+
+        int val = climbStairs(n - 1, cache) + climbStairs(n - 2, cache);
+        cache[n] = val;
+        return val;
+    }
+};
+
+using Solution = Solution2;
 
 int main(int argc, char* argv[])
 {
