@@ -3,7 +3,7 @@
  *
  *       Filename:  merge_two_lists.c
  *
- *    Description:  Merge Two Sorted Lists.
+ *    Description:  21. Merge Two Sorted Lists.
  *
  *        Version:  1.0
  *        Created:  2015/02/24 21时49分30秒
@@ -23,8 +23,9 @@ struct ListNode {
 	struct ListNode *next;
 };
 
+// Iterative
 struct ListNode *
-mergeTwoLists(struct ListNode *l1, struct ListNode *l2)
+mergeTwoLists1(struct ListNode *l1, struct ListNode *l2)
 {
 	struct ListNode head;
 	struct ListNode *ptr = &head;
@@ -49,6 +50,25 @@ mergeTwoLists(struct ListNode *l1, struct ListNode *l2)
 	}
 
 	return head.next;
+}
+
+// Recursive
+struct ListNode *
+mergeTwoLists2(struct ListNode *l1, struct ListNode *l2)
+{
+    if (l1 == NULL) {
+        return l2;
+    } else if (l2 == NULL) {
+        return l1;
+    }
+
+    if (l1->val < l2->val) {
+        l1->next = mergeTwoLists2(l1->next, l2);
+        return l1;
+    } else {
+        l2->next = mergeTwoLists2(l1, l2->next);
+        return l2;
+    }
 }
 
 void 
@@ -84,6 +104,8 @@ void printList(struct ListNode *head)
 	}
 	printf("\n");
 }
+
+#define mergeTwoLists mergeTwoLists2
 
 int main(int argc, char *argv[])
 {
