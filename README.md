@@ -199,6 +199,7 @@
 | 705 | [Design HashSet](https://leetcode.com/problems/design-hashset) | Easy | [C++](./algorithms/design_hashset.cpp) |
 | 706 | [Design HashMap](https://leetcode.com/problems/design-hashmap) | Easy | [C++](./algorithms/design_hashmap.cpp) |
 | 739 | [Daily Temperatures](https://leetcode.com/problems/daily-temperatures) | Medium | [C++](./algorithms/daily_temperatures.cpp) | `Stack` |
+| 779 | [K-th Symbol in Grammar](https://leetcode.com/problems/k-th-symbol-in-grammar) | Medium | [C++](./algorithms/kth_symbol_in_grammar.cpp) | `Recursion` |
 | 788 | [Rotated Digits](https://leetcode.com/problems/rotated-digits) | Easy | [C++](./algorithms/rotated_digits.cpp) |
 | 796 | [Rotate String](https://leetcode.com/problems/rotate-string) | Easy | [C++](./algorithms/rotate_string.cpp) | `String` |
 | 899 | [Orderly Queue](https://leetcode.com/problems/orderly-queue) | Hard | [C++](./algorithms/orderly_queue.cpp) | `Math` `String` |
