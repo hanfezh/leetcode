@@ -196,6 +196,7 @@
 | 645 | [Set Mismatch](https://leetcode.com/problems/set-mismatch) | Easy | [C++](./algorithms/set_mismatch.cpp) |
 | 653 | [Two Sum IV - Input is a BST](https://leetcode.com/problems/two-sum-iv-input-is-a-bst) | Easy | [C++](./algorithms/two_sum4.cpp) |
 | 680 | [Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii) | Easy | [C++](./algorithms/valid_palindrome2.cpp) | |
+| 704 | [Binary Search](https://leetcode.com/problems/binary-search) | Easy | [C++](./algorithms/binary_search.cpp) | `Binary Search` |
 | 705 | [Design HashSet](https://leetcode.com/problems/design-hashset) | Easy | [C++](./algorithms/design_hashset.cpp) |
 | 706 | [Design HashMap](https://leetcode.com/problems/design-hashmap) | Easy | [C++](./algorithms/design_hashmap.cpp) |
 | 739 | [Daily Temperatures](https://leetcode.com/problems/daily-temperatures) | Medium | [C++](./algorithms/daily_temperatures.cpp) | `Stack` |
