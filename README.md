@@ -63,6 +63,7 @@
 | 64 | [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum) | Medium | [C++](./algorithms/minimum_path_sum.cpp) | `DP` |
 | 66 | [Plus One](https://leetcode.com/problems/plus-one) | Easy | [C++](./algorithms/plus_one.cpp) |
 | 67 | [Add Binary](https://leetcode.com/problems/add-binary/) | Easy | [C++](./algorithms/add_binary.cpp) |
+| 69 | [Sqrt(x)](https://leetcode.com/problems/sqrtx) | Easy | [C++](./algorithms/sqrt.cpp) | `Binary search` |
 | 70 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | Easy | [C++](./algorithms/climbing_stairs.cpp) | `DP` |
 | 71 | [Simplify Path](https://leetcode.com/problems/simplify-path) | Medium | [C++](./algorithms/simplify_path.cpp) | |
 | 73 | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes) | Medium | [C++](./algorithms/set_matrix_zeroes.cpp) | `Array` |
