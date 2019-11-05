@@ -22,7 +22,7 @@
 | 18 | [4Sum](https://leetcode.com/problems/4sum) | Medium | [C++](./algorithms/four_sum.cpp) |
 | 19 | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list) | Medium | [C++](./algorithms/remove_nth_from_end.cpp) |
 | 20 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses) | Easy | [Python](./algorithms/valid_parentheses.py) |
-| 21 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists) | Easy | [C](./algorithms/merge_two_lists.c) |
+| 21 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists) | Easy | [C](./algorithms/merge_two_lists.c) | `Linked List` |
 | 22 | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses) | Medium | [C++](./algorithms/generate_parentheses.cpp) |
 | 23 | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists) | Hard | [C++](./algorithms/merge_k_sorted_lists.cpp) | `Sort` |
 | 24 | [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs) | Medium | [C++](./algorithms/swap_nodes_in_pairs.cpp) | `Linked List` |
@@ -200,6 +200,7 @@
 | 705 | [Design HashSet](https://leetcode.com/problems/design-hashset) | Easy | [C++](./algorithms/design_hashset.cpp) |
 | 706 | [Design HashMap](https://leetcode.com/problems/design-hashmap) | Easy | [C++](./algorithms/design_hashmap.cpp) |
 | 739 | [Daily Temperatures](https://leetcode.com/problems/daily-temperatures) | Medium | [C++](./algorithms/daily_temperatures.cpp) | `Stack` |
+| 779 | [K-th Symbol in Grammar](https://leetcode.com/problems/k-th-symbol-in-grammar) | Medium | [C++](./algorithms/kth_symbol_in_grammar.cpp) | `Recursion` |
 | 788 | [Rotated Digits](https://leetcode.com/problems/rotated-digits) | Easy | [C++](./algorithms/rotated_digits.cpp) |
 | 796 | [Rotate String](https://leetcode.com/problems/rotate-string) | Easy | [C++](./algorithms/rotate_string.cpp) | `String` |
 | 899 | [Orderly Queue](https://leetcode.com/problems/orderly-queue) | Hard | [C++](./algorithms/orderly_queue.cpp) | `Math` `String` |
