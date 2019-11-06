@@ -21,6 +21,7 @@
  */
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdint.h>
 
 // Forward declaration of isBadVersion API.
 bool isBadVersion(int version)
@@ -28,7 +29,8 @@ bool isBadVersion(int version)
     return version >= 4 ? true : false;
 }
 
-class Solution
+// Iterative
+class Solution1
 {
 public:
     int firstBadVersion(int n)
@@ -46,9 +48,42 @@ public:
     }
 };
 
+// Binary search
+class Solution2
+{
+public:
+    int firstBadVersion(int n)
+    {
+        int left = 1;
+        int right = n;
+        while (left < right)
+        {
+            int mid = ((int64_t)left + right) / 2;
+            if (isBadVersion(mid))
+            {
+                right = mid;
+            }
+            else
+            {
+                left = mid + 1;
+            }
+        }
+
+        // left == right
+        return left;
+    }
+};
+
+using Solution = Solution2;
+
 int main(int argc, char* argv[])
 {
-    int bad_ver = Solution().firstBadVersion(10);
-    printf("%d\n", bad_ver);
+    int num = 10;
+    if (argc > 1)
+    {
+        num = atoi(argv[1]);
+    }
+    int bad_ver = Solution().firstBadVersion(num);
+    printf("%d -> %d\n", num, bad_ver);
     return 0;
 }
