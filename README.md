@@ -63,6 +63,7 @@
 | 64 | [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum) | Medium | [C++](./algorithms/minimum_path_sum.cpp) | `DP` |
 | 66 | [Plus One](https://leetcode.com/problems/plus-one) | Easy | [C++](./algorithms/plus_one.cpp) |
 | 67 | [Add Binary](https://leetcode.com/problems/add-binary/) | Easy | [C++](./algorithms/add_binary.cpp) |
+| 69 | [Sqrt(x)](https://leetcode.com/problems/sqrtx) | Easy | [C++](./algorithms/sqrt.cpp) | `Binary search` |
 | 70 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | Easy | [C++](./algorithms/climbing_stairs.cpp) | `DP` |
 | 71 | [Simplify Path](https://leetcode.com/problems/simplify-path) | Medium | [C++](./algorithms/simplify_path.cpp) | |
 | 73 | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes) | Medium | [C++](./algorithms/set_matrix_zeroes.cpp) | `Array` |
@@ -167,7 +168,7 @@
 | 263 | [Ugly Number](https://leetcode.com/problems/ugly-number) | Easy | [Python](./algorithms/ugly_number.py) |
 | 268 | [Missing Number](https://leetcode.com/problems/missing-number) | Easy | [C++](./algorithms/missing_number.cpp) |
 | 273 | [Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list) | Easy | [C++](./algorithms/delete_node_in_linked_list.cpp) |
-| 278 | [First Bad Version](https://leetcode.com/problems/first-bad-version) | Easy | [C++](./algorithms/first_bad_version.cpp) |
+| 278 | [First Bad Version](https://leetcode.com/problems/first-bad-version) | Easy | [C++](./algorithms/first_bad_version.cpp) | `Binary Search` |
 | 287 | [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number) | Medium | [C++](./algorithms/find_the_duplicate_number.cpp) |
 | 300 | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence) | Medium | [C++](./algorithms/longest_increasing_subsequence.cpp) | `DP` |
 | 334 | [Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence) | Medium | [C++](./algorithms/increasing_triplet_subsequence.cpp) | |
@@ -175,6 +176,7 @@
 | 349 | [Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays) | Easy | [C++](./algorithms/intersection_of_two_arrays.cpp) |
 | 350 | [Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii) | Easy | [C++](./algorithms/intersection_of_two_arrays2.cpp) |
 | 371 | [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers) | Easy | [C++](./algorithms/sum_of_two_integers.cpp) |
+| 374 | [Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower) | Easy | [C++](./algorithms/guess_number_higher_or_lower.cpp) | `Binary Search` |
 | 377 | [Combination Sum IV](https://leetcode.com/problems/combination-sum-iv) | Medium | [C++](./algorithms/combination_sum4.cpp) |
 | 386 | [Lexicographical Numbers](https://leetcode.com/problems/lexicographical-numbers) | Medium | [C++](./algorithms/lexicographical_numbers.cpp) |
 | 397 | [Integer Replacement](https://leetcode.com/problems/integer-replacement) | Medium | [C++](./algorithms/integer_replacement.cpp) |
@@ -196,6 +198,7 @@
 | 645 | [Set Mismatch](https://leetcode.com/problems/set-mismatch) | Easy | [C++](./algorithms/set_mismatch.cpp) |
 | 653 | [Two Sum IV - Input is a BST](https://leetcode.com/problems/two-sum-iv-input-is-a-bst) | Easy | [C++](./algorithms/two_sum4.cpp) |
 | 680 | [Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii) | Easy | [C++](./algorithms/valid_palindrome2.cpp) | |
+| 704 | [Binary Search](https://leetcode.com/problems/binary-search) | Easy | [C++](./algorithms/binary_search.cpp) | `Binary Search` |
 | 705 | [Design HashSet](https://leetcode.com/problems/design-hashset) | Easy | [C++](./algorithms/design_hashset.cpp) |
 | 706 | [Design HashMap](https://leetcode.com/problems/design-hashmap) | Easy | [C++](./algorithms/design_hashmap.cpp) |
 | 739 | [Daily Temperatures](https://leetcode.com/problems/daily-temperatures) | Medium | [C++](./algorithms/daily_temperatures.cpp) | `Stack` |
