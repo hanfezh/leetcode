@@ -3,9 +3,9 @@
  *
  *       Filename:  position_in_sorted_array.cpp
  *
- *    Description:  Find First and Last Position of Element in Sorted Array: Given an 
- *                  array of integers nums sorted in ascending order, find the starting 
- *                  and ending position of a given target value.
+ *    Description:  34. Find First and Last Position of Element in Sorted Array. 
+ *                  Given an array of integers nums sorted in ascending order, find the 
+ *                  starting and ending position of a given target value.
  *
  *        Version:  1.0
  *        Created:  08/30/18 11:52:53
@@ -26,60 +26,49 @@ class Solution
 public:
     std::vector<int> searchRange(const std::vector<int>& nums, int target)
     {
-        int found = -1;
-        bool exist = searchRange(nums, 0, nums.size() - 1, target, &found);
-        if (!exist)
-        {
-            return std::vector<int>({-1, -1});
-        }
+        int left = 0;
+        int right = nums.size() - 1;
 
-        int start = found;
-        int end = found;
-        while (start > 0)
+        // Search for the leftmost index
+        while (left < right)
         {
-            if (nums[start - 1] != target)
+            int mid = (left + right) / 2;
+            if (nums[mid] < target)
             {
-                break;
+                left = mid + 1;
             }
-            start--;
-        }
-        while (end < (nums.size() - 1))
-        {
-            if (nums[end + 1] != target)
+            else
             {
-                break;
+                right = mid;
             }
-            end++;
-        }
-        return std::vector<int>({start, end});
-    }
-
-private:
-    bool searchRange(const std::vector<int>& nums, int start, int end, int target, int* found)
-    {
-        if (start > end)
-        {
-            return false;
-        }
-        if ((nums[start] > target) || (nums[end] < target))
-        {
-            return false;
         }
 
-        int middle = (end + start) / 2 ;
-        if (nums[middle] == target)
+        // nums.size() == 0 || left == right
+        if (left >= nums.size() || nums[left] != target)
         {
-            *found = middle;
-            return true;
+            // Not found
+            return std::vector<int>(2, -1);
         }
-        else if (nums[middle] < target)
+
+        std::vector<int> indices(2, left);
+        right = nums.size() - 1;
+
+        // Search for the rightmost index
+        while (left < right)
         {
-            return searchRange(nums, middle + 1, end, target, found);
+            int mid = (left + right + 1) / 2;
+            if (nums[mid] > target)
+            {
+                right = mid - 1;
+            }
+            else
+            {
+                left = mid;
+            }
         }
-        else
-        {
-            return searchRange(nums, start, middle - 1, target, found);
-        }
+
+        indices[1] = right;
+        return indices;
     }
 };
 
@@ -87,7 +76,7 @@ int main(int argc, char* argv[])
 {
     // std::vector<int> nums = {5, 7, 7, 8, 8, 10};
     std::vector<int> nums = {5, 7, 7, 8, 8, 10};
-    if (argc > 3)
+    if (argc > 2)
     {
         nums.clear();
         for (int i = 1; i < argc; i++)
