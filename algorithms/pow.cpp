@@ -20,7 +20,7 @@
 #include <stdlib.h>
 #include <limits.h>
 
-// Non-recursive
+// Iterative
 class Solution1
 {
 public:
@@ -101,7 +101,46 @@ private:
     }
 };
 
-using Solution = Solution2;
+// Binary search
+class Solution3
+{
+public:
+    double myPow(double x, int n)
+    {
+        if (x == 0.0)
+        {
+            return 0.0;
+        }
+        if (abs(x) == 1)
+        {
+            return (n & 0x1) ? x : 1.0;
+        }
+        if (n == 0)
+        {
+            return 1.0;
+        }
+
+        double val = 1.0;
+        if (n < 0)
+        {
+            if (n == INT_MIN)
+            {
+                n++;
+                val = 1 / x;
+            }
+            n = -n;
+            x = 1 / x;
+        }
+
+        if (n & 0x1)
+        {
+            val *= x;
+        }
+        return val * myPow(x * x, n / 2);
+    }
+};
+
+using Solution = Solution3;
 
 int main(int argc, char* argv[])
 {
@@ -114,7 +153,7 @@ int main(int argc, char* argv[])
     }
 
     double x_pow = Solution().myPow(x, n);
-    printf("pow(%F, %d)  = %F\n", x, n, x_pow);
+    printf("pow(%F, %d) = %F\n", x, n, x_pow);
 
     return 0;
 }
