@@ -134,7 +134,7 @@
 | 151 | [Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string) | Medium | [C++](./algorithms/reverse_words.cpp) | |
 | 152 | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray) | Medium | [C++](./algorithms/maximum_product_subarray.cpp) | `DP` |
 | 153 | [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array) | Medium | [C](./algorithms/find_minimum.c) [C++](./algorithms/find_minimum.cpp) | `Binary Search` |
-| 154 | [Find Minimum in Rotated Sorted Array II](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii) | Hard | [C](./algorithms/find_minimum2.c) |
+| 154 | [Find Minimum in Rotated Sorted Array II](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii) | Hard | [C](./algorithms/find_minimum2.c) [C++](./algorithms/find_minimum2.cpp) | `Binary Search` |
 | 155 | [Min Stack](https://leetcode.com/problems/min-stack) | Easy | [Python](./algorithms/min_stack.py) |
 | 160 | [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists) | Easy | [C++](./algorithms/intersection_of_linked_lists.cpp) |
 | 162 | [Find Peak Element](https://leetcode.com/problems/find-peak-element) | Medium | [C++](./algorithms/find_peak_element.cpp) | `Binary Search` |
@@ -169,7 +169,7 @@
 | 268 | [Missing Number](https://leetcode.com/problems/missing-number) | Easy | [C++](./algorithms/missing_number.cpp) |
 | 273 | [Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list) | Easy | [C++](./algorithms/delete_node_in_linked_list.cpp) |
 | 278 | [First Bad Version](https://leetcode.com/problems/first-bad-version) | Easy | [C++](./algorithms/first_bad_version.cpp) | `Binary Search` |
-| 287 | [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number) | Medium | [C++](./algorithms/find_the_duplicate_number.cpp) |
+| 287 | [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number) | Medium | [C++](./algorithms/find_the_duplicate_number.cpp) | `Two Pointers` |
 | 300 | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence) | Medium | [C++](./algorithms/longest_increasing_subsequence.cpp) | `DP` |
 | 334 | [Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence) | Medium | [C++](./algorithms/increasing_triplet_subsequence.cpp) | |
 | 344 | [Reverse String](https://leetcode.com/problems/reverse-string) | Easy | [C++](./algorithms/reverse_string.cpp) | |

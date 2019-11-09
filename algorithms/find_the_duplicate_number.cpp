@@ -22,7 +22,8 @@
 #include <stdlib.h>
 #include <vector>
 
-class Solution
+// Modify array
+class Solution1
 {
 public:
     int findDuplicate(std::vector<int>& nums)
@@ -55,6 +56,37 @@ private:
         *a ^= *b;
     }
 };
+
+// Two pointers
+class Solution2
+{
+public:
+    int findDuplicate(std::vector<int>& nums)
+    {
+        int slow = nums[0];
+        int fast = nums[nums[0]];
+
+        // Start first meet
+        while (slow != fast)
+        {
+            slow = nums[slow];
+            fast = nums[nums[fast]];
+        }
+
+        // Start second meet
+        fast = 0;
+        while (slow != fast)
+        {
+            slow = nums[slow];
+            fast = nums[fast];
+        }
+
+        // The second meet point is the duplicate
+        return slow;
+    }
+};
+
+using Solution = Solution2;
 
 int main(int argc, char* argv[])
 {
