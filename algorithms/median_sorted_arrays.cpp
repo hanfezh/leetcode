@@ -79,7 +79,7 @@ public:
         }
 
         if ((m + n) & 0x1) {
-            // Ignore j overflow
+            // Avoid j overflow
             return (double)left_max;
         }
 
