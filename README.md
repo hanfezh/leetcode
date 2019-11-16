@@ -87,10 +87,10 @@
 | 96 | [Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees) | Medium | [C++](./algorithms/unique_binary_search_trees.cpp) | `DP` |
 | 98 | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree) | Medium | [C++](./algorithms/validate_binary_search_tree.cpp) |
 | 100 | [Same Tree](https://leetcode.com/problems/same-tree) | Easy | [C++](./algorithms/same_tree.cpp) |
-| 101 | [Symmtric Tree](https://leetcode.com/problems/symmetric-tree) | Easy | [C++](./algorithms/symmetric_tree.cpp) |
+| 101 | [Symmtric Tree](https://leetcode.com/problems/symmetric-tree) | Easy | [C++](./algorithms/symmetric_tree.cpp) | `Tree` `DFS` `BFS` |
 | 102 | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal) | Medium | [C++](./algorithms/binary_tree_level_order_traversal.cpp) | `Tree` |
 | 103 | [Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal) | Medium | [C++](./algorithms/binary_tree_zigzag_order_traversal.cpp) | `Tree` |
-| 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree) | Easy | [C++](./algorithms/maximum_depth.cpp) |
+| 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree) | Easy | [C++](./algorithms/maximum_depth.cpp) | `Tree` `DFS` |
 | 105 | [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal) | Medium | [C++](./algorithms/construct_binary_tree_from_preorder.cpp) | `Tree` |
 | 106 | [Construct Binary Tree from Inorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal) | Medium | [C++](./algorithms/construct_binary_tree_from_postorder.cpp) | `Tree` |
 | 107 | [Binary Tree Level Order Traversal II](https://leetcode.com/problems/binary-tree-level-order-traversal-ii) | Easy | [C++](./algorithms/binary_tree_level_order_traversal2.cpp) | `Tree` |
