@@ -17,7 +17,7 @@
  * =====================================================================================
  */
 #include <stdio.h>
-#include <vector>
+#include <queue>
 
 struct TreeNode
 {
@@ -72,33 +72,29 @@ public:
             return true;
         }
 
-        std::vector<TreeNode*> nodes = {root->left, root->right};
+        std::queue<TreeNode*> nodes;
+        nodes.push(root->left);
+        nodes.push(root->right);
         while (!nodes.empty())
         {
-            int mid = nodes.size() / 2;
-            auto iter = nodes.end();
-            for (int i = 0; i < mid; i++)
+            auto* a = nodes.front();
+            nodes.pop();
+            auto* b = nodes.front();
+            nodes.pop();
+            if (a == NULL && b == NULL)
             {
-                auto* a = nodes[i];
-                auto* b = nodes[2 * mid - i - 1];
-                if (a == NULL && b == NULL)
-                {
-                    continue;
-                }
-                else if (a == NULL || b == NULL || a->val != b->val)
-                {
-                    return false;
-                }
-
-                // Insert subnodes
-                iter = nodes.insert(iter, a->left);
-                iter = nodes.insert(iter + 1, a->right);
-                iter = nodes.insert(iter + 1, b->left);
-                nodes.insert(iter + 1, b->right);
+                continue;
+            }
+            else if (a == NULL || b == NULL || a->val != b->val)
+            {
+                return false;
             }
 
-            // Delete current level's nodes
-            nodes.erase(nodes.begin(), nodes.begin() + mid * 2);
+            // Push subnodes
+            nodes.push(a->left);
+            nodes.push(b->right);
+            nodes.push(a->right);
+            nodes.push(b->left);
         }
 
         return true;
