@@ -103,7 +103,7 @@
 | 114 | [Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list) | Medium | [C++](./algorithms/flatten_binary_tree_to_linked_list.cpp) | `Tree` |
 | 115 | [Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences) | Hard | [C++](./algorithms/distinct_subsequences.cpp) | `DP` |
 | 116 | [Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node) | Medium | [C++](./algorithms/populating_next_right_pointers.cpp) | `Tree` `DFS` |
-| 117 | [Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii) | Medium | [C++](./algorithms/populating_next_right_pointers2.cpp) | `Tree` `BFS` |
+| 117 | [Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii) | Medium | [C++](./algorithms/populating_next_right_pointers2.cpp) | `Tree` `BFS` `DFS` |
 | 118 | [Pascal's Triangle](https://leetcode.com/problems/pascals-triangle) | Easy | [C++](./algorithms/pascal_triangle.cpp) | `Array` |
 | 119 | [Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii) | Easy | [C++](./algorithms/pascal_triangle2.cpp) | `Array` |
 | 120 | [Triangle](https://leetcode.com/problems/triangle) | Medium | [C++](./algorithms/triangle.cpp) | `DP` |

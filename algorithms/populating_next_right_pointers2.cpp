@@ -34,7 +34,8 @@ struct Node
     }
 };
 
-class Solution
+// Iterative, BFS
+class Solution1
 {
 public:
     Node* connect(Node* root)
@@ -75,6 +76,55 @@ public:
         return root;
     }
 };
+
+// Recursive, DFS
+class Solution2
+{
+public:
+    Node* connect(Node* root)
+    {
+        if (root == nullptr)
+        {
+            return root;
+        }
+        if (root->left != nullptr)
+        {
+            if (root->right != nullptr)
+            {
+                root->left->next = root->right;
+            }
+            else
+            {
+                root->left->next = getNext(root->next);
+            }
+        }
+        if (root->right != nullptr)
+        {
+            root->right->next = getNext(root->next);
+        }
+
+        // Connect subnodes
+        connect(root->right);
+        connect(root->left);
+        return root;
+    }
+
+private:
+    Node* getNext(Node* node)
+    {
+        if (node == nullptr) {
+            return node;
+        } else if (node->left != nullptr) {
+            return node->left;
+        } else if (node->right != nullptr) {
+            return node->right;
+        } else {
+            return getNext(node->next);
+        }
+    }
+};
+
+using Solution = Solution2;
 
 int main(int argc, char* argv[])
 {
