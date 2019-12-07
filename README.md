@@ -206,6 +206,7 @@
 | 704 | [Binary Search](https://leetcode.com/problems/binary-search) | Easy | [C++](./algorithms/binary_search.cpp) | `Binary Search` |
 | 705 | [Design HashSet](https://leetcode.com/problems/design-hashset) | Easy | [C++](./algorithms/design_hashset.cpp) |
 | 706 | [Design HashMap](https://leetcode.com/problems/design-hashmap) | Easy | [C++](./algorithms/design_hashmap.cpp) |
+| 707 | [Design Linked List](https://leetcode.com/problems/design-linked-list) | Medium | [C++](./algorithms/design_linked_list.cpp) | `Linked List` |
 | 719 | [Find K-th Smallest Pair Distance](https://leetcode.com/problems/find-k-th-smallest-pair-distance) | Hard | [C++](./algorithms/find_kth_smallest_pair_distance.cpp) | `Binary Search` |
 | 739 | [Daily Temperatures](https://leetcode.com/problems/daily-temperatures) | Medium | [C++](./algorithms/daily_temperatures.cpp) | `Stack` |
 | 744 | [Find Smallest Letter Greater Than Target](https://leetcode.com/problems/find-smallest-letter-greater-than-target) | Easy | [C++](./algorithms/find_smallest_letter.cpp) | `Binary Search` |
