@@ -3,8 +3,8 @@
  *
  *       Filename:  symmetric_tree.cpp
  *
- *    Description:  Symmetric Tree. Given a binary tree, check whether it is a mirror of 
- *                  itself (ie, symmetric around its center).
+ *    Description:  101. Symmetric Tree. Given a binary tree, check whether it is a 
+ *                  mirror of itself (ie, symmetric around its center).
  *
  *        Version:  1.0
  *        Created:  02/20/19 11:35:03
@@ -17,6 +17,7 @@
  * =====================================================================================
  */
 #include <stdio.h>
+#include <queue>
 
 struct TreeNode
 {
@@ -26,7 +27,8 @@ struct TreeNode
     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
 };
 
-class Solution
+// Recursive
+class Solution1
 {
 public:
     bool isSymmetric(TreeNode* root)
@@ -50,8 +52,7 @@ private:
         {
             return false;
         }
-
-        if (a->val != b->val)
+        else if (a->val != b->val)
         {
             return false;
         }
@@ -59,6 +60,48 @@ private:
         return (isSymmetric(a->left, b->right) && isSymmetric(a->right, b->left));
     }
 };
+
+// Iterative
+class Solution2
+{
+public:
+    bool isSymmetric(TreeNode* root)
+    {
+        if (root == NULL)
+        {
+            return true;
+        }
+
+        std::queue<TreeNode*> nodes;
+        nodes.push(root->left);
+        nodes.push(root->right);
+        while (!nodes.empty())
+        {
+            auto* a = nodes.front();
+            nodes.pop();
+            auto* b = nodes.front();
+            nodes.pop();
+            if (a == NULL && b == NULL)
+            {
+                continue;
+            }
+            else if (a == NULL || b == NULL || a->val != b->val)
+            {
+                return false;
+            }
+
+            // Push subnodes
+            nodes.push(a->left);
+            nodes.push(b->right);
+            nodes.push(a->right);
+            nodes.push(b->left);
+        }
+
+        return true;
+    }
+};
+
+using Solution = Solution2;
 
 int main(int argc, char* argv[])
 {

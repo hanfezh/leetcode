@@ -34,7 +34,8 @@ struct Node
     }
 };
 
-class Solution
+// Recursive
+class Solution1
 {
 public:
     Node* connect(Node* root)
@@ -65,6 +66,40 @@ private:
         }
     }
 };
+
+// Iterative
+class Solution2
+{
+public:
+    Node* connect(Node* root)
+    {
+        if (root == nullptr)
+        {
+            return root;
+        }
+
+        Node* pre = root;
+        Node* cur = nullptr;
+        while (pre->left != nullptr)
+        {
+            cur = pre;
+            while (cur != nullptr)
+            {
+                cur->left->next = cur->right;
+                if (cur->next != nullptr)
+                {
+                    cur->right->next = cur->next->left;
+                }
+                cur = cur->next;
+            }
+            pre = pre->left;
+        }
+
+        return root;
+    }
+};
+
+using Solution = Solution2;
 
 int main(int argc, char* argv[])
 {

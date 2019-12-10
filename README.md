@@ -3,9 +3,9 @@
 | # | Title | Difficulty | Solutions | Topics |
 | - | ----- | ---------- | --------- | ---- |
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum) | Easy | [C++](./algorithms/two_sum.cpp) [Go](./algorithms/two_sum.go) | `Hash Table` |
-| 2	| [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) | Medium | [Python](./algorithms/add_two_numbers.py) |
+| 2	| [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) | Medium | [Python](./algorithms/add_two_numbers.py) | `Linked List` |
 | 3	| [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters) | Medium | [Python](./algorithms/longest_substring.py) |
-| 4 | [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays) | Hard | [Go](./algorithms/median_sorted_arrays.go) [C++](./algorithms/median_sorted_arrays.cpp) | `Binary Search` |
+| 4 | [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays) | Hard | [C++](./algorithms/median_sorted_arrays.cpp) [Go](./algorithms/median_sorted_arrays.go) | `Binary Search` |
 | 5 | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring) | Medium | [C](./algorithms/longest_palindrome.c) |
 | 6 | [ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion) | Medium | [C](./algorithms/zigzag_conversion.c) |
 | 7 | [Reverse Integer](https://leetcode.com/problems/reverse-integer) | Easy | [Python](./algorithms/reverse_integer.py) |
@@ -87,23 +87,23 @@
 | 96 | [Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees) | Medium | [C++](./algorithms/unique_binary_search_trees.cpp) | `DP` |
 | 98 | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree) | Medium | [C++](./algorithms/validate_binary_search_tree.cpp) |
 | 100 | [Same Tree](https://leetcode.com/problems/same-tree) | Easy | [C++](./algorithms/same_tree.cpp) |
-| 101 | [Symmtric Tree](https://leetcode.com/problems/symmetric-tree) | Easy | [C++](./algorithms/symmetric_tree.cpp) |
+| 101 | [Symmtric Tree](https://leetcode.com/problems/symmetric-tree) | Easy | [C++](./algorithms/symmetric_tree.cpp) | `Tree` `DFS` `BFS` |
 | 102 | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal) | Medium | [C++](./algorithms/binary_tree_level_order_traversal.cpp) | `Tree` `BFS` |
 | 103 | [Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal) | Medium | [C++](./algorithms/binary_tree_zigzag_order_traversal.cpp) | `Tree` |
-| 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree) | Easy | [C++](./algorithms/maximum_depth.cpp) |
-| 105 | [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal) | Medium | [C++](./algorithms/construct_binary_tree_from_preorder.cpp) | `Tree` |
-| 106 | [Construct Binary Tree from Inorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal) | Medium | [C++](./algorithms/construct_binary_tree_from_postorder.cpp) | `Tree` |
+| 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree) | Easy | [C++](./algorithms/maximum_depth.cpp) | `Tree` `DFS` |
+| 105 | [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal) | Medium | [C++](./algorithms/construct_binary_tree_from_preorder.cpp) | `Tree` `DFS` |
+| 106 | [Construct Binary Tree from Inorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal) | Medium | [C++](./algorithms/construct_binary_tree_from_postorder.cpp) | `Tree` `DFS` |
 | 107 | [Binary Tree Level Order Traversal II](https://leetcode.com/problems/binary-tree-level-order-traversal-ii) | Easy | [C++](./algorithms/binary_tree_level_order_traversal2.cpp) | `Tree` |
 | 108 | [Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree) | Easy | [C++](./algorithms/convert_sorted_array_to_bst.cpp) | `Tree` |
 | 109 | [Convert Sorted List to Binary Search Tree](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree) | Medium | [C++](./algorithms/convert_sorted_list_to_bst.cpp) | `Tree` |
 | 110 | [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree) | Easy | [C++](./algorithms/balanced_binary_tree.cpp) | |
 | 111 | [Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree) | Easy | [C++](./algorithms/minimum_depth_of_binary_tree.cpp) | `Tree` |
-| 112 | [Path Sum](https://leetcode.com/problems/path-sum) | Easy | [Python](./algorithms/path_sum.py) |
+| 112 | [Path Sum](https://leetcode.com/problems/path-sum) | Easy | [Python](./algorithms/path_sum.py) | `Tree` `DFS` |
 | 113 | [Path Sum II](https://leetcode.com/problems/path-sum-ii) | Medium | [Python](./algorithms/path_sum2.py) |
 | 114 | [Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list) | Medium | [C++](./algorithms/flatten_binary_tree_to_linked_list.cpp) | `Tree` |
 | 115 | [Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences) | Hard | [C++](./algorithms/distinct_subsequences.cpp) | `DP` |
-| 116 | [Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node) | Medium | [C++](./algorithms/populating_next_right_pointers.cpp) | `Tree` |
-| 117 | [Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii) | Medium | [C++](./algorithms/populating_next_right_pointers2.cpp) | `Tree` |
+| 116 | [Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node) | Medium | [C++](./algorithms/populating_next_right_pointers.cpp) | `Tree` `DFS` |
+| 117 | [Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii) | Medium | [C++](./algorithms/populating_next_right_pointers2.cpp) | `Tree` `BFS` `DFS` |
 | 118 | [Pascal's Triangle](https://leetcode.com/problems/pascals-triangle) | Easy | [C++](./algorithms/pascal_triangle.cpp) | `Array` |
 | 119 | [Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii) | Easy | [C++](./algorithms/pascal_triangle2.cpp) | `Array` |
 | 120 | [Triangle](https://leetcode.com/problems/triangle) | Medium | [C++](./algorithms/triangle.cpp) | `DP` |
@@ -164,12 +164,14 @@
 | 217 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate) | Easy | [C++](./algorithms/contains_duplicate.cpp) |
 | 219 | [Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii) | Easy | [C++](./algorithms/contains_duplicate2.cpp) |
 | 220 | [Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii) | Medium | [C++](./algorithms/contains_duplicate3.cpp) |
+| 236 | [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree) | Medium | [C++](./algorithms/lowest_common_ancestor.cpp) | `Tree` `DFS` |
 | 257 | [Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths) | Easy | [C++](./algorithms/binary_tree_paths.cpp) |
 | 263 | [Ugly Number](https://leetcode.com/problems/ugly-number) | Easy | [Python](./algorithms/ugly_number.py) |
 | 268 | [Missing Number](https://leetcode.com/problems/missing-number) | Easy | [C++](./algorithms/missing_number.cpp) |
 | 273 | [Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list) | Easy | [C++](./algorithms/delete_node_in_linked_list.cpp) |
 | 278 | [First Bad Version](https://leetcode.com/problems/first-bad-version) | Easy | [C++](./algorithms/first_bad_version.cpp) | `Binary Search` |
 | 287 | [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number) | Medium | [C++](./algorithms/find_the_duplicate_number.cpp) | `Two Pointers` |
+| 297 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree) | Hard | [C++](./algorithms/serialize_binary_tree.cpp) | `Tree` `DFS` |
 | 300 | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence) | Medium | [C++](./algorithms/longest_increasing_subsequence.cpp) | `DP` |
 | 334 | [Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence) | Medium | [C++](./algorithms/increasing_triplet_subsequence.cpp) | |
 | 344 | [Reverse String](https://leetcode.com/problems/reverse-string) | Easy | [C++](./algorithms/reverse_string.cpp) | |
@@ -204,6 +206,7 @@
 | 704 | [Binary Search](https://leetcode.com/problems/binary-search) | Easy | [C++](./algorithms/binary_search.cpp) | `Binary Search` |
 | 705 | [Design HashSet](https://leetcode.com/problems/design-hashset) | Easy | [C++](./algorithms/design_hashset.cpp) |
 | 706 | [Design HashMap](https://leetcode.com/problems/design-hashmap) | Easy | [C++](./algorithms/design_hashmap.cpp) |
+| 707 | [Design Linked List](https://leetcode.com/problems/design-linked-list) | Medium | [C++](./algorithms/design_linked_list.cpp) | `Linked List` |
 | 719 | [Find K-th Smallest Pair Distance](https://leetcode.com/problems/find-k-th-smallest-pair-distance) | Hard | [C++](./algorithms/find_kth_smallest_pair_distance.cpp) | `Binary Search` |
 | 739 | [Daily Temperatures](https://leetcode.com/problems/daily-temperatures) | Medium | [C++](./algorithms/daily_temperatures.cpp) | `Stack` |
 | 744 | [Find Smallest Letter Greater Than Target](https://leetcode.com/problems/find-smallest-letter-greater-than-target) | Easy | [C++](./algorithms/find_smallest_letter.cpp) | `Binary Search` |

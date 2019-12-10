@@ -34,47 +34,97 @@ struct Node
     }
 };
 
-class Solution
+// Iterative, BFS
+class Solution1
 {
 public:
     Node* connect(Node* root)
     {
-        auto link_node = [](Node** ptr, Node** node) {
-            if (*node != nullptr)
+        auto link_node = [](Node** head, Node** tail, Node* node) {
+            if (node != nullptr)
             {
-                if (*ptr != nullptr)
+                if (*head == nullptr)
                 {
-                    (*ptr)->next = *node;
+                    *head = node;
                 }
-                *ptr = *node;
+                if (*tail != nullptr)
+                {
+                    (*tail)->next = node;
+                }
+                *tail = node;
             }
         };
 
         Node* cur = root;
-        Node* pre = nullptr;
-        Node* ptr = nullptr;
+        Node* head = nullptr;
+        Node* tail = nullptr;
 
-        while (cur != nullptr && (cur->left != nullptr || cur->right != nullptr))
+        while (cur != nullptr)
         {
-            pre = cur;
-            ptr = nullptr;
+            head = nullptr;
+            tail = nullptr;
             while (cur != nullptr)
             {
-                link_node(&ptr, &(cur->left));
-                link_node(&ptr, &(cur->right));
+                link_node(&head, &tail, cur->left);
+                link_node(&head, &tail, cur->right);
                 cur = cur->next;
             }
 
-            cur = (pre->left != nullptr ? pre->left : pre->right);
-            while (cur != nullptr && cur->left == nullptr && cur->right == nullptr)
-            {
-                cur = cur->next;
-            }
+            cur = head;
         }
 
         return root;
     }
 };
+
+// Recursive, DFS
+class Solution2
+{
+public:
+    Node* connect(Node* root)
+    {
+        if (root == nullptr)
+        {
+            return root;
+        }
+        if (root->left != nullptr)
+        {
+            if (root->right != nullptr)
+            {
+                root->left->next = root->right;
+            }
+            else
+            {
+                root->left->next = getNext(root->next);
+            }
+        }
+        if (root->right != nullptr)
+        {
+            root->right->next = getNext(root->next);
+        }
+
+        // Connect subnodes
+        connect(root->right);
+        connect(root->left);
+        return root;
+    }
+
+private:
+    Node* getNext(Node* node)
+    {
+        if (node == nullptr) {
+            return node;
+        } else if (node->left != nullptr) {
+            return node->left;
+        } else if (node->right != nullptr) {
+            return node->right;
+        } else {
+            return getNext(node->next);
+        }
+    }
+};
+
+using Solution = Solution2;
 
 int main(int argc, char* argv[])
 {
