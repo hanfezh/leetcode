@@ -3,8 +3,8 @@
  *
  *       Filename:  intersection_of_linked_lists.cpp
  *
- *    Description:  Intersection of Two Linked Lists. Write a program to find the node 
- *                  at which the intersection of two singly linked lists begins.
+ *    Description:  160. Intersection of Two Linked Lists. Write a program to find the 
+ *                  node at which the intersection of two singly linked lists begins.
  *
  *        Version:  1.0
  *        Created:  02/25/19 03:50:57
@@ -26,7 +26,7 @@ struct ListNode
     ListNode(int x) : val(x), next(NULL) {}
 };
 
-class Solution
+class Solution1
 {
 public:
     ListNode* getIntersectionNode(ListNode* a, ListNode* b)
@@ -68,6 +68,34 @@ public:
         return a;
     }
 };
+
+// Two pointers
+class Solution2
+{
+public:
+    ListNode* getIntersectionNode(ListNode* a, ListNode* b)
+    {
+        if (a == NULL || b == NULL)
+        {
+            return NULL;
+        }
+
+        ListNode* p = a;
+        ListNode* q = b;
+
+        // If two lists intersect, p and q will meet in the next iteration.
+        // Otherwise, p and q will both equal NULL pointer.
+        while (p != q)
+        {
+            p = (p != NULL ? p->next : b);
+            q = (q != NULL ? q->next : a);
+        }
+
+        return p;
+    }
+};
+
+using Solution = Solution2;
 
 int main(int argc, char* argv[])
 {
