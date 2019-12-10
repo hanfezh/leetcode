@@ -3,8 +3,8 @@
  *
  *       Filename:  remove_linked_list_elements.cpp
  *
- *    Description:  Remove Linked List Elements. Remove all elements from a linked list 
- *                  of integers that have value val.
+ *    Description:  203. Remove Linked List Elements. Remove all elements from a linked 
+ *                  list of integers that have value val.
  *
  *        Version:  1.0
  *        Created:  02/25/19 03:21:52
@@ -26,7 +26,8 @@ struct ListNode
     ListNode(int x) : val(x), next(NULL) {}
 };
 
-class Solution
+// Iterative
+class Solution1
 {
 public:
     ListNode* removeElements(ListNode* head, int val)
@@ -53,6 +54,32 @@ public:
         return fake.next;
     }
 };
+
+// Recursive
+class Solution2
+{
+public:
+    ListNode* removeElements(ListNode* head, int val)
+    {
+        if (head == NULL)
+        {
+            return head;
+        }
+        if (head->val == val)
+        {
+            ListNode* ptr = head->next;
+            delete head;
+            return removeElements(ptr, val);
+        }
+        else
+        {
+            head->next = removeElements(head->next, val);
+            return head;
+        }
+    }
+};
+
+using Solution = Solution2;
 
 int main(int argc, char* argv[])
 {
