@@ -3,8 +3,8 @@
  *
  *       Filename:  remove_nth_from_end.cpp
  *
- *    Description:  Remove Nth Node From End of List: Given a linked list, remove the 
- *                  n-th node from the end of list and return its head.
+ *    Description:  19. Remove Nth Node From End of List: Given a linked list, remove 
+ *                  the n-th node from the end of list and return its head.
  *
  *        Version:  1.0
  *        Created:  07/11/18 01:29:52
@@ -79,7 +79,8 @@ void printList(ListNode* head)
     printf("\n");
 }
 
-class Solution
+// Recursive
+class Solution1
 {
 public:
     ListNode* removeNthFromEnd(ListNode* head, int n)
@@ -116,6 +117,44 @@ private:
         return idx;
     }
 };
+
+// Two pointers
+class Solution2
+{
+public:
+    ListNode* removeNthFromEnd(ListNode* head, int n)
+    {
+        ListNode* prev = NULL;
+        ListNode* p = head;
+        ListNode* q = head;
+        while (n != 0)
+        {
+            n--;
+            q = q->next;
+        }
+
+        while (q != NULL)
+        {
+            prev = p;
+            p = p->next;
+            q = q->next;
+        }
+
+        if (prev == NULL)
+        {
+            head = head->next;
+        }
+        else
+        {
+            prev->next = p->next;
+        }
+
+        delete p;
+        return head;
+    }
+};
+
+using Solution = Solution2;
 
 int main(int argc, char* argv[])
 {

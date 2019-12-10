@@ -20,7 +20,7 @@
 | 16 | [3Sum Closest](https://leetcode.com/problems/3sum-closest) | Medium | [C++](./algorithms/three_sum_closest.cpp) |
 | 17 | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | Medium | [C++](./algorithms/letter_combinations.cpp) |
 | 18 | [4Sum](https://leetcode.com/problems/4sum) | Medium | [C++](./algorithms/four_sum.cpp) |
-| 19 | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list) | Medium | [C++](./algorithms/remove_nth_from_end.cpp) |
+| 19 | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list) | Medium | [C++](./algorithms/remove_nth_from_end.cpp) | `Two Pointers` |
 | 20 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses) | Easy | [Python](./algorithms/valid_parentheses.py) |
 | 21 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists) | Easy | [C](./algorithms/merge_two_lists.c) | `Linked List` |
 | 22 | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses) | Medium | [C++](./algorithms/generate_parentheses.cpp) |
@@ -88,7 +88,7 @@
 | 98 | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree) | Medium | [C++](./algorithms/validate_binary_search_tree.cpp) |
 | 100 | [Same Tree](https://leetcode.com/problems/same-tree) | Easy | [C++](./algorithms/same_tree.cpp) |
 | 101 | [Symmtric Tree](https://leetcode.com/problems/symmetric-tree) | Easy | [C++](./algorithms/symmetric_tree.cpp) | `Tree` `DFS` `BFS` |
-| 102 | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal) | Medium | [C++](./algorithms/binary_tree_level_order_traversal.cpp) | `Tree` |
+| 102 | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal) | Medium | [C++](./algorithms/binary_tree_level_order_traversal.cpp) | `Tree` `BFS` |
 | 103 | [Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal) | Medium | [C++](./algorithms/binary_tree_zigzag_order_traversal.cpp) | `Tree` |
 | 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree) | Easy | [C++](./algorithms/maximum_depth.cpp) | `Tree` `DFS` |
 | 105 | [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal) | Medium | [C++](./algorithms/construct_binary_tree_from_preorder.cpp) | `Tree` `DFS` |
@@ -136,7 +136,7 @@
 | 153 | [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array) | Medium | [C](./algorithms/find_minimum.c) [C++](./algorithms/find_minimum.cpp) | `Binary Search` |
 | 154 | [Find Minimum in Rotated Sorted Array II](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii) | Hard | [C](./algorithms/find_minimum2.c) [C++](./algorithms/find_minimum2.cpp) | `Binary Search` |
 | 155 | [Min Stack](https://leetcode.com/problems/min-stack) | Easy | [Python](./algorithms/min_stack.py) |
-| 160 | [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists) | Easy | [C++](./algorithms/intersection_of_linked_lists.cpp) |
+| 160 | [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists) | Easy | [C++](./algorithms/intersection_of_linked_lists.cpp) | `Two Pointers` |
 | 162 | [Find Peak Element](https://leetcode.com/problems/find-peak-element) | Medium | [C++](./algorithms/find_peak_element.cpp) | `Binary Search` |
 | 165 | [Compare Version Numbers](https://leetcode.com/problems/compare-version-numbers) | Medium | [C++](./algorithms/compare_version_numbers.cpp) | `String` |
 | 167 | [Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted) | Easy | [C++](./algorithms/two_sum2.cpp) |
