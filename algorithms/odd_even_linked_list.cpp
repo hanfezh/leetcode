@@ -14,42 +14,25 @@ class Solution
 public:
     ListNode* oddEvenList(ListNode* head)
     {
-        ListNode fake(0);
-        ListNode* odd = &fake;
-        ListNode* even = nullptr;
-        ListNode* ptr = nullptr;
-        int count = 0;
-
-        while (head != nullptr)
+        if (head == nullptr)
         {
-            count++;
-            ptr = head;
-            head = head->next;
-            if (count & 0x1)
-            {
-                // Odd index
-                ptr->next = odd->next;
-                odd->next = ptr;
-                odd = ptr;
-            }
-            else
-            {
-                // Even index
-                ptr->next = nullptr;
-                if (even == nullptr)
-                {
-                    even = ptr;
-                    odd->next = even;
-                }
-                else
-                {
-                    even->next = ptr;
-                    even = ptr;
-                }
-            }
+            return head;
         }
 
-        return fake.next;
+        ListNode* odd = head;
+        ListNode* even = head->next;
+        ListNode* middle = even;
+
+        while (even != nullptr && even->next != nullptr)
+        {
+            odd->next = even->next;
+            even->next = even->next->next;
+            odd = odd->next;
+            even = even->next;
+        }
+
+        odd->next = middle;
+        return head;
     }
 };
 
