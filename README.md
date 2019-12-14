@@ -3,7 +3,7 @@
 | # | Title | Difficulty | Solutions | Topics |
 | - | ----- | ---------- | --------- | ---- |
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum) | Easy | [C++](./algorithms/two_sum.cpp) [Go](./algorithms/two_sum.go) | `Hash Table` |
-| 2	| [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) | Medium | [Python](./algorithms/add_two_numbers.py) | `Linked List` |
+| 2	| [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) | Medium | [C++](./algorithms/add_two_numbers.cpp) [Python](./algorithms/add_two_numbers.py) | `Linked List` |
 | 3	| [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters) | Medium | [Python](./algorithms/longest_substring.py) |
 | 4 | [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays) | Hard | [C++](./algorithms/median_sorted_arrays.cpp) [Go](./algorithms/median_sorted_arrays.go) | `Binary Search` |
 | 5 | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring) | Medium | [C](./algorithms/longest_palindrome.c) |
