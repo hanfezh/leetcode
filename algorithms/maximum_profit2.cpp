@@ -3,7 +3,7 @@
  *
  *       Filename:  maximum_profit2.cpp
  *
- *    Description:  Best Time to Buy and Sell Stock II.
+ *    Description:  122. Best Time to Buy and Sell Stock II.
  *
  *        Version:  1.0
  *        Created:  09/06/18 02:39:36
@@ -20,7 +20,8 @@
 #include <limits.h>
 #include <vector>
 
-class Solution
+// Peak Valley Approach
+class Solution1
 {
 public:
     int maxProfit(const std::vector<int>& prices)
@@ -39,15 +40,16 @@ public:
             if (prices[i] >= prices[i - 1])
             {
                 max_price = prices[i];
-                continue;
             }
-
-            if (max_price > min_price)
+            else
             {
-                max_profit += max_price - min_price;
+                if (max_price > min_price)
+                {
+                    max_profit += max_price - min_price;
+                }
+                min_price = prices[i];
+                max_price = 0;
             }
-            min_price = prices[i];
-            max_price = 0;
         }
 
         if (max_price > min_price)
@@ -58,6 +60,26 @@ public:
         return max_profit;
     }
 };
+
+// Optimized solution
+class Solution2
+{
+public:
+    int maxProfit(const std::vector<int>& prices)
+    {
+        int max_profit = 0;
+        for (int i = 1; i < prices.size(); i++)
+        {
+            if (prices[i] > prices[i - 1])
+            {
+                max_profit += prices[i] - prices[i - 1];
+            }
+        }
+        return max_profit;
+    }
+};
+
+using Solution = Solution2;
 
 int main(int argc, char* argv[])
 {

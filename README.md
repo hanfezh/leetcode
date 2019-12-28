@@ -108,7 +108,7 @@
 | 119 | [Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii) | Easy | [C++](./algorithms/pascal_triangle2.cpp) | `Array` |
 | 120 | [Triangle](https://leetcode.com/problems/triangle) | Medium | [C++](./algorithms/triangle.cpp) | `DP` |
 | 121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) | Easy | [C++](./algorithms/maximum_profit.cpp) |
-| 122 | [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii) | Easy | [C++](./algorithms/maximum_profit2.cpp) |
+| 122 | [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii) | Easy | [C++](./algorithms/maximum_profit2.cpp) | `Array` |
 | 123 | [Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii) | Hard | [C++](./algorithms/maximum_profit3.cpp) |
 | 124 | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum) | Hard | [C++](./algorithms/binary_tree_maximum_path_sum.cpp) | `Tree` `DFS` |
 | 125 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome) | Easy | [C++](./algorithms/valid_palindrome.cpp) | |
