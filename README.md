@@ -146,7 +146,7 @@
 | 175 | [Combine Two Tables](https://leetcode.com/problems/combine-two-tables) | Easy | [MySQL](./database/combine_two_tables.sql) | |
 | 176 | [Second Highest Salary](https://leetcode.com/problems/second-highest-salary) | Easy | [MySQL](./database/second_highest_salary.sql) | |
 | 179 | [Largest Number](https://leetcode.com/problems/largest-number) | Medium | [Python](./algorithms/largest_number.py) |
-| 189 | [Rotate Array](https://leetcode.com/problems/rotate-array) | Easy | [C](./algorithms/rotate_array.c) |
+| 189 | [Rotate Array](https://leetcode.com/problems/rotate-array) | Easy | [C](./algorithms/rotate_array.c) | `Array` |
 | 197 | [Rising Temperature](https://leetcode.com/problems/rising-temperature) | Easy | [MySQL](./database/rising_temperature.sql) |
 | 190 | [Reverse Bits](https://leetcode.com/problems/reverse-bits) | Easy | [C++](./algorithms/reverse_bits.cpp) | |
 | 191 | [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits) | Easy | [C++](./algorithms/number_of_bits.cpp) | |
