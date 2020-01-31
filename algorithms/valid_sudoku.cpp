@@ -16,9 +16,13 @@
  * =====================================================================================
  */
 #include <stdio.h>
+#include <assert.h>
+#include <string>
 #include <vector>
+#include <unordered_set>
 
-class Solution
+// Brute force
+class Solution1
 {
 public:
     bool isValidSudoku(std::vector<std::vector<char>>& board)
@@ -98,10 +102,52 @@ private:
     }
 };
 
+// Hash table
+class Solution2
+{
+public:
+    bool isValidSudoku(std::vector<std::vector<char>>& board)
+    {
+        if (board.size() != 9)
+        {
+            return false;
+        }
+
+        std::unordered_set<std::string> seen;
+        for (int i = 0; i < board.size(); i++)
+        {
+            if (board[i].size() != 9)
+            {
+                return false;
+            }
+
+            for (int j = 0; j < board[i].size(); j++)
+            {
+                if (board[i][j] == '.')
+                {
+                    continue;
+                }
+
+                std::string num = std::string(1, board[i][j]);
+                if (!seen.insert(num + " in row " + std::to_string(i)).second ||
+                    !seen.insert(num + " in column " + std::to_string(j)).second ||
+                    !seen.insert(num + " in block " + std::to_string(i / 3) + "-" + std::to_string(j / 3)).second)
+                {
+                    // Already exists, insert failed
+                    return false;
+                }
+            }
+        }
+
+        return true;
+    }
+};
+
+using Solution = Solution2;
+
 int main(int argc, char* argv[])
 {
-#if 0
-    std::vector<std::vector<char>> board = {
+    std::vector<std::vector<char>> board1 = {
         {'5','3','.','.','7','.','.','.','.'},
         {'6','.','.','1','9','5','.','.','.'},
         {'.','9','8','.','.','.','.','6','.'},
@@ -112,9 +158,8 @@ int main(int argc, char* argv[])
         {'.','.','.','4','1','9','.','.','5'},
         {'.','.','.','.','8','.','.','7','9'}
     };
-#endif
 
-    std::vector<std::vector<char>> board = {
+    std::vector<std::vector<char>> board2 = {
         {'.','.','.','.','.','.','.','.','.'},
         {'.','.','.','.','.','.','.','.','.'},
         {'.','9','.','.','.','.','.','.','1'},
@@ -126,7 +171,12 @@ int main(int argc, char* argv[])
         {'.','.','.','5','.','4','.','.','.'}
     };
 
-    bool valid = Solution().isValidSudoku(board);
+    bool valid = Solution().isValidSudoku(board1);
+    assert(valid == true);
+    printf("Sudoku is %s.\n", (valid ? "valid" : "invalid"));
+
+    valid = Solution().isValidSudoku(board2);
+    assert(valid == false);
     printf("Sudoku is %s.\n", (valid ? "valid" : "invalid"));
 
     return 0;
