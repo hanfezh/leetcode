@@ -3,7 +3,7 @@
  *
  *       Filename:  valid_sudoku.cpp
  *
- *    Description:  Valid Sudoku: Determine if a 9x9 Sudoku board is valid.
+ *    Description:  36. Valid Sudoku: Determine if a 9x9 Sudoku board is valid.
  *
  *        Version:  1.0
  *        Created:  08/07/18 12:45:06

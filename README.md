@@ -47,6 +47,7 @@
 | 44 | [Wildcard Matching](https://leetcode.com/problems/wildcard-matching) | Hard | [C++](./algorithms/wildcard_matching.cpp) | `Backtracking` |
 | 46 | [Permutations](https://leetcode.com/problems/permutations) | Medium | [C++](./algorithms/permutations.cpp) |
 | 47 | [Permutations II](https://leetcode.com/problems/permutations-ii) | Medium | [C++](./algorithms/permutations2.cpp) | `DFS` |
+| 48 | [Rotate Image](https://leetcode.com/problems/rotate-image) | Medium | [C++](./algorithms/rotate_image.cpp) | `Array` |
 | 49 | [Group Anagrams](https://leetcode.com/problems/group-anagrams) | Medium | [C++](./algorithms/group_anagrams.cpp) | `String` |
 | 50 | [Pow(x, n)](https://leetcode.com/problems/powx-n) | Medium | [C++](./algorithms/pow.cpp) | `Binary Search` |
 | 53 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray) | Easy | [C++](./algorithms/maximum_subarray.cpp) |
