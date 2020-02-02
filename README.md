@@ -167,6 +167,7 @@
 | 220 | [Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii) | Medium | [C++](./algorithms/contains_duplicate3.cpp) |
 | 234 | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list) | Medium | [C++](./algorithms/palindrome_linked_list.cpp) | `Linked List` |
 | 236 | [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree) | Medium | [C++](./algorithms/lowest_common_ancestor.cpp) | `Tree` `DFS` |
+| 242 | [Valid Anagram](https://leetcode.com/problems/valid-anagram) | Easy | [C++](./algorithms/valid_anagram.cpp) | `Hash Table` |
 | 257 | [Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths) | Easy | [C++](./algorithms/binary_tree_paths.cpp) |
 | 263 | [Ugly Number](https://leetcode.com/problems/ugly-number) | Easy | [Python](./algorithms/ugly_number.py) |
 | 268 | [Missing Number](https://leetcode.com/problems/missing-number) | Easy | [C++](./algorithms/missing_number.cpp) |
