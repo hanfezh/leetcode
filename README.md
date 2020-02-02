@@ -8,7 +8,7 @@
 | 4 | [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays) | Hard | [C++](./algorithms/median_sorted_arrays.cpp) [Go](./algorithms/median_sorted_arrays.go) | `Binary Search` |
 | 5 | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring) | Medium | [C](./algorithms/longest_palindrome.c) |
 | 6 | [ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion) | Medium | [C](./algorithms/zigzag_conversion.c) |
-| 7 | [Reverse Integer](https://leetcode.com/problems/reverse-integer) | Easy | [Python](./algorithms/reverse_integer.py) |
+| 7 | [Reverse Integer](https://leetcode.com/problems/reverse-integer) | Easy | [C++](./algorithms/reverse_integer.cpp) [Python](./algorithms/reverse_integer.py) | `Math` |
 | 8 | [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi) | Medium | [Python](./algorithms/atoi.py) |
 | 9 | [Palindrome Number](https://leetcode.com/problems/palindrome-number) | Easy | [Python](./algorithms/palindrome_number.py) |
 | 10 | [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching) | Hard | [C++](./algorithms/regular_expression_matching.cpp) |
@@ -178,7 +178,7 @@
 | 300 | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence) | Medium | [C++](./algorithms/longest_increasing_subsequence.cpp) | `DP` |
 | 328 | [Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list) | Medium | [C++](./algorithms/odd_even_linked_list.cpp) | `Linked List` |
 | 334 | [Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence) | Medium | [C++](./algorithms/increasing_triplet_subsequence.cpp) | |
-| 344 | [Reverse String](https://leetcode.com/problems/reverse-string) | Easy | [C++](./algorithms/reverse_string.cpp) | |
+| 344 | [Reverse String](https://leetcode.com/problems/reverse-string) | Easy | [C++](./algorithms/reverse_string.cpp) | `Two Pointers` |
 | 349 | [Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays) | Easy | [C++](./algorithms/intersection_of_two_arrays.cpp) |
 | 350 | [Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii) | Easy | [C++](./algorithms/intersection_of_two_arrays2.cpp) | `Hash Table` |
 | 367 | [Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square) | Easy | [C++](./algorithms/valid_perfect_square.cpp) | `Binary Search` |

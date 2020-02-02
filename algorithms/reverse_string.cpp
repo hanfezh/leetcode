@@ -18,6 +18,7 @@
  */
 #include <stdio.h>
 #include <stdlib.h>
+#include <algorithm>
 #include <vector>
 #include <string>
 
@@ -28,14 +29,9 @@ public:
     {
         int i = 0;
         int j = s.size() - 1;
-        char chr = '\0';
         while (i < j)
         {
-            chr = s[i];
-            s[i] = s[j];
-            s[j] = chr;
-            i++;
-            j--;
+            std::swap(s[i++], s[j--]);
         }
     }
 };
