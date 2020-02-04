@@ -45,7 +45,7 @@
 | 42 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water) | Hard | [C++](./algorithms/trapping_rain_water.cpp) | `DP` |
 | 43 | [Multiply Strings](https://leetcode.com/problems/multiply-strings) | Medium | [C++](./algorithms/multiply_strings.cpp) |
 | 44 | [Wildcard Matching](https://leetcode.com/problems/wildcard-matching) | Hard | [C++](./algorithms/wildcard_matching.cpp) | `Backtracking` |
-| 46 | [Permutations](https://leetcode.com/problems/permutations) | Medium | [C++](./algorithms/permutations.cpp) |
+| 46 | [Permutations](https://leetcode.com/problems/permutations) | Medium | [C++](./algorithms/permutations.cpp) | `DFS` |
 | 47 | [Permutations II](https://leetcode.com/problems/permutations-ii) | Medium | [C++](./algorithms/permutations2.cpp) | `DFS` |
 | 48 | [Rotate Image](https://leetcode.com/problems/rotate-image) | Medium | [C++](./algorithms/rotate_image.cpp) | `Array` |
 | 49 | [Group Anagrams](https://leetcode.com/problems/group-anagrams) | Medium | [C++](./algorithms/group_anagrams.cpp) | `String` |
@@ -161,6 +161,7 @@
 | 200 | [Number of Islands](https://leetcode.com/problems/number-of-islands) | Medium | [C++](./algorithms/number_of_islands.cpp) | `Union Find` |
 | 203 | [Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements) | Easy | [C++](./algorithms/remove_linked_list_elements.cpp) | `Linked List` |
 | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list) | Easy | [C++](./algorithms/reverse_linked_list.cpp) | `Linked List` |
+| 208 | [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree) | Medium | [C++](./algorithms/implement_trie.cpp) | `Design` `Trie` |
 | 216 | [Combination Sum III](https://leetcode.com/problems/combination-sum-iii) | Medium | [C++](./algorithms/combination_sum3.cpp) |
 | 217 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate) | Easy | [C++](./algorithms/contains_duplicate.cpp) | `Hash Table` |
 | 219 | [Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii) | Easy | [C++](./algorithms/contains_duplicate2.cpp) |
