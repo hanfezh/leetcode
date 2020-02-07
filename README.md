@@ -9,7 +9,7 @@
 | 5 | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring) | Medium | [C](./algorithms/longest_palindrome.c) |
 | 6 | [ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion) | Medium | [C](./algorithms/zigzag_conversion.c) |
 | 7 | [Reverse Integer](https://leetcode.com/problems/reverse-integer) | Easy | [C++](./algorithms/reverse_integer.cpp) [Python](./algorithms/reverse_integer.py) | `Math` |
-| 8 | [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi) | Medium | [Python](./algorithms/atoi.py) |
+| 8 | [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi) | Medium | [C++](./algorithms/atoi.cpp) [Python](./algorithms/atoi.py) | `Math` |
 | 9 | [Palindrome Number](https://leetcode.com/problems/palindrome-number) | Easy | [Python](./algorithms/palindrome_number.py) |
 | 10 | [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching) | Hard | [C++](./algorithms/regular_expression_matching.cpp) |
 | 11 | [Container With Most Water](https://leetcode.com/problems/container-with-most-water) | Medium | [C++](./algorithms/container_with_most_water.cpp) |
