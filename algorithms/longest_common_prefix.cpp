@@ -3,8 +3,8 @@
  *
  *       Filename:  longest_common_prefix.cpp
  *
- *    Description:  Write a function to find the longest common prefix string amongst an 
- *                  array of strings.
+ *    Description:  14. Longest Common Prefix: Write a function to find the longest 
+ *                  common prefix string amongst an array of strings.
  *
  *        Version:  1.0
  *        Created:  06/29/18 10:48:56
@@ -20,6 +20,7 @@
 #include <string>
 #include <vector>
 
+// Vertical scanning
 class Solution
 {
 public:
@@ -29,34 +30,21 @@ public:
         {
             return "";
         }
-        else if (strs.size() == 1)
-        {
-            return strs[0];
-        }
 
-        const auto& first = strs[0];
-        size_t len = 0;
-        bool stop = false;
-        for (int i = 0; i < first.size(); i++)
+        for (int i = 0; i < strs[0].size(); i++)
         {
+            char chr = strs[0][i];
             for (int j = 1; j < strs.size(); j++)
             {
-                if (i >= strs[j].size() || strs[j][i] != first[i])
+                if (i == strs[j].size() || strs[j][i] != chr)
                 {
-                    stop = true;
-                    break;
+                    // Stop scanning
+                    return strs[0].substr(0, i);
                 }
             }
-
-            if (stop)
-            {
-                break;
-            }
-
-            len += 1;
         }
 
-        return first.substr(0, len);
+        return strs[0];
     }
 };
 

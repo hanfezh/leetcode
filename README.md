@@ -15,7 +15,7 @@
 | 11 | [Container With Most Water](https://leetcode.com/problems/container-with-most-water) | Medium | [C++](./algorithms/container_with_most_water.cpp) |
 | 12 | [Integer to Roman](https://leetcode.com/problems/integer-to-roman) | Medium | [C++](./algorithms/integer_to_roman.cpp) |
 | 13 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer) | Easy | [C++](./algorithms/roman_to_integer.cpp) |
-| 14 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix) | Easy | [C++](./algorithms/longest_common_prefix.cpp) |
+| 14 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix) | Easy | [C++](./algorithms/longest_common_prefix.cpp) | `String` |
 | 15 | [3Sum](https://leetcode.com/problems/3sum) | Medium | [C](./algorithms/three_sum.c) |
 | 16 | [3Sum Closest](https://leetcode.com/problems/3sum-closest) | Medium | [C++](./algorithms/three_sum_closest.cpp) |
 | 17 | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | Medium | [C++](./algorithms/letter_combinations.cpp) |
