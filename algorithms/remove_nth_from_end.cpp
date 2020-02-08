@@ -79,42 +79,35 @@ void printList(ListNode* head)
     printf("\n");
 }
 
-// Recursive
+// Iterative
 class Solution1
 {
 public:
     ListNode* removeNthFromEnd(ListNode* head, int n)
     {
-        ListNode fake_node(0);
-        ListNode* fake_head = &fake_node;
-        fake_head->next = head;
+        ListNode dummy(0);
+        dummy.next = head;
 
-        ListNode** ptr = NULL;
-        getNthFromEnd(&fake_head, n, &ptr);
-        if (ptr == NULL || ptr == &fake_head)
+        ListNode* p = head;
+        while (p != NULL)
         {
-            return NULL;
+            p = p->next;
+            n--;
         }
 
-        *ptr = (*ptr)->next;
-        return fake_head->next;
-    }
-
-private:
-    int getNthFromEnd(ListNode** head, int n, ListNode*** ptr)
-    {
-        if (*head == NULL)
+        n = std::abs(n);
+        p = &dummy;
+        while (n > 0)
         {
-            return 0;
+            p = p->next;
+            n--;
         }
 
-        int idx = 1 + getNthFromEnd(&((*head)->next), n, ptr);
-        if (idx == n)
-        {
-            *ptr = head;
-        }
+        ListNode* q = p->next;
+        p->next = q->next;
 
-        return idx;
+        delete q;
+        return dummy.next;
     }
 };
 
@@ -124,33 +117,27 @@ class Solution2
 public:
     ListNode* removeNthFromEnd(ListNode* head, int n)
     {
-        ListNode* prev = NULL;
-        ListNode* p = head;
-        ListNode* q = head;
-        while (n != 0)
+        ListNode dummy(0);
+        dummy.next = head;
+
+        ListNode* p = &dummy;
+        ListNode* q = &dummy;
+        while (n >= 0)
         {
             n--;
             q = q->next;
         }
-
         while (q != NULL)
         {
-            prev = p;
             p = p->next;
             q = q->next;
         }
 
-        if (prev == NULL)
-        {
-            head = head->next;
-        }
-        else
-        {
-            prev->next = p->next;
-        }
+        q = p->next;
+        p->next = q->next;
 
-        delete p;
-        return head;
+        delete q;
+        return dummy.next;
     }
 };
 
