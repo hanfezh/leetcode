@@ -3,7 +3,7 @@
  *
  *       Filename:  count_and_say.cpp
  *
- *    Description:  Count and Say: Given an integer n, generate the nth term of the 
+ *    Description:  38. Count and Say: Given an integer n, generate the nth term of the 
  *                  count-and-say sequence.
  *
  *        Version:  1.0
@@ -37,23 +37,18 @@ public:
         std::string last = countAndSay(n - 1);
         std::string curr;
 
-        char prev = last[0];
-        int count = 1;
-        for (size_t i = 1; i < last.size(); i++)
+        for (size_t i = 0; i < last.size(); i++)
         {
-            if (last[i] == prev)
+            int count = 1;
+            while ((i + 1 < last.size()) && (last[i] == last[i + 1]))
             {
-                count += 1;
+                i++;
+                count++;
             }
-            else
-            {
-                curr += std::to_string(count) + prev;
-                prev = last[i];
-                count = 1;
-            }
+
+            curr += std::to_string(count) + last[i];
         }
 
-        curr += std::to_string(count) + prev;
         return curr;
     }
 };

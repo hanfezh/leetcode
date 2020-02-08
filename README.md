@@ -38,7 +38,7 @@
 | 34 | [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array) | Medium | [C++](./algorithms/position_in_sorted_array.cpp) |
 | 35 | [Search Insert Position](https://leetcode.com/problems/search-insert-position) | Easy | [C++](./algorithms/search_insert_position.cpp) |
 | 36 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku) | Medium | [C++](./algorithms/valid_sudoku.cpp) | `Hash Table` |
-| 38 | [Count and Say](https://leetcode.com/problems/count-and-say) | Medium | [C++](./algorithms/count_and_say.cpp) |
+| 38 | [Count and Say](https://leetcode.com/problems/count-and-say) | Easy | [C++](./algorithms/count_and_say.cpp) | `String` |
 | 39 | [Combination Sum](https://leetcode.com/problems/combination-sum) | Medium | [C++](./algorithms/combination_sum.cpp) |
 | 40 | [Combination Sum II](https://leetcode.com/problems/combination-sum-ii) | Medium | [C++](./algorithms/combination_sum2.cpp) |
 | 41 | [First Missing Positive](https://leetcode.com/problems/first-missing-positive) | Hard | [C++](./algorithms/first_missing_positive.cpp) |
