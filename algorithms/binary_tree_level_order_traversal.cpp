@@ -30,7 +30,8 @@ struct TreeNode
     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
 };
 
-class Solution
+// Intuitive BFS
+class Solution1
 {
 public:
     vector<vector<int>> levelOrder(TreeNode* root)
@@ -75,6 +76,38 @@ private:
         levelOrder(parents, values);
     }
 };
+
+// Optimized BFS
+class Solution2
+{
+public:
+    vector<vector<int>> levelOrder(TreeNode* root)
+    {
+        vector<vector<int>> values;
+        bfsTraverse(root, 0, &values);
+        return values;
+    }
+
+private:
+    void bfsTraverse(TreeNode* node, int depth, vector<vector<int>>* values)
+    {
+        if (node == NULL)
+        {
+            return;
+        }
+        if (depth == values->size())
+        {
+            // Append new element
+            values->emplace_back();
+        }
+
+        values->at(depth).push_back(node->val);
+        bfsTraverse(node->left, depth + 1, values);
+        bfsTraverse(node->right, depth + 1, values);
+    }
+};
+
+using Solution = Solution2;
 
 int main(int argc, char* argv[])
 {
