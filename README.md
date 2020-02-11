@@ -50,7 +50,7 @@
 | 48 | [Rotate Image](https://leetcode.com/problems/rotate-image) | Medium | [C++](./algorithms/rotate_image.cpp) | `Array` |
 | 49 | [Group Anagrams](https://leetcode.com/problems/group-anagrams) | Medium | [C++](./algorithms/group_anagrams.cpp) | `String` |
 | 50 | [Pow(x, n)](https://leetcode.com/problems/powx-n) | Medium | [C++](./algorithms/pow.cpp) | `Binary Search` |
-| 53 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray) | Easy | [C++](./algorithms/maximum_subarray.cpp) |
+| 53 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray) | Easy | [C++](./algorithms/maximum_subarray.cpp) | `Array` |
 | 54 | [Spiral Matrix](https://leetcode.com/problems/spiral-matrix) | Medium | [C++](./algorithms/spiral_matrix.cpp) | `Array` |
 | 55 | [Jump Game](https://leetcode.com/problems/jump-game) | Medium | [C++](./algorithms/jump_game.cpp) | `DP` |
 | 56 | [Merge Intervals](https://leetcode.com/problems/merge-intervals) | Medium | [C++](./algorithms/merge_intervals.cpp) | |
@@ -108,7 +108,7 @@
 | 118 | [Pascal's Triangle](https://leetcode.com/problems/pascals-triangle) | Easy | [C++](./algorithms/pascal_triangle.cpp) | `Array` |
 | 119 | [Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii) | Easy | [C++](./algorithms/pascal_triangle2.cpp) | `Array` |
 | 120 | [Triangle](https://leetcode.com/problems/triangle) | Medium | [C++](./algorithms/triangle.cpp) | `DP` |
-| 121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) | Easy | [C++](./algorithms/maximum_profit.cpp) |
+| 121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) | Easy | [C++](./algorithms/maximum_profit.cpp) | `Array` |
 | 122 | [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii) | Easy | [C++](./algorithms/maximum_profit2.cpp) | `Array` |
 | 123 | [Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii) | Hard | [C++](./algorithms/maximum_profit3.cpp) |
 | 124 | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum) | Hard | [C++](./algorithms/binary_tree_maximum_path_sum.cpp) | `Tree` `DFS` |
@@ -157,7 +157,7 @@
 | 194 | [Transpose File](https://leetcode.com/problems/transpose-file) | Medium | [Bash](./shell/transpose_file.sh) |
 | 195 | [Tenth Line](https://leetcode.com/problems/tenth-line) | Easy | [Bash](./shell/tenth_line.sh) |
 | 196 | [Delete Duplicate Emails](https://leetcode.com/problems/delete-duplicate-emails) | Easy | [MySQL](./database/delete_duplicate_emails.sql) |
-| 198 | [House Robber](https://leetcode.com/problems/house-robber) | Easy | [C++](./algorithms/house_robber.cpp) |
+| 198 | [House Robber](https://leetcode.com/problems/house-robber) | Easy | [C++](./algorithms/house_robber.cpp) | `DP` |
 | 199 | [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view) | Medium | [C++](./algorithms/binary_tree_right_side_view.cpp) | `BFS` |
 | 200 | [Number of Islands](https://leetcode.com/problems/number-of-islands) | Medium | [C++](./algorithms/number_of_islands.cpp) | `Union Find` |
 | 203 | [Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements) | Easy | [C++](./algorithms/remove_linked_list_elements.cpp) | `Linked List` |

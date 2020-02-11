@@ -19,7 +19,8 @@
 #include <stdlib.h>
 #include <vector>
 
-class Solution
+// Recursive
+class Solution1
 {
 public:
     int rob(const std::vector<int>& nums)
@@ -46,6 +47,27 @@ private:
         return amounts->at(idx);
     }
 };
+
+// Iterative
+class Solution2
+{
+public:
+    int rob(const std::vector<int>& nums)
+    {
+        int adj = 0;
+        int pre = 0;
+        int cur = 0;
+        for (const auto val: nums)
+        {
+            cur = std::max(val + pre, adj);
+            pre = adj;
+            adj = cur;
+        }
+        return cur;
+    }
+};
+
+using Solution = Solution2;
 
 int main(int argc, char* argv[])
 {
