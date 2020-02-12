@@ -137,7 +137,7 @@
 | 152 | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray) | Medium | [C++](./algorithms/maximum_product_subarray.cpp) | `DP` |
 | 153 | [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array) | Medium | [C](./algorithms/find_minimum.c) [C++](./algorithms/find_minimum.cpp) | `Binary Search` |
 | 154 | [Find Minimum in Rotated Sorted Array II](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii) | Hard | [C](./algorithms/find_minimum2.c) [C++](./algorithms/find_minimum2.cpp) | `Binary Search` |
-| 155 | [Min Stack](https://leetcode.com/problems/min-stack) | Easy | [Python](./algorithms/min_stack.py) |
+| 155 | [Min Stack](https://leetcode.com/problems/min-stack) | Easy | [C++](./algorithms/min_stack.cpp) [Python](./algorithms/min_stack.py) | `Stack` `Design` |
 | 160 | [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists) | Easy | [C++](./algorithms/intersection_of_linked_lists.cpp) | `Two Pointers` |
 | 162 | [Find Peak Element](https://leetcode.com/problems/find-peak-element) | Medium | [C++](./algorithms/find_peak_element.cpp) | `Binary Search` |
 | 165 | [Compare Version Numbers](https://leetcode.com/problems/compare-version-numbers) | Medium | [C++](./algorithms/compare_version_numbers.cpp) | `String` |
