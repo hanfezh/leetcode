@@ -189,6 +189,7 @@
 | 371 | [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers) | Easy | [C++](./algorithms/sum_of_two_integers.cpp) |
 | 374 | [Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower) | Easy | [C++](./algorithms/guess_number_higher_or_lower.cpp) | `Binary Search` |
 | 377 | [Combination Sum IV](https://leetcode.com/problems/combination-sum-iv) | Medium | [C++](./algorithms/combination_sum4.cpp) |
+| 384 | [Shuffle an Array](https://leetcode.com/problems/shuffle-an-array) | Medium | [C++](./algorithms/shuffle_an_array.cpp) | `Design` |
 | 386 | [Lexicographical Numbers](https://leetcode.com/problems/lexicographical-numbers) | Medium | [C++](./algorithms/lexicographical_numbers.cpp) |
 | 387 | [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string) | Easy | [C++](./algorithms/first_unique_character.cpp) | `Hash Table` |
 | 397 | [Integer Replacement](https://leetcode.com/problems/integer-replacement) | Medium | [C++](./algorithms/integer_replacement.cpp) |
