@@ -21,33 +21,16 @@
 #include <algorithm>
 #include <vector>
 
-class Solution
+// Sort algorithm
+class Solution1
 {
 public:
     int missingNumber(std::vector<int>& nums)
     {
-#define __XOR__
-#ifdef __XOR__
-        return xorMissing(nums);
-#else
         return sortMissing(nums);
-#endif
     }
 
 private:
-    int xorMissing(std::vector<int>& nums)
-    {
-        int supposed = 0;
-        for (size_t i = 0; i < nums.size(); i++)
-        {
-            supposed ^= i;
-            supposed ^= nums[i];
-        }
-
-        supposed ^= nums.size();
-        return supposed;
-    }
-
     int sortMissing(std::vector<int>& nums)
     {
 #ifdef __STD_SORT__
@@ -110,6 +93,47 @@ private:
         *a ^= *b;
     }
 };
+
+// Bit manipulation trick
+class Solution2
+{
+public:
+    int missingNumber(std::vector<int>& nums)
+    {
+        return xorMissing(nums);
+    }
+
+private:
+    int xorMissing(std::vector<int>& nums)
+    {
+        int supposed = 0;
+        for (size_t i = 0; i < nums.size(); i++)
+        {
+            supposed ^= i;
+            supposed ^= nums[i];
+        }
+
+        supposed ^= nums.size();
+        return supposed;
+    }
+};
+
+// Gauss formula
+class Solution3
+{
+public:
+    int missingNumber(std::vector<int>& nums)
+    {
+        int sum = nums.size() * (nums.size() + 1) / 2;
+        for (const auto val: nums)
+        {
+            sum -= val;
+        }
+        return sum;
+    }
+};
+
+using Solution = Solution3;
 
 int main(int argc, char* argv[])
 {
