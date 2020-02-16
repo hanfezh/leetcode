@@ -59,7 +59,6 @@ public:
 
         return num;
     }
-
 };
 
 int main(int argc, char* argv[])

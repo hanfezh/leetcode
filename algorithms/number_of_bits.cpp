@@ -16,7 +16,8 @@
 #include <stdio.h>
 #include <stdint.h>
 
-class Solution
+// Iterative loop
+class Solution1
 {
 public:
     int hammingWeight(uint32_t n)
@@ -33,6 +34,24 @@ public:
         return m;
     }
 };
+
+// Bit manipulation trick
+class Solution2
+{
+public:
+    int hammingWeight(uint32_t n)
+    {
+        int sum = 0;
+        while (n != 0)
+        {
+            sum++;
+            n &= (n - 1);
+        }
+        return sum;
+    }
+};
+
+using Solution = Solution2;
 
 int main(int argc, char* argv[])
 {

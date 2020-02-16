@@ -151,7 +151,7 @@
 | 189 | [Rotate Array](https://leetcode.com/problems/rotate-array) | Easy | [C](./algorithms/rotate_array.c) | `Array` |
 | 197 | [Rising Temperature](https://leetcode.com/problems/rising-temperature) | Easy | [MySQL](./database/rising_temperature.sql) |
 | 190 | [Reverse Bits](https://leetcode.com/problems/reverse-bits) | Easy | [C++](./algorithms/reverse_bits.cpp) | `Bit Manipulation` |
-| 191 | [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits) | Easy | [C++](./algorithms/number_of_bits.cpp) | |
+| 191 | [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits) | Easy | [C++](./algorithms/number_of_bits.cpp) | `Bit Manipulation` |
 | 192 | [Word Frequency](https://leetcode.com/problems/word-frequency) | Medium | [Bash](./shell/word_frequency.sh) |
 | 193 | [Valid Phone Numbers](https://leetcode.com/problems/valid-phone-numbers) | Easy | [Bash](./shell/valid_phone_numbers.sh) |
 | 194 | [Transpose File](https://leetcode.com/problems/transpose-file) | Medium | [Bash](./shell/transpose_file.sh) |
