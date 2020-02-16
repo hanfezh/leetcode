@@ -14,7 +14,7 @@
 | 10 | [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching) | Hard | [C++](./algorithms/regular_expression_matching.cpp) |
 | 11 | [Container With Most Water](https://leetcode.com/problems/container-with-most-water) | Medium | [C++](./algorithms/container_with_most_water.cpp) |
 | 12 | [Integer to Roman](https://leetcode.com/problems/integer-to-roman) | Medium | [C++](./algorithms/integer_to_roman.cpp) |
-| 13 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer) | Easy | [C++](./algorithms/roman_to_integer.cpp) |
+| 13 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer) | Easy | [C++](./algorithms/roman_to_integer.cpp) | `Math` |
 | 14 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix) | Easy | [C++](./algorithms/longest_common_prefix.cpp) | `String` |
 | 15 | [3Sum](https://leetcode.com/problems/3sum) | Medium | [C](./algorithms/three_sum.c) |
 | 16 | [3Sum Closest](https://leetcode.com/problems/3sum-closest) | Medium | [C++](./algorithms/three_sum_closest.cpp) |
@@ -181,6 +181,7 @@
 | 292 | [Nim Game](https://leetcode.com/problems/nim-game) | Easy | [C++](./algorithms/nim_game.cpp) | `Brainteaser` |
 | 297 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree) | Hard | [C++](./algorithms/serialize_binary_tree.cpp) | `Tree` `DFS` |
 | 300 | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence) | Medium | [C++](./algorithms/longest_increasing_subsequence.cpp) | `DP` |
+| 326 | [Power of Three](https://leetcode.com/problems/power-of-three) | Easy | [C++](./algorithms/power_of_three.cpp) | `Math` |
 | 328 | [Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list) | Medium | [C++](./algorithms/odd_even_linked_list.cpp) | `Linked List` |
 | 334 | [Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence) | Medium | [C++](./algorithms/increasing_triplet_subsequence.cpp) | |
 | 344 | [Reverse String](https://leetcode.com/problems/reverse-string) | Easy | [C++](./algorithms/reverse_string.cpp) | `Two Pointers` |
