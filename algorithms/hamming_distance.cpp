@@ -3,7 +3,8 @@
 
 #include <stdio.h>
 
-class Solution
+// Iterative loop
+class Solution1
 {
 public:
     int hammingDistance(int x, int y)
@@ -23,6 +24,27 @@ public:
         return n;
     }
 };
+
+// Bit manipulation trick
+class Solution2
+{
+public:
+    int hammingDistance(int x, int y)
+    {
+        int n = 0;
+        unsigned int z = x ^ y;
+
+        while (z != 0)
+        {
+            n++;
+            z &= (z - 1);
+        }
+
+        return n;
+    }
+};
+
+using Solution = Solution2;
 
 int main(int argc, char* argv[])
 {
