@@ -42,7 +42,7 @@
 | 39 | [Combination Sum](https://leetcode.com/problems/combination-sum) | Medium | [C++](./algorithms/combination_sum.cpp) |
 | 40 | [Combination Sum II](https://leetcode.com/problems/combination-sum-ii) | Medium | [C++](./algorithms/combination_sum2.cpp) |
 | 41 | [First Missing Positive](https://leetcode.com/problems/first-missing-positive) | Hard | [C++](./algorithms/first_missing_positive.cpp) |
-| 42 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water) | Hard | [C++](./algorithms/trapping_rain_water.cpp) | `DP` |
+| 42 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water) | Hard | [C++](./algorithms/trapping_rain_water.cpp) | `Dynamic Programming` |
 | 43 | [Multiply Strings](https://leetcode.com/problems/multiply-strings) | Medium | [C++](./algorithms/multiply_strings.cpp) |
 | 44 | [Wildcard Matching](https://leetcode.com/problems/wildcard-matching) | Hard | [C++](./algorithms/wildcard_matching.cpp) | `Backtracking` |
 | 46 | [Permutations](https://leetcode.com/problems/permutations) | Medium | [C++](./algorithms/permutations.cpp) | `DFS` |
@@ -52,21 +52,22 @@
 | 50 | [Pow(x, n)](https://leetcode.com/problems/powx-n) | Medium | [C++](./algorithms/pow.cpp) | `Binary Search` |
 | 53 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray) | Easy | [C++](./algorithms/maximum_subarray.cpp) | `Array` |
 | 54 | [Spiral Matrix](https://leetcode.com/problems/spiral-matrix) | Medium | [C++](./algorithms/spiral_matrix.cpp) | `Array` |
-| 55 | [Jump Game](https://leetcode.com/problems/jump-game) | Medium | [C++](./algorithms/jump_game.cpp) | `DP` |
+| 55 | [Jump Game](https://leetcode.com/problems/jump-game) | Medium | [C++](./algorithms/jump_game.cpp) | `Dynamic Programming` |
 | 56 | [Merge Intervals](https://leetcode.com/problems/merge-intervals) | Medium | [C++](./algorithms/merge_intervals.cpp) | |
 | 57 | [Insert Interval](https://leetcode.com/problems/insert-interval) | Medium | [C++](./algorithms/insert_interval.cpp) | `Array` |
 | 58 | [Length of Last Word](https://leetcode.com/problems/length-of-last-word) | Easy | [C++](./algorithms/length_of_last_word.cpp) |
 | 59 | [Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii) | Medium | [C++](./algorithms/spiral_matrix2.cpp) | `Array` |
 | 60 | [Permutation Sequence](https://leetcode.com/problems/permutation-sequence) | Medium | [C++](./algorithms/permutation_sequence.cpp) | |
 | 61 | [Rotate List](https://leetcode.com/problems/rotate-list/) | Medium | [C++](./algorithms/rotate_list.cpp) |
-| 62 | [Unique Paths](https://leetcode.com/problems/unique-paths) | Medium | [C](./algorithms/unique_paths.c) [C++](./algorithms/unique_paths.cpp) | `DP` |
-| 63 | [Unique Paths II](https://leetcode.com/problems/unique-paths-ii) | Medium | [C++](./algorithms/unique_paths2.cpp) | `DP` |
-| 64 | [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum) | Medium | [C++](./algorithms/minimum_path_sum.cpp) | `DP` |
+| 62 | [Unique Paths](https://leetcode.com/problems/unique-paths) | Medium | [C](./algorithms/unique_paths.c) [C++](./algorithms/unique_paths.cpp) | `Dynamic Programming` |
+| 63 | [Unique Paths II](https://leetcode.com/problems/unique-paths-ii) | Medium | [C++](./algorithms/unique_paths2.cpp) | `Dynamic Programming` |
+| 64 | [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum) | Medium | [C++](./algorithms/minimum_path_sum.cpp) | `Dynamic Programming` |
 | 66 | [Plus One](https://leetcode.com/problems/plus-one) | Easy | [C++](./algorithms/plus_one.cpp) | `Array` |
 | 67 | [Add Binary](https://leetcode.com/problems/add-binary/) | Easy | [C++](./algorithms/add_binary.cpp) |
 | 69 | [Sqrt(x)](https://leetcode.com/problems/sqrtx) | Easy | [C++](./algorithms/sqrt.cpp) | `Binary search` |
-| 70 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | Easy | [C++](./algorithms/climbing_stairs.cpp) | `DP` |
+| 70 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | Easy | [C++](./algorithms/climbing_stairs.cpp) | `Dynamic Programming` |
 | 71 | [Simplify Path](https://leetcode.com/problems/simplify-path) | Medium | [C++](./algorithms/simplify_path.cpp) | |
+| 72 | [Edit Distance](https://leetcode.com/problems/edit-distance) | Hard | [C++](./algorithms/edit_distance.cpp) | `Dynamic Programming` |
 | 73 | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes) | Medium | [C++](./algorithms/set_matrix_zeroes.cpp) | `Array` |
 | 74 | [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix) | Medium | [C++](./algorithms/search_2d_matrix.cpp) | `Binary Search` |
 | 75 | [Sort Colors](https://leetcode.com/problems/sort-colors) | Medium | [C++](./algorithms/sort_colors.cpp) | `Sort` |
@@ -80,12 +81,12 @@
 | 86 | [Partition List](https://leetcode.com/problems/partition-list) | Medium | [C++](./algorithms/partition_list.cpp) | |
 | 88 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | Easy | [C++](./algorithms/merge_sorted_array.cpp) | `Two Pointers` |
 | 90 | [Subsets II](https://leetcode.com/problems/subsets-ii) | Medium | [C++](./algorithms/subsets2.cpp) |
-| 91 | [Decode Ways](https://leetcode.com/problems/decode-ways) | Medium | [C++](./algorithms/decode_ways.cpp) | `DP` |
+| 91 | [Decode Ways](https://leetcode.com/problems/decode-ways) | Medium | [C++](./algorithms/decode_ways.cpp) | `Dynamic Programming` |
 | 92 | [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii) | Medium | [C++](./algorithms/reverse_linked_list2.cpp) | |
 | 93 | [Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses) | Medium | [C++](./algorithms/restore_ip_addresses.cpp) | `DFS` |
 | 94 | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal) | Medium | [C++](./algorithms/binary_tree_inorder_traversal.cpp) [Go](./algorithms/binary_tree_inorder_traversal.go) | `Tree` `Stack` |
 | 95 | [Unique Binary Search Trees II](https://leetcode.com/problems/unique-binary-search-trees-ii) | Medium | [C++](./algorithms/unique_binary_search_trees2.cpp) | `Tree` |
-| 96 | [Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees) | Medium | [C++](./algorithms/unique_binary_search_trees.cpp) | `DP` |
+| 96 | [Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees) | Medium | [C++](./algorithms/unique_binary_search_trees.cpp) | `Dynamic Programming` |
 | 98 | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree) | Medium | [C++](./algorithms/validate_binary_search_tree.cpp) | `DFS` |
 | 100 | [Same Tree](https://leetcode.com/problems/same-tree) | Easy | [C++](./algorithms/same_tree.cpp) |
 | 101 | [Symmtric Tree](https://leetcode.com/problems/symmetric-tree) | Easy | [C++](./algorithms/symmetric_tree.cpp) | `Tree` `DFS` `BFS` |
@@ -102,12 +103,12 @@
 | 112 | [Path Sum](https://leetcode.com/problems/path-sum) | Easy | [Python](./algorithms/path_sum.py) | `Tree` `DFS` |
 | 113 | [Path Sum II](https://leetcode.com/problems/path-sum-ii) | Medium | [Python](./algorithms/path_sum2.py) |
 | 114 | [Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list) | Medium | [C++](./algorithms/flatten_binary_tree_to_linked_list.cpp) | `Tree` |
-| 115 | [Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences) | Hard | [C++](./algorithms/distinct_subsequences.cpp) | `DP` |
+| 115 | [Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences) | Hard | [C++](./algorithms/distinct_subsequences.cpp) | `Dynamic Programming` |
 | 116 | [Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node) | Medium | [C++](./algorithms/populating_next_right_pointers.cpp) | `Tree` `DFS` |
 | 117 | [Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii) | Medium | [C++](./algorithms/populating_next_right_pointers2.cpp) | `Tree` `BFS` `DFS` |
 | 118 | [Pascal's Triangle](https://leetcode.com/problems/pascals-triangle) | Easy | [C++](./algorithms/pascal_triangle.cpp) | `Array` |
 | 119 | [Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii) | Easy | [C++](./algorithms/pascal_triangle2.cpp) | `Array` |
-| 120 | [Triangle](https://leetcode.com/problems/triangle) | Medium | [C++](./algorithms/triangle.cpp) | `DP` |
+| 120 | [Triangle](https://leetcode.com/problems/triangle) | Medium | [C++](./algorithms/triangle.cpp) | `Dynamic Programming` |
 | 121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) | Easy | [C++](./algorithms/maximum_profit.cpp) | `Array` |
 | 122 | [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii) | Easy | [C++](./algorithms/maximum_profit2.cpp) | `Array` |
 | 123 | [Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii) | Hard | [C++](./algorithms/maximum_profit3.cpp) |
@@ -122,8 +123,8 @@
 | 136 | [Single Number](https://leetcode.com/problems/single-number) | Easy | [Python](./algorithms/single_number.py) | `Bit Manipulation` |
 | 137 | [Single Number II](https://leetcode.com/problems/single-number-ii) | Medium | [C++](./algorithms/single_number2.cpp) | `Bit Manipulation` |
 | 138 | [Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer) | Medium | [C++](./algorithms/copy_list_with_random_pointer.cpp) | `Linked List` |
-| 139 | [Word Break](https://leetcode.com/problems/word-break/submissions) | Medium | [C++](./algorithms/word_break.cpp) | `DP` |
-| 140 | [Word Break II](https://leetcode.com/problems/word-break-ii) | Hard | [C++](./algorithms/word_break2.cpp) | `DFS` `DP` |
+| 139 | [Word Break](https://leetcode.com/problems/word-break/submissions) | Medium | [C++](./algorithms/word_break.cpp) | `Dynamic Programming` |
+| 140 | [Word Break II](https://leetcode.com/problems/word-break-ii) | Hard | [C++](./algorithms/word_break2.cpp) | `DFS` `Dynamic Programming` |
 | 141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle) | Easy | [C++](./algorithms/linked_list_cycle.cpp) | `Two Pointers` |
 | 142 | [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii) | Medium | [C++](./algorithms/linked_list_cycle2.cpp) | `Two Pointers` |
 | 143 | [Reorder List](https://leetcode.com/problems/reorder-list) | Medium | [C](./algorithms/reorder_list.c) |
@@ -134,7 +135,7 @@
 | 148 | [Sort List](https://leetcode.com/problems/sort-list) | Medium | [C++](./algorithms/sort_list.cpp) | `Sort` |
 | 149 | [Max Points on a Line](https://leetcode.com/problems/max-points-on-a-line) | Hard | [C++](./algorithms/max_points.cpp) | `Math` |
 | 151 | [Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string) | Medium | [C++](./algorithms/reverse_words.cpp) | |
-| 152 | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray) | Medium | [C++](./algorithms/maximum_product_subarray.cpp) | `DP` |
+| 152 | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray) | Medium | [C++](./algorithms/maximum_product_subarray.cpp) | `Dynamic Programming` |
 | 153 | [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array) | Medium | [C](./algorithms/find_minimum.c) [C++](./algorithms/find_minimum.cpp) | `Binary Search` |
 | 154 | [Find Minimum in Rotated Sorted Array II](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii) | Hard | [C](./algorithms/find_minimum2.c) [C++](./algorithms/find_minimum2.cpp) | `Binary Search` |
 | 155 | [Min Stack](https://leetcode.com/problems/min-stack) | Easy | [C++](./algorithms/min_stack.cpp) [Python](./algorithms/min_stack.py) | `Stack` `Design` |
@@ -157,7 +158,7 @@
 | 194 | [Transpose File](https://leetcode.com/problems/transpose-file) | Medium | [Bash](./shell/transpose_file.sh) |
 | 195 | [Tenth Line](https://leetcode.com/problems/tenth-line) | Easy | [Bash](./shell/tenth_line.sh) |
 | 196 | [Delete Duplicate Emails](https://leetcode.com/problems/delete-duplicate-emails) | Easy | [MySQL](./database/delete_duplicate_emails.sql) |
-| 198 | [House Robber](https://leetcode.com/problems/house-robber) | Easy | [C++](./algorithms/house_robber.cpp) | `DP` |
+| 198 | [House Robber](https://leetcode.com/problems/house-robber) | Easy | [C++](./algorithms/house_robber.cpp) | `Dynamic Programming` |
 | 199 | [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view) | Medium | [C++](./algorithms/binary_tree_right_side_view.cpp) | `BFS` |
 | 200 | [Number of Islands](https://leetcode.com/problems/number-of-islands) | Medium | [C++](./algorithms/number_of_islands.cpp) | `Union Find` |
 | 203 | [Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements) | Easy | [C++](./algorithms/remove_linked_list_elements.cpp) | `Linked List` |
@@ -180,7 +181,7 @@
 | 287 | [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number) | Medium | [C++](./algorithms/find_the_duplicate_number.cpp) | `Two Pointers` |
 | 292 | [Nim Game](https://leetcode.com/problems/nim-game) | Easy | [C++](./algorithms/nim_game.cpp) | `Brainteaser` |
 | 297 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree) | Hard | [C++](./algorithms/serialize_binary_tree.cpp) | `Tree` `DFS` |
-| 300 | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence) | Medium | [C++](./algorithms/longest_increasing_subsequence.cpp) | `DP` |
+| 300 | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence) | Medium | [C++](./algorithms/longest_increasing_subsequence.cpp) | `Dynamic Programming` |
 | 326 | [Power of Three](https://leetcode.com/problems/power-of-three) | Easy | [C++](./algorithms/power_of_three.cpp) | `Math` |
 | 328 | [Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list) | Medium | [C++](./algorithms/odd_even_linked_list.cpp) | `Linked List` |
 | 334 | [Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence) | Medium | [C++](./algorithms/increasing_triplet_subsequence.cpp) | |
