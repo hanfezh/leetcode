@@ -80,6 +80,7 @@
 | 83 | [Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list) | Easy | [C++](./algorithms/remove_duplicates_from_list.cpp) |
 | 86 | [Partition List](https://leetcode.com/problems/partition-list) | Medium | [C++](./algorithms/partition_list.cpp) | |
 | 88 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | Easy | [C++](./algorithms/merge_sorted_array.cpp) | `Two Pointers` |
+| 89 | [Gray Code](https://leetcode.com/problems/gray-code) | Medium | [C++](./algorithms/gray_code.cpp) | `Bit Manipulation` |
 | 90 | [Subsets II](https://leetcode.com/problems/subsets-ii) | Medium | [C++](./algorithms/subsets2.cpp) |
 | 91 | [Decode Ways](https://leetcode.com/problems/decode-ways) | Medium | [C++](./algorithms/decode_ways.cpp) | `Dynamic Programming` |
 | 92 | [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii) | Medium | [C++](./algorithms/reverse_linked_list2.cpp) | |
