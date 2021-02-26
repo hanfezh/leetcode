@@ -213,6 +213,7 @@
 | 501 | [Find Mode in Binary Search Tree](https://leetcode.com/problems/find-mode-in-binary-search-tree) | Easy | [C++](./algorithms/find_mode_in_binary_search_tree.cpp) |
 | 509 | [Fibonacci Number](https://leetcode.com/problems/fibonacci-number) | Easy | [C++](./algorithms/fibonacci_number.cpp) | `Array` |
 | 523 | [Continuous Subarray Sum](https://leetcode.com/problems/continuous-subarray-sum) | Medium | [C++](./algorithms/continuous_subarray_sum.cpp) | |
+| 524 | [Longest Word in Dictionary through Deleting](https://leetcode.com/problems/longest-word-in-dictionary-through-deleting) | Medium | [C++](./algorithms/longest_word_through_deleting.cpp) | `Sort` `Two Pointers` |
 | 541 | [Reverse String II](https://leetcode.com/problems/reverse-string-ii) | Easy | [C++](./algorithms/reverse_string2.cpp) | |
 | 560 | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k) | Medium | [C++](./algorithms/subarray_sum_equals_k.cpp) | `Array` |
 | 599 | [Minimum Index Sum of Two Lists](https://leetcode.com/problems/minimum-index-sum-of-two-lists) | Easy | [C++](./algorithms/minimum_index_sum.cpp) |
