@@ -219,6 +219,7 @@
 | 599 | [Minimum Index Sum of Two Lists](https://leetcode.com/problems/minimum-index-sum-of-two-lists) | Easy | [C++](./algorithms/minimum_index_sum.cpp) |
 | 623 | [Add One Row to Tree](https://leetcode.com/problems/add-one-row-to-tree) | Medium | [C++](./algorithms/add_one_row_to_tree.cpp) |
 | 628 | [Maximum Product of Three Numbers](https://leetcode.com/problems/maximum-product-of-three-numbers/) | Easy | [Go](./algorithms/maximum_product_of_three_numbers.go) |
+| 629 | [K Inverse Pairs Array](https://leetcode.com/problems/k-inverse-pairs-array) | Hard | [C++](./algorithms/k_inverse_paris_array.cpp) | `Dynamic Programming` |
 | 645 | [Set Mismatch](https://leetcode.com/problems/set-mismatch) | Easy | [C++](./algorithms/set_mismatch.cpp) |
 | 653 | [Two Sum IV - Input is a BST](https://leetcode.com/problems/two-sum-iv-input-is-a-bst) | Easy | [C++](./algorithms/two_sum4.cpp) |
 | 658 | [Find K Closest Elements](https://leetcode.com/problems/find-k-closest-elements) | Medium | [C++](./algorithms/find_k_closest_elements.cpp) | `Binary Search` |
