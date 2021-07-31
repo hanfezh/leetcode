@@ -11,65 +11,54 @@
  *       Compiler:  gcc
  *
  *         Author:  Zhu Xianfeng (), xianfeng.zhu@gmail.com
- *   Organization:  
+ *   Organization:
  *
  * =====================================================================================
  */
-#include <stdio.h>
-#include <stdlib.h>
+#include <cstdio>
+#include <cstdlib>
 
-struct ListNode
-{
-    int val;
-    ListNode *next;
-    ListNode(int x) : val(x), next(NULL) {}
+struct ListNode {
+  int val;
+  ListNode* next;
+  explicit ListNode(int x) : val(x), next(nullptr) {}
 };
 
-class Solution
-{
-public:
-    ListNode* reverseBetween(ListNode* head, int m, int n)
-    {
-        ListNode fake(0);
-        ListNode* first = &fake;
-        ListNode* last = &fake;
-        ListNode* ptr = head;
-        ListNode* tmp = NULL;
-        int i = 0;
-        while (ptr != NULL)
-        {
-            i++;
-            if (i >= m && i <= n)
-            {
-                // Reverse
-                tmp = ptr->next;
-                ptr->next = first->next;
-                first->next = ptr;
-                if (i == m)
-                {
-                    last = ptr;
-                }
-                ptr = tmp;
-            }
-            else
-            {
-                // Forward
-                tmp = ptr->next;
-                ptr->next = NULL;
-                last->next = ptr;
-                last = last->next;
-                first = last;
-                ptr = tmp;
-            }
-        }
+class Solution {
+ public:
+  // 1 <= left <= right <= n
+  ListNode* reverseBetween(ListNode* head, int left, int right) {
+    ListNode fake(0);
+    ListNode* pre = &fake;
+    ListNode* cur = head;
+    fake.next = head;
 
-        return fake.next;
+    while (--left > 0) {
+      pre = cur;
+      cur = cur->next;
+      right--;
     }
+    pre->next = nullptr;
+
+    ListNode* last = cur;
+    ListNode* tmp = nullptr;
+    while (right > 0) {
+      tmp = cur->next;
+      cur->next = pre->next;
+      pre->next = cur;
+      cur = tmp;
+      right--;
+    }
+    if (last != cur) {
+      last->next = cur;
+    }
+
+    return fake.next;
+  }
 };
 
-int main(int argc, char* argv[])
-{
-    ListNode head(0);
-    auto* reverse = Solution().reverseBetween(&head, 0, 0);
-    return 0;
+int main(int argc, char* argv[]) {
+  ListNode head(0);
+  auto* reverse = Solution().reverseBetween(&head, 0, 0);
+  return 0;
 }
