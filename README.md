@@ -101,7 +101,7 @@
 | 109 | [Convert Sorted List to Binary Search Tree](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree) | Medium | [C++](./algorithms/convert_sorted_list_to_bst.cpp) | `Tree` |
 | 110 | [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree) | Easy | [C++](./algorithms/balanced_binary_tree.cpp) | |
 | 111 | [Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree) | Easy | [C++](./algorithms/minimum_depth_of_binary_tree.cpp) | `Tree` |
-| 112 | [Path Sum](https://leetcode.com/problems/path-sum) | Easy | [Python](./algorithms/path_sum.py) | `Tree` `DFS` |
+| 112 | [Path Sum](https://leetcode.com/problems/path-sum) | Easy | [C++](./algorithms/path_sum.cpp) [Python](./algorithms/path_sum.py) | `Tree` `DFS` |
 | 113 | [Path Sum II](https://leetcode.com/problems/path-sum-ii) | Medium | [Python](./algorithms/path_sum2.py) |
 | 114 | [Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list) | Medium | [C++](./algorithms/flatten_binary_tree_to_linked_list.cpp) | `Tree` |
 | 115 | [Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences) | Hard | [C++](./algorithms/distinct_subsequences.cpp) | `Dynamic Programming` |
