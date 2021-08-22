@@ -183,7 +183,7 @@
 | 283 | [Move Zeroes](https://leetcode.com/problems/move-zeroes) | Easy | [C++](./algorithms/move_zeroes.cpp) | `Two Pointers` |
 | 287 | [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number) | Medium | [C++](./algorithms/find_the_duplicate_number.cpp) | `Two Pointers` |
 | 292 | [Nim Game](https://leetcode.com/problems/nim-game) | Easy | [C++](./algorithms/nim_game.cpp) | `Brainteaser` |
-| 295 | [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/) | Hard | [C++](./algorithms/median_finder.cpp) | `Sort` |
+| 295 | [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/) | Hard | [C++](./algorithms/median_finder.cpp) | `Sort` `Priority Queue`|
 | 297 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree) | Hard | [C++](./algorithms/serialize_binary_tree.cpp) | `Tree` `DFS` |
 | 300 | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence) | Medium | [C++](./algorithms/longest_increasing_subsequence.cpp) | `Dynamic Programming` |
 | 326 | [Power of Three](https://leetcode.com/problems/power-of-three) | Easy | [C++](./algorithms/power_of_three.cpp) | `Math` |
