@@ -5,32 +5,34 @@
 #include <cstdio>
 #include <vector>
 
+// Partition and sort
 class Solution {
  public:
   int findKthLargest(std::vector<int>& nums, int k) {
     int left = 0;
     int right = nums.size() - 1;
+    k = nums.size() - k;
     while (true) {
       const int idx = partition(nums, left, right);
-      if (idx < k - 1) {
+      if (idx < k) {
         left = idx + 1;
-      } else if (idx > k - 1) {
+      } else if (idx > k) {
         right = idx - 1;
       } else {
         break;
       }
     }
-    return nums[k - 1];
+    return nums[k];
   }
 
  private:
   int partition(std::vector<int>& nums, int left, int right) {
-    int pivot = left;
+    const int pivot = right;
     while (left < right) {
-      if (nums[right] <= nums[pivot]) {
-        right--;
-      } else if (nums[left] >= nums[pivot]) {
+      if (nums[left] < nums[pivot]) {
         left++;
+      } else if (nums[right] >= nums[pivot]) {
+        right--;
       } else {
         std::swap(nums[left], nums[right]);
       }
