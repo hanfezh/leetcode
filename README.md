@@ -168,7 +168,7 @@
 | 205 | [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings) | Easy | [Go](./algorithms/isomorphic_strings.go) | `Hash Table` |
 | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list) | Easy | [C++](./algorithms/reverse_linked_list.cpp) | `Linked List` |
 | 208 | [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree) | Medium | [C++](./algorithms/implement_trie.cpp) | `Design` `Trie` |
-| 215 | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) | Medium | [C++](./algorithms/find_kth_larguest.cpp) | `Sort` |
+| 215 | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) | Medium | [C++](./algorithms/find_kth_larguest.cpp) | `Sort` `Priority Queue`|
 | 216 | [Combination Sum III](https://leetcode.com/problems/combination-sum-iii) | Medium | [C++](./algorithms/combination_sum3.cpp) |
 | 217 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate) | Easy | [C++](./algorithms/contains_duplicate.cpp) | `Hash Table` |
 | 219 | [Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii) | Easy | [C++](./algorithms/contains_duplicate2.cpp) |

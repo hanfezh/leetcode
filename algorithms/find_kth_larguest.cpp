@@ -3,10 +3,11 @@
 // Author: xianfeng.zhu@gmail.com
 
 #include <cstdio>
+#include <queue>
 #include <vector>
 
 // Partition and sort
-class Solution {
+class Solution1 {
  public:
   int findKthLargest(std::vector<int>& nums, int k) {
     int left = 0;
@@ -41,6 +42,23 @@ class Solution {
     return left;
   }
 };
+
+// Min-heap using std::priority_queue
+class Solution2 {
+ public:
+  int findKthLargest(std::vector<int>& nums, int k) {
+    std::priority_queue<int, std::vector<int>, std::greater<int>> min_heap;
+    for (const int val: nums) {
+      min_heap.push(val);
+      if (min_heap.size() > k) {
+        min_heap.pop();
+      }
+    }
+    return min_heap.top();
+  }
+};
+
+using Solution = Solution2;
 
 int main(int argc, char* argv[]) {
   std::vector<int> nums = {3, 2, 1, 5, 6, 4};
