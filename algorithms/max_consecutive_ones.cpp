@@ -10,16 +10,16 @@ class Solution {
  public:
   int findMaxConsecutiveOnes(std::vector<int>& nums) {
     int max_num = 0;
-    int last_idx = 0;
+    int last_idx = -1;
     int i = 0;
     while (i < nums.size()) {
       if (nums[i] == 0) {
-        max_num = std::max(max_num, i - last_idx);
-        last_idx = i + 1;
+        max_num = std::max(max_num, i - last_idx - 1);
+        last_idx = i;
       }
       i++;
     }
-    return std::max(max_num, i - last_idx);
+    return std::max(max_num, i - last_idx - 1);
   }
 };
 

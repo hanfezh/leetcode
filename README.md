@@ -212,6 +212,7 @@
 | 448 | [Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/) | Easy | [C++](./algorithms/find_disappeared_numbers.cpp) |
 | 461 | [Hamming Distance](https://leetcode.com/problems/hamming-distance) | Easy | [C++](./algorithms/hamming_distance.cpp) | `Bit Manipulation` |
 | 485 | [Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones) | Easy | [C++](./algorithms/max_consecutive_ones.cpp) | `Array` |
+| 487 | [Max Consecutive Ones II](https://leetcode.com/problems/max-consecutive-ones-ii) | Medium | [C++](./algorithms/max_consecutive_ones2.cpp) | `Array` |
 | 491 | [Increasing Subsequences](https://leetcode.com/problems/increasing-subsequences) | Medium | [C++](./algorithms/increasing_subsequences.cpp) |
 | 501 | [Find Mode in Binary Search Tree](https://leetcode.com/problems/find-mode-in-binary-search-tree) | Easy | [C++](./algorithms/find_mode_in_binary_search_tree.cpp) |
 | 509 | [Fibonacci Number](https://leetcode.com/problems/fibonacci-number) | Easy | [C++](./algorithms/fibonacci_number.cpp) | `Array` |
