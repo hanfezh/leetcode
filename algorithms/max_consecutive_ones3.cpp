@@ -1,4 +1,4 @@
-// 10004. Max Consecutive Ones III
+// 1004. Max Consecutive Ones III
 // Refer: https://leetcode.com/problems/max-consecutive-ones-iii
 // Author: xianfeng.zhu@gmail.com
 
