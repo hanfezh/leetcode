@@ -241,6 +241,7 @@
 | 788 | [Rotated Digits](https://leetcode.com/problems/rotated-digits) | Easy | [C++](./algorithms/rotated_digits.cpp) |
 | 796 | [Rotate String](https://leetcode.com/problems/rotate-string) | Easy | [C++](./algorithms/rotate_string.cpp) | `String` |
 | 899 | [Orderly Queue](https://leetcode.com/problems/orderly-queue) | Hard | [C++](./algorithms/orderly_queue.cpp) | `Math` `String` |
+| 912 | [Sort an Array](https://leetcode.com/problems/sort-an-array) | Medium | [C++](./algorithms/sort_array.cpp) | `Array` `Merge Sort` |
 | 965 | [Univalued Binary Tree](https://leetcode.com/problems/univalued-binary-tree) | Easy | [C++](./algorithms/univalued_binary_tree.cpp) |
 | 1004 | [Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii) | Medium | [C++](./algorithms/max_consecutive_ones3.cpp) | `Array` `Two Pointers` |
 
