@@ -2,11 +2,12 @@
 // Refer: https://leetcode.com/problems/sort-an-array
 // Author: xianfeng.zhu@gmail.com
 
+#include <algorithm>
 #include <cstdio>
 #include <vector>
 
 // Merge sort
-class Solution {
+class Solution1 {
  public:
   std::vector<int> sortArray(std::vector<int>& nums) {
     mergeSort(nums, 0, nums.size() - 1);
@@ -48,6 +49,41 @@ class Solution {
     }
   }
 };
+
+// Quick sort, time limit exceeded
+class Solution2 {
+ public:
+  std::vector<int> sortArray(std::vector<int>& nums) {
+    quickSort(nums, 0, nums.size() - 1);
+    return nums;
+  }
+
+ private:
+  void quickSort(std::vector<int>& nums, int left, int right) {
+    if (left < right) {
+      int pi = partition(nums, left, right);
+      quickSort(nums, left, pi - 1);
+      quickSort(nums, pi + 1, right);
+    }
+  }
+
+  int partition(std::vector<int>& nums, int left, int right) {
+    const int pivot = right;
+    while (left < right) {
+      if (nums[left] < nums[pivot]) {
+        left++;
+      } else if (nums[right] >= nums[pivot]) {
+        right--;
+      } else {
+        std::swap(nums[left], nums[right]);
+      }
+    }
+    std::swap(nums[left], nums[pivot]);
+    return left;
+  }
+};
+
+using Solution = Solution1;
 
 int main(int argc, char* argv[]) {
   std::vector<int> nums = {5, 2, 3, 1};
