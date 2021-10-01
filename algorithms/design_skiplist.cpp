@@ -66,20 +66,33 @@ class Skiplist {
   }
 
   bool erase(int num) {
+    std::vector<Node*> prevs(cur_level_);
     Node* node = &head_;
-    Node* target = nullptr;
     for (int i = cur_level_ - 1; i >= 0; i--) {
       node = findClosest(node, i, num);
-      if (node->next[i] != nullptr && node->next[i]->val == num) {
-        target = node->next[i];
-        node->next[i] = node->next[i]->next[i];
+      prevs[i] = node;
+    }
+
+    Node* target = prevs[0]->next[0];
+    if (target == nullptr || target->val != num) {
+      // Not exists
+      return false;
+    }
+
+    // Erase target node and free memory
+    for (int i = 0; i < cur_level_; i++) {
+      if (prevs[i]->next[i] == target) {
+        prevs[i]->next[i] = target->next[i];
       }
     }
-    if (target != nullptr) {
-      delete target;
-      return true;
+    delete target;
+
+    // Update current level
+    while (cur_level_ > 1 && head_.next[cur_level_ - 1] == nullptr) {
+      cur_level_--;
     }
-    return false;
+
+    return true;
   }
 
  private:
