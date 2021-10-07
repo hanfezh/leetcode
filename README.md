@@ -173,6 +173,7 @@
 | 217 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate) | Easy | [C++](./algorithms/contains_duplicate.cpp) | `Hash Table` |
 | 219 | [Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii) | Easy | [C++](./algorithms/contains_duplicate2.cpp) |
 | 220 | [Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii) | Medium | [C++](./algorithms/contains_duplicate3.cpp) |
+| 232 | [Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks) | Easy | [C++](./algorithms/implement_queue_using_stacks.cpp) | `Stack` `Queue` |
 | 234 | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list) | Medium | [C++](./algorithms/palindrome_linked_list.cpp) | `Linked List` `Two Pointers` |
 | 236 | [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree) | Medium | [C++](./algorithms/lowest_common_ancestor.cpp) [Go](./algorithms/lowest_common_ancestor.go) | `Tree` `DFS` |
 | 237 | [Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list) | Easy | [C++](./algorithms/delete_node_in_linked_list.cpp) | `Linked List` |
