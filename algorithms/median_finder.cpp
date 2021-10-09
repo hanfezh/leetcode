@@ -5,7 +5,7 @@
 #include <queue>
 #include <vector>
 
-// Time limit exceeded
+// Time limit exceeded, insertion sort
 // O(n) add, O(1) find
 class MedianFinder1 {
  public:
@@ -31,7 +31,7 @@ class MedianFinder1 {
   std::vector<int> nums_;
 };
 
-// Time limit exceeded
+// Time limit exceeded, quick sort
 // O(1) add, O(nlogn) find
 class MedianFinder2 {
  public:
@@ -121,7 +121,7 @@ class MedianFinder3 {
   std::vector<int> nums_;
 };
 
-// Time limit exceeded
+// Time limit exceeded, merge sort
 // O(logn) add, O(1) find
 class MedianFinder4 {
  public:
@@ -154,7 +154,6 @@ class MedianFinder4 {
   }
 
   double findMedian() {
-    std::sort(nums_.begin(), nums_.end());
     int mid = nums_.size() / 2;
     if ((nums_.size() % 2) != 0) {
       return nums_[mid];
