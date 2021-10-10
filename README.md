@@ -214,6 +214,7 @@
 | 448 | [Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/) | Easy | [C++](./algorithms/find_disappeared_numbers.cpp) |
 | 461 | [Hamming Distance](https://leetcode.com/problems/hamming-distance) | Easy | [C++](./algorithms/hamming_distance.cpp) | `Bit Manipulation` |
 | 477 | [Total Hamming Distance](https://leetcode.com/problems/total-hamming-distance) | Medium| [C++](./algorithms/total_hamming_distance.cpp) | `Math` `Bit Manipulation` |
+| 480 | [Sliding Window Median](https://leetcode.com/problems/sliding-window-median) | Hard | [C++](./algorithms/median_sliding_window.cpp) | `Array` |
 | 485 | [Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones) | Easy | [C++](./algorithms/max_consecutive_ones.cpp) | `Array` |
 | 487 | [Max Consecutive Ones II](https://leetcode.com/problems/max-consecutive-ones-ii) | Medium | [C++](./algorithms/max_consecutive_ones2.cpp) | `Array` `Two Pointers`|
 | 491 | [Increasing Subsequences](https://leetcode.com/problems/increasing-subsequences) | Medium | [C++](./algorithms/increasing_subsequences.cpp) |
