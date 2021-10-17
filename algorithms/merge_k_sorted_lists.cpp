@@ -18,17 +18,19 @@
  */
 #include <stdio.h>
 #include <stdlib.h>
+#include <queue>
 #include <vector>
 
 struct ListNode {
   int val;
   ListNode* next;
-  ListNode(int x) : val(x), next(nullptr) {}
+  explicit ListNode(int x) : val(x), next(nullptr) {}
 };
 
-class Solution {
+// Merge lists one by one, O(kN)
+class Solution1 {
  public:
-  ListNode* mergeKLists(const std::vector<ListNode*>& lists) {
+  ListNode* mergeKLists(std::vector<ListNode*>& lists) {
     ListNode* first = nullptr;
     for (int i = 0; i < lists.size(); i++) {
       first = mergeList(first, lists[i]);
@@ -64,6 +66,41 @@ class Solution {
     return fake.next;
   }
 };
+
+// Priority queue, O(Nlogk)
+class Solution2 {
+ public:
+  struct NodeCompare {
+    bool operator()(const ListNode* a, const ListNode* b) { return a->val > b->val; }
+  };
+
+  ListNode* mergeKLists(std::vector<ListNode*>& lists) {
+    std::priority_queue<ListNode*, std::vector<ListNode*>, NodeCompare> min_queue;
+    for (auto lst : lists) {
+      if (lst != nullptr) {
+        min_queue.push(lst);
+      }
+    }
+
+    if (min_queue.empty()) {
+      return nullptr;
+    }
+
+    ListNode dummy(0);
+    ListNode* ptr = &dummy;
+    while (!min_queue.empty()) {
+      ptr->next = min_queue.top();
+      ptr = ptr->next;
+      min_queue.pop();
+      if (ptr->next != nullptr) {
+        min_queue.push(ptr->next);
+      }
+    }
+    return dummy.next;
+  }
+};
+
+using Solution = Solution2;
 
 int main(int argc, char* argv[]) {
   std::vector<ListNode*> lists;

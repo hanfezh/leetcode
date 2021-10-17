@@ -24,7 +24,7 @@
 | 20 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses) | Easy | [C++](./algorithms/valid_parentheses.cpp) [Python](./algorithms/valid_parentheses.py) | `Stack` |
 | 21 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists) | Easy | [C](./algorithms/merge_two_lists.c) | `Linked List` |
 | 22 | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses) | Medium | [C++](./algorithms/generate_parentheses.cpp) |
-| 23 | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists) | Hard | [C++](./algorithms/merge_k_sorted_lists.cpp) | `Sort` |
+| 23 | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists) | Hard | [C++](./algorithms/merge_k_sorted_lists.cpp) | `Sort` `Priority Queue`|
 | 24 | [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs) | Medium | [C++](./algorithms/swap_nodes_in_pairs.cpp) | `Linked List` |
 | 25 | [Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group) | Hard | [C++](./algorithms/reverse_nodes_in_k_group.cpp) | |
 | 26 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array) | Easy | [Python](./algorithms/remove_duplicates.py) |
