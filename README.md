@@ -248,6 +248,7 @@
 | 899 | [Orderly Queue](https://leetcode.com/problems/orderly-queue) | Hard | [C++](./algorithms/orderly_queue.cpp) | `Math` `String` |
 | 912 | [Sort an Array](https://leetcode.com/problems/sort-an-array) | Medium | [C++](./algorithms/sort_array.cpp) | `Array` `Merge Sort` |
 | 965 | [Univalued Binary Tree](https://leetcode.com/problems/univalued-binary-tree) | Easy | [C++](./algorithms/univalued_binary_tree.cpp) | `BFS` |
+| 993 | [Cousins in Binary Tree](https://leetcode.com/problems/cousins-in-binary-tree) | Easy | [C++](./algorithms/cousins_in_binary_tree.cpp) | `Tree` `DFS` |
 | 1004 | [Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii) | Medium | [C++](./algorithms/max_consecutive_ones3.cpp) | `Array` `Two Pointers` |
 | 1206 | [Design Skiplist](https://leetcode.com/problems/design-skiplist) | Hard | [C++](./a.algorithms/design_skiplist.cpp) | `Linked List` |
 | 1247 | [Minimum Swaps to Make Strings Equal](https://leetcode.com/problems/minimum-swaps-to-make-strings-equal) | Medium | [C++](./algorithms/minimum_swaps_equal.cpp) | `Math` `String` |
