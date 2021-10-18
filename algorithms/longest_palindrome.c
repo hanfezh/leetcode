@@ -20,7 +20,7 @@
 #include <stdio.h>
 #include <string.h>
 
-
+/* Expand around center, O(n^2) */
 char *longestPalindrome(char *s)
 {
     static char buf[1024] = {'\0'};
