@@ -12,7 +12,7 @@
  *       Revision:  none
  *       Compiler:  gcc
  *
- *         Author:  YOUR NAME (),
+ *         Author:  xianfeng.zhu@gmail.com
  *   Organization:
  *
  * =====================================================================================
@@ -30,7 +30,7 @@ struct TreeNode {
   TreeNode(int x) : val(x), left(NULL), right(NULL) {}
 };
 
-// Intuitive DFS
+// Intuitive BFS
 class Solution1 {
  public:
   vector<vector<int>> levelOrder(TreeNode* root) {
@@ -58,7 +58,7 @@ class Solution1 {
   }
 };
 
-// Optimized BFS
+// Optimized DFS
 class Solution2 {
  public:
   vector<vector<int>> levelOrder(TreeNode* root) {
