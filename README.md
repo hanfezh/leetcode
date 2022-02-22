@@ -24,7 +24,7 @@
 | 20 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses) | Easy | [C++](./algorithms/valid_parentheses.cpp) [Python](./algorithms/valid_parentheses.py) | `Stack` |
 | 21 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists) | Easy | [C](./algorithms/merge_two_lists.c) | `Linked List` |
 | 22 | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses) | Medium | [C++](./algorithms/generate_parentheses.cpp) |
-| 23 | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists) | Hard | [C++](./algorithms/merge_k_sorted_lists.cpp) | `Sort` `Priority Queue`|
+| 23 | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists) | Hard | [C++](./algorithms/merge_k_sorted_lists.cpp) | `Sorting` `Priority Queue`|
 | 24 | [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs) | Medium | [C++](./algorithms/swap_nodes_in_pairs.cpp) | `Linked List` |
 | 25 | [Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group) | Hard | [C++](./algorithms/reverse_nodes_in_k_group.cpp) | |
 | 26 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array) | Easy | [Python](./algorithms/remove_duplicates.py) |
@@ -70,7 +70,7 @@
 | 72 | [Edit Distance](https://leetcode.com/problems/edit-distance) | Hard | [C++](./algorithms/edit_distance.cpp) | `Dynamic Programming` |
 | 73 | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes) | Medium | [C++](./algorithms/set_matrix_zeroes.cpp) | `Array` |
 | 74 | [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix) | Medium | [C++](./algorithms/search_2d_matrix.cpp) | `Binary Search` |
-| 75 | [Sort Colors](https://leetcode.com/problems/sort-colors) | Medium | [C++](./algorithms/sort_colors.cpp) | `Sort` |
+| 75 | [Sort Colors](https://leetcode.com/problems/sort-colors) | Medium | [C++](./algorithms/sort_colors.cpp) | `Sorting` |
 | 77 | [Combinations](https://leetcode.com/problems/combinations) | Medium | [C++](./algorithms/combinations.cpp) |
 | 78 | [Subsets](https://leetcode.com/problems/subsets) | Medium | [C++](./algorithms/subsets.cpp) |
 | 79 | [Word Search](https://leetcode.com/problems/word-search) | Medium | [C++](./algorithms/word_search.cpp) | `Backtracking` |
@@ -133,7 +133,7 @@
 | 145 | [Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal) | Hard | [C++](./algorithms/binary_tree_postorder_traversal.cpp) | `Tree` `Stack` |
 | 146 | [LRU Cache](https://leetcode.com/problems/lru-cache) | Medium | [C++](./algorithms/lru_cache.cpp) | `Design` |
 | 147 | [Insertion Sort List](https://leetcode.com/problems/insertion-sort-list) | Medium | [C](./algorithms/insertion_sort_list.c) |
-| 148 | [Sort List](https://leetcode.com/problems/sort-list) | Medium | [C++](./algorithms/sort_list.cpp) | `Sort` |
+| 148 | [Sort List](https://leetcode.com/problems/sort-list) | Medium | [C++](./algorithms/sort_list.cpp) | `Sorting` |
 | 149 | [Max Points on a Line](https://leetcode.com/problems/max-points-on-a-line) | Hard | [C++](./algorithms/max_points.cpp) | `Math` |
 | 151 | [Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string) | Medium | [C++](./algorithms/reverse_words.cpp) | |
 | 152 | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray) | Medium | [C++](./algorithms/maximum_product_subarray.cpp) | `Dynamic Programming` |
@@ -169,7 +169,7 @@
 | 205 | [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings) | Easy | [Go](./algorithms/isomorphic_strings.go) | `Hash Table` |
 | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list) | Easy | [C++](./algorithms/reverse_linked_list.cpp) | `Linked List` |
 | 208 | [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree) | Medium | [C++](./algorithms/implement_trie.cpp) | `Design` `Trie` |
-| 215 | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) | Medium | [C++](./algorithms/find_kth_larguest.cpp) | `Sort` `Priority Queue`|
+| 215 | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) | Medium | [C++](./algorithms/find_kth_larguest.cpp) | `Sorting` `Priority Queue`|
 | 216 | [Combination Sum III](https://leetcode.com/problems/combination-sum-iii) | Medium | [C++](./algorithms/combination_sum3.cpp) |
 | 217 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate) | Easy | [C++](./algorithms/contains_duplicate.cpp) | `Hash Table` |
 | 219 | [Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii) | Easy | [C++](./algorithms/contains_duplicate2.cpp) |
@@ -189,7 +189,7 @@
 | 283 | [Move Zeroes](https://leetcode.com/problems/move-zeroes) | Easy | [C++](./algorithms/move_zeroes.cpp) | `Two Pointers` |
 | 287 | [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number) | Medium | [C++](./algorithms/find_the_duplicate_number.cpp) | `Two Pointers` |
 | 292 | [Nim Game](https://leetcode.com/problems/nim-game) | Easy | [C++](./algorithms/nim_game.cpp) | `Brainteaser` |
-| 295 | [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/) | Hard | [C++](./algorithms/median_finder.cpp) | `Sort` `Priority Queue`|
+| 295 | [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/) | Hard | [C++](./algorithms/median_finder.cpp) | `Sorting` `Priority Queue`|
 | 297 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree) | Hard | [C++](./algorithms/serialize_binary_tree.cpp) | `Tree` `DFS` |
 | 300 | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence) | Medium | [C++](./algorithms/longest_increasing_subsequence.cpp) | `Dynamic Programming` |
 | 326 | [Power of Three](https://leetcode.com/problems/power-of-three) | Easy | [C++](./algorithms/power_of_three.cpp) | `Math` |
@@ -217,6 +217,7 @@
 | 442 | [Find All Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/) | Medium | [C++](./algorithms/find_duplicates.cpp) |
 | 443 | [String Compression](https://leetcode.com/problems/string-compression) | Easy | [C++](./algorithms/string_compression.cpp) |
 | 448 | [Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/) | Easy | [C++](./algorithms/find_disappeared_numbers.cpp) |
+| 452 | [Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/) | Medium | [Python3](./algorithms/minimum_arrow_shots.py) | `Sorting` |
 | 461 | [Hamming Distance](https://leetcode.com/problems/hamming-distance) | Easy | [C++](./algorithms/hamming_distance.cpp) | `Bit Manipulation` |
 | 477 | [Total Hamming Distance](https://leetcode.com/problems/total-hamming-distance) | Medium| [C++](./algorithms/total_hamming_distance.cpp) | `Math` `Bit Manipulation` |
 | 480 | [Sliding Window Median](https://leetcode.com/problems/sliding-window-median) | Hard | [C++](./algorithms/median_sliding_window.cpp) | `Array` |
@@ -226,7 +227,7 @@
 | 501 | [Find Mode in Binary Search Tree](https://leetcode.com/problems/find-mode-in-binary-search-tree) | Easy | [C++](./algorithms/find_mode_in_binary_search_tree.cpp) |
 | 509 | [Fibonacci Number](https://leetcode.com/problems/fibonacci-number) | Easy | [C++](./algorithms/fibonacci_number.cpp) | `Array` |
 | 523 | [Continuous Subarray Sum](https://leetcode.com/problems/continuous-subarray-sum) | Medium | [C++](./algorithms/continuous_subarray_sum.cpp) | |
-| 524 | [Longest Word in Dictionary through Deleting](https://leetcode.com/problems/longest-word-in-dictionary-through-deleting) | Medium | [C++](./algorithms/longest_word_through_deleting.cpp) | `Sort` `Two Pointers` |
+| 524 | [Longest Word in Dictionary through Deleting](https://leetcode.com/problems/longest-word-in-dictionary-through-deleting) | Medium | [C++](./algorithms/longest_word_through_deleting.cpp) | `Sorting` `Two Pointers` |
 | 540 | [Single Element in a Sorted Array](https://leetcode.com/problems/single-element-in-a-sorted-array) | Medium | [C++](./algorithms/single_non_duplicate.cpp) | `Bit Manipulation` `Binary Search` |
 | 541 | [Reverse String II](https://leetcode.com/problems/reverse-string-ii) | Easy | [C++](./algorithms/reverse_string2.cpp) | |
 | 560 | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k) | Medium | [C++](./algorithms/subarray_sum_equals_k.cpp) | `Array` |
@@ -256,8 +257,8 @@
 | 1004 | [Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii) | Medium | [C++](./algorithms/max_consecutive_ones3.cpp) | `Array` `Two Pointers` |
 | 1206 | [Design Skiplist](https://leetcode.com/problems/design-skiplist) | Hard | [C++](./a.algorithms/design_skiplist.cpp) | `Linked List` |
 | 1247 | [Minimum Swaps to Make Strings Equal](https://leetcode.com/problems/minimum-swaps-to-make-strings-equal) | Medium | [C++](./algorithms/minimum_swaps_equal.cpp) | `Math` `String` |
-| 1288 | [Remove Covered Intervals](https://leetcode.com/problems/remove-covered-intervals/) | Medium | [C++](./algorithms/remove_covered_intervals.cpp) | `Array` `Sort` |
-| 1366 | [Rank Teams by Votes](https://leetcode.com/problems/rank-teams-by-votes) | Medium | [C++](./algorithms/rank_teams.cpp) | `Array` `Sort` |
+| 1288 | [Remove Covered Intervals](https://leetcode.com/problems/remove-covered-intervals/) | Medium | [C++](./algorithms/remove_covered_intervals.cpp) | `Array` `Sorting` |
+| 1366 | [Rank Teams by Votes](https://leetcode.com/problems/rank-teams-by-votes) | Medium | [C++](./algorithms/rank_teams.cpp) | `Array` `Sorting` |
 | 1641 | [Count Sorted Vowel Strings](https://leetcode.com/problems/count-sorted-vowel-strings) | Medium | [C++](./algorithms/count_sorted_vowel_strings.cpp) | `Dynamic Programming` |
 | 1679 | [Max Number of K-Sum Pairs](https://leetcode.com/problems/max-number-of-k-sum-pairs) | Medium | [C++](./algorithms/max_number_of_ksum_pairs.cpp) | `Hash Table` |
 | 1720 | [Decode XORed Array](https://leetcode.com/problems/decode-xored-array) | Easy | [C++](./algorithms/decode_xored_array.cpp) | `Bit Manipulation` |
