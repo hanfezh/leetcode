@@ -163,7 +163,7 @@
 | 198 | [House Robber](https://leetcode.com/problems/house-robber) | Easy | [C++](./algorithms/house_robber.cpp) | `Dynamic Programming` |
 | 199 | [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view) | Medium | [C++](./algorithms/binary_tree_right_side_view.cpp) | `BFS` |
 | 200 | [Number of Islands](https://leetcode.com/problems/number-of-islands) | Medium | [C++](./algorithms/number_of_islands.cpp) | `Union Find` |
-| 202 | [Happy Number](https://leetcode.com/problems/happy-number) | Easy | [Go](./algorithms/happy_number.go) | `Hash Table` |
+| 202 | [Happy Number](https://leetcode.com/problems/happy-number) | Easy | [C++](./algorithms/happy_number.cpp) [Go](./algorithms/happy_number.go) | `Hash Table` |
 | 203 | [Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements) | Easy | [C++](./algorithms/remove_linked_list_elements.cpp) | `Linked List` |
 | 204 | [Count Primes](https://leetcode.com/problems/count-primes) | Easy | [C++](./algorithms/count_primes.cpp) | `Math` |
 | 205 | [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings) | Easy | [Go](./algorithms/isomorphic_strings.go) | `Hash Table` |
