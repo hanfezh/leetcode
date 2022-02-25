@@ -143,7 +143,7 @@
 | 155 | [Min Stack](https://leetcode.com/problems/min-stack) | Easy | [C++](./algorithms/min_stack.cpp) [Python](./algorithms/min_stack.py) | `Stack` `Design` |
 | 160 | [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists) | Easy | [C++](./algorithms/intersection_of_linked_lists.cpp) | `Two Pointers` |
 | 162 | [Find Peak Element](https://leetcode.com/problems/find-peak-element) | Medium | [C++](./algorithms/find_peak_element.cpp) | `Binary Search` |
-| 165 | [Compare Version Numbers](https://leetcode.com/problems/compare-version-numbers) | Medium | [C++](./algorithms/compare_version_numbers.cpp) | `String` |
+| 165 | [Compare Version Numbers](https://leetcode.com/problems/compare-version-numbers) | Medium | [C++](./algorithms/compare_version_numbers.cpp) [Python3](./algorithms/compare_version_numbers.py) | `String` |
 | 167 | [Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted) | Easy | [C++](./algorithms/two_sum2.cpp) |
 | 168 | [Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title) | Easy | [C++](./algorithms/excel_sheet_column_title.cpp) | `Math` |
 | 169 | [Majority Element](https://leetcode.com/problems/majority-element) | Easy | [C++](./algorithms/majority_element.cpp) | `Array` |
