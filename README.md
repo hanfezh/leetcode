@@ -241,6 +241,7 @@
 | 645 | [Set Mismatch](https://leetcode.com/problems/set-mismatch) | Easy | [C++](./algorithms/set_mismatch.cpp) |
 | 653 | [Two Sum IV - Input is a BST](https://leetcode.com/problems/two-sum-iv-input-is-a-bst) | Easy | [C++](./algorithms/two_sum4.cpp) |
 | 658 | [Find K Closest Elements](https://leetcode.com/problems/find-k-closest-elements) | Medium | [C++](./algorithms/find_k_closest_elements.cpp) | `Binary Search` |
+| 662 | [Maximum Width of Binary Tree](https://leetcode.com/problems/maximum-width-of-binary-tree/) | Medium | [C++](./algorithms/maximum_width_of_binary_tree.cpp) | `Binary Tree` `BFS` |
 | 680 | [Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii) | Easy | [C++](./algorithms/valid_palindrome2.cpp) | |
 | 704 | [Binary Search](https://leetcode.com/problems/binary-search) | Easy | [C++](./algorithms/binary_search.cpp) | `Binary Search` |
 | 705 | [Design HashSet](https://leetcode.com/problems/design-hashset) | Easy | [C++](./algorithms/design_hashset.cpp) | `Bit Manipulation` `Hash Table` |
