@@ -197,6 +197,7 @@
 | 326 | [Power of Three](https://leetcode.com/problems/power-of-three) | Easy | [C++](./algorithms/power_of_three.cpp) | `Math` |
 | 328 | [Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list) | Medium | [C++](./algorithms/odd_even_linked_list.cpp) | `Linked List` |
 | 334 | [Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence) | Medium | [C++](./algorithms/increasing_triplet_subsequence.cpp) | |
+| 338 | [Counting Bits](https://leetcode.com/problems/counting-bits/) | Easy | [C++](./algorithms/count_bits.cpp) | `Dynamic Programming` |
 | 344 | [Reverse String](https://leetcode.com/problems/reverse-string) | Easy | [C++](./algorithms/reverse_string.cpp) | `Two Pointers` |
 | 349 | [Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays) | Easy | [C++](./algorithms/intersection_of_two_arrays.cpp) |
 | 350 | [Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii) | Easy | [C++](./algorithms/intersection_of_two_arrays2.cpp) | `Hash Table` |
