@@ -15,7 +15,6 @@
  *
  * =====================================================================================
  */
-#include <cmath>
 #include <cstdio>
 #include <cstdlib>
 #include <vector>
@@ -38,7 +37,7 @@ class Solution {
     bits[1] = 1;
     int pre = 1;
     for (int i = 1; i <= 31 && pre < n; i++) {
-      int end = std::pow(2, i);
+      int end = 1 << i;
       if (end <= n) {
         bits[end] = 1;
       } else {
