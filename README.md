@@ -209,7 +209,7 @@
 | 384 | [Shuffle an Array](https://leetcode.com/problems/shuffle-an-array) | Medium | [C++](./algorithms/shuffle_an_array.cpp) | `Design` |
 | 386 | [Lexicographical Numbers](https://leetcode.com/problems/lexicographical-numbers) | Medium | [C++](./algorithms/lexicographical_numbers.cpp) |
 | 387 | [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string) | Easy | [C++](./algorithms/first_unique_character.cpp) | `Hash Table` |
-| 392 | [Is Subsequence](https://leetcode.com/problems/is-subsequence/) | Easy | [Python3](./algorithms/is_subsequence.py) | `String` |
+| 392 | [Is Subsequence](https://leetcode.com/problems/is-subsequence/) | Easy | [C++](./algorithms/is_subsequence.cpp) [Python3](./algorithms/is_subsequence.py) | `String` |
 | 397 | [Integer Replacement](https://leetcode.com/problems/integer-replacement) | Medium | [C++](./algorithms/integer_replacement.cpp) |
 | 404 | [Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves) | Easy | [C++](./algorithms/sum_of_left_leaves.cpp) | `Tree` |
 | 410 | [Split Array Largest Sum](https://leetcode.com/problems/split-array-largest-sum) | Hard | [C++](./algorithms/split_array_largest_sum.cpp) | `Binary Search` |
