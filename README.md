@@ -168,7 +168,7 @@
 | 203 | [Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements) | Easy | [C++](./algorithms/remove_linked_list_elements.cpp) | `Linked List` |
 | 204 | [Count Primes](https://leetcode.com/problems/count-primes) | Easy | [C++](./algorithms/count_primes.cpp) | `Math` |
 | 205 | [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings) | Easy | [Go](./algorithms/isomorphic_strings.go) | `Hash Table` |
-| 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list) | Easy | [C++](./algorithms/reverse_linked_list.cpp) | `Linked List` |
+| 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list) | Easy | [C++](./algorithms/reverse_linked_list.cpp) [Python3](./algorithms/reverse_linked_list.py) | `Linked List` `Recursion` |
 | 208 | [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree) | Medium | [C++](./algorithms/implement_trie.cpp) | `Design` `Trie` |
 | 215 | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) | Medium | [C++](./algorithms/find_kth_larguest.cpp) | `Sorting` `Priority Queue`|
 | 216 | [Combination Sum III](https://leetcode.com/problems/combination-sum-iii) | Medium | [C++](./algorithms/combination_sum3.cpp) |
