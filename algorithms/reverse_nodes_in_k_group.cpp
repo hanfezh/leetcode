@@ -23,7 +23,7 @@
 struct ListNode {
   int val;
   ListNode* next;
-  ListNode(int x) : val(x), next(nullptr) {}
+  ListNode(int x = 0, ListNode* n = nullptr) : val(x), next(n) {}
 
   void printList() {
     ListNode* ptr = this;
@@ -44,7 +44,8 @@ struct ListNode {
   }
 };
 
-class Solution {
+// Traverse once, min O(n), max O(n + k)
+class Solution1 {
  public:
   ListNode* reverseKGroup(ListNode* head, int k) {
     ListNode dummy(0);
@@ -85,9 +86,48 @@ class Solution {
   }
 };
 
+// Traverse twice, O(2n), but more readable
+class Solution2 {
+ public:
+  ListNode* reverseKGroup(ListNode* head, int k) {
+    ListNode dummy(0);
+    ListNode* left = &dummy;
+    ListNode* right = &dummy;
+    ListNode* cur = head;
+    while (true) {
+      int count = 0;
+      while (cur != nullptr && count != k) {
+        cur = cur->next;
+        count++;
+      }
+      if (count != k) {
+        right->next = head;
+        break;
+      }
+
+      // Reverse current k-group
+      ListNode* tmp = nullptr;
+      left = right;
+      while (count-- > 0) {
+        tmp = head->next;
+        head->next = left->next;
+        left->next = head;
+        head = tmp;
+        if (right->next != nullptr) {
+          right = right->next;
+        }
+      }
+    }
+    return dummy.next;
+  }
+};
+
+using Solution = Solution2;
+
 int main(int argc, char* argv[]) {
   const std::vector<int> nums = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
   ListNode* head = ListNode::convert(nums);
+  head->printList();
   head = Solution().reverseKGroup(head, 3);
   head->printList();
   return 0;
