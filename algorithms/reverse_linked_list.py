@@ -8,14 +8,12 @@ class ListNode:
         self.val = val
         self.next = next
 
-// Recursion
+# Recursion
 class Solution:
     def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
-        def reverse(p):
-            if not p or not p.next:
-                return p, p
-            h, t = reverse(p.next)
-            t.next = p
-            p.next = None
-            return h, p
-        return reverse(head)[0]
+        if not head or not head.next:
+            return head
+        ptr = self.reverseList(head.next)
+        head.next.next = head
+        head.next = None
+        return ptr
