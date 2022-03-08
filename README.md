@@ -1,6 +1,6 @@
 # LeetCode
 
-| # | Title | Difficulty | Solutions | Topics |
+| No. | Title | Difficulty | Solutions | Topics |
 | - | ----- | ---------- | --------- | ---- |
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum) | Easy | [C++](./algorithms/two_sum.cpp) [Go](./algorithms/two_sum.go) | `Hash Table` |
 | 2	| [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) | Medium | [C++](./algorithms/add_two_numbers.cpp) [Python](./algorithms/add_two_numbers.py) | `Linked List` |
@@ -22,7 +22,7 @@
 | 18 | [4Sum](https://leetcode.com/problems/4sum) | Medium | [C++](./algorithms/four_sum.cpp) |
 | 19 | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list) | Medium | [C++](./algorithms/remove_nth_from_end.cpp) | `Two Pointers` |
 | 20 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses) | Easy | [C++](./algorithms/valid_parentheses.cpp) [Python](./algorithms/valid_parentheses.py) | `Stack` |
-| 21 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists) | Easy | [C](./algorithms/merge_two_lists.c) | `Linked List` |
+| 21 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists) | Easy | [C](./algorithms/merge_two_lists.c) [Python3](./algorithms/merge_two_lists.py) | `Linked List` |
 | 22 | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses) | Medium | [C++](./algorithms/generate_parentheses.cpp) |
 | 23 | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists) | Hard | [C++](./algorithms/merge_k_sorted_lists.cpp) | `Sorting` `Priority Queue`|
 | 24 | [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs) | Medium | [C++](./algorithms/swap_nodes_in_pairs.cpp) | `Linked List` |
