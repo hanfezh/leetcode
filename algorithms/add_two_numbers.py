@@ -24,6 +24,14 @@ class ListNode:
         return s
 
     @staticmethod
+    def convert(nums):
+        ptr = dummy = ListNode(0)
+        for n in nums:
+            ptr.next = ListNode(n)
+            ptr = ptr.next
+        return dummy.next
+
+    @staticmethod
     def deserialize(s):
         a = s.find('{')
         b = s.find('}')
@@ -31,71 +39,28 @@ class ListNode:
         return ListNode(int(s))
 
 class Solution:
-    # @return a ListNode
     def addTwoNumbers(self, l1, l2):
-        head = None
-        prev = None
-        node = None
-        val  = 0
-        while l1 is not None and l2 is not None:
-            val += l1.val + l2.val
-            node = ListNode(val % 10)
-            val /= 10
-            l1 = l1.next
-            l2 = l2.next
-            if head is None:
-                head = node
-            if prev is not None:
-                prev.next = node
-            prev = node
-
-        l3 = None
-        if l1 is not None:
-            l3 = l1
-        elif l2 is not None:
-            l3 = l2
-
-        if l3 is not None:
-            while l3 is not None:
-                val += l3.val
-                node = ListNode(val % 10)
-                val /= 10
-                l3 = l3.next
-                if head is None:
-                    head = node
-                if prev is not None:
-                    prev.next = node
-                prev = node
-
-        if val > 0:
-            node = ListNode(val)
-            if prev is not None:
-                prev.next = node
-
-        return head
-
-def genListNode(nums):
-    head = None
-    node = None
-    prev = None
-    for i in nums:
-        node = ListNode(i)
-        if head is None:
-            head = node
-        if prev is not None:
-            prev.next = node
-        prev = node
-
-    return head
+        ptr = dummy = ListNode(0)
+        carry = 0
+        while l1 or l2 or carry:
+            if l1:
+                carry += l1.val
+                l1 = l1.next
+            if l2:
+                carry += l2.val
+                l2 = l2.next
+            carry, val = divmod(carry, 10)
+            ptr.next = ListNode(val)
+            ptr = ptr.next
+        return dummy.next
 
 def main():
-    l1 = genListNode([2, 4, 3])
-    l2 = genListNode([5, 6, 4])
+    l1 = ListNode.convert([2, 4, 6])
+    l2 = ListNode.convert([5, 6, 4])
     print l1
     print l2
 
-    sol = Solution()
-    l3 = sol.addTwoNumbers(l1, l2)
+    l3 = Solution().addTwoNumbers(l1, l2)
     print l3
 
 if __name__ == "__main__":
