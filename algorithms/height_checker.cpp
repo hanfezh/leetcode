@@ -22,7 +22,8 @@
 
 using std::vector;
 
-class Solution {
+// Sorting
+class Solution1 {
  public:
   int heightChecker(vector<int>& heights) {
     int num = 0;
@@ -36,6 +37,33 @@ class Solution {
     return num;
   }
 };
+
+// Counting sort
+class Solution2 {
+ public:
+  int heightChecker(vector<int>& heights) {
+    int num = 0;
+    vector<int> counts(101, 0);
+    for (const int h : heights) {
+      counts[h] += 1;
+    }
+
+    int i = 0;
+    for (const int h : heights) {
+      while (counts[i] == 0) {
+        i++;
+      }
+      if (i != h) {
+        num += 1;
+      }
+      counts[i] -= 1;
+    }
+
+    return num;
+  }
+};
+
+using Solution = Solution2;
 
 int main(int argc, char* argv[]) {
   vector<int> heights({1, 1, 4, 2, 1, 3});
