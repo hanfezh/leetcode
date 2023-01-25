@@ -26,7 +26,6 @@ class Solution {
   int findContentChildren(vector<int>& g, vector<int>& s) {
     int i = 0;
     int j = 0;
-    int n = 0;
 
     std::sort(g.begin(), g.end());
     std::sort(s.begin(), s.end());
@@ -34,13 +33,10 @@ class Solution {
     while (i < g.size() && j < s.size()) {
       if (s[j] >= g[i]) {
         i++;
-        j++;
-        n++;
-      } else {
-        j++;
       }
+      j++;
     }
-    return n;
+    return i;
   }
 };
 
