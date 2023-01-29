@@ -18,10 +18,12 @@
 #include <algorithm>
 #include <cstdio>
 #include <string>
+#include <unordered_map>
 
 using std::string;
+using std::unordered_map;
 
-class Solution {
+class Solution1 {
  public:
   int lengthOfLongestSubstring(string s) {
     int len = 0;
@@ -39,8 +41,31 @@ class Solution {
   }
 };
 
+// Hash table
+class Solution2 {
+ public:
+  int lengthOfLongestSubstring(string s) {
+    unordered_map<char, int> indices;
+    int len = 0;
+    int left = -1;
+    for (int i = 0; i < s.size(); i++) {
+      auto it = indices.find(s[i]);
+      if (it != indices.end() && it->second >= left) {
+        left = it->second;
+        it->second = i;
+      } else {
+        indices[s[i]] = i;
+      }
+      len = std::max(len, i - left);
+    }
+    return len;
+  }
+};
+
+using Solution = Solution2;
+
 int main(int argc, char* argv[]) {
-  string s = "abcabcbb";
+  string s = "abba";
   if (argc > 1) {
     s = argv[1];
   }
