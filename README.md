@@ -10,7 +10,7 @@
 | 6 | [ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion) | Medium | [C](./algorithms/zigzag_conversion.c) | `String` |
 | 7 | [Reverse Integer](https://leetcode.com/problems/reverse-integer) | Easy | [C++](./algorithms/reverse_integer.cpp) [Python](./algorithms/reverse_integer.py) | `Math` |
 | 8 | [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi) | Medium | [C++](./algorithms/atoi.cpp) [Python](./algorithms/atoi.py) | `Math` |
-| 9 | [Palindrome Number](https://leetcode.com/problems/palindrome-number) | Easy | [Python](./algorithms/palindrome_number.py) |
+| 9 | [Palindrome Number](https://leetcode.com/problems/palindrome-number) | Easy | [C++](./algorithms/palindrome_number.cpp) [Python](./algorithms/palindrome_number.py) | `Math` |
 | 10 | [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching) | Hard | [C++](./algorithms/regular_expression_matching.cpp) |
 | 11 | [Container With Most Water](https://leetcode.com/problems/container-with-most-water) | Medium | [C++](./algorithms/container_with_most_water.cpp) |
 | 12 | [Integer to Roman](https://leetcode.com/problems/integer-to-roman) | Medium | [C++](./algorithms/integer_to_roman.cpp) |
