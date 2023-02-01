@@ -35,6 +35,3 @@ class Solution:
             p = p.next
         p.next = left or right
         return dummy.next
-
-
-
