@@ -15,8 +15,10 @@
  *
  * =====================================================================================
  */
-#include <cstdio>
 #include <vector>
+
+#include "gmock/gmock.h"
+#include "gtest/gtest.h"
 
 using std::vector;
 
@@ -37,10 +39,9 @@ class Solution {
   }
 };
 
-int main(int argc, char* argv[]) {
+TEST(Solution, removeElement) {
   vector<int> nums = {3, 2, 2, 3};
   int val = 3;
   const int k = Solution().removeElement(nums, val);
-  printf("k = %d\n", k);
-  return 0;
+  EXPECT_EQ(k, 2);
 }

@@ -1,5 +1,29 @@
 # LeetCode
 
+## How to build C++?
+
+1. Install vcpkg
+
+```
+git clone https://github.com/microsoft/vcpkg
+./vcpkg/bootstrap-vcpkg.sh
+```
+
+2. Install deps gtest
+
+```
+./vcpkg/vcpkg install gtest
+```
+
+3. Build with cmake
+
+```
+cmake -B build -S . "-DCMAKE_TOOLCHAIN_FILE=$(pwd)/vcpkg/scripts/buildsystems/vcpkg.cmake"
+cmake --build build
+```
+
+## Problems & Solutions
+
 | No. | Title | Difficulty | Solutions | Topics |
 | - | ----- | ---------- | --------- | ---- |
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum) | Easy | [C++](./algorithms/two_sum.cpp) [Go](./algorithms/two_sum.go) | `Hash Table` |

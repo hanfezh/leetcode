@@ -1,12 +1,23 @@
 cmake_minimum_required(VERSION 3.0)
 
-add_executable(longest_substring longest_substring.cpp)
-add_executable(length_of_last_word length_of_last_word.cpp)
-add_executable(search_insert_position search_insert_position.cpp)
-add_executable(remove_element remove_element.cpp)
-add_executable(zigzag_conversion zigzag_conversion.cpp)
-add_executable(palindrome_number palindrome_number.cpp)
-add_executable(add_to_array_form add_to_array_form.cpp)
-add_executable(sorted_squares sorted_squares.cpp)
-add_executable(maximum_gap maximum_gap.cpp)
-add_executable(sort_list sort_list.cpp)
+find_package(GTest CONFIG REQUIRED)
+
+# file(GLOB TEST_SOURCES *.cpp)
+set(TEST_SOURCES
+    longest_substring.cpp
+    length_of_last_word.cpp
+    search_insert_position.cpp
+    remove_element.cpp
+    zigzag_conversion.cpp
+    palindrome_number.cpp
+    add_to_array_form.cpp
+    sorted_squares.cpp
+    maximum_gap.cpp
+    sort_list.cpp)
+
+foreach(source_file ${TEST_SOURCES})
+    # get_filename_component(source_file ${source_file} NAME)
+    string(REPLACE ".cpp" "" test_name ${source_file})
+    add_executable(${test_name} ${source_file})
+    target_link_libraries(${test_name} PRIVATE GTest::gmock GTest::gtest GTest::gmock_main GTest::gtest_main)
+endforeach(source_file ${TEST_SOURCES})

@@ -70,6 +70,6 @@ int main(int argc, char* argv[])
 {
     TreeNode* root = nullptr;
     auto values = Solution().rightSideView(root);
-    printf("Tree's height = %d\n", values.size());
+    printf("Tree's height = %lu\n", values.size());
     return 0;
 }
