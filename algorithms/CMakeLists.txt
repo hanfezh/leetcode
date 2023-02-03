@@ -6,6 +6,7 @@ find_package(GTest CONFIG REQUIRED)
 set(TEST_SOURCES
     add_to_array_form.cpp
     contains_duplicate.cpp
+    find_the_difference.cpp
     first_missing_positive.cpp
     longest_substring.cpp
     length_of_last_word.cpp
