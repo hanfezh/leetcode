@@ -29,7 +29,8 @@ using std::string;
 using std::tuple;
 using std::vector;
 
-class Solution {
+// Hash table
+class Solution1 {
  public:
   char findTheDifference(string s, string t) {
     array<int, 26> counts = {0};
@@ -46,12 +47,25 @@ class Solution {
   }
 };
 
+// Bit manipulation
+class Solution2 {
+ public:
+  char findTheDifference(string s, string t) {
+    char c = 0;
+    for (int i = 0; i < s.size(); i++) {
+      c ^= s[i] ^ t[i];
+    }
+    return c ^= t[t.size() - 1];
+  }
+};
+
 TEST(Solution, findTheDifference) {
   vector<tuple<string, string, char>> cases = {
       std::make_tuple(string("abcd"), string("abcde"), 'e'),
       std::make_tuple(string(""), string("y"), 'y'),
   };
   for (auto& c : cases) {
-    EXPECT_EQ(Solution().findTheDifference(std::get<0>(c), std::get<1>(c)), std::get<2>(c));
+    EXPECT_EQ(Solution1().findTheDifference(std::get<0>(c), std::get<1>(c)), std::get<2>(c));
+    EXPECT_EQ(Solution2().findTheDifference(std::get<0>(c), std::get<1>(c)), std::get<2>(c));
   }
 }
