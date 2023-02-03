@@ -17,9 +17,12 @@
  * =====================================================================================
  */
 #include <algorithm>
-#include <cstdio>
 #include <set>
+#include <utility>
 #include <vector>
+
+#include "gmock/gmock.h"
+#include "gtest/gtest.h"
 
 // Quick sort
 class Solution1 {
@@ -91,17 +94,16 @@ class Solution3 {
   }
 };
 
-using Solution = Solution1;
-
-int main(int argc, char* argv[]) {
-  std::vector<int> nums = {10, 7, 8, 9, 1, 5, 1};
-  if (argc > 2) {
-    nums.clear();
-    for (int i = 1; i < argc; i++) {
-      nums.push_back(atoi(argv[i]));
-    }
+TEST(Solution, containsDuplicate) {
+  std::vector<std::pair<std::vector<int>, bool>> cases = {
+      std::make_pair(std::vector<int>{1, 3, 2}, false),
+      std::make_pair(std::vector<int>{1, 2, 3, 1}, true),
+      std::make_pair(std::vector<int>{1, 2, 3, 4}, false),
+      std::make_pair(std::vector<int>{10, 7, 8, 9, 1, 5, 1}, true),
+  };
+  for (auto& c : cases) {
+    EXPECT_EQ(Solution1().containsDuplicate(c.first), c.second);
+    EXPECT_EQ(Solution2().containsDuplicate(c.first), c.second);
+    EXPECT_EQ(Solution3().containsDuplicate(c.first), c.second);
   }
-  auto is_dup = Solution().containsDuplicate(nums);
-  printf("Contains duplicate? %s\n", (is_dup ? "Yes" : "No"));
-  return 0;
 }

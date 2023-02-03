@@ -5,6 +5,7 @@ find_package(GTest CONFIG REQUIRED)
 # file(GLOB TEST_SOURCES *.cpp)
 set(TEST_SOURCES
     add_to_array_form.cpp
+    contains_duplicate.cpp
     first_missing_positive.cpp
     longest_substring.cpp
     length_of_last_word.cpp

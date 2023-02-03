@@ -73,21 +73,17 @@ class Solution2 {
   }
 };
 
-TEST(Solution1, firstMissingPositive) {
-  std::vector<int> nums = {1, 0, -1, 0, -2, 2};
-  const int fmp = Solution1().firstMissingPositive(nums);
-  EXPECT_EQ(fmp, 3);
-}
-
-TEST(Solution2, firstMissingPositive) {
+TEST(Solution, firstMissingPositive) {
   std::vector<std::pair<std::vector<int>, int>> cases = {
       std::make_pair(std::vector<int>{0, 3}, 1),
       std::make_pair(std::vector<int>{1, 2, 0}, 3),
       std::make_pair(std::vector<int>{3, 4, -1, 1}, 2),
       std::make_pair(std::vector<int>{7, 8, 9, 11}, 1),
       std::make_pair(std::vector<int>{1, 2, 3, 4}, 5),
+      std::make_pair(std::vector<int>{1, 0, -1, 0, -2, 2}, 3),
   };
   for (auto& c : cases) {
+    EXPECT_EQ(Solution1().firstMissingPositive(c.first), c.second);
     EXPECT_EQ(Solution2().firstMissingPositive(c.first), c.second);
   }
 }
