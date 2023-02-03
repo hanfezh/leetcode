@@ -4,16 +4,17 @@ find_package(GTest CONFIG REQUIRED)
 
 # file(GLOB TEST_SOURCES *.cpp)
 set(TEST_SOURCES
+    add_to_array_form.cpp
+    first_missing_positive.cpp
     longest_substring.cpp
     length_of_last_word.cpp
-    search_insert_position.cpp
-    remove_element.cpp
-    zigzag_conversion.cpp
-    palindrome_number.cpp
-    add_to_array_form.cpp
-    sorted_squares.cpp
     maximum_gap.cpp
-    sort_list.cpp)
+    palindrome_number.cpp
+    remove_element.cpp
+    search_insert_position.cpp
+    sorted_squares.cpp
+    sort_list.cpp
+    zigzag_conversion.cpp)
 
 foreach(source_file ${TEST_SOURCES})
     # get_filename_component(source_file ${source_file} NAME)

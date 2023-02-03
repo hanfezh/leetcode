@@ -65,7 +65,7 @@ cmake --build build
 | 38 | [Count and Say](https://leetcode.com/problems/count-and-say) | Easy | [C++](./algorithms/count_and_say.cpp) | `String` |
 | 39 | [Combination Sum](https://leetcode.com/problems/combination-sum) | Medium | [C++](./algorithms/combination_sum.cpp) |
 | 40 | [Combination Sum II](https://leetcode.com/problems/combination-sum-ii) | Medium | [C++](./algorithms/combination_sum2.cpp) |
-| 41 | [First Missing Positive](https://leetcode.com/problems/first-missing-positive) | Hard | [C++](./algorithms/first_missing_positive.cpp) |
+| 41 | [First Missing Positive](https://leetcode.com/problems/first-missing-positive) | Hard | [C++](./algorithms/first_missing_positive.cpp) | `Array` `Hash Table` |
 | 42 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water) | Hard | [C++](./algorithms/trapping_rain_water.cpp) | `Dynamic Programming` |
 | 43 | [Multiply Strings](https://leetcode.com/problems/multiply-strings) | Medium | [C++](./algorithms/multiply_strings.cpp) |
 | 44 | [Wildcard Matching](https://leetcode.com/problems/wildcard-matching) | Hard | [C++](./algorithms/wildcard_matching.cpp) | `Backtracking` |
