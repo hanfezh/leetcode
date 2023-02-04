@@ -3,8 +3,8 @@
  *
  *       Filename:  sort_colors.cpp
  *
- *    Description:  75. Sort Colors. Given an array with n objects colored red, white or 
- *                  blue, sort them in-place so that objects of the same color are 
+ *    Description:  75. Sort Colors. Given an array with n objects colored red, white or
+ *                  blue, sort them in-place so that objects of the same color are
  *                  adjacent, with the colors in the order red, white and blue.
  *
  *        Version:  1.0
@@ -13,71 +13,57 @@
  *       Compiler:  gcc
  *
  *         Author:  Zhu Xianfeng (), xianfeng.zhu@gmail.com
- *   Organization:  
+ *   Organization:
  *
  * =====================================================================================
  */
-#include <stdio.h>
-#include <stdlib.h>
+#include <algorithm>
 #include <vector>
 
-class Solution
-{
-public:
-    enum Color
-    {
-        Red   = 0,
-        White = 1,
-        Blue  = 2,
-    };
+#include "gmock/gmock.h"
+#include "gtest/gtest.h"
 
-    void sortColors(std::vector<int>& nums)
-    {
-        int i = 0;
-        int head = 0;
-        int tail = nums.size() - 1;
+// Two pointers
+class Solution {
+ public:
+  enum Color {
+    Red = 0,
+    White = 1,
+    Blue = 2,
+  };
 
-        for (int i = 0; i < nums.size(); i++)
-        {
-            // Swap current blue and right red/white
-            while (nums[i] == Blue && i < tail)
-            {
-                if (nums[tail] != Blue)
-                {
-                    swapColor(&nums[i], &nums[tail]);
-                }
-                tail--;
-            }
+  void sortColors(std::vector<int>& nums) {
+    int left = 0;
+    int right = nums.size() - 1;
 
-            // Swap current red and left white/blue
-            while (nums[i] == Red && i > head)
-            {
-                if (nums[head] != Red)
-                {
-                    swapColor(&nums[i], &nums[head]);
-                }
-                head++;
-            }
+    for (int i = left; i <= right; i++) {
+      // Swap current blue and right red/white
+      while (nums[i] == Blue && i < right) {
+        if (nums[right] != Blue) {
+          std::swap(nums[i], nums[right]);
         }
-    }
+        right--;
+      }
 
-private:
-    void swapColor(int* a, int* b)
-    {
-        int c = *a;
-        *a = *b;
-        *b = c;
+      // Swap current red and left white/blue
+      while (nums[i] == Red && i > left) {
+        if (nums[left] != Red) {
+          std::swap(nums[i], nums[left]);
+        }
+        left++;
+      }
     }
+  }
 };
 
-int main(int argc, char* argv[])
-{
-    std::vector<int> nums = {2, 0, 2, 1, 1, 0};
-    Solution().sortColors(nums);
-    for (auto n: nums)
-    {
-        printf("%d ", n);
-    }
-    printf("\n");
-    return 0;
+TEST(Solution, sortColors) {
+  std::vector<std::pair<std::vector<int>, std::initializer_list<int>>> cases = {
+      std::make_pair(std::vector<int>{2, 0, 1}, std::initializer_list<int>{0, 1, 2}),
+      std::make_pair(std::vector<int>{2, 0, 2, 1, 1, 0},
+                     std::initializer_list<int>{0, 0, 1, 1, 2, 2}),
+  };
+  for (auto& c : cases) {
+    Solution().sortColors(c.first);
+    EXPECT_THAT(c.first, testing::ElementsAreArray(c.second));
+  }
 }

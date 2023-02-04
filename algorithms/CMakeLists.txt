@@ -16,6 +16,7 @@ set(TEST_SOURCES
     remove_element.cpp
     search_insert_position.cpp
     sorted_squares.cpp
+    sort_colors.cpp
     sort_list.cpp
     zigzag_conversion.cpp)
 
