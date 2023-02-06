@@ -14,6 +14,7 @@ set(TEST_SOURCES
     maximum_gap.cpp
     palindrome_number.cpp
     remove_element.cpp
+    same_tree.cpp
     search_insert_position.cpp
     sorted_squares.cpp
     sort_colors.cpp
