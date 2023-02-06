@@ -16,8 +16,12 @@
  *
  * =====================================================================================
  */
-#include <cstdio>
 #include <queue>
+#include <tuple>
+#include <vector>
+
+#include "gmock/gmock.h"
+#include "gtest/gtest.h"
 
 struct TreeNode {
   int val;
@@ -26,6 +30,16 @@ struct TreeNode {
   TreeNode() : val(0), left(nullptr), right(nullptr) {}
   TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
   TreeNode(int x, TreeNode* left, TreeNode* right) : val(x), left(left), right(right) {}
+
+  static TreeNode* convert(const std::vector<int*>& nums, const int i = 0) {
+    if (i >= nums.size() || nums[i] == nullptr) {
+      return nullptr;
+    }
+    TreeNode* root = new TreeNode(*nums[i]);
+    root->left = convert(nums, 2 * i + 1);
+    root->right = convert(nums, 2 * i + 2);
+    return root;
+  }
 };
 
 // Recursion
@@ -81,10 +95,19 @@ class Solution2 {
   }
 };
 
-int main(int argc, char* argv[]) {
-  TreeNode* a = nullptr;
-  TreeNode* b = nullptr;
-  auto is_same = Solution2().isSameTree(a, b);
-  printf("Same tree? %s\n", (is_same ? "Yes" : "No"));
-  return 0;
+TEST(Solution, isSameTree) {
+#define _N(x) new int(x)
+  std::vector<std::tuple<TreeNode*, TreeNode*, bool>> cases = {
+      std::make_tuple(TreeNode::convert(std::vector<int*>{_N(1), _N(2), _N(3)}),
+                      TreeNode::convert(std::vector<int*>{_N(1), _N(2), _N(3)}), true),
+      std::make_tuple(TreeNode::convert(std::vector<int*>{_N(1), _N(1), _N(2)}),
+                      TreeNode::convert(std::vector<int*>{_N(1), _N(2), _N(1)}), false),
+      std::make_tuple(TreeNode::convert(std::vector<int*>{_N(1), nullptr, _N(2)}),
+                      TreeNode::convert(std::vector<int*>{_N(1), nullptr, _N(2)}), true),
+  };
+  for (auto& c : cases) {
+    EXPECT_EQ(Solution1().isSameTree(std::get<0>(c), std::get<1>(c)), std::get<2>(c));
+    EXPECT_EQ(Solution2().isSameTree(std::get<0>(c), std::get<1>(c)), std::get<2>(c));
+  }
+#undef _N
 }
