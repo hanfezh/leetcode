@@ -19,6 +19,7 @@ set(TEST_SOURCES
     sorted_squares.cpp
     sort_colors.cpp
     sort_list.cpp
+    two_sum.cpp
     zigzag_conversion.cpp)
 
 foreach(source_file ${TEST_SOURCES})
