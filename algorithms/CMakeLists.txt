@@ -12,6 +12,7 @@ set(TEST_SOURCES
     longest_substring.cpp
     length_of_last_word.cpp
     maximum_gap.cpp
+    maximum_profit.cpp
     palindrome_number.cpp
     remove_element.cpp
     same_tree.cpp
