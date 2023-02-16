@@ -20,6 +20,7 @@ set(TEST_SOURCES
     majority_element.cpp
     maximum_gap.cpp
     maximum_profit.cpp
+    middle_node.cpp
     palindrome_number.cpp
     remove_element.cpp
     same_tree.cpp
