@@ -6,6 +6,7 @@ find_package(GTest CONFIG REQUIRED)
 set(TEST_SOURCES
     add_to_array_form.cpp
     balanced_binary_tree.cpp
+    climbing_stairs.cpp
     contains_duplicate.cpp
     lowest_common_ancestor_bst.cpp
     find_lhs.cpp
