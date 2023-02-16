@@ -123,7 +123,7 @@ cmake --build build
 | 107 | [Binary Tree Level Order Traversal II](https://leetcode.com/problems/binary-tree-level-order-traversal-ii) | Easy | [C++](./algorithms/binary_tree_level_order_traversal2.cpp) | `Tree` |
 | 108 | [Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree) | Easy | [C++](./algorithms/convert_sorted_array_to_bst.cpp) | `Tree` |
 | 109 | [Convert Sorted List to Binary Search Tree](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree) | Medium | [C++](./algorithms/convert_sorted_list_to_bst.cpp) | `Tree` |
-| 110 | [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree) | Easy | [C++](./algorithms/balanced_binary_tree.cpp) | |
+| 110 | [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree) | Easy | [C++](./algorithms/balanced_binary_tree.cpp) | `Tree` `DFS` |
 | 111 | [Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree) | Easy | [C++](./algorithms/minimum_depth_of_binary_tree.cpp) | `Tree` |
 | 112 | [Path Sum](https://leetcode.com/problems/path-sum) | Easy | [C++](./algorithms/path_sum.cpp) [Python](./algorithms/path_sum.py) | `Tree` `DFS` |
 | 113 | [Path Sum II](https://leetcode.com/problems/path-sum-ii) | Medium | [Python](./algorithms/path_sum2.py) |

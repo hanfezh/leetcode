@@ -5,6 +5,7 @@ find_package(GTest CONFIG REQUIRED)
 # file(GLOB TEST_SOURCES *.cpp)
 set(TEST_SOURCES
     add_to_array_form.cpp
+    balanced_binary_tree.cpp
     contains_duplicate.cpp
     lowest_common_ancestor_bst.cpp
     find_lhs.cpp
