@@ -205,6 +205,7 @@ cmake --build build
 | 228 | [Summary Ranges](https://leetcode.com/problems/summary-ranges/) | Easy | [Python3](./algorithms/summary_ranges.py) | `Array` |
 | 232 | [Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks) | Easy | [C++](./algorithms/implement_queue_using_stacks.cpp) | `Stack` `Queue` |
 | 234 | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list) | Medium | [C++](./algorithms/palindrome_linked_list.cpp) | `Linked List` `Two Pointers` |
+| 235 | [Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree) | Easy | [C++](./algorithms/lowest_common_ancestor_bst.cpp) | `Tree` `DFS` |
 | 236 | [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree) | Medium | [C++](./algorithms/lowest_common_ancestor.cpp) [Go](./algorithms/lowest_common_ancestor.go) | `Tree` `DFS` |
 | 237 | [Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list) | Easy | [C++](./algorithms/delete_node_in_linked_list.cpp) | `Linked List` |
 | 242 | [Valid Anagram](https://leetcode.com/problems/valid-anagram) | Easy | [C++](./algorithms/valid_anagram.cpp) | `String` `Hash Table` |
