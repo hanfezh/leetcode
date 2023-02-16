@@ -171,7 +171,7 @@ cmake --build build
 | 165 | [Compare Version Numbers](https://leetcode.com/problems/compare-version-numbers) | Medium | [C++](./algorithms/compare_version_numbers.cpp) [Python3](./algorithms/compare_version_numbers.py) | `String` |
 | 167 | [Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted) | Easy | [C++](./algorithms/two_sum2.cpp) |
 | 168 | [Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title) | Easy | [C++](./algorithms/excel_sheet_column_title.cpp) | `Math` |
-| 169 | [Majority Element](https://leetcode.com/problems/majority-element) | Easy | [C++](./algorithms/majority_element.cpp) | `Array` |
+| 169 | [Majority Element](https://leetcode.com/problems/majority-element) | Easy | [C++](./algorithms/majority_element.cpp) | `Array` `Sorting` `Hash Table` |
 | 171 | [Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number/) | Easy | [C++](./algorithms/excel_sheet_column_number.cpp) | `Math` `String` |
 | 173 | [Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator) | Medium | [C++](./algorithms/binary_search_tree_iterator.cpp) | `Tree` `Stack` |
 | 175 | [Combine Two Tables](https://leetcode.com/problems/combine-two-tables) | Easy | [MySQL](./database/combine_two_tables.sql) | |

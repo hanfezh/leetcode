@@ -16,6 +16,7 @@ set(TEST_SOURCES
     longest_palindrome.cpp
     longest_substring.cpp
     length_of_last_word.cpp
+    majority_element.cpp
     maximum_gap.cpp
     maximum_profit.cpp
     palindrome_number.cpp
