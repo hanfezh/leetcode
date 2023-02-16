@@ -9,6 +9,7 @@ set(TEST_SOURCES
     find_lhs.cpp
     find_the_difference.cpp
     first_missing_positive.cpp
+    flood_fill.cpp
     longest_substring.cpp
     length_of_last_word.cpp
     maximum_gap.cpp

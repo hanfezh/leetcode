@@ -138,7 +138,7 @@ cmake --build build
 | 122 | [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii) | Easy | [C++](./algorithms/maximum_profit2.cpp) | `Array` |
 | 123 | [Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii) | Hard | [C++](./algorithms/maximum_profit3.cpp) |
 | 124 | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum) | Hard | [C++](./algorithms/binary_tree_maximum_path_sum.cpp) | `Tree` `DFS` |
-| 125 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome) | Easy | [C++](./algorithms/valid_palindrome.cpp) | | `Two Pointers` |
+| 125 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome) | Easy | [C++](./algorithms/valid_palindrome.cpp) | `String` `Two Pointers` |
 | 126 | [Word Ladder II](https://leetcode.com/problems/word-ladder-ii) | Hard | [C++](./algorithms/word_ladder2.cpp) | `BFS` |
 | 127 | [Word Ladder](https://leetcode.com/problems/word-ladder) | Medium | [C++](./algorithms/word_ladder.cpp) | `BFS` |
 | 128 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence) | Medium | [C++](./algorithms/longest_consecutive_sequence.cpp) | `Array` |
@@ -207,7 +207,7 @@ cmake --build build
 | 234 | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list) | Medium | [C++](./algorithms/palindrome_linked_list.cpp) | `Linked List` `Two Pointers` |
 | 236 | [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree) | Medium | [C++](./algorithms/lowest_common_ancestor.cpp) [Go](./algorithms/lowest_common_ancestor.go) | `Tree` `DFS` |
 | 237 | [Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list) | Easy | [C++](./algorithms/delete_node_in_linked_list.cpp) | `Linked List` |
-| 242 | [Valid Anagram](https://leetcode.com/problems/valid-anagram) | Easy | [C++](./algorithms/valid_anagram.cpp) | `Hash Table` |
+| 242 | [Valid Anagram](https://leetcode.com/problems/valid-anagram) | Easy | [C++](./algorithms/valid_anagram.cpp) | `String` `Hash Table` |
 | 257 | [Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths) | Easy | [C++](./algorithms/binary_tree_paths.cpp) |
 | 258 | [Add Digits](https://leetcode.com/problems/add-digits/) | Easy | [Python3](./algorithms/add_digits.py) | `Math` |
 | 263 | [Ugly Number](https://leetcode.com/problems/ugly-number) | Easy | [Python](./algorithms/ugly_number.py) |
@@ -273,11 +273,12 @@ cmake --build build
 | 658 | [Find K Closest Elements](https://leetcode.com/problems/find-k-closest-elements) | Medium | [C++](./algorithms/find_k_closest_elements.cpp) | `Binary Search` |
 | 662 | [Maximum Width of Binary Tree](https://leetcode.com/problems/maximum-width-of-binary-tree/) | Medium | [C++](./algorithms/maximum_width_of_binary_tree.cpp) | `Binary Tree` `BFS` |
 | 680 | [Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii) | Easy | [C++](./algorithms/valid_palindrome2.cpp) | |
-| 704 | [Binary Search](https://leetcode.com/problems/binary-search) | Easy | [C++](./algorithms/binary_search.cpp) | `Binary Search` |
+| 704 | [Binary Search](https://leetcode.com/problems/binary-search) | Easy | [C++](./algorithms/binary_search.cpp) | `Array` `Binary Search` |
 | 705 | [Design HashSet](https://leetcode.com/problems/design-hashset) | Easy | [C++](./algorithms/design_hashset.cpp) | `Bit Manipulation` `Hash Table` |
 | 706 | [Design HashMap](https://leetcode.com/problems/design-hashmap) | Easy | [C++](./algorithms/design_hashmap.cpp) | `Array` `Hash Table` |
 | 707 | [Design Linked List](https://leetcode.com/problems/design-linked-list) | Medium | [C++](./algorithms/design_linked_list.cpp) | `Linked List` |
 | 719 | [Find K-th Smallest Pair Distance](https://leetcode.com/problems/find-k-th-smallest-pair-distance) | Hard | [C++](./algorithms/find_kth_smallest_pair_distance.cpp) | `Binary Search` |
+| 733 | [Flood Fill](https://leetcode.com/problems/flood-fill/) | Easy | [C++](./algorithms/flood_fill.cpp) | `Array` `DFS` |
 | 739 | [Daily Temperatures](https://leetcode.com/problems/daily-temperatures) | Medium | [C++](./algorithms/daily_temperatures.cpp) | `Stack` |
 | 744 | [Find Smallest Letter Greater Than Target](https://leetcode.com/problems/find-smallest-letter-greater-than-target) | Easy | [C++](./algorithms/find_smallest_letter.cpp) | `Binary Search` |
 | 765 | [Couples Holding Hands](https://leetcode.com/problems/couples-holding-hands) | Hard | [C++](./algorithms/couples_holding_hands.cpp) | `Union Find` |
