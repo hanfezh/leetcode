@@ -9,6 +9,7 @@ set(TEST_SOURCES
     balanced_binary_tree.cpp
     climbing_stairs.cpp
     contains_duplicate.cpp
+    diameter_of_binary_tree.cpp
     lowest_common_ancestor_bst.cpp
     find_lhs.cpp
     find_the_difference.cpp

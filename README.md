@@ -74,7 +74,7 @@ cmake --build build
 | 48 | [Rotate Image](https://leetcode.com/problems/rotate-image) | Medium | [C++](./algorithms/rotate_image.cpp) | `Array` |
 | 49 | [Group Anagrams](https://leetcode.com/problems/group-anagrams) | Medium | [C++](./algorithms/group_anagrams.cpp) | `String` |
 | 50 | [Pow(x, n)](https://leetcode.com/problems/powx-n) | Medium | [C++](./algorithms/pow.cpp) | `Binary Search` |
-| 53 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray) | Easy | [C++](./algorithms/maximum_subarray.cpp) | `Array` |
+| 53 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray) | Medium | [C++](./algorithms/maximum_subarray.cpp) | `Array` |
 | 54 | [Spiral Matrix](https://leetcode.com/problems/spiral-matrix) | Medium | [C++](./algorithms/spiral_matrix.cpp) | `Array` |
 | 55 | [Jump Game](https://leetcode.com/problems/jump-game) | Medium | [C++](./algorithms/jump_game.cpp) | `Dynamic Programming` |
 | 56 | [Merge Intervals](https://leetcode.com/problems/merge-intervals) | Medium | [C++](./algorithms/merge_intervals.cpp) | |
@@ -264,6 +264,7 @@ cmake --build build
 | 524 | [Longest Word in Dictionary through Deleting](https://leetcode.com/problems/longest-word-in-dictionary-through-deleting) | Medium | [C++](./algorithms/longest_word_through_deleting.cpp) | `Sorting` `Two Pointers` |
 | 540 | [Single Element in a Sorted Array](https://leetcode.com/problems/single-element-in-a-sorted-array) | Medium | [C++](./algorithms/single_non_duplicate.cpp) | `Bit Manipulation` `Binary Search` |
 | 541 | [Reverse String II](https://leetcode.com/problems/reverse-string-ii) | Easy | [C++](./algorithms/reverse_string2.cpp) | |
+| 543 | [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/) | Easy | [C++](./algorithms/diameter_of_binary_tree.cpp) | `Tree` `DFS` |
 | 560 | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k) | Medium | [C++](./algorithms/subarray_sum_equals_k.cpp) | `Array` |
 | 594 | [Longest Harmonious Subsequence](https://leetcode.com/problems/longest-harmonious-subsequence/) | Easy | [C++](./algorithms/find_lhs.cpp) | `Hash Table` |
 | 599 | [Minimum Index Sum of Two Lists](https://leetcode.com/problems/minimum-index-sum-of-two-lists) | Easy | [C++](./algorithms/minimum_index_sum.cpp) |
