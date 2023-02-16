@@ -4,6 +4,7 @@ find_package(GTest CONFIG REQUIRED)
 
 # file(GLOB TEST_SOURCES *.cpp)
 set(TEST_SOURCES
+    add_binary.cpp
     add_to_array_form.cpp
     balanced_binary_tree.cpp
     climbing_stairs.cpp
