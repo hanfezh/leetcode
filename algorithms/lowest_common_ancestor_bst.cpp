@@ -25,7 +25,8 @@ struct TreeNode {
   TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
 };
 
-class Solution {
+// Recursion
+class Solution1 {
  public:
   TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
     if (root == nullptr || root == p || root == q) {
@@ -41,7 +42,34 @@ class Solution {
   }
 };
 
+// Iteration
+class Solution2 {
+ public:
+  TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
+    if (root == nullptr) {
+      return root;
+    }
+
+    if (p->val > q->val) {
+      std::swap(p, q);
+    }
+
+    TreeNode* cur = root;
+    while (cur != nullptr) {
+      if (cur->val > p->val && cur->val > q->val) {
+        cur = cur->left;
+      } else if (cur->val < p->val && cur->val < q->val) {
+        cur = cur->right;
+      } else {
+        break;
+      }
+    }
+    return cur;
+  }
+};
+
 TEST(Solution, lowestCommonAncestor) {
   TreeNode* root = nullptr;
-  EXPECT_EQ(Solution().lowestCommonAncestor(root, nullptr, nullptr), nullptr);
+  EXPECT_EQ(Solution1().lowestCommonAncestor(root, nullptr, nullptr), nullptr);
+  EXPECT_EQ(Solution2().lowestCommonAncestor(root, nullptr, nullptr), nullptr);
 }
