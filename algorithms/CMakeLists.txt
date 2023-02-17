@@ -10,14 +10,15 @@ set(TEST_SOURCES
     climbing_stairs.cpp
     contains_duplicate.cpp
     diameter_of_binary_tree.cpp
-    lowest_common_ancestor_bst.cpp
     find_lhs.cpp
     find_the_difference.cpp
     first_missing_positive.cpp
     flood_fill.cpp
+    insert_interval.cpp
     longest_palindrome.cpp
     longest_substring.cpp
     length_of_last_word.cpp
+    lowest_common_ancestor_bst.cpp
     majority_element.cpp
     maximum_gap.cpp
     maximum_profit.cpp

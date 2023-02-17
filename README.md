@@ -77,7 +77,7 @@ cmake --build build
 | 53 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray) | Medium | [C++](./algorithms/maximum_subarray.cpp) | `Array` |
 | 54 | [Spiral Matrix](https://leetcode.com/problems/spiral-matrix) | Medium | [C++](./algorithms/spiral_matrix.cpp) | `Array` |
 | 55 | [Jump Game](https://leetcode.com/problems/jump-game) | Medium | [C++](./algorithms/jump_game.cpp) | `Dynamic Programming` |
-| 56 | [Merge Intervals](https://leetcode.com/problems/merge-intervals) | Medium | [C++](./algorithms/merge_intervals.cpp) | |
+| 56 | [Merge Intervals](https://leetcode.com/problems/merge-intervals) | Medium | [C++](./algorithms/merge_intervals.cpp) | `Array` `Sorting` |
 | 57 | [Insert Interval](https://leetcode.com/problems/insert-interval) | Medium | [C++](./algorithms/insert_interval.cpp) | `Array` |
 | 58 | [Length of Last Word](https://leetcode.com/problems/length-of-last-word) | Easy | [C++](./algorithms/length_of_last_word.cpp) | `String` |
 | 59 | [Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii) | Medium | [C++](./algorithms/spiral_matrix2.cpp) | `Array` |
