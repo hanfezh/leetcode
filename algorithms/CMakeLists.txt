@@ -25,6 +25,7 @@ set(TEST_SOURCES
     middle_node.cpp
     min_stack.cpp
     palindrome_number.cpp
+    product_except_self.cpp
     remove_element.cpp
     same_tree.cpp
     search_insert_position.cpp
