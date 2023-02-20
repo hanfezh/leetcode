@@ -160,6 +160,7 @@ cmake --build build
 | 147 | [Insertion Sort List](https://leetcode.com/problems/insertion-sort-list) | Medium | [C](./algorithms/insertion_sort_list.c) |
 | 148 | [Sort List](https://leetcode.com/problems/sort-list) | Medium | [C++](./algorithms/sort_list.cpp) [Python3](./algorithms/sort_list.py) | `Sorting` `Merge Sort` |
 | 149 | [Max Points on a Line](https://leetcode.com/problems/max-points-on-a-line) | Hard | [C++](./algorithms/max_points.cpp) | `Math` |
+| 150 | [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/) | Medium | [C++](./algorithms/eval_rpn.cpp) | `Stack` |
 | 151 | [Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string) | Medium | [C++](./algorithms/reverse_words.cpp) | |
 | 152 | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray) | Medium | [C++](./algorithms/maximum_product_subarray.cpp) | `Dynamic Programming` |
 | 153 | [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array) | Medium | [C](./algorithms/find_minimum.c) [C++](./algorithms/find_minimum.cpp) | `Binary Search` |

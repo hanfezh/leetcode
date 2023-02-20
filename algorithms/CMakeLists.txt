@@ -10,6 +10,7 @@ set(TEST_SOURCES
     climbing_stairs.cpp
     contains_duplicate.cpp
     diameter_of_binary_tree.cpp
+    eval_rpn.cpp
     find_lhs.cpp
     find_the_difference.cpp
     first_missing_positive.cpp
