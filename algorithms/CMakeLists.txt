@@ -16,6 +16,7 @@ set(TEST_SOURCES
     first_missing_positive.cpp
     flood_fill.cpp
     insert_interval.cpp
+    k_closest_points.cpp
     longest_palindrome.cpp
     longest_substring.cpp
     length_of_last_word.cpp

@@ -58,7 +58,7 @@ cmake --build build
 | 30 | [Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words) | Hard | [C++](./algorithms/substring_with_concatenation_words.cpp) | `Hash Table` |
 | 31 | [Next Permutation](https://leetcode.com/problems/next-permutation) | Medium | [C++](./algorithms/next_permutation.cpp) |
 | 32 | [Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses) | Hard | [C++](./algorithms/longest_valid_parentheses.cpp) | `Stack` |
-| 33 | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array) | Medium | [C++](./algorithms/search_in_rotated_sorted_array.cpp) [Go](./algorithms/search_in_rotated_sorted_array.go) |
+| 33 | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array) | Medium | [C++](./algorithms/search_in_rotated_sorted_array.cpp) [Go](./algorithms/search_in_rotated_sorted_array.go) | `Array` `Binary Search` |
 | 34 | [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array) | Medium | [C++](./algorithms/position_in_sorted_array.cpp) |
 | 35 | [Search Insert Position](https://leetcode.com/problems/search-insert-position) | Easy | [C++](./algorithms/search_insert_position.cpp) | `Array` `Binary Search` |
 | 36 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku) | Medium | [C++](./algorithms/valid_sudoku.cpp) | `Hash Table` |
@@ -294,6 +294,7 @@ cmake --build build
 | 899 | [Orderly Queue](https://leetcode.com/problems/orderly-queue) | Hard | [C++](./algorithms/orderly_queue.cpp) | `Math` `String` |
 | 912 | [Sort an Array](https://leetcode.com/problems/sort-an-array) | Medium | [C++](./algorithms/sort_array.cpp) | `Array` `Merge Sort` |
 | 965 | [Univalued Binary Tree](https://leetcode.com/problems/univalued-binary-tree) | Easy | [C++](./algorithms/univalued_binary_tree.cpp) | `BFS` |
+| 973 | [K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin/) | Medium | [C++](./algorithms/k_closest_points.cpp) | `Array` `Sorting` |
 | 977 | [Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/description/) | Easy | [C++](./algorithms/sorted_squares.cpp) | `Array` `Two Pointers` |
 | 989 | [Add to Array-Form of Integer](https://leetcode.com/problems/add-to-array-form-of-integer/) | Easy | [C++](./algorithms/add_to_array_form.cpp) | `Array` `Math` |
 | 993 | [Cousins in Binary Tree](https://leetcode.com/problems/cousins-in-binary-tree) | Easy | [C++](./algorithms/cousins_in_binary_tree.cpp) | `Tree` `DFS` |
