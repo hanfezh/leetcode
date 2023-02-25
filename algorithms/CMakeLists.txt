@@ -29,6 +29,7 @@ set(TEST_SOURCES
     min_stack.cpp
     palindrome_number.cpp
     product_except_self.cpp
+    recover_binary_search_tree.cpp
     remove_element.cpp
     same_tree.cpp
     search_insert_position.cpp
