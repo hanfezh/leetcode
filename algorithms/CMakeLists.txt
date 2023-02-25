@@ -7,6 +7,7 @@ set(TEST_SOURCES
     add_binary.cpp
     add_to_array_form.cpp
     balanced_binary_tree.cpp
+    binary_tree_tilt.cpp
     climbing_stairs.cpp
     contains_duplicate.cpp
     diameter_of_binary_tree.cpp
