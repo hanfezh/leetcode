@@ -10,6 +10,7 @@ set(TEST_SOURCES
     binary_tree_tilt.cpp
     climbing_stairs.cpp
     contains_duplicate.cpp
+    count_complete_tree_nodes.cpp
     diameter_of_binary_tree.cpp
     eval_rpn.cpp
     find_lhs.cpp
