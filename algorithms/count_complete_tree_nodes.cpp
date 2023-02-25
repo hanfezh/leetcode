@@ -42,12 +42,39 @@ struct TreeNode {
   }
 };
 
-// Depth first search, O(logN)
-class Solution {
+// Depth first search, O(N)
+class Solution1 {
  public:
   int countNodes(TreeNode* root) {
     if (root == nullptr) {
       return 0;
+    }
+    return (1 + countNodes(root->left) + countNodes(root->right));
+  }
+};
+
+// Depth first search, O(logN*logN)
+class Solution2 {
+ public:
+  int countNodes(TreeNode* root) {
+    if (root == nullptr) {
+      return 0;
+    }
+
+    TreeNode* left = root->left;
+    TreeNode* right = root->right;
+    int lc = 1;
+    int rc = 1;
+    while (left != nullptr) {
+      lc++;
+      left = left->left;
+    }
+    while (right != nullptr) {
+      rc++;
+      right = right->right;
+    }
+    if (lc == rc) {
+      return ((1 << lc) - 1);
     }
     return (1 + countNodes(root->left) + countNodes(root->right));
   }
@@ -63,7 +90,8 @@ TEST(Solution, countNodes) {
                      6),
   };
   for (auto& c : cases) {
-    EXPECT_EQ(Solution().countNodes(c.first), c.second);
+    EXPECT_EQ(Solution1().countNodes(c.first), c.second);
+    EXPECT_EQ(Solution2().countNodes(c.first), c.second);
   }
 #undef _N
 }
