@@ -28,6 +28,7 @@ set(TEST_SOURCES
     maximum_gap.cpp
     maximum_profit.cpp
     middle_node.cpp
+    min_add_to_make_valid.cpp
     min_stack.cpp
     palindrome_number.cpp
     product_except_self.cpp
