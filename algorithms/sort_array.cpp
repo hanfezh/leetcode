@@ -85,6 +85,38 @@ class Solution2 {
   }
 };
 
+// Heap sort
+class Solution3 {
+ public:
+  std::vector<int> sortArray(std::vector<int>& nums) {
+    for (int i = (nums.size() - 2) / 2; i >= 0; i--) {
+      heapifyDown(nums, nums.size(), i);
+    }
+    for (int i = nums.size() - 1; i > 0; i--) {
+      std::swap(nums[i], nums[0]);
+      heapifyDown(nums, i, 0);
+    }
+    return nums;
+  }
+
+ private:
+  void heapifyDown(std::vector<int>& nums, int size, int i) {
+    const int l = i * 2 + 1;
+    const int r = i * 2 + 2;
+    int m = i;
+    if (l < size && nums[m] < nums[l]) {
+      m = l;
+    }
+    if (r < size && nums[m] < nums[r]) {
+      m = r;
+    }
+    if (i != m) {
+      std::swap(nums[i], nums[m]);
+      heapifyDown(nums, size, m);
+    }
+  }
+};
+
 TEST(Solution, sortArray) {
   std::vector<std::vector<int>> cases = {
       std::vector<int>{1},
@@ -103,5 +135,9 @@ TEST(Solution, sortArray) {
     std::vector<int> c2 = c;
     Solution2().sortArray(c2);
     EXPECT_THAT(c2, testing::ElementsAreArray(nums));
+
+    std::vector<int> c3 = c;
+    Solution3().sortArray(c3);
+    EXPECT_THAT(c3, testing::ElementsAreArray(nums));
   }
 }
