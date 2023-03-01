@@ -37,6 +37,7 @@ set(TEST_SOURCES
     same_tree.cpp
     search_insert_position.cpp
     sorted_squares.cpp
+    sort_array.cpp
     sort_colors.cpp
     sort_list.cpp
     two_sum.cpp

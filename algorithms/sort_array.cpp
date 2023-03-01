@@ -3,8 +3,10 @@
 // Author: xianfeng.zhu@gmail.com
 
 #include <algorithm>
-#include <cstdio>
 #include <vector>
+
+#include "gmock/gmock.h"
+#include "gtest/gtest.h"
 
 // Merge sort
 class Solution1 {
@@ -83,14 +85,23 @@ class Solution2 {
   }
 };
 
-using Solution = Solution1;
+TEST(Solution, sortArray) {
+  std::vector<std::vector<int>> cases = {
+      std::vector<int>{1},
+      std::vector<int>{1, 2, 3},
+      std::vector<int>{5, 2, 3, 1},
+      std::vector<int>{5, 1, 1, 2, 0, 0},
+  };
+  for (auto& c : cases) {
+    std::vector<int> nums = c;
+    std::sort(nums.begin(), nums.end());
 
-int main(int argc, char* argv[]) {
-  std::vector<int> nums = {5, 2, 3, 1};
-  Solution().sortArray(nums);
-  for (const int val : nums) {
-    printf("%d ", val);
+    std::vector<int> c1 = c;
+    Solution1().sortArray(c1);
+    EXPECT_THAT(c1, testing::ElementsAreArray(nums));
+
+    std::vector<int> c2 = c;
+    Solution2().sortArray(c2);
+    EXPECT_THAT(c2, testing::ElementsAreArray(nums));
   }
-  printf("\n");
-  return 0;
 }
