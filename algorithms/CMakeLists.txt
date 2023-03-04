@@ -36,6 +36,7 @@ set(TEST_SOURCES
     recover_binary_search_tree.cpp
     remove_element.cpp
     same_tree.cpp
+    sample_stats.cpp
     search_insert_position.cpp
     sorted_squares.cpp
     sort_array.cpp
