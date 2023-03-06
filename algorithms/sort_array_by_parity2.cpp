@@ -16,6 +16,7 @@
  *
  * =====================================================================================
  */
+#include <algorithm>
 #include <vector>
 
 #include "gmock/gmock.h"
@@ -24,7 +25,7 @@
 using std::vector;
 
 // Extra spaces
-class Solution {
+class Solution1 {
  public:
   vector<int> sortArrayByParityII(vector<int>& nums) {
     auto is_odd = [](const int n) { return (n % 2 == 1); };
@@ -45,6 +46,25 @@ class Solution {
   }
 };
 
+// No spaces, two pointer
+class Solution2 {
+ public:
+  vector<int> sortArrayByParityII(vector<int>& nums) {
+    auto is_odd = [](const int n) { return (n % 2 == 1); };
+
+    for (int i = 0, j = 1; i < nums.size(); i += 2) {
+      if (!is_odd(nums[i])) {
+        continue;
+      }
+      while (is_odd(nums[j])) {
+        j += 2;
+      }
+      std::swap(nums[i], nums[j]);
+    }
+    return nums;
+  }
+};
+
 TEST(Solution, sortArrayByParityII) {
   auto verify = [](const vector<int>& nums) {
     for (int i = 0; i < nums.size(); i++) {
@@ -54,6 +74,9 @@ TEST(Solution, sortArrayByParityII) {
   vector<vector<int>> cases = {vector<int>{2, 3}, vector<int>{4, 2, 5, 7},
                                vector<int>{2, 3, 1, 1, 4, 0, 0, 4, 3, 3}};
   for (auto& c : cases) {
-    verify(Solution().sortArrayByParityII(c));
+    auto c1 = c;
+    verify(Solution1().sortArrayByParityII(c));
+    auto c2 = c;
+    verify(Solution2().sortArrayByParityII(c));
   }
 }
