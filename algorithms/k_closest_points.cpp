@@ -31,10 +31,11 @@ using std::vector;
 class Solution1 {
  public:
   vector<vector<int>> kClosest(vector<vector<int>>& points, int k) {
-    std::partial_sort(points.begin(), points.begin() + k, points.end(),
-                      [](const vector<int>& a, const vector<int>& b) {
-                        return ((a[0] * a[0] + a[1] * a[1]) < (b[0] * b[0] + b[1] * b[1]));
-                      });
+    std::partial_sort(
+        points.begin(), points.begin() + k, points.end(),
+        [](const vector<int>& a, const vector<int>& b) {
+          return ((a[0] * a[0] + a[1] * a[1]) < (b[0] * b[0] + b[1] * b[1]));
+        });
     return {points.begin(), points.begin() + k};
   }
 };
@@ -43,12 +44,10 @@ class Solution1 {
 class Solution2 {
  public:
   vector<vector<int>> kClosest(vector<vector<int>>& points, int k) {
-    priority_queue<vector<int>, vector<vector<int>>, Compare> pq;
-    for (const auto& p : points) {
-      pq.push(p);
-      if (pq.size() > k) {
-        pq.pop();
-      }
+    priority_queue<vector<int>, vector<vector<int>>, Compare> pq(points.begin(),
+                                                                 points.end());
+    while (pq.size() > k) {
+      pq.pop();
     }
 
     vector<vector<int>> res;
@@ -68,7 +67,8 @@ class Solution2 {
 
 TEST(Solution, kClosest) {
   vector<std::tuple<vector<vector<int>>, int, vector<vector<int>>>> cases = {
-      std::make_tuple(vector<vector<int>>{{1, 3}, {-2, 2}}, 1, vector<vector<int>>{{-2, 2}}),
+      std::make_tuple(vector<vector<int>>{{1, 3}, {-2, 2}}, 1,
+                      vector<vector<int>>{{-2, 2}}),
       std::make_tuple(vector<vector<int>>{{3, 3}, {5, -1}, {-2, 4}}, 2,
                       vector<vector<int>>{{3, 3}, {-2, 4}}),
   };
