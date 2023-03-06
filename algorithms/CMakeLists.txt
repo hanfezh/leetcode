@@ -18,6 +18,7 @@ set(TEST_SOURCES
     first_missing_positive.cpp
     flood_fill.cpp
     insert_interval.cpp
+    kth_missing_positive_number.cpp
     kth_smallest_element.cpp
     k_closest_points.cpp
     longest_palindrome.cpp
