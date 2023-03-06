@@ -40,6 +40,7 @@ set(TEST_SOURCES
     search_insert_position.cpp
     sorted_squares.cpp
     sort_array.cpp
+    sort_array_by_parity.cpp
     sort_array_by_parity2.cpp
     sort_colors.cpp
     sort_list.cpp

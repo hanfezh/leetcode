@@ -297,6 +297,7 @@ cmake --build build
 | 796 | [Rotate String](https://leetcode.com/problems/rotate-string) | Easy | [C++](./algorithms/rotate_string.cpp) | `String` |
 | 876 | [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) | Easy | [C++](./algorithms/middle_node.cpp) | `Linked List` `Two Pointers` |
 | 899 | [Orderly Queue](https://leetcode.com/problems/orderly-queue) | Hard | [C++](./algorithms/orderly_queue.cpp) | `Math` `String` |
+| 905 | [Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/) | Easy | [C++](./algorithms/sort_array_by_parity.cpp) | `Array` `Two Pointers` |
 | 912 | [Sort an Array](https://leetcode.com/problems/sort-an-array) | Medium | [C++](./algorithms/sort_array.cpp) | `Array` `Merge Sort` `Heap Sort` |
 | 921 | [Minimum Add to Make Parentheses Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/) | Medium | [C++](./algorithms/min_add_to_make_valid.cpp) | `String` `Stack` |
 | 922 | [Sort Array By Parity II](https://leetcode.com/problems/sort-array-by-parity-ii/) | Easy | [C++](./algorithms/sort_array_by_parity2.cpp) | `Array` `Two Pointers` |

@@ -46,7 +46,7 @@ class Solution1 {
   }
 };
 
-// No spaces, two pointer
+// No spaces, two pointers
 class Solution2 {
  public:
   vector<int> sortArrayByParityII(vector<int>& nums) {
