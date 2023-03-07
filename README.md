@@ -255,7 +255,7 @@ cmake --build build
 | 442 | [Find All Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/) | Medium | [C++](./algorithms/find_duplicates.cpp) |
 | 443 | [String Compression](https://leetcode.com/problems/string-compression) | Easy | [C++](./algorithms/string_compression.cpp) |
 | 448 | [Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/) | Easy | [C++](./algorithms/find_disappeared_numbers.cpp) |
-| 451 | [Sort Characters By Frequency](https://leetcode.com/problems/sort-characters-by-frequency/) | Medium | [C++](./algorithms/sort_characters_by_frequency.cpp) [Python3](./algorithms/sort_characters_by_frequency.py)| `Hash Table` |
+| 451 | [Sort Characters By Frequency](https://leetcode.com/problems/sort-characters-by-frequency/) | Medium | [C++](./algorithms/sort_characters_by_frequency.cpp) [Python3](./algorithms/sort_characters_by_frequency.py)| `Hash Table` `Sorting` |
 | 452 | [Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/) | Medium | [Python3](./algorithms/minimum_arrow_shots.py) | `Sorting` |
 | 455 | [Assign Cookies](https://leetcode.com/problems/assign-cookies/description/) | Easy | [C++](./algorithms/assign_cookies.cpp) | `Sorting` `Two Pointers` |
 | 461 | [Hamming Distance](https://leetcode.com/problems/hamming-distance) | Easy | [C++](./algorithms/hamming_distance.cpp) | `Bit Manipulation` |

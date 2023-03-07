@@ -43,6 +43,7 @@ set(TEST_SOURCES
     sort_array.cpp
     sort_array_by_parity.cpp
     sort_array_by_parity2.cpp
+    sort_characters_by_frequency.cpp
     sort_colors.cpp
     sort_list.cpp
     two_sum.cpp

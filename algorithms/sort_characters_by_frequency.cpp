@@ -16,12 +16,17 @@
  *
  * =====================================================================================
  */
-#include <cstdio>
+#include <algorithm>
 #include <string>
 #include <unordered_map>
+#include <utility>
 #include <vector>
 
-class Solution {
+#include "gmock/gmock.h"
+#include "gtest/gtest.h"
+
+// Hash table without sort
+class Solution1 {
  public:
   std::string frequencySort(const std::string& s) {
     // Count frequency
@@ -50,13 +55,28 @@ class Solution {
   }
 };
 
-int main(int argc, char* argv[]) {
-  std::string s = "tree";
-  if (argc > 1) {
-    s = argv[1];
+// Hash table with sort
+class Solution2 {
+ public:
+  std::string frequencySort(std::string s) {
+    std::vector<int> counts(128, 0);
+    for (const char c : s) {
+      counts[c]++;
+    }
+    std::sort(s.begin(), s.end(), [&](const char a, const char b) -> bool {
+      return counts[a] > counts[b] || (counts[a] == counts[b] && a < b);
+    });
+    return s;
   }
-  const std::string res = Solution().frequencySort(s);
-  printf("s = %s\n", s.c_str());
-  printf("%s\n", res.c_str());
-  return 0;
+};
+
+TEST(Solution, frequencySort) {
+  std::vector<std::pair<std::string, std::string>> cases = {
+      std::make_pair("tree", "eert"),
+      std::make_pair("cccaaa", "aaaccc"),
+  };
+  for (auto& c : cases) {
+    EXPECT_EQ(Solution1().frequencySort(c.first), c.second);
+    EXPECT_EQ(Solution2().frequencySort(c.first), c.second);
+  }
 }
