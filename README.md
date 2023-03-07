@@ -213,7 +213,7 @@ cmake --build build
 | 236 | [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree) | Medium | [C++](./algorithms/lowest_common_ancestor.cpp) [Go](./algorithms/lowest_common_ancestor.go) | `Tree` `DFS` |
 | 237 | [Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list) | Easy | [C++](./algorithms/delete_node_in_linked_list.cpp) | `Linked List` |
 | 238 | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | Medium | [C++](./algorithms/product_except_self.cpp) | `Array` `Prefix Sum` |
-| 242 | [Valid Anagram](https://leetcode.com/problems/valid-anagram) | Easy | [C++](./algorithms/valid_anagram.cpp) | `String` `Hash Table` |
+| 242 | [Valid Anagram](https://leetcode.com/problems/valid-anagram) | Easy | [C++](./algorithms/valid_anagram.cpp) | `String` `Hash Table` |s
 | 257 | [Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths) | Easy | [C++](./algorithms/binary_tree_paths.cpp) |
 | 258 | [Add Digits](https://leetcode.com/problems/add-digits/) | Easy | [Python3](./algorithms/add_digits.py) | `Math` |
 | 263 | [Ugly Number](https://leetcode.com/problems/ugly-number) | Easy | [Python](./algorithms/ugly_number.py) |
@@ -231,6 +231,7 @@ cmake --build build
 | 334 | [Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence) | Medium | [C++](./algorithms/increasing_triplet_subsequence.cpp) | |
 | 338 | [Counting Bits](https://leetcode.com/problems/counting-bits/) | Easy | [C++](./algorithms/count_bits.cpp) | `Dynamic Programming` |
 | 344 | [Reverse String](https://leetcode.com/problems/reverse-string) | Easy | [C++](./algorithms/reverse_string.cpp) | `Two Pointers` |
+| 347 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | Medium | [C++](./algorithms/top_k_frequent_elements.cpp) | `Hash Table` `Heap` |
 | 349 | [Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays) | Easy | [C++](./algorithms/intersection_of_two_arrays.cpp) | `Hash Table` |
 | 350 | [Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii) | Easy | [C++](./algorithms/intersection_of_two_arrays2.cpp) | `Hash Table` |
 | 367 | [Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square) | Easy | [C++](./algorithms/valid_perfect_square.cpp) | `Binary Search` |

@@ -46,6 +46,7 @@ set(TEST_SOURCES
     sort_characters_by_frequency.cpp
     sort_colors.cpp
     sort_list.cpp
+    top_k_frequent_elements.cpp
     two_sum.cpp
     valid_parentheses.cpp
     zigzag_conversion.cpp)
