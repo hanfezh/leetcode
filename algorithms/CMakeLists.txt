@@ -36,6 +36,7 @@ set(TEST_SOURCES
     product_except_self.cpp
     range_sum_query.cpp
     recover_binary_search_tree.cpp
+    remove_duplicates.cpp
     remove_element.cpp
     same_tree.cpp
     sample_stats.cpp
