@@ -15,6 +15,7 @@ set(TEST_SOURCES
     eval_rpn.cpp
     find_lhs.cpp
     find_the_difference.cpp
+    find_the_duplicate_number.cpp
     first_missing_positive.cpp
     flood_fill.cpp
     insert_interval.cpp
