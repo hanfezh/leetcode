@@ -43,8 +43,29 @@ class Solution1 {
   }
 };
 
-// Two pointers, time O(N), space O(1)
+// Negative marking, time O(N), space O(1)
 class Solution2 {
+ public:
+  int findDuplicate(std::vector<int>& nums) {
+    int dup = 0;
+    for (int i = 0; i < nums.size(); i++) {
+      const int j = std::abs(nums[i]);
+      if (nums[j] < 0) {
+        dup = j;
+        break;
+      }
+      nums[j] *= -1;
+    }
+    // Restore numbers
+    for (int& n : nums) {
+      n = std::abs(n);
+    }
+    return dup;
+  }
+};
+
+// Two pointers, time O(N), space O(1)
+class Solution3 {
  public:
   int findDuplicate(std::vector<int>& nums) {
     int slow = nums[0];
@@ -75,8 +96,8 @@ TEST(Solution, findDuplicate) {
   };
   for (auto& c : cases) {
     auto c1 = c;
-    auto c2 = c;
     EXPECT_EQ(Solution1().findDuplicate(c1.first), c1.second);
-    EXPECT_EQ(Solution2().findDuplicate(c2.first), c2.second);
+    EXPECT_EQ(Solution2().findDuplicate(c.first), c.second);
+    EXPECT_EQ(Solution3().findDuplicate(c.first), c.second);
   }
 }
