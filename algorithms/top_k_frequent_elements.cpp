@@ -32,14 +32,6 @@ using std::unordered_map;
 using std::vector;
 
 class Solution {
-  using value_type = pair<int, int>;
-
-  struct Compare {
-    bool operator()(const value_type& a, const value_type& b) {
-      return a.second < b.second;
-    }
-  };
-
  public:
   vector<int> topKFrequent(vector<int>& nums, int k) {
     unordered_map<int, int> counts;
@@ -47,14 +39,17 @@ class Solution {
       counts[n]++;
     }
 
-    priority_queue<value_type, vector<value_type>, Compare> pq;
+    auto compare = [&](const int a, const int b) -> bool {
+      return counts[a] < counts[b];
+    };
+    priority_queue<int, vector<int>, decltype(compare)> pq(compare);
     for (const auto& kv : counts) {
-      pq.push(std::make_pair(kv.first, kv.second));
+      pq.push(kv.first);
     }
 
     vector<int> res;
     while (k-- > 0) {
-      res.push_back(pq.top().first);
+      res.push_back(pq.top());
       pq.pop();
     }
     return res;
