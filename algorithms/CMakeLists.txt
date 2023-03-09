@@ -11,6 +11,7 @@ set(TEST_SOURCES
     climbing_stairs.cpp
     contains_duplicate.cpp
     count_complete_tree_nodes.cpp
+    custom_stack.cpp
     diameter_of_binary_tree.cpp
     eval_rpn.cpp
     find_lhs.cpp
