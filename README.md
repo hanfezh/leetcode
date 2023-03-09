@@ -220,6 +220,7 @@ cmake --build build
 | 268 | [Missing Number](https://leetcode.com/problems/missing-number) | Easy | [C++](./algorithms/missing_number.cpp) | `Array` `Math` |
 | 278 | [First Bad Version](https://leetcode.com/problems/first-bad-version) | Easy | [C++](./algorithms/first_bad_version.cpp) | `Binary Search` |
 | 283 | [Move Zeroes](https://leetcode.com/problems/move-zeroes) | Easy | [C++](./algorithms/move_zeroes.cpp) | `Two Pointers` |
+| 286 | [Walls and Gates](https://leetcode.com/problems/walls-and-gates/) | Medium | [C++](./algorithms/walls_and_gates.cpp) | `Matrix` `DFS` |
 | 287 | [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number) | Medium | [C++](./algorithms/find_the_duplicate_number.cpp) | `Two Pointers` |
 | 292 | [Nim Game](https://leetcode.com/problems/nim-game) | Easy | [C++](./algorithms/nim_game.cpp) | `Brainteaser` |
 | 295 | [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/) | Hard | [C++](./algorithms/median_finder.cpp) | `Sorting` `Priority Queue`|

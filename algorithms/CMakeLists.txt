@@ -51,6 +51,7 @@ set(TEST_SOURCES
     top_k_frequent_elements.cpp
     two_sum.cpp
     valid_parentheses.cpp
+    walls_and_gates.cpp
     zigzag_conversion.cpp)
 
 foreach(source_file ${TEST_SOURCES})
