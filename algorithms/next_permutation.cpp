@@ -3,8 +3,8 @@
  *
  *       Filename:  next_permutation.cpp
  *
- *    Description:  Next Permutation: Implement next permutation, which rearranges 
- *                  numbers into the lexicographically next greater permutation of 
+ *    Description:  31. Next Permutation. Implement next permutation, which rearranges 
+ *                  numbers into the lexicographically next greater permutation of
  *                  numbers. If such arrangement is not possible, it must rearrange it 
  *                  as the lowest possible order (ie, sorted in ascending order).
  *
@@ -14,82 +14,55 @@
  *       Compiler:  gcc
  *
  *         Author:  Zhu Xianfeng (), xianfeng.zhu@gmail.com
- *   Organization:  
+ *   Organization:
  *
  * =====================================================================================
  */
-#include <stdio.h>
-#include <stdlib.h>
-#include <vector>
 #include <algorithm>
+#include <vector>
 
-class Solution
-{
-public:
-    void nextPermutation(std::vector<int>& nums)
-    {
-        int i = nums.size() - 1;
-        int j = -1;
+#include "gmock/gmock.h"
+#include "gtest/gtest.h"
 
-        for ( ; i > 0; i--)
-        {
-            if (nums[i] <= nums[i - 1])
-            {
-                continue;
-            }
+using std::vector;
 
-            for (j = i; j < nums.size(); j++)
-            {
-                if (nums[j] <= nums[i - 1])
-                {
-                    break;
-                }
-            }
-            j -= 1;
-            break;
-        }
-
-        if (i == 0)
-        {
-            // Reverse
-            std::reverse(nums.begin(), nums.end());
-        }
-        else
-        {
-            // i > 0
-            int a = nums[i - 1];
-            nums[i - 1] = nums[j];
-            nums[j] = a;
-            std::reverse(nums.begin() + i, nums.end());
-        }
+/**
+ * 1. Find the largest index k such that nums[k] < nums[k + 1].
+ *    If no such index exists, just reverse nums and done.
+ * 2. Find the largest index r > k such that nums[k] < nums[r].
+ * 3. Swap nums[k] and nums[r].
+ * 4. Reverse the sub-array nums[k + 1:].
+ */
+class Solution {
+ public:
+  void nextPermutation(vector<int>& nums) {
+    int k = nums.size() - 2;
+    while (k >= 0 && nums[k] >= nums[k + 1]) {
+      k--;
     }
+
+    if (k < 0) {
+      std::reverse(nums.begin(), nums.end());
+      return;
+    }
+
+    int r = nums.size() - 1;
+    while (r > k && nums[r] <= nums[k]) {
+      r--;
+    }
+    std::swap(nums[k], nums[r]);
+    std::reverse(nums.begin() + k + 1, nums.end());
+  }
 };
 
-int main(int argc, char* argv[])
-{
-    // std::vector<int> nums = {1, 2, 3};
-    // std::vector<int> nums = {5, 4, 7, 5, 3, 2};
-    std::vector<int> nums = {4, 2, 0, 2, 3, 2, 0};
-    if (argc > 3)
-    {
-        nums.clear();
-        for (int i = 1; i < argc; i++)
-        {
-            nums.push_back(atoi(argv[i]));
-        }
-    }
-
-    for (auto n: nums)
-    {
-        printf("%d ", n);
-    }
-    printf("-> ");
-    Solution().nextPermutation(nums);
-    for (auto n: nums)
-    {
-        printf("%d ", n);
-    }
-    printf("\n");
-
-    return 0;
+TEST(Solution, nextPermutation) {
+  vector<std::pair<vector<int>, vector<int>>> cases = {
+      std::make_pair(vector<int>{1, 2, 3}, vector<int>{1, 3, 2}),
+      std::make_pair(vector<int>{3, 2, 1}, vector<int>{1, 2, 3}),
+      std::make_pair(vector<int>{1, 1, 5}, vector<int>{1, 5, 1}),
+  };
+  for (auto& c : cases) {
+    Solution().nextPermutation(c.first);
+    EXPECT_THAT(c.first, testing::ElementsAreArray(c.second));
+  }
 }
