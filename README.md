@@ -239,6 +239,7 @@ cmake --build build
 | 371 | [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers) | Easy | [C++](./algorithms/sum_of_two_integers.cpp) |
 | 374 | [Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower) | Easy | [C++](./algorithms/guess_number_higher_or_lower.cpp) | `Binary Search` |
 | 377 | [Combination Sum IV](https://leetcode.com/problems/combination-sum-iv) | Medium | [C++](./algorithms/combination_sum4.cpp) |
+| 382 | [Linked List Random Node](https://leetcode.com/problems/linked-list-random-node/) | Medium | [C++](./algorithms/linked_list_random_node.cpp) | `Linked List` |
 | 383 | [Ransom Note](https://leetcode.com/problems/ransom-note/) | Easy | [C++](./algorithms/ransom_note.cpp)  [Python3](./algorithms/ransom_note.py) | `Hash Table` |
 | 384 | [Shuffle an Array](https://leetcode.com/problems/shuffle-an-array) | Medium | [C++](./algorithms/shuffle_an_array.cpp) | `Design` |
 | 386 | [Lexicographical Numbers](https://leetcode.com/problems/lexicographical-numbers) | Medium | [C++](./algorithms/lexicographical_numbers.cpp) |
