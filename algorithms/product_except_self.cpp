@@ -26,7 +26,7 @@
 using std::initializer_list;
 using std::vector;
 
-class Solution {
+class Solution1 {
  public:
   vector<int> productExceptSelf(vector<int>& nums) {
     vector<int> prods(nums.size(), 1);
@@ -41,12 +41,36 @@ class Solution {
   }
 };
 
+class Solution2 {
+ public:
+  vector<int> productExceptSelf(vector<int>& nums) {
+    vector<int> prods(nums.size());
+    vector<int> pres(nums.size(), 1);
+    vector<int> sufs(nums.size(), 1);
+    for (size_t i = 1; i < nums.size(); i++) {
+      pres[i] = pres[i - 1] * nums[i - 1];
+    }
+    for (int i = nums.size() - 2; i >= 0; i--) {
+      sufs[i] = sufs[i + 1] * nums[i + 1];
+    }
+    for (size_t i = 0; i < nums.size(); i++) {
+      prods[i] = pres[i] * sufs[i];
+    }
+    return prods;
+  }
+};
+
 TEST(Solution, productExceptSelf) {
   vector<std::pair<vector<int>, initializer_list<int>>> cases = {
-      std::make_pair(vector<int>{1, 2, 3, 4}, initializer_list<int>{24, 12, 8, 6}),
-      std::make_pair(vector<int>{-1, 1, 0, -3, 3}, initializer_list<int>{0, 0, 9, 0, 0}),
+      std::make_pair(vector<int>{1, 2, 3, 4},
+                     initializer_list<int>{24, 12, 8, 6}),
+      std::make_pair(vector<int>{-1, 1, 0, -3, 3},
+                     initializer_list<int>{0, 0, 9, 0, 0}),
   };
   for (auto& c : cases) {
-    EXPECT_THAT(Solution().productExceptSelf(c.first), testing::ElementsAreArray(c.second));
+    EXPECT_THAT(Solution1().productExceptSelf(c.first),
+                testing::ElementsAreArray(c.second));
+    EXPECT_THAT(Solution2().productExceptSelf(c.first),
+                testing::ElementsAreArray(c.second));
   }
 }
