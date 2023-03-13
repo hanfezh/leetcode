@@ -16,7 +16,9 @@
  *
  * =====================================================================================
  */
+#include <functional>
 #include <initializer_list>
+#include <numeric>
 #include <utility>
 #include <vector>
 
@@ -60,6 +62,24 @@ class Solution2 {
   }
 };
 
+class Solution3 {
+ public:
+  vector<int> productExceptSelf(vector<int>& nums) {
+    vector<int> prods(nums.size());
+    vector<int> pres(nums.size(), 1);
+    vector<int> sufs(nums.size(), 1);
+    std::partial_sum(nums.begin(), nums.end(), pres.begin(),
+                     std::multiplies<int>());
+    std::partial_sum(nums.rbegin(), nums.rend(), sufs.rbegin(),
+                     std::multiplies<int>());
+    for (size_t i = 0; i < nums.size(); i++) {
+      prods[i] =
+          (i > 0 ? pres[i - 1] : 1) * (i < nums.size() - 1 ? sufs[i + 1] : 1);
+    }
+    return prods;
+  }
+};
+
 TEST(Solution, productExceptSelf) {
   vector<std::pair<vector<int>, initializer_list<int>>> cases = {
       std::make_pair(vector<int>{1, 2, 3, 4},
@@ -71,6 +91,8 @@ TEST(Solution, productExceptSelf) {
     EXPECT_THAT(Solution1().productExceptSelf(c.first),
                 testing::ElementsAreArray(c.second));
     EXPECT_THAT(Solution2().productExceptSelf(c.first),
+                testing::ElementsAreArray(c.second));
+    EXPECT_THAT(Solution3().productExceptSelf(c.first),
                 testing::ElementsAreArray(c.second));
   }
 }
