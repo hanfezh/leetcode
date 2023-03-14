@@ -41,6 +41,7 @@ set(TEST_SOURCES
     recover_binary_search_tree.cpp
     remove_duplicates.cpp
     remove_element.cpp
+    rotated_digits.cpp
     same_tree.cpp
     sample_stats.cpp
     search_insert_position.cpp

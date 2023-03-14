@@ -296,7 +296,7 @@ cmake --build build
 | 744 | [Find Smallest Letter Greater Than Target](https://leetcode.com/problems/find-smallest-letter-greater-than-target) | Easy | [C++](./algorithms/find_smallest_letter.cpp) | `Binary Search` |
 | 765 | [Couples Holding Hands](https://leetcode.com/problems/couples-holding-hands) | Hard | [C++](./algorithms/couples_holding_hands.cpp) | `Union Find` |
 | 779 | [K-th Symbol in Grammar](https://leetcode.com/problems/k-th-symbol-in-grammar) | Medium | [C++](./algorithms/kth_symbol_in_grammar.cpp) | `Recursion` |
-| 788 | [Rotated Digits](https://leetcode.com/problems/rotated-digits) | Easy | [C++](./algorithms/rotated_digits.cpp) |
+| 788 | [Rotated Digits](https://leetcode.com/problems/rotated-digits) | Easy | [C++](./algorithms/rotated_digits.cpp) | `Dynamic Programming` |
 | 796 | [Rotate String](https://leetcode.com/problems/rotate-string) | Easy | [C++](./algorithms/rotate_string.cpp) | `String` |
 | 876 | [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) | Easy | [C++](./algorithms/middle_node.cpp) | `Linked List` `Two Pointers` |
 | 899 | [Orderly Queue](https://leetcode.com/problems/orderly-queue) | Hard | [C++](./algorithms/orderly_queue.cpp) | `Math` `String` |
