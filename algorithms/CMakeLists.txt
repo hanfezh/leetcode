@@ -55,6 +55,7 @@ set(TEST_SOURCES
     top_k_frequent_elements.cpp
     two_sum.cpp
     valid_parentheses.cpp
+    valid_palindrome2.cpp
     walls_and_gates.cpp
     zigzag_conversion.cpp)
 
