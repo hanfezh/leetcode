@@ -20,6 +20,7 @@ set(TEST_SOURCES
     find_the_duplicate_number.cpp
     first_missing_positive.cpp
     flood_fill.cpp
+    implement_trie.cpp
     insert_interval.cpp
     kth_missing_positive_number.cpp
     kth_smallest_element.cpp
