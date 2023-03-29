@@ -40,7 +40,7 @@ cmake --build build
 | 12 | [Integer to Roman](https://leetcode.com/problems/integer-to-roman) | Medium | [C++](./algorithms/integer_to_roman.cpp) |
 | 13 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer) | Easy | [C++](./algorithms/roman_to_integer.cpp) | `Math` |
 | 14 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix) | Easy | [C++](./algorithms/longest_common_prefix.cpp) | `String` |
-| 15 | [3Sum](https://leetcode.com/problems/3sum) | Medium | [C](./algorithms/three_sum.c) |
+| 15 | [3Sum](https://leetcode.com/problems/3sum) | Medium | [C](./algorithms/three_sum.c) [C++](./algorithms/three_sum.cpp) | `Array` `Two Pointers` `Sorting` |
 | 16 | [3Sum Closest](https://leetcode.com/problems/3sum-closest) | Medium | [C++](./algorithms/three_sum_closest.cpp) |
 | 17 | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | Medium | [C++](./algorithms/letter_combinations.cpp) |
 | 18 | [4Sum](https://leetcode.com/problems/4sum) | Medium | [C++](./algorithms/four_sum.cpp) |
