@@ -17,11 +17,18 @@
  */
 #include <algorithm>
 #include <cstdio>
+#include <initializer_list>
 #include <string>
 #include <unordered_map>
+#include <utility>
 
+#include "gmock/gmock.h"
+#include "gtest/gtest.h"
+
+using std::initializer_list;
 using std::string;
 using std::unordered_map;
+using std::vector;
 
 class Solution1 {
  public:
@@ -62,14 +69,35 @@ class Solution2 {
   }
 };
 
-using Solution = Solution2;
-
-int main(int argc, char* argv[]) {
-  string s = "abba";
-  if (argc > 1) {
-    s = argv[1];
+// Replace hash table with vector
+class Solution3 {
+ public:
+  int lengthOfLongestSubstring(string s) {
+    vector<int> indices(256, -1);
+    int len = 0;
+    int start = -1;
+    for (int i = 0; i < s.size(); i++) {
+      const int c = s[i];
+      if (indices[c] > start) {
+        start = indices[c];
+      }
+      indices[s[i]] = i;
+      len = std::max(len, i - start);
+    }
+    return len;
   }
-  const int len = Solution().lengthOfLongestSubstring(s);
-  printf("Length of longest substring: %d\n", len);
-  return 0;
+};
+
+TEST(Solution, lengthOfLongestSubstring) {
+  initializer_list<std::pair<string, int>> cases = {
+      std::make_pair("abba", 2),
+      std::make_pair("bbbbb", 1),
+      std::make_pair("pwwkew", 3),
+      std::make_pair("abcabcbb", 3),
+  };
+  for (const auto& c : cases) {
+    EXPECT_EQ(Solution1().lengthOfLongestSubstring(c.first), c.second);
+    EXPECT_EQ(Solution2().lengthOfLongestSubstring(c.first), c.second);
+    EXPECT_EQ(Solution3().lengthOfLongestSubstring(c.first), c.second);
+  }
 }
