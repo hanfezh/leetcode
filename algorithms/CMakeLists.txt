@@ -15,6 +15,7 @@ set(TEST_SOURCES
     custom_stack.cpp
     diameter_of_binary_tree.cpp
     eval_rpn.cpp
+    fibonacci_number.cpp
     find_lhs.cpp
     find_the_difference.cpp
     find_the_duplicate_number.cpp
