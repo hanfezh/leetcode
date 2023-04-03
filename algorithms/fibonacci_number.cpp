@@ -52,6 +52,20 @@ class Solution2 {
   }
 };
 
+// Dynamic programming with less space
+class Solution3 {
+ public:
+  int fib(int n) {
+    int a = 0, b = 1, c = 0;
+    for (int i = 2; i < n + 1; i++) {
+      c = a + b;
+      a = b;
+      b = c;
+    }
+    return (n > 1 ? c : n);
+  }
+};
+
 TEST(Solution, fib) {
   initializer_list<pair<int, int>> cases = {
       std::make_pair(2, 1),
@@ -61,5 +75,6 @@ TEST(Solution, fib) {
   for (auto c : cases) {
     EXPECT_EQ(Solution1().fib(c.first), c.second);
     EXPECT_EQ(Solution2().fib(c.first), c.second);
+    EXPECT_EQ(Solution3().fib(c.first), c.second);
   }
 }
