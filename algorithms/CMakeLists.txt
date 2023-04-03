@@ -10,6 +10,7 @@ set(TEST_SOURCES
     basic_calculator.cpp
     binary_tree_tilt.cpp
     climbing_stairs.cpp
+    coin_change.cpp
     contains_duplicate.cpp
     count_complete_tree_nodes.cpp
     custom_stack.cpp
