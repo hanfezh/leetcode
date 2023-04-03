@@ -48,7 +48,7 @@ class Solution1 {
   }
 };
 
-// Dynamic programming + hash table
+// Dynamic programming + hash table, top down
 class Solution2 {
  public:
   int coinChange(vector<int>& coins, int amount) {
@@ -82,6 +82,23 @@ class Solution2 {
   unordered_map<int, int> nums_;
 };
 
+// Dynamic programming, bottom up
+class Solution3 {
+ public:
+  int coinChange(vector<int>& coins, int amount) {
+    vector<int> dp(amount + 1, amount + 1);
+    dp[0] = 0;
+    for (int i = 1; i <= amount; i++) {
+      for (const int c : coins) {
+        if (c <= i) {
+          dp[i] = std::min(dp[i], 1 + dp[i - c]);
+        }
+      }
+    }
+    return (dp[amount] == (amount + 1) ? -1 : dp[amount]);
+  }
+};
+
 TEST(Solution, coinChange) {
   vector<tuple<vector<int>, int, int>> cases = {
       std::make_tuple(vector<int>{1, 2, 5}, 11, 3),
@@ -89,5 +106,6 @@ TEST(Solution, coinChange) {
   for (auto& c : cases) {
     EXPECT_EQ(Solution1().coinChange(std::get<0>(c), std::get<1>(c)), std::get<2>(c));
     EXPECT_EQ(Solution2().coinChange(std::get<0>(c), std::get<1>(c)), std::get<2>(c));
+    EXPECT_EQ(Solution3().coinChange(std::get<0>(c), std::get<1>(c)), std::get<2>(c));
   }
 }
