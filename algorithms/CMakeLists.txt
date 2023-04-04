@@ -35,6 +35,7 @@ set(TEST_SOURCES
     majority_element.cpp
     maximum_gap.cpp
     maximum_profit.cpp
+    merge_intervals.cpp
     middle_node.cpp
     min_add_to_make_valid.cpp
     min_stack.cpp
