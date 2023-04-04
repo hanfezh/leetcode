@@ -275,7 +275,7 @@ cmake --build build
 | 524 | [Longest Word in Dictionary through Deleting](https://leetcode.com/problems/longest-word-in-dictionary-through-deleting) | Medium | [C++](./algorithms/longest_word_through_deleting.cpp) | `Sorting` `Two Pointers` |
 | 540 | [Single Element in a Sorted Array](https://leetcode.com/problems/single-element-in-a-sorted-array) | Medium | [C++](./algorithms/single_non_duplicate.cpp) | `Bit Manipulation` `Binary Search` |
 | 541 | [Reverse String II](https://leetcode.com/problems/reverse-string-ii) | Easy | [C++](./algorithms/reverse_string2.cpp) | |
-| 542 | [01 Matrix](https://leetcode.com/problems/01-matrix/) | Medium | [C++](./algorithms/update_matrix.cpp) | `BFS` |
+| 542 | [01 Matrix](https://leetcode.com/problems/01-matrix/) | Medium | [C++](./algorithms/update_matrix.cpp) | `BFS` `Dynamic Programming` |
 | 543 | [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/) | Easy | [C++](./algorithms/diameter_of_binary_tree.cpp) | `Tree` `DFS` |
 | 560 | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k) | Medium | [C++](./algorithms/subarray_sum_equals_k.cpp) | `Array` |
 | 563 | [Binary Tree Tilt](https://leetcode.com/problems/binary-tree-tilt/) | Easy | [C++](./algorithms/binary_tree_tilt.cpp) | `Tree` `DFS` |

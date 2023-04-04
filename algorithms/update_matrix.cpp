@@ -28,7 +28,7 @@
 using namespace std;
 
 // Breadth first search
-class Solution {
+class Solution1 {
  public:
   vector<vector<int>> updateMatrix(vector<vector<int>>& mat) {
     const int rows = mat.size();
@@ -64,6 +64,45 @@ class Solution {
   }
 };
 
+// Dynamic programming
+class Solution2 {
+ public:
+  vector<vector<int>> updateMatrix(vector<vector<int>>& mat) {
+    const int rows = mat.size();
+    const int cols = mat[0].size();
+    vector<vector<int>> dis(rows, vector<int>(cols, INT_MAX - 10000));
+
+    // First pass: check from left to right, top to bottom
+    for (int i = 0; i < rows; i++) {
+      for (int j = 0; j < cols; j++) {
+        if (mat[i][j] == 0) {
+          dis[i][j] = 0;
+        } else {
+          if (i > 0) {
+            dis[i][j] = std::min(dis[i][j], dis[i - 1][j] + 1);
+          }
+          if (j > 0) {
+            dis[i][j] = std::min(dis[i][j], dis[i][j - 1] + 1);
+          }
+        }
+      }
+    }
+
+    // Second pass: check from right to left, bottom to top
+    for (int i = rows - 1; i >= 0; i--) {
+      for (int j = cols - 1; j >= 0; j--) {
+        if (i < rows - 1) {
+          dis[i][j] = std::min(dis[i][j], dis[i + 1][j] + 1);
+        }
+        if (j < cols - 1) {
+          dis[i][j] = std::min(dis[i][j], dis[i][j + 1] + 1);
+        }
+      }
+    }
+    return dis;
+  }
+};
+
 TEST(Solution, updateMatrix) {
   vector<pair<vector<vector<int>>, vector<vector<int>>>> cases = {
       std::make_pair(vector<vector<int>>{{0, 0, 0}, {0, 1, 0}, {0, 0, 0}},
@@ -72,6 +111,7 @@ TEST(Solution, updateMatrix) {
                      vector<vector<int>>{{0, 0, 0}, {0, 1, 0}, {1, 2, 1}}),
   };
   for (auto& c : cases) {
-    EXPECT_THAT(Solution().updateMatrix(c.first), testing::ElementsAreArray(c.second));
+    EXPECT_THAT(Solution1().updateMatrix(c.first), testing::ElementsAreArray(c.second));
+    EXPECT_THAT(Solution2().updateMatrix(c.first), testing::ElementsAreArray(c.second));
   }
 }
