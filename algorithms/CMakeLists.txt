@@ -59,6 +59,7 @@ set(TEST_SOURCES
     three_sum.cpp
     top_k_frequent_elements.cpp
     two_sum.cpp
+    update_matrix.cpp
     valid_parentheses.cpp
     valid_palindrome2.cpp
     walls_and_gates.cpp
