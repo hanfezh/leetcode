@@ -13,6 +13,7 @@ set(TEST_SOURCES
     coin_change.cpp
     contains_duplicate.cpp
     count_complete_tree_nodes.cpp
+    course_schedule.cpp
     custom_stack.cpp
     diameter_of_binary_tree.cpp
     eval_rpn.cpp
