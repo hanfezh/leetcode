@@ -9,6 +9,7 @@ set(TEST_SOURCES
     balanced_binary_tree.cpp
     basic_calculator.cpp
     binary_tree_tilt.cpp
+    champagne_tower.cpp
     climbing_stairs.cpp
     coin_change.cpp
     contains_duplicate.cpp
