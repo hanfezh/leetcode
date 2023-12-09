@@ -328,3 +328,4 @@ cmake --build build
 | 1720 | [Decode XORed Array](https://leetcode.com/problems/decode-xored-array) | Easy | [C++](./algorithms/decode_xored_array.cpp) | `Bit Manipulation` |
 | 2032 | [Two Out of Three](https://leetcode.com/problems/two-out-of-three) | Easy | [C++](./algorithms/two_out_of_three.cpp) | `Set` `Map` |
 | 2177 | [Find Three Consecutive Integers That Sum to a Given Number](https://leetcode.com/problems/find-three-consecutive-integers-that-sum-to-a-given-number/) | Medium | [C++](./algorithms/sum_of_three.cpp) | `Math` |
+| 2951 | [Find the Peaks](https://leetcode.com/problems/find-the-peaks/) | Easy | [C++](./algorithms/find_the_peaks.cpp) | `Array` |

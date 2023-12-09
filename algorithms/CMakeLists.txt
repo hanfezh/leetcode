@@ -22,6 +22,7 @@ set(TEST_SOURCES
     find_lhs.cpp
     find_the_difference.cpp
     find_the_duplicate_number.cpp
+    find_the_peaks.cpp
     first_missing_positive.cpp
     flood_fill.cpp
     implement_trie.cpp
