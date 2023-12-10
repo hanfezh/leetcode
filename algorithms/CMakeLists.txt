@@ -62,6 +62,7 @@ set(TEST_SOURCES
     sort_list.cpp
     three_sum.cpp
     top_k_frequent_elements.cpp
+    transpose_matrix.cpp
     two_sum.cpp
     update_matrix.cpp
     valid_parentheses.cpp
