@@ -207,6 +207,7 @@ cmake --build build
 | 224 | [Basic Calculator](https://leetcode.com/problems/basic-calculator/) | Hard | [C++](./algorithms/basic_calculator.cpp) | `String` `Stack` |
 | 225 | [Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues) | Easy | [C++](./algorithms/implement_stack_using_queues.cpp) | `Stack` `Queue` |
 | 226 | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree) | Easy | [C++](./algorithms/invert_binary_tree.cpp) | `Tree` `DFS` |
+| 227 | [Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii/) | Medium | [C++](./algorithms/basic_calculator2.cpp) | `String` `Stack` |
 | 228 | [Summary Ranges](https://leetcode.com/problems/summary-ranges/) | Easy | [Python3](./algorithms/summary_ranges.py) | `Array` |
 | 230 | [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) | Medium | [C++](./algorithms/kth_smallest_element.cpp) | `Tree` `BFS` |
 | 232 | [Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks) | Easy | [C++](./algorithms/implement_queue_using_stacks.cpp) | `Stack` `Queue` |
