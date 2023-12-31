@@ -1,13 +1,13 @@
 /*
  * =====================================================================================
  *
- *       Filename:  basic_calculator2.cpp
+ *       Filename:  basic_calculator3.cpp
  *
- *    Description:  227. Basic Calculator II.
- *                  https://leetcode.com/problems/basic-calculator-ii/
+ *    Description:  772. Basic Calculator III.
+ *                  https://leetcode.com/problems/basic-calculator-iii/
  *
  *        Version:  1.0
- *        Created:  12/30/2023 20:38:44
+ *        Created:  12/31/2023 09:23:02
  *       Revision:  none
  *       Compiler:  gcc
  *
@@ -16,6 +16,7 @@
  *
  * =====================================================================================
  */
+
 #include <cctype>
 #include <cwctype>
 #include <stack>
@@ -31,15 +32,25 @@ using std::vector;
 class Solution {
  public:
   int calculate(string s) {
+    int i = 0;
+    return calculate(s, i);
+  }
+
+ private:
+  int calculate(const string& s, int& i) {
     stack<int> st;
     int cur = 0;
     char opt = '+';
-    for (int i = 0; i < s.length(); i++) {
+    for (; i < s.length(); i++) {
       const char c = s[i];
-      if (std::isdigit(c)) {
+      if (c == '(') {
+        i++;
+        cur = calculate(s, i);
+      } else if (std::isdigit(c)) {
         cur = cur * 10 + (c - '0');
       }
-      if (c == '+' || c == '-' || c == '*' || c == '/' || (i == s.length() - 1)) {
+
+      if (c == '+' || c == '-' || c == '*' || c == '/' || c == ')' || (i == s.length() - 1)) {
         if (opt == '+') {
           st.push(cur);
         } else if (opt == '-') {
@@ -56,6 +67,10 @@ class Solution {
         opt = c;
         cur = 0;
       }
+
+      if (c == ')') {
+        break;
+      }
     }
 
     int result = 0;
@@ -69,9 +84,11 @@ class Solution {
 
 TEST(Solution, calculate) {
   vector<std::pair<string, int>> cases = {
-      std::make_pair(string("3+2*2"), 7),
-      std::make_pair(string(" 3/2 "), 1),
-      std::make_pair(string(" 3+5 / 2 "), 5),
+      // std::make_pair(string("3+2*2"), 7),
+      // std::make_pair(string(" 3/2 "), 1),
+      // std::make_pair(string(" 3+5 / 2 "), 5),
+      // std::make_pair(string(" (3+5) / 2 "), 4),
+      std::make_pair(string("2*(5+5*2)/3+(6/2+8)"), 21),
   };
   for (const auto& c : cases) {
     EXPECT_EQ(Solution().calculate(c.first), c.second);

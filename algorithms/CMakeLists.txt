@@ -9,6 +9,7 @@ set(TEST_SOURCES
     balanced_binary_tree.cpp
     basic_calculator.cpp
     basic_calculator2.cpp
+    basic_calculator3.cpp
     binary_tree_tilt.cpp
     champagne_tower.cpp
     climbing_stairs.cpp
