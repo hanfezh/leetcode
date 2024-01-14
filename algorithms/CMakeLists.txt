@@ -27,6 +27,7 @@ set(TEST_SOURCES
     find_the_peaks.cpp
     first_missing_positive.cpp
     flood_fill.cpp
+    h_index.cpp
     implement_trie.cpp
     insert_interval.cpp
     kth_missing_positive_number.cpp

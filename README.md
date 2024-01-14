@@ -222,6 +222,7 @@ cmake --build build
 | 258 | [Add Digits](https://leetcode.com/problems/add-digits/) | Easy | [Python3](./algorithms/add_digits.py) | `Math` |
 | 263 | [Ugly Number](https://leetcode.com/problems/ugly-number) | Easy | [Python](./algorithms/ugly_number.py) |
 | 268 | [Missing Number](https://leetcode.com/problems/missing-number) | Easy | [C++](./algorithms/missing_number.cpp) | `Array` `Math` |
+| 274 | [H-Index](https://leetcode.com/problems/h-index/) | Medium | [C++](./algorithms/h_index.cpp) | `Sorting` |
 | 278 | [First Bad Version](https://leetcode.com/problems/first-bad-version) | Easy | [C++](./algorithms/first_bad_version.cpp) | `Binary Search` |
 | 283 | [Move Zeroes](https://leetcode.com/problems/move-zeroes) | Easy | [C++](./algorithms/move_zeroes.cpp) | `Two Pointers` |
 | 286 | [Walls and Gates](https://leetcode.com/problems/walls-and-gates/) | Medium | [C++](./algorithms/walls_and_gates.cpp) | `Matrix` `DFS` |
