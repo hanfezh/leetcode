@@ -176,8 +176,9 @@ cmake --build build
 | 169 | [Majority Element](https://leetcode.com/problems/majority-element) | Easy | [C++](./algorithms/majority_element.cpp) | `Array` `Sorting` `Hash Table` |
 | 171 | [Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number/) | Easy | [C++](./algorithms/excel_sheet_column_number.cpp) | `Math` `String` |
 | 173 | [Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator) | Medium | [C++](./algorithms/binary_search_tree_iterator.cpp) | `Tree` `Stack` |
-| 175 | [Combine Two Tables](https://leetcode.com/problems/combine-two-tables) | Easy | [MySQL](./database/combine_two_tables.sql) | |
-| 176 | [Second Highest Salary](https://leetcode.com/problems/second-highest-salary) | Easy | [MySQL](./database/second_highest_salary.sql) | |
+| 175 | [Combine Two Tables](https://leetcode.com/problems/combine-two-tables) | Easy | [MySQL](./database/combine_two_tables.sql) | Database |
+| 176 | [Second Highest Salary](https://leetcode.com/problems/second-highest-salary) | Easy | [MySQL](./database/second_highest_salary.sql) | Database |
+| 178 | [Rank Scores](https://leetcode.com/problems/rank-scores/) | Medium | [MySQL](./database/rank_scores.sql) | Database |
 | 179 | [Largest Number](https://leetcode.com/problems/largest-number) | Medium | [Python](./algorithms/largest_number.py) |
 | 189 | [Rotate Array](https://leetcode.com/problems/rotate-array) | Easy | [C](./algorithms/rotate_array.c) | `Array` |
 | 197 | [Rising Temperature](https://leetcode.com/problems/rising-temperature) | Easy | [MySQL](./database/rising_temperature.sql) |
