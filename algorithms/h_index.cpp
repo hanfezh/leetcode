@@ -25,7 +25,8 @@
 
 using std::vector;
 
-class Solution {
+// std::sort
+class Solution1 {
  public:
   int hIndex(vector<int>& citations) {
     std::sort(citations.begin(), citations.end());
@@ -40,6 +41,25 @@ class Solution {
     return h;
   }
 };
+
+// Counting sort
+class Solution2 {
+ public:
+  int hIndex(vector<int>& citations) {
+    const int n = citations.size();
+    vector<int> papers(n + 1);
+    for (const int val : citations) {
+      papers[std::min(val, n)]++;
+    }
+    int k = n;
+    for (int s = papers[n]; k > s; s += papers[k]) {
+      k--;
+    }
+    return k;
+  }
+};
+
+using Solution = Solution2;
 
 TEST(Solution, hIndex) {
   vector<std::pair<vector<int>, int>> cases = {
