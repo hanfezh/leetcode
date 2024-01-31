@@ -44,6 +44,7 @@ set(TEST_SOURCES
     maximum_swap.cpp
     merge_intervals.cpp
     middle_node.cpp
+    minimum_arrow_shots.cpp
     min_add_to_make_valid.cpp
     min_stack.cpp
     next_permutation.cpp
