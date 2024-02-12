@@ -42,6 +42,7 @@ set(TEST_SOURCES
     maximum_gap.cpp
     maximum_profit.cpp
     maximum_swap.cpp
+    max_points.cpp
     merge_intervals.cpp
     middle_node.cpp
     minimum_arrow_shots.cpp
