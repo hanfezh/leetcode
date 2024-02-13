@@ -26,6 +26,7 @@ set(TEST_SOURCES
     find_the_duplicate_number.cpp
     find_the_peaks.cpp
     first_missing_positive.cpp
+    first_palindrome.cpp
     flood_fill.cpp
     h_index.cpp
     implement_trie.cpp
