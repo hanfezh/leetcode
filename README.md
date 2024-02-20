@@ -326,6 +326,7 @@ cmake --build build
 | 1206 | [Design Skiplist](https://leetcode.com/problems/design-skiplist) | Hard | [C++](./a.algorithms/design_skiplist.cpp) | `Linked List` |
 | 1247 | [Minimum Swaps to Make Strings Equal](https://leetcode.com/problems/minimum-swaps-to-make-strings-equal) | Medium | [C++](./algorithms/minimum_swaps_equal.cpp) | `Math` `String` |
 | 1288 | [Remove Covered Intervals](https://leetcode.com/problems/remove-covered-intervals/) | Medium | [C++](./algorithms/remove_covered_intervals.cpp) | `Array` `Sorting` |
+| 1365 | [How Many Numbers Are Smaller Than the Current Number]()https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/ | Easy | [C++](./algorithms/smaller_numbers.cpp) | `Sorting` `Hash Table` |
 | 1366 | [Rank Teams by Votes](https://leetcode.com/problems/rank-teams-by-votes) | Medium | [C++](./algorithms/rank_teams.cpp) | `Array` `Sorting` |
 | 1381 | [Design a Stack With Increment Operation](https://leetcode.com/problems/design-a-stack-with-increment-operation/) | Medium | [C++](./algorithms/custom_stack.cpp) | `Array` `Stack` |
 | 1539 | [Kth Missing Positive Number](https://leetcode.com/problems/kth-missing-positive-number/) | Easy | [C++](./algorithms/kth_missing_positive_number.cpp) | `Array` `Hash Table` |
