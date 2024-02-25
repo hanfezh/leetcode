@@ -21,6 +21,7 @@ set(TEST_SOURCES
     diameter_of_binary_tree.cpp
     eval_rpn.cpp
     fibonacci_number.cpp
+    find_all_people.cpp
     find_lhs.cpp
     find_the_difference.cpp
     find_the_duplicate_number.cpp
