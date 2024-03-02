@@ -70,6 +70,7 @@ set(TEST_SOURCES
     sort_colors.cpp
     sort_list.cpp
     three_sum.cpp
+    tic_tac_toe.cpp
     top_k_frequent_elements.cpp
     transpose_matrix.cpp
     two_sum.cpp

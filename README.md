@@ -239,6 +239,7 @@ cmake --build build
 | 338 | [Counting Bits](https://leetcode.com/problems/counting-bits/) | Easy | [C++](./algorithms/count_bits.cpp) | `Dynamic Programming` |
 | 344 | [Reverse String](https://leetcode.com/problems/reverse-string) | Easy | [C++](./algorithms/reverse_string.cpp) | `Two Pointers` |
 | 347 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | Medium | [C++](./algorithms/top_k_frequent_elements.cpp) | `Hash Table` `Heap` |
+| 348 | [Design Tic-Tac-Toe](https://leetcode.com/problems/design-tic-tac-toe/) | Medium | [C++](./algorithms/tic_tac_toe.cpp) | `Matrix` |
 | 349 | [Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays) | Easy | [C++](./algorithms/intersection_of_two_arrays.cpp) | `Hash Table` |
 | 350 | [Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii) | Easy | [C++](./algorithms/intersection_of_two_arrays2.cpp) | `Hash Table` |
 | 367 | [Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square) | Easy | [C++](./algorithms/valid_perfect_square.cpp) | `Binary Search` |
