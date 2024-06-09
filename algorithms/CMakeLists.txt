@@ -6,6 +6,7 @@ find_package(GTest CONFIG REQUIRED)
 set(TEST_SOURCES
     add_binary.cpp
     add_to_array_form.cpp
+    armstrong_number.cpp
     balanced_binary_tree.cpp
     basic_calculator.cpp
     basic_calculator2.cpp
