@@ -324,7 +324,8 @@ cmake --build build
 | 1004 | [Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii) | Medium | [C++](./algorithms/max_consecutive_ones3.cpp) | `Array` `Two Pointers` |
 | 1051 | [Height Checker](https://leetcode.com/problems/height-checker/description/) | Easy | [C++](./algorithms/height_checker.cpp) | `Array` `Sorting` `Counting Sort` |
 | 1093 | [Statistics from a Large Sample](https://leetcode.com/problems/statistics-from-a-large-sample/) | Medium | [C++](./algorithms/sample_stats.cpp) | `Array` `Math` |
-| 1206 | [Design Skiplist](https://leetcode.com/problems/design-skiplist) | Hard | [C++](./a.algorithms/design_skiplist.cpp) | `Linked List` |
+| 1206 | [Design Skiplist](https://leetcode.com/problems/design-skiplist) | Hard | [C++](./algorithms/design_skiplist.cpp) | `Linked List` |
+| 1207 | [Unique Number of Occurrences](https://leetcode.com/problems/unique-number-of-occurrences/) | Easy | [C++](./algorithms/unique_occurrences.cpp) | `Hash Table` |
 | 1247 | [Minimum Swaps to Make Strings Equal](https://leetcode.com/problems/minimum-swaps-to-make-strings-equal) | Medium | [C++](./algorithms/minimum_swaps_equal.cpp) | `Math` `String` |
 | 1288 | [Remove Covered Intervals](https://leetcode.com/problems/remove-covered-intervals/) | Medium | [C++](./algorithms/remove_covered_intervals.cpp) | `Array` `Sorting` |
 | 1365 | [How Many Numbers Are Smaller Than the Current Number]()https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/ | Easy | [C++](./algorithms/smaller_numbers.cpp) | `Sorting` `Hash Table` |

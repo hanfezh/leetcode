@@ -76,6 +76,7 @@ set(TEST_SOURCES
     transpose_matrix.cpp
     two_sum.cpp
     update_matrix.cpp
+    unique_occurrences.cpp
     valid_parentheses.cpp
     valid_palindrome2.cpp
     walls_and_gates.cpp
