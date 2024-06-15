@@ -21,19 +21,17 @@
 #include <algorithm>
 #include <vector>
 
-// Sort algorithm
+#include "gmock/gmock.h"
+#include "gtest/gtest.h"
+
+// Sort algorithm, std::sort
 class Solution1 {
  public:
   int missingNumber(std::vector<int>& nums) { return sortMissing(nums); }
 
  private:
   int sortMissing(std::vector<int>& nums) {
-#ifdef __STD_SORT__
     std::sort(nums.begin(), nums.end());
-#else
-    quickSort(nums, 0, nums.size() - 1);
-#endif
-
     int supposed = 0;
     for (size_t i = 0; i < nums.size(); i++) {
       if (nums[i] != supposed) {
@@ -42,7 +40,26 @@ class Solution1 {
       }
       supposed++;
     }
+    return supposed;
+  }
+};
 
+// Sort algorithm, quick sort
+class Solution2 {
+ public:
+  int missingNumber(std::vector<int>& nums) { return sortMissing(nums); }
+
+ private:
+  int sortMissing(std::vector<int>& nums) {
+    quickSort(nums, 0, nums.size() - 1);
+    int supposed = 0;
+    for (size_t i = 0; i < nums.size(); i++) {
+      if (nums[i] != supposed) {
+        // Find missing
+        break;
+      }
+      supposed++;
+    }
     return supposed;
   }
 
@@ -80,7 +97,7 @@ class Solution1 {
 };
 
 // Bit manipulation trick, xor
-class Solution2 {
+class Solution3 {
  public:
   int missingNumber(std::vector<int>& nums) {
     int supposed = 0;
@@ -94,7 +111,7 @@ class Solution2 {
 };
 
 // Gauss formula
-class Solution3 {
+class Solution4 {
  public:
   int missingNumber(std::vector<int>& nums) {
     int sum = nums.size() * (nums.size() + 1) / 2;
@@ -105,17 +122,14 @@ class Solution3 {
   }
 };
 
-using Solution = Solution2;
-
-int main(int argc, char* argv[]) {
-  std::vector<int> nums = {3, 0, 1};
-  if (argc > 1) {
-    nums.clear();
-    for (int i = 1; i < argc; i++) {
-      nums.push_back(atoi(argv[i]));
-    }
+TEST(Solution, missingNumber) {
+  std::vector<std::pair<std::vector<int>, int>> cases{
+      std::make_pair(std::vector<int>{3, 0, 1}, 2),
+  };
+  for (auto& c : cases) {
+    EXPECT_EQ(Solution1().missingNumber(c.first), c.second);
+    EXPECT_EQ(Solution2().missingNumber(c.first), c.second);
+    EXPECT_EQ(Solution3().missingNumber(c.first), c.second);
+    EXPECT_EQ(Solution4().missingNumber(c.first), c.second);
   }
-  auto missing = Solution().missingNumber(nums);
-  printf("Missing number: %d\n", missing);
-  return 0;
 }

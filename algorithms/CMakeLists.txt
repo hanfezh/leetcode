@@ -52,6 +52,7 @@ set(TEST_SOURCES
     minimum_arrow_shots.cpp
     min_add_to_make_valid.cpp
     min_stack.cpp
+    missing_number.cpp
     next_permutation.cpp
     palindrome_number.cpp
     product_except_self.cpp
