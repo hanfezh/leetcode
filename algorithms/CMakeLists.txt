@@ -71,6 +71,7 @@ set(TEST_SOURCES
     sort_characters_by_frequency.cpp
     sort_colors.cpp
     sort_list.cpp
+    third_maximum_number.cpp
     three_sum.cpp
     tic_tac_toe.cpp
     top_k_frequent_elements.cpp
