@@ -300,7 +300,7 @@ cmake --build build
 | 705 | [Design HashSet](https://leetcode.com/problems/design-hashset) | Easy | [C++](./algorithms/design_hashset.cpp) | `Bit Manipulation` `Hash Table` |
 | 706 | [Design HashMap](https://leetcode.com/problems/design-hashmap) | Easy | [C++](./algorithms/design_hashmap.cpp) | `Array` `Hash Table` |
 | 707 | [Design Linked List](https://leetcode.com/problems/design-linked-list) | Medium | [C++](./algorithms/design_linked_list.cpp) | `Linked List` |
-| 716 | [Max Stack](https://leetcode.com/problems/max-stack) | Hard | [C++](./algorithms/max_stack.cpp) | `Ordered Set` |
+| 716 | [Max Stack](https://leetcode.com/problems/max-stack) | Hard | [C++](./algorithms/max_stack.cpp) | `Ordered Set` `Priority Queue`|
 | 719 | [Find K-th Smallest Pair Distance](https://leetcode.com/problems/find-k-th-smallest-pair-distance) | Hard | [C++](./algorithms/find_kth_smallest_pair_distance.cpp) | `Binary Search` |
 | 733 | [Flood Fill](https://leetcode.com/problems/flood-fill/) | Easy | [C++](./algorithms/flood_fill.cpp) | `Array` `DFS` |
 | 739 | [Daily Temperatures](https://leetcode.com/problems/daily-temperatures) | Medium | [C++](./algorithms/daily_temperatures.cpp) | `Stack` |

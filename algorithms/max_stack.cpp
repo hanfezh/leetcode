@@ -16,14 +16,19 @@
  * =====================================================================================
  */
 
+#include <algorithm>
+#include <iterator>
+#include <list>
 #include <set>
+#include <vector>
 
 #include "gmock/gmock.h"
 #include "gtest/gtest.h"
 
-class MaxStack {
+// Ordered set
+class MaxStack1 {
  public:
-  MaxStack() {}
+  MaxStack1() {}
 
   void push(int x) {
     int index = 0;
@@ -58,6 +63,58 @@ class MaxStack {
   std::set<std::pair<int, int>> stack_;  // index, value
   std::set<std::pair<int, int>> queue_;  // value, index
 };
+
+// Priority queue
+class MaxStack2 {
+ public:
+  MaxStack2() {}
+
+  void push(int x) {
+    int index = 0;
+    if (!stack_.empty()) {
+      index = stack_.back().first + 1;
+    }
+    stack_.emplace_back(std::make_pair(index, x));
+    queue_.emplace_back(std::make_pair(x, index));
+    std::push_heap(queue_.begin(), queue_.end());
+  }
+
+  int pop() {
+    auto back = stack_.back();
+    const int val = back.second;
+    auto iter = std::find(queue_.begin(), queue_.end(), std::make_pair(back.second, back.first));
+    if (iter != queue_.end()) {
+      queue_.erase(iter);
+    }
+    if (!queue_.empty()) {
+      std::make_heap(queue_.begin(), queue_.end());
+    }
+    stack_.pop_back();
+    return val;
+  }
+
+  int top() { return stack_.back().second; }
+
+  int peekMax() { return queue_.front().first; }
+
+  int popMax() {
+    auto& front = queue_.front();
+    const int val = front.first;
+    auto iter = std::find(stack_.begin(), stack_.end(), std::make_pair(front.second, front.first));
+    if (iter != stack_.end()) {
+      stack_.erase(iter);
+    }
+    std::pop_heap(queue_.begin(), queue_.end());
+    queue_.erase(std::prev(queue_.end()));
+    return val;
+  }
+
+ private:
+  std::list<std::pair<int, int>> stack_;    // index, value
+  std::vector<std::pair<int, int>> queue_;  // value, index
+};
+
+using MaxStack = MaxStack2;
 
 TEST(MaxStack, push) {
   MaxStack* obj = new MaxStack();
