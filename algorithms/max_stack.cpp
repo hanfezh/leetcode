@@ -44,10 +44,7 @@ class MaxStack {
 
   int top() { return stack_.rbegin()->second; }
 
-  int peekMax() {
-    auto back = std::prev(queue_.end());
-    return back->first;
-  }
+  int peekMax() { return queue_.rbegin()->first; }
 
   int popMax() {
     auto back = std::prev(queue_.end());
