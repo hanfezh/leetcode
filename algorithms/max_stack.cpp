@@ -19,7 +19,10 @@
 #include <algorithm>
 #include <iterator>
 #include <list>
+#include <queue>
 #include <set>
+#include <stack>
+#include <unordered_set>
 #include <vector>
 
 #include "gmock/gmock.h"
@@ -114,7 +117,66 @@ class MaxStack2 {
   std::vector<std::pair<int, int>> queue_;  // value, index
 };
 
-using MaxStack = MaxStack2;
+// Priority queue + lazy update
+class MaxStack3 {
+ public:
+  MaxStack3() {}
+
+  void push(int x) {
+    stack_.emplace(x, index_);
+    queue_.emplace(x, index_);
+    index_++;
+  }
+
+  int pop() {
+    updateStack();
+    const int val = stack_.top().first;
+    removed_.insert(stack_.top().second);
+    stack_.pop();
+    return val;
+  }
+
+  int top() {
+    updateStack();
+    return stack_.top().first;
+  }
+
+  int peekMax() {
+    updateQueue();
+    return queue_.top().first;
+  }
+
+  int popMax() {
+    updateQueue();
+    const int val = queue_.top().first;
+    removed_.insert(queue_.top().second);
+    queue_.pop();
+    return val;
+  }
+
+ private:
+  void updateStack() {
+    while (removed_.count(stack_.top().second) > 0) {
+      removed_.erase(stack_.top().second);
+      stack_.pop();
+    }
+  }
+
+  void updateQueue() {
+    while (removed_.count(queue_.top().second) > 0) {
+      removed_.erase(queue_.top().second);
+      queue_.pop();
+    }
+  }
+
+ private:
+  int index_ = 0;
+  std::unordered_set<int> removed_;                 // removed indexes
+  std::stack<std::pair<int, int>> stack_;           // value, index
+  std::priority_queue<std::pair<int, int>> queue_;  // value, index
+};
+
+using MaxStack = MaxStack3;
 
 TEST(MaxStack, push) {
   MaxStack* obj = new MaxStack();
