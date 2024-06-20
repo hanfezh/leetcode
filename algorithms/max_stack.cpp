@@ -19,6 +19,7 @@
 #include <algorithm>
 #include <iterator>
 #include <list>
+#include <memory>
 #include <queue>
 #include <set>
 #include <stack>
@@ -176,7 +177,80 @@ class MaxStack3 {
   std::priority_queue<std::pair<int, int>> queue_;  // value, index
 };
 
-using MaxStack = MaxStack3;
+// Priority queue + shared_ptr
+class MaxStack4 {
+  struct Node {
+    int value = 0;
+    int index = 0;
+    bool removed = false;
+
+    Node(int v, int i, bool r) : value(v), index(i), removed(r) {}
+  };
+
+  using NodePtr = std::shared_ptr<Node>;
+
+  struct Compare {
+    bool operator()(const NodePtr& a, const NodePtr& b) {
+      return a->value != b->value ? a->value < b->value : a->index < b->index;
+    }
+  };
+
+ public:
+  MaxStack4() {}
+
+  void push(int x) {
+    auto ptr = std::make_shared<Node>(x, index_, false);
+    stack_.push(ptr);
+    queue_.push(ptr);
+    index_++;
+  }
+
+  int pop() {
+    updateStack();
+    auto ptr = stack_.top();
+    stack_.pop();
+    ptr->removed = true;
+    return ptr->value;
+  }
+
+  int top() {
+    updateStack();
+    return stack_.top()->value;
+  }
+
+  int peekMax() {
+    updateQueue();
+    return queue_.top()->value;
+  }
+
+  int popMax() {
+    updateQueue();
+    auto ptr = queue_.top();
+    queue_.pop();
+    ptr->removed = true;
+    return ptr->value;
+  }
+
+ private:
+  void updateStack() {
+    while (stack_.top()->removed) {
+      stack_.pop();
+    }
+  }
+
+  void updateQueue() {
+    while (queue_.top()->removed) {
+      queue_.pop();
+    }
+  }
+
+ private:
+  int index_ = 0;
+  std::stack<NodePtr> stack_;
+  std::priority_queue<NodePtr, std::vector<NodePtr>, Compare> queue_;
+};
+
+using MaxStack = MaxStack4;
 
 TEST(MaxStack, push) {
   MaxStack* obj = new MaxStack();
