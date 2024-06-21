@@ -178,6 +178,7 @@ cmake --build build
 | 173 | [Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator) | Medium | [C++](./algorithms/binary_search_tree_iterator.cpp) | `Tree` `Stack` |
 | 175 | [Combine Two Tables](https://leetcode.com/problems/combine-two-tables) | Easy | [MySQL](./database/combine_two_tables.sql) | Database |
 | 176 | [Second Highest Salary](https://leetcode.com/problems/second-highest-salary) | Easy | [MySQL](./database/second_highest_salary.sql) | Database |
+| 177 | [Nth Highest Salary](https://leetcode.com/problems/nth-highest-salary) | Medium | [MySQL](./database/nth_highest_salary.sql) | Database |
 | 178 | [Rank Scores](https://leetcode.com/problems/rank-scores/) | Medium | [MySQL](./database/rank_scores.sql) | Database |
 | 179 | [Largest Number](https://leetcode.com/problems/largest-number) | Medium | [Python](./algorithms/largest_number.py) |
 | 189 | [Rotate Array](https://leetcode.com/problems/rotate-array) | Easy | [C](./algorithms/rotate_array.c) | `Array` |
