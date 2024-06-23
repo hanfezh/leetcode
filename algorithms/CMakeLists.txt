@@ -52,6 +52,7 @@ set(TEST_SOURCES
     middle_node.cpp
     minimum_arrow_shots.cpp
     min_add_to_make_valid.cpp
+    min_max_game.cpp
     min_stack.cpp
     missing_number.cpp
     next_permutation.cpp
