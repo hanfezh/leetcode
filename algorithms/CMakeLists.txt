@@ -56,6 +56,7 @@ set(TEST_SOURCES
     min_max_game.cpp
     min_stack.cpp
     missing_number.cpp
+    missing_ranges.cpp
     next_permutation.cpp
     palindrome_number.cpp
     product_except_self.cpp
