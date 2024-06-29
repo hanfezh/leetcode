@@ -335,6 +335,7 @@ cmake --build build
 | 1365 | [How Many Numbers Are Smaller Than the Current Number]()https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/ | Easy | [C++](./algorithms/smaller_numbers.cpp) | `Sorting` `Hash Table` |
 | 1366 | [Rank Teams by Votes](https://leetcode.com/problems/rank-teams-by-votes) | Medium | [C++](./algorithms/rank_teams.cpp) | `Array` `Sorting` |
 | 1381 | [Design a Stack With Increment Operation](https://leetcode.com/problems/design-a-stack-with-increment-operation/) | Medium | [C++](./algorithms/custom_stack.cpp) | `Array` `Stack` |
+| 1382 | [Balance a Binary Search Tree](https://leetcode.com/problems/balance-a-binary-search-tree/) | Medium | [C++](./algorithms/balance_bst.cpp) | `Binary Search Tree` |
 | 1539 | [Kth Missing Positive Number](https://leetcode.com/problems/kth-missing-positive-number/) | Easy | [C++](./algorithms/kth_missing_positive_number.cpp) | `Array` `Hash Table` |
 | 1641 | [Count Sorted Vowel Strings](https://leetcode.com/problems/count-sorted-vowel-strings) | Medium | [C++](./algorithms/count_sorted_vowel_strings.cpp) | `Dynamic Programming` |
 | 1679 | [Max Number of K-Sum Pairs](https://leetcode.com/problems/max-number-of-k-sum-pairs) | Medium | [C++](./algorithms/max_number_of_ksum_pairs.cpp) | `Hash Table` |

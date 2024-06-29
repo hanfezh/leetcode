@@ -8,6 +8,7 @@ set(TEST_SOURCES
     add_to_array_form.cpp
     armstrong_number.cpp
     balanced_binary_tree.cpp
+    balance_bst.cpp
     basic_calculator.cpp
     basic_calculator2.cpp
     basic_calculator3.cpp
