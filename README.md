@@ -325,6 +325,7 @@ cmake --build build
 | 977 | [Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/description/) | Easy | [C++](./algorithms/sorted_squares.cpp) | `Array` `Two Pointers` |
 | 989 | [Add to Array-Form of Integer](https://leetcode.com/problems/add-to-array-form-of-integer/) | Easy | [C++](./algorithms/add_to_array_form.cpp) | `Array` `Math` |
 | 993 | [Cousins in Binary Tree](https://leetcode.com/problems/cousins-in-binary-tree) | Easy | [C++](./algorithms/cousins_in_binary_tree.cpp) | `Tree` `DFS` |
+| 997 | [Find the Town Judge](https://leetcode.com/problems/find-the-town-judge/) | Easy | [C++](./algorithms/find_judge.cpp) | `Graph` |
 | 1004 | [Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii) | Medium | [C++](./algorithms/max_consecutive_ones3.cpp) | `Array` `Two Pointers` |
 | 1051 | [Height Checker](https://leetcode.com/problems/height-checker/description/) | Easy | [C++](./algorithms/height_checker.cpp) | `Array` `Sorting` `Counting Sort` |
 | 1093 | [Statistics from a Large Sample](https://leetcode.com/problems/statistics-from-a-large-sample/) | Medium | [C++](./algorithms/sample_stats.cpp) | `Array` `Math` |
