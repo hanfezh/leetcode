@@ -45,6 +45,7 @@ set(TEST_SOURCES
     lowest_common_ancestor_bst.cpp
     majority_element.cpp
     maximum_gap.cpp
+    maximum_odd_number.cpp
     maximum_profit.cpp
     maximum_swap.cpp
     max_points.cpp

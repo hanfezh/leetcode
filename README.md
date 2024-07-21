@@ -346,5 +346,6 @@ cmake --build build
 | 2092 | [Find All People With Secret](https://leetcode.com/problems/find-all-people-with-secret/) | Hard | [C++](./algorithms/find_all_people.cpp) | `Union Find` |
 | 2108 | [Find First Palindromic String in the Array](https://leetcode.com/problems/find-first-palindromic-string-in-the-array/) | Easy | [C++](./algorithms/first_palindrome.cpp) | `Two Pointers` |
 | 2177 | [Find Three Consecutive Integers That Sum to a Given Number](https://leetcode.com/problems/find-three-consecutive-integers-that-sum-to-a-given-number/) | Medium | [C++](./algorithms/sum_of_three.cpp) | `Math` |
-| 2293 | [Min Max Game]()https://leetcode.com/problems/min-max-game/ | Easy | [C++](./algorithms/min_max_game.cpp) | `Array` |
+| 2293 | [Min Max Game](https://leetcode.com/problems/min-max-game/) | Easy | [C++](./algorithms/min_max_game.cpp) | `Array` |
+| 2864 | [Maximum Odd Binary Number](https://leetcode.com/problems/maximum-odd-binary-number/) | Easy | [C++](./algorithms/maximum_odd_number.cpp) | `Math` `String` |
 | 2951 | [Find the Peaks](https://leetcode.com/problems/find-the-peaks/) | Easy | [C++](./algorithms/find_the_peaks.cpp) | `Array` |
