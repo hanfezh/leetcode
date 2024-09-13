@@ -34,8 +34,8 @@ class Solution1 {
     }
 
     // Ensure m <= n
-    int m = nums1.size();
-    int n = nums2.size();
+    const int m = nums1.size();
+    const int n = nums2.size();
     int left = 0;
     int right = m;
     int i = 0;
@@ -89,19 +89,20 @@ class Solution1 {
   }
 };
 
+// Intuitive: O(m+n)
 class Solution2 {
  public:
   double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
-    const int a = (nums1.size() + nums2.size() - 1) / 2;
-    const int b = (nums1.size() + nums2.size()) / 2;
+    const int m = (nums1.size() + nums2.size() - 1) / 2;
+    const int n = (nums1.size() + nums2.size()) / 2;
     int steps = 0;
     double median = 0.0;
 
     auto apply = [&](int val) {
-      if (steps == a) {
+      if (steps == m) {
         median = val;
       }
-      if (steps == b) {
+      if (steps == n) {
         median = (median + val) / 2.0;
         return true;
       }
@@ -133,7 +134,47 @@ class Solution2 {
   }
 };
 
-TEST(Solution, maxPoints) {
+// Binary search
+class Solution3 {
+ public:
+  double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
+    const int m = nums1.size();
+    const int n = nums2.size();
+    if (m > n) {
+      // Ensure m <= n
+      return findMedianSortedArrays(nums2, nums1);
+    }
+
+    const int target = (m + n + 1) / 2;
+    int left = 0;
+    int right = m;
+
+    while (left <= right) {
+      const int i = (left + right) / 2;
+      const int j = target - i;
+      const int min1 = (i > 0 ? nums1[i - 1] : INT_MIN);
+      const int max1 = (i < m ? nums1[i] : INT_MAX);
+      const int min2 = (j > 0 ? nums2[j - 1] : INT_MIN);
+      const int max2 = (j < n ? nums2[j] : INT_MAX);
+
+      if (min1 > max2) {
+        right = i - 1;
+      } else if (max1 < min2) {
+        left = i + 1;
+      } else {
+        // min1 <= max2 && min2 <= max1
+        if ((m + n) & 0x1) {
+          return std::max(min1, min2);
+        } else {
+          return (std::max(min1, min2) + std::min(max1, max2)) / 2.0;
+        }
+      }
+    }
+    return 0.0;
+  }
+};
+
+TEST(Solution, findMedianSortedArrays) {
   vector<tuple<vector<int>, vector<int>, double>> cases = {
       std::make_tuple(vector<int>{}, vector<int>{2}, 2.0),
       std::make_tuple(vector<int>{1, 3}, vector<int>{2}, 2.0),
@@ -142,5 +183,6 @@ TEST(Solution, maxPoints) {
   for (auto& c : cases) {
     EXPECT_EQ(Solution1().findMedianSortedArrays(std::get<0>(c), std::get<1>(c)), std::get<2>(c));
     EXPECT_EQ(Solution2().findMedianSortedArrays(std::get<0>(c), std::get<1>(c)), std::get<2>(c));
+    EXPECT_EQ(Solution3().findMedianSortedArrays(std::get<0>(c), std::get<1>(c)), std::get<2>(c));
   }
 }
