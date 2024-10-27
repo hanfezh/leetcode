@@ -52,6 +52,7 @@ set(TEST_SOURCES
     max_stack.cpp
     median_sorted_arrays.cpp
     merge_intervals.cpp
+    merge_sorted_array.cpp
     middle_node.cpp
     minimum_arrow_shots.cpp
     min_add_to_make_valid.cpp
