@@ -71,6 +71,7 @@ set(TEST_SOURCES
     same_tree.cpp
     sample_stats.cpp
     search_insert_position.cpp
+    shifting_letters2.cpp
     smaller_numbers.cpp
     sorted_squares.cpp
     sort_array.cpp
