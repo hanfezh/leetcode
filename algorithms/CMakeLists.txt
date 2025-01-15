@@ -62,6 +62,7 @@ set(TEST_SOURCES
     missing_ranges.cpp
     next_permutation.cpp
     palindrome_number.cpp
+    prefix_common_array.cpp
     product_except_self.cpp
     range_sum_query.cpp
     recover_binary_search_tree.cpp
