@@ -353,3 +353,4 @@ cmake --build build
 | 2951 | [Find the Peaks](https://leetcode.com/problems/find-the-peaks/) | Easy | [C++](./algorithms/find_the_peaks.cpp) | `Array` |
 | 3151 | [Special Array I](https://leetcode.com/problems/special-array-i/) | Easy | [C++](./algorithms/special_array1.cpp) | `Array` |
 | 3285 | [Find Indices of Stable Mountains](https://leetcode.com/problems/find-indices-of-stable-mountains/) | Easy | [C++](./algorithms/stable_mountains.cpp) | `Array` |
+| 3432 | [Count Partitions with Even Sum Difference]()https://leetcode.com/problems/count-partitions-with-even-sum-difference/ | Easy | [C++](./algorithms/count_partitions.cpp) | `Array` `Math` |

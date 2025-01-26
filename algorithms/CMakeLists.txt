@@ -18,6 +18,7 @@ set(TEST_SOURCES
     coin_change.cpp
     contains_duplicate.cpp
     count_complete_tree_nodes.cpp
+    count_partitions.cpp
     course_schedule.cpp
     custom_stack.cpp
     diameter_of_binary_tree.cpp
