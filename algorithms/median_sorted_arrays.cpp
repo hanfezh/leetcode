@@ -22,75 +22,8 @@
 using std::tuple;
 using std::vector;
 
-// Binary search
-class Solution1 {
- public:
-  double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
-    if (nums1.size() > nums2.size()) {
-      return findMedianSortedArrays(nums2, nums1);
-    }
-    if (nums2.size() == 0) {
-      return 0.0;
-    }
-
-    // Ensure m <= n
-    const int m = nums1.size();
-    const int n = nums2.size();
-    int left = 0;
-    int right = m;
-    int i = 0;
-    int j = 0;
-
-    //       left_part          |        right_part
-    // A[0], A[1], ..., A[i-1]  |  A[i], A[i+1], ..., A[m-1]
-    // B[0], B[1], ..., B[j-1]  |  B[j], B[j+1], ..., B[n-1]
-
-    while (left <= right) {
-      i = (left + right) / 2;
-      j = (m + n + 1) / 2 - i;
-      if (i < m && nums1[i] < nums2[j - 1]) {
-        // i is too small
-        left = i + 1;
-      } else if (i > 0 && nums1[i - 1] > nums2[j]) {
-        // i is too big
-        right = i - 1;
-      } else {
-        // Found
-        // i == 0 || i == m || nums1[i] >= nums2[j - 1]
-        // j == 0 || j == n || nums1[i - 1] <= nums2[j]
-        break;
-      }
-    }
-
-    int left_max = 0;
-    int right_min = 0;
-    if (i == 0) {
-      left_max = nums2[j - 1];
-    } else if (j == 0) {
-      left_max = nums1[i - 1];
-    } else {
-      left_max = std::max(nums1[i - 1], nums2[j - 1]);
-    }
-
-    if ((m + n) & 0x1) {
-      // Avoid j overflow
-      return (double)left_max;
-    }
-
-    if (i == m) {
-      right_min = nums2[j];
-    } else if (j == n) {
-      right_min = nums1[i];
-    } else {
-      right_min = std::min(nums1[i], nums2[j]);
-    }
-
-    return ((left_max + right_min) / 2.0);
-  }
-};
-
 // Intuitive: O(m+n)
-class Solution2 {
+class Solution1 {
  public:
   double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
     const int m = (nums1.size() + nums2.size() - 1) / 2;
@@ -134,8 +67,8 @@ class Solution2 {
   }
 };
 
-// Binary search
-class Solution3 {
+// Binary search, O(log(m))
+class Solution2 {
  public:
   double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
     const int m = nums1.size();
@@ -145,29 +78,27 @@ class Solution3 {
       return findMedianSortedArrays(nums2, nums1);
     }
 
-    const int target = (m + n + 1) / 2;
-    int left = 0;
-    int right = m;
+    const int half = (m + n + 1) / 2;
+    int l = 0;
+    int r = m;
 
-    while (left <= right) {
-      const int i = (left + right) / 2;
-      const int j = target - i;
-      const int min1 = (i > 0 ? nums1[i - 1] : INT_MIN);
-      const int max1 = (i < m ? nums1[i] : INT_MAX);
-      const int min2 = (j > 0 ? nums2[j - 1] : INT_MIN);
-      const int max2 = (j < n ? nums2[j] : INT_MAX);
-
-      if (min1 > max2) {
-        right = i - 1;
-      } else if (max1 < min2) {
-        left = i + 1;
-      } else {
-        // min1 <= max2 && min2 <= max1
-        if ((m + n) & 0x1) {
-          return std::max(min1, min2);
-        } else {
-          return (std::max(min1, min2) + std::min(max1, max2)) / 2.0;
+    while (l <= r) {
+      const int i = (l + r) / 2;  // Index in nums1
+      const int j = half - i;     // Index in nums2
+      const int left1 = (i > 0 ? nums1[i - 1] : INT_MIN);
+      const int right1 = (i < m ? nums1[i] : INT_MAX);
+      const int left2 = (j > 0 ? nums2[j - 1] : INT_MIN);
+      const int right2 = (j < n ? nums2[j] : INT_MAX);
+      if ((left1 <= right2) && (left2 <= right1)) {
+        if ((m + n) & 0x1) {  // Odd
+          return std::max(left1, left2);
+        } else {  // Even
+          return (std::max(left1, left2) + std::min(right1, right2)) / 2.0;
         }
+      } else if (left1 > right2) {
+        r = i - 1;
+      } else {
+        l = i + 1;
       }
     }
     return 0.0;
@@ -183,6 +114,5 @@ TEST(Solution, findMedianSortedArrays) {
   for (auto& c : cases) {
     EXPECT_EQ(Solution1().findMedianSortedArrays(std::get<0>(c), std::get<1>(c)), std::get<2>(c));
     EXPECT_EQ(Solution2().findMedianSortedArrays(std::get<0>(c), std::get<1>(c)), std::get<2>(c));
-    EXPECT_EQ(Solution3().findMedianSortedArrays(std::get<0>(c), std::get<1>(c)), std::get<2>(c));
   }
 }
