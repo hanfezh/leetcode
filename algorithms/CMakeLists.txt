@@ -23,6 +23,7 @@ set(TEST_SOURCES
     custom_stack.cpp
     diameter_of_binary_tree.cpp
     eval_rpn.cpp
+    exam_room.cpp
     fibonacci_number.cpp
     find_all_people.cpp
     find_judge.cpp

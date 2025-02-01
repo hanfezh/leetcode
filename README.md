@@ -313,6 +313,7 @@ cmake --build build
 | 788 | [Rotated Digits](https://leetcode.com/problems/rotated-digits) | Easy | [C++](./algorithms/rotated_digits.cpp) | `Dynamic Programming` |
 | 796 | [Rotate String](https://leetcode.com/problems/rotate-string) | Easy | [C++](./algorithms/rotate_string.cpp) | `String` |
 | 799 | [Champagne Tower](https://leetcode.com/problems/champagne-tower/) | Medium| [C++](./algorithms/champagne_tower.cpp) | `Dynamic Programming` |
+| 855 | [Exam Room](https://leetcode.com/problems/exam-room/) | Medium | [C++](./algorithms/exam_room.cpp) | `Ordered Set` |
 | 867 | [Transpose Matrix](https://leetcode.com/problems/transpose-matrix/) | Easy | [C++](./algorithms/transpose_matrix.cpp) | `Matrix` |
 | 876 | [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) | Easy | [C++](./algorithms/middle_node.cpp) | `Linked List` `Two Pointers` |
 | 899 | [Orderly Queue](https://leetcode.com/problems/orderly-queue) | Hard | [C++](./algorithms/orderly_queue.cpp) | `Math` `String` |
