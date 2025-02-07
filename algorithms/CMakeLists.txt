@@ -90,6 +90,7 @@ set(TEST_SOURCES
     tic_tac_toe.cpp
     top_k_frequent_elements.cpp
     transpose_matrix.cpp
+    tuple_same_product.cpp
     two_sum.cpp
     update_matrix.cpp
     unique_occurrences.cpp

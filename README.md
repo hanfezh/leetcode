@@ -343,6 +343,7 @@ cmake --build build
 | 1641 | [Count Sorted Vowel Strings](https://leetcode.com/problems/count-sorted-vowel-strings) | Medium | [C++](./algorithms/count_sorted_vowel_strings.cpp) | `Dynamic Programming` |
 | 1679 | [Max Number of K-Sum Pairs](https://leetcode.com/problems/max-number-of-k-sum-pairs) | Medium | [C++](./algorithms/max_number_of_ksum_pairs.cpp) | `Hash Table` |
 | 1720 | [Decode XORed Array](https://leetcode.com/problems/decode-xored-array) | Easy | [C++](./algorithms/decode_xored_array.cpp) | `Bit Manipulation` |
+| 1726 | [Tuple with Same Product]()https://leetcode.com/problems/tuple-with-same-product/ | Medium | [C++](./algorithms/tuple_same_product.cpp) | `Hash Map` `Math` |
 | 2032 | [Two Out of Three](https://leetcode.com/problems/two-out-of-three) | Easy | [C++](./algorithms/two_out_of_three.cpp) | `Set` `Map` |
 | 2092 | [Find All People With Secret](https://leetcode.com/problems/find-all-people-with-secret/) | Hard | [C++](./algorithms/find_all_people.cpp) | `Union Find` |
 | 2108 | [Find First Palindromic String in the Array](https://leetcode.com/problems/find-first-palindromic-string-in-the-array/) | Easy | [C++](./algorithms/first_palindrome.cpp) | `Two Pointers` |
