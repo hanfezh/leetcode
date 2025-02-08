@@ -63,6 +63,7 @@ set(TEST_SOURCES
     missing_number.cpp
     missing_ranges.cpp
     next_permutation.cpp
+    number_containers.cpp
     palindrome_number.cpp
     prefix_common_array.cpp
     product_except_self.cpp
