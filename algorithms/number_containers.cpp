@@ -17,19 +17,25 @@
  * =====================================================================================
  */
 
+#include <functional>
+#include <queue>
 #include <set>
 #include <unordered_map>
+#include <vector>
 
 #include "gmock/gmock.h"
 #include "gtest/gtest.h"
 
+using std::greater;
+using std::priority_queue;
 using std::set;
 using std::unordered_map;
+using std::vector;
 
 // Hash map + ordered set
-class NumberContainers {
+class NumberContainers1 {
  public:
-  NumberContainers() {}
+  NumberContainers1() {}
 
   void change(int index, int number) {
     auto it = nums_.find(index);
@@ -55,7 +61,41 @@ class NumberContainers {
   unordered_map<int, set<int>> indexes_;
 };
 
+// Hash map + priority queue
+class NumberContainers2 {
+ public:
+  NumberContainers2() {}
+
+  void change(int index, int number) {
+    nums_[index] = number;
+    indexes_[number].push(index);
+  }
+
+  // Lazy update
+  int find(int number) {
+    auto it = indexes_.find(number);
+    if (it == indexes_.end()) {
+      return -1;
+    }
+    auto& min_queue = it->second;
+    while (!min_queue.empty()) {
+      const int top = min_queue.top();
+      if (nums_[top] != number) {
+        min_queue.pop();
+      } else {
+        return top;
+      }
+    }
+    return -1;
+  }
+
+ private:
+  unordered_map<int, int> nums_;
+  unordered_map<int, priority_queue<int, vector<int>, greater<int>>> indexes_;
+};
+
 TEST(Solution, NumberContainers) {
+  using NumberContainers = NumberContainers2;
   NumberContainers nc;
   EXPECT_EQ(nc.find(10),
             -1);     // There is no index that is filled with number 10. Therefore, we return -1.
