@@ -14,6 +14,7 @@ set(TEST_SOURCES
     basic_calculator3.cpp
     binary_tree_tilt.cpp
     champagne_tower.cpp
+    clear_digits.cpp
     climbing_stairs.cpp
     coin_change.cpp
     contains_duplicate.cpp

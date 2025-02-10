@@ -355,5 +355,6 @@ cmake --build build
 | 2864 | [Maximum Odd Binary Number](https://leetcode.com/problems/maximum-odd-binary-number/) | Easy | [C++](./algorithms/maximum_odd_number.cpp) | `Math` `String` |
 | 2951 | [Find the Peaks](https://leetcode.com/problems/find-the-peaks/) | Easy | [C++](./algorithms/find_the_peaks.cpp) | `Array` |
 | 3151 | [Special Array I](https://leetcode.com/problems/special-array-i/) | Easy | [C++](./algorithms/special_array1.cpp) | `Array` |
+| 3174 | [Clear Digits](https://leetcode.com/problems/clear-digits/) | Easy | [C++](./algorithms/clear_digits.cpp) | `Stack` |
 | 3285 | [Find Indices of Stable Mountains](https://leetcode.com/problems/find-indices-of-stable-mountains/) | Easy | [C++](./algorithms/stable_mountains.cpp) | `Array` |
 | 3432 | [Count Partitions with Even Sum Difference]()https://leetcode.com/problems/count-partitions-with-even-sum-difference/ | Easy | [C++](./algorithms/count_partitions.cpp) | `Array` `Math` |
