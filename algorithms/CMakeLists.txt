@@ -66,6 +66,7 @@ set(TEST_SOURCES
     next_permutation.cpp
     number_containers.cpp
     palindrome_number.cpp
+    permutation_in_string.cpp
     prefix_common_array.cpp
     product_except_self.cpp
     range_sum_query.cpp

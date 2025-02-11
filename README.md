@@ -287,6 +287,7 @@ cmake --build build
 | 543 | [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/) | Easy | [C++](./algorithms/diameter_of_binary_tree.cpp) | `Tree` `DFS` |
 | 560 | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k) | Medium | [C++](./algorithms/subarray_sum_equals_k.cpp) | `Array` |
 | 563 | [Binary Tree Tilt](https://leetcode.com/problems/binary-tree-tilt/) | Easy | [C++](./algorithms/binary_tree_tilt.cpp) | `Tree` `DFS` |
+| 567 | [Permutation in String](https://leetcode.com/problems/permutation-in-string/) | Medium | [C++](./algorithms/permutation_in_string.cpp) | `Sorting` |
 | 594 | [Longest Harmonious Subsequence](https://leetcode.com/problems/longest-harmonious-subsequence/) | Easy | [C++](./algorithms/find_lhs.cpp) | `Hash Table` |
 | 599 | [Minimum Index Sum of Two Lists](https://leetcode.com/problems/minimum-index-sum-of-two-lists) | Easy | [C++](./algorithms/minimum_index_sum.cpp) |
 | 623 | [Add One Row to Tree](https://leetcode.com/problems/add-one-row-to-tree) | Medium | [C++](./algorithms/add_one_row_to_tree.cpp) |
