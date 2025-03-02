@@ -341,6 +341,7 @@ cmake --build build
 | 1381 | [Design a Stack With Increment Operation](https://leetcode.com/problems/design-a-stack-with-increment-operation/) | Medium | [C++](./algorithms/custom_stack.cpp) | `Array` `Stack` |
 | 1382 | [Balance a Binary Search Tree](https://leetcode.com/problems/balance-a-binary-search-tree/) | Medium | [C++](./algorithms/balance_bst.cpp) | `Binary Search Tree` |
 | 1539 | [Kth Missing Positive Number](https://leetcode.com/problems/kth-missing-positive-number/) | Easy | [C++](./algorithms/kth_missing_positive_number.cpp) | `Array` `Hash Table` |
+| 1566 | [Detect Pattern of Length M Repeated K or More Times](https://leetcode.com/problems/detect-pattern-of-length-m-repeated-k-or-more-times/) | Easy | [C++](./algorithms/contains_pattern.cpp) | `Array` `Enumeration` |
 | 1641 | [Count Sorted Vowel Strings](https://leetcode.com/problems/count-sorted-vowel-strings) | Medium | [C++](./algorithms/count_sorted_vowel_strings.cpp) | `Dynamic Programming` |
 | 1679 | [Max Number of K-Sum Pairs](https://leetcode.com/problems/max-number-of-k-sum-pairs) | Medium | [C++](./algorithms/max_number_of_ksum_pairs.cpp) | `Hash Table` |
 | 1720 | [Decode XORed Array](https://leetcode.com/problems/decode-xored-array) | Easy | [C++](./algorithms/decode_xored_array.cpp) | `Bit Manipulation` |

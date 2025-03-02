@@ -18,6 +18,7 @@ set(TEST_SOURCES
     climbing_stairs.cpp
     coin_change.cpp
     contains_duplicate.cpp
+    contains_pattern.cpp
     count_complete_tree_nodes.cpp
     count_partitions.cpp
     course_schedule.cpp
