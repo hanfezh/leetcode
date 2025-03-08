@@ -353,6 +353,7 @@ cmake --build build
 | 2177 | [Find Three Consecutive Integers That Sum to a Given Number](https://leetcode.com/problems/find-three-consecutive-integers-that-sum-to-a-given-number/) | Medium | [C++](./algorithms/sum_of_three.cpp) | `Math` |
 | 2293 | [Min Max Game](https://leetcode.com/problems/min-max-game/) | Easy | [C++](./algorithms/min_max_game.cpp) | `Array` |
 | 2349 | [Design a Number Container System](https://leetcode.com/problems/design-a-number-container-system/) | Medium | [C++](./algorithms/number_containers.cpp) | `Hash Table` `Ordered Set` `Priority Queue` |
+| 2379 | [Minimum Recolors to Get K Consecutive Black Blocks](https://leetcode.com/problems/minimum-recolors-to-get-k-consecutive-black-blocks/) | Easy | [C++](./algorithms/minimum_recolors.cpp) | `Sliding Window` |
 | 2381 | [Shifting Letters II](https://leetcode.com/problems/shifting-letters-ii/) | Medium | [C++](./algorithms/shifting_letters2.cpp) | `Array` |
 | 2657 | [Find the Prefix Common Array of Two Arrays]()https://leetcode.com/problems/find-the-prefix-common-array-of-two-arrays/ | Medium | [C++](./algorithms/prefix_common_array.cpp) | `Array` |
 | 2864 | [Maximum Odd Binary Number](https://leetcode.com/problems/maximum-odd-binary-number/) | Easy | [C++](./algorithms/maximum_odd_number.cpp) | `Math` `String` |

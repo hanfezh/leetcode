@@ -59,6 +59,7 @@ set(TEST_SOURCES
     merge_sorted_array.cpp
     middle_node.cpp
     minimum_arrow_shots.cpp
+    minimum_recolors.cpp
     min_add_to_make_valid.cpp
     min_max_game.cpp
     min_stack.cpp
