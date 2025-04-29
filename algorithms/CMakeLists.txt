@@ -21,6 +21,7 @@ set(TEST_SOURCES
     contains_pattern.cpp
     count_complete_tree_nodes.cpp
     count_partitions.cpp
+    count_subarrays.cpp
     course_schedule.cpp
     custom_stack.cpp
     diameter_of_binary_tree.cpp
