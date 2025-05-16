@@ -96,6 +96,7 @@ set(TEST_SOURCES
     third_maximum_number.cpp
     three_sum.cpp
     tic_tac_toe.cpp
+    time_map.cpp
     top_k_frequent_elements.cpp
     transpose_matrix.cpp
     tuple_same_product.cpp

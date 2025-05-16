@@ -325,7 +325,8 @@ cmake --build build
 | 922 | [Sort Array By Parity II](https://leetcode.com/problems/sort-array-by-parity-ii/) | Easy | [C++](./algorithms/sort_array_by_parity2.cpp) | `Array` `Two Pointers` |
 | 965 | [Univalued Binary Tree](https://leetcode.com/problems/univalued-binary-tree) | Easy | [C++](./algorithms/univalued_binary_tree.cpp) | `BFS` |
 | 973 | [K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin/) | Medium | [C++](./algorithms/k_closest_points.cpp) | `Array` `Sorting` `Priority Queue` |
-| 977 | [Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/description/) | Easy | [C++](./algorithms/sorted_squares.cpp) | `Array` `Two Pointers` |
+| 977 | [Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/) | Easy | [C++](./algorithms/sorted_squares.cpp) | `Array` `Two Pointers` |
+| 981 | [Time Based Key-Value Store](https://leetcode.com/problems/time-based-key-value-store/) | Medium | [C++](./algorithms/time_map.cpp) | `Hash Table` |
 | 989 | [Add to Array-Form of Integer](https://leetcode.com/problems/add-to-array-form-of-integer/) | Easy | [C++](./algorithms/add_to_array_form.cpp) | `Array` `Math` |
 | 993 | [Cousins in Binary Tree](https://leetcode.com/problems/cousins-in-binary-tree) | Easy | [C++](./algorithms/cousins_in_binary_tree.cpp) | `Tree` `DFS` |
 | 997 | [Find the Town Judge](https://leetcode.com/problems/find-the-town-judge/) | Easy | [C++](./algorithms/find_judge.cpp) | `Graph` |
