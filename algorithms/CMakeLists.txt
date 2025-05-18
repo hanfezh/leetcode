@@ -54,6 +54,7 @@ set(TEST_SOURCES
     maximum_odd_number.cpp
     maximum_profit.cpp
     maximum_swap.cpp
+    max_chunks_to_sorted.cpp
     max_points.cpp
     max_stack.cpp
     median_sorted_arrays.cpp
