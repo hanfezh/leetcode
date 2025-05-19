@@ -361,6 +361,7 @@ cmake --build build
 | 2657 | [Find the Prefix Common Array of Two Arrays]()https://leetcode.com/problems/find-the-prefix-common-array-of-two-arrays/ | Medium | [C++](./algorithms/prefix_common_array.cpp) | `Array` |
 | 2864 | [Maximum Odd Binary Number](https://leetcode.com/problems/maximum-odd-binary-number/) | Easy | [C++](./algorithms/maximum_odd_number.cpp) | `Math` `String` |
 | 2951 | [Find the Peaks](https://leetcode.com/problems/find-the-peaks/) | Easy | [C++](./algorithms/find_the_peaks.cpp) | `Array` |
+| 3024 | [Type of Triangle](https://leetcode.com/problems/type-of-triangle/) | Easy | [C++](./algorithms/triangle_type.cpp) | `Math` |
 | 3151 | [Special Array I](https://leetcode.com/problems/special-array-i/) | Easy | [C++](./algorithms/special_array1.cpp) | `Array` |
 | 3174 | [Clear Digits](https://leetcode.com/problems/clear-digits/) | Easy | [C++](./algorithms/clear_digits.cpp) | `Stack` |
 | 3285 | [Find Indices of Stable Mountains](https://leetcode.com/problems/find-indices-of-stable-mountains/) | Easy | [C++](./algorithms/stable_mountains.cpp) | `Array` |

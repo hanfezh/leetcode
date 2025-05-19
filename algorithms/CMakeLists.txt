@@ -100,6 +100,7 @@ set(TEST_SOURCES
     time_map.cpp
     top_k_frequent_elements.cpp
     transpose_matrix.cpp
+    triangle_type.cpp
     tuple_same_product.cpp
     two_sum.cpp
     update_matrix.cpp
