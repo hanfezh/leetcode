@@ -37,6 +37,7 @@ set(TEST_SOURCES
     first_missing_positive.cpp
     first_palindrome.cpp
     flood_fill.cpp
+    highest_peak.cpp
     h_index.cpp
     implement_trie.cpp
     insert_interval.cpp
