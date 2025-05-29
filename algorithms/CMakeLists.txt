@@ -66,6 +66,7 @@ set(TEST_SOURCES
     minimum_recolors.cpp
     min_add_to_make_valid.cpp
     min_max_game.cpp
+    min_operations.cpp
     min_stack.cpp
     missing_number.cpp
     missing_ranges.cpp
