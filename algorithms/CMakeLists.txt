@@ -16,6 +16,7 @@ set(TEST_SOURCES
     champagne_tower.cpp
     clear_digits.cpp
     climbing_stairs.cpp
+    cloest_meeting_node.cpp
     coin_change.cpp
     contains_duplicate.cpp
     contains_pattern.cpp
