@@ -252,7 +252,7 @@ cmake --build build
 | 382 | [Linked List Random Node](https://leetcode.com/problems/linked-list-random-node/) | Medium | [C++](./algorithms/linked_list_random_node.cpp) | `Linked List` |
 | 383 | [Ransom Note](https://leetcode.com/problems/ransom-note/) | Easy | [C++](./algorithms/ransom_note.cpp)  [Python3](./algorithms/ransom_note.py) | `Hash Table` |
 | 384 | [Shuffle an Array](https://leetcode.com/problems/shuffle-an-array) | Medium | [C++](./algorithms/shuffle_an_array.cpp) | `Design` |
-| 386 | [Lexicographical Numbers](https://leetcode.com/problems/lexicographical-numbers) | Medium | [C++](./algorithms/lexicographical_numbers.cpp) |
+| 386 | [Lexicographical Numbers](https://leetcode.com/problems/lexicographical-numbers) | Medium | [C++](./algorithms/lexicographical_numbers.cpp) | `DFS` |
 | 387 | [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string) | Easy | [C++](./algorithms/first_unique_character.cpp) | `Hash Table` |
 | 389 | [Find the Difference](https://leetcode.com/problems/find-the-difference/) | Easy | [C++](./algorithms/find_the_difference.cpp) | `Hash Table` `Bit Manipulation` |
 | 392 | [Is Subsequence](https://leetcode.com/problems/is-subsequence/) | Easy | [C++](./algorithms/is_subsequence.cpp) [Python3](./algorithms/is_subsequence.py) | `String` |

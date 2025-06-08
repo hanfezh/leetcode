@@ -46,6 +46,7 @@ set(TEST_SOURCES
     kth_smallest_element.cpp
     k_closest_points.cpp
     largest_divisible_subset.cpp
+    lexicographical_numbers.cpp
     linked_list_random_node.cpp
     longest_palindrome.cpp
     longest_substring.cpp
