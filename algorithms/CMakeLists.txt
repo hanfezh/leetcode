@@ -70,6 +70,7 @@ set(TEST_SOURCES
     min_max_game.cpp
     min_operations.cpp
     min_stack.cpp
+    min_window.cpp
     missing_number.cpp
     missing_ranges.cpp
     next_permutation.cpp
