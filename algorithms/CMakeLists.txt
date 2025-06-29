@@ -89,6 +89,7 @@ set(TEST_SOURCES
     sample_stats.cpp
     search_insert_position.cpp
     shifting_letters2.cpp
+    shortest_path.cpp
     smaller_numbers.cpp
     sorted_squares.cpp
     sort_array.cpp

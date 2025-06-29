@@ -334,6 +334,7 @@ cmake --build build
 | 997 | [Find the Town Judge](https://leetcode.com/problems/find-the-town-judge/) | Easy | [C++](./algorithms/find_judge.cpp) | `Graph` |
 | 1004 | [Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii) | Medium | [C++](./algorithms/max_consecutive_ones3.cpp) | `Array` `Two Pointers` |
 | 1051 | [Height Checker](https://leetcode.com/problems/height-checker/description/) | Easy | [C++](./algorithms/height_checker.cpp) | `Array` `Sorting` `Counting Sort` |
+| 1091 | [Shortest Path in Binary Matrix](https://leetcode.com/problems/shortest-path-in-binary-matrix/) | Medium | [C++](./algorithms/shortest_path.cpp) | `Array` `BFS` |
 | 1093 | [Statistics from a Large Sample](https://leetcode.com/problems/statistics-from-a-large-sample/) | Medium | [C++](./algorithms/sample_stats.cpp) | `Array` `Math` |
 | 1134 | [Armstrong Number]()https://leetcode.com/problems/armstrong-number/ | Easy | [C++](./algorithms/armstrong_number.cpp) | `Math` |
 | 1206 | [Design Skiplist](https://leetcode.com/problems/design-skiplist) | Hard | [C++](./algorithms/design_skiplist.cpp) | `Linked List` |
