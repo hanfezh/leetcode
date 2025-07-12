@@ -76,6 +76,7 @@ set(TEST_SOURCES
     next_permutation.cpp
     number_containers.cpp
     palindrome_number.cpp
+    partition_labels.cpp
     permutation_in_string.cpp
     prefix_common_array.cpp
     product_except_self.cpp
