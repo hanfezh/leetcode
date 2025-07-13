@@ -3,36 +3,40 @@
 // Author: xianfeng.zhu@gmail.com
 
 #include <algorithm>
-#include <cstdio>
+#include <tuple>
 #include <vector>
-#include <queue>
+
+#include "gtest/gtest.h"
 
 // Sliding window, two pointers
 class Solution {
  public:
   int longestOnes(std::vector<int>& nums, int k) {
-    std::queue<int> zero_indexes;
-    int max_num = 0;
-    int left = -1;
-    int right = -1;
-    for (right = 0; right < nums.size(); right++) {
-      if (nums[right] == 0) {
-        zero_indexes.push(right);
-        if (zero_indexes.size() > k) {
-          left = zero_indexes.front();
-          zero_indexes.pop();
-        }
+    int prev = 0;
+    int used_zeros = 0;
+    int max_ones = 0;
+    for (int i = 0; i < nums.size(); i++) {
+      if (nums[i] == 0) {
+        used_zeros++;
       }
-      max_num = std::max(max_num, right - left);
+      while (used_zeros > k) {
+        if (nums[prev] == 0) {
+          used_zeros--;
+        }
+        prev++;
+      }
+      max_ones = std::max(max_ones, i - prev + 1);
     }
-    return max_num;
+    return max_ones;
   }
 };
 
-int main(int argc, char* argv[]) {
-  std::vector<int> nums = {1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0};
-  const int k = 2;
-  const int max_num = Solution().longestOnes(nums, k);
-  printf("Max consecutive ones is %d\n", max_num);
-  return 0;
+TEST(Solution, longestOnes) {
+  std::vector<std::tuple<std::vector<int>, int, int>> cases{
+      {{1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0}, 2, 6},
+      {{0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1}, 3, 10},
+  };
+  for (auto& [nums, k, max_ones] : cases) {
+    EXPECT_EQ(Solution().longestOnes(nums, k), max_ones);
+  }
 }
