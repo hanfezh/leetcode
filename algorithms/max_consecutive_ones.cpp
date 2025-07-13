@@ -2,30 +2,37 @@
 // Refer: https://leetcode.com/problems/max-consecutive-ones
 // Author: xianfeng.zhu@gmail.com
 
-#include <cstdio>
 #include <algorithm>
+#include <utility>
 #include <vector>
+
+#include "gtest/gtest.h"
 
 class Solution {
  public:
   int findMaxConsecutiveOnes(std::vector<int>& nums) {
-    int max_num = 0;
-    int last_idx = -1;
-    int i = 0;
-    while (i < nums.size()) {
-      if (nums[i] == 0) {
-        max_num = std::max(max_num, i - last_idx - 1);
-        last_idx = i;
+    int prev = -1;
+    int max_ones = 0;
+    for (int i = 0; i < nums.size(); i++) {
+      if (nums[i] == 1) {
+        if (prev == -1) {
+          prev = i;
+        }
+        max_ones = std::max(max_ones, i - prev + 1);
+      } else {
+        prev = -1;
       }
-      i++;
     }
-    return std::max(max_num, i - last_idx - 1);
+    return max_ones;
   }
 };
 
-int main(int argc, char* argv[]) {
-  std::vector<int> nums = {1, 1, 0, 1, 1, 1};
-  const int max_num = Solution().findMaxConsecutiveOnes(nums);
-  printf("The maximum number of consecutive 1s is %d\n", max_num);
-  return 0;
+TEST(Solution, findMaxConsecutiveOnes) {
+  std::vector<std::pair<std::vector<int>, int>> cases = {
+      {{1, 1, 0, 1, 1, 1}, 3},
+      {{1, 0, 1, 1, 0, 1}, 2},
+  };
+  for (auto& [nums, max_ones] : cases) {
+    EXPECT_EQ(Solution().findMaxConsecutiveOnes(nums), max_ones);
+  }
 }

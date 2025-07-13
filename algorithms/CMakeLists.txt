@@ -58,6 +58,7 @@ set(TEST_SOURCES
     maximum_profit.cpp
     maximum_swap.cpp
     max_chunks_to_sorted.cpp
+    max_consecutive_ones.cpp
     max_points.cpp
     max_stack.cpp
     median_sorted_arrays.cpp
