@@ -326,6 +326,7 @@ cmake --build build
 | 912 | [Sort an Array](https://leetcode.com/problems/sort-an-array) | Medium | [C++](./algorithms/sort_array.cpp) | `Array` `Merge Sort` `Heap Sort` |
 | 921 | [Minimum Add to Make Parentheses Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/) | Medium | [C++](./algorithms/min_add_to_make_valid.cpp) | `String` `Stack` |
 | 922 | [Sort Array By Parity II](https://leetcode.com/problems/sort-array-by-parity-ii/) | Easy | [C++](./algorithms/sort_array_by_parity2.cpp) | `Array` `Two Pointers` |
+| 938 | [Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst/) | Easy | [C++](./algorithms/range_sum_bst.cpp) | `DFS` |
 | 965 | [Univalued Binary Tree](https://leetcode.com/problems/univalued-binary-tree) | Easy | [C++](./algorithms/univalued_binary_tree.cpp) | `BFS` |
 | 973 | [K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin/) | Medium | [C++](./algorithms/k_closest_points.cpp) | `Array` `Sorting` `Priority Queue` |
 | 977 | [Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/) | Easy | [C++](./algorithms/sorted_squares.cpp) | `Array` `Two Pointers` |
