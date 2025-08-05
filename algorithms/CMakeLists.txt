@@ -32,6 +32,7 @@ set(TEST_SOURCES
     find_all_people.cpp
     find_judge.cpp
     find_lhs.cpp
+    find_minimum.cpp
     find_the_difference.cpp
     find_the_duplicate_number.cpp
     find_the_peaks.cpp
