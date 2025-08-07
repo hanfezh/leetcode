@@ -373,4 +373,5 @@ cmake --build build
 | 3174 | [Clear Digits](https://leetcode.com/problems/clear-digits/) | Easy | [C++](./algorithms/clear_digits.cpp) | `Stack` |
 | 3285 | [Find Indices of Stable Mountains](https://leetcode.com/problems/find-indices-of-stable-mountains/) | Easy | [C++](./algorithms/stable_mountains.cpp) | `Array` |
 | 3392 | [Count Subarrays of Length Three With a Condition](https://leetcode.com/problems/count-subarrays-of-length-three-with-a-condition/) | Easy | [C++](./algorithms/count_subarrays.cpp) | `Array` |
-| 3432 | [Count Partitions with Even Sum Difference]()https://leetcode.com/problems/count-partitions-with-even-sum-difference/ | Easy | [C++](./algorithms/count_partitions.cpp) | `Array` `Math` |
+| 3432 | [Count Partitions with Even Sum Difference](https://leetcode.com/problems/count-partitions-with-even-sum-difference/) | Easy | [C++](./algorithms/count_partitions.cpp) | `Array` `Math` |
+| 3479 | [Fruits Into Baskets III](https://leetcode.com/problems/fruits-into-baskets-iii/) | Medium | [C++](./algorithms/fruits_into_baskets3.cpp) | `Segment Tree` `Binary Search` |
