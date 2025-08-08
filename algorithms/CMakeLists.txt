@@ -60,6 +60,7 @@ set(TEST_SOURCES
     maximum_profit.cpp
     maximum_swap.cpp
     max_chunks_to_sorted.cpp
+    max_collected_fruits.cpp
     max_consecutive_ones.cpp
     max_consecutive_ones3.cpp
     max_points.cpp

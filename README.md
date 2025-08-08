@@ -372,6 +372,7 @@ cmake --build build
 | 3151 | [Special Array I](https://leetcode.com/problems/special-array-i/) | Easy | [C++](./algorithms/special_array1.cpp) | `Array` |
 | 3174 | [Clear Digits](https://leetcode.com/problems/clear-digits/) | Easy | [C++](./algorithms/clear_digits.cpp) | `Stack` |
 | 3285 | [Find Indices of Stable Mountains](https://leetcode.com/problems/find-indices-of-stable-mountains/) | Easy | [C++](./algorithms/stable_mountains.cpp) | `Array` |
+| 3363 | [Find the Maximum Number of Fruits Collected](https://leetcode.com/problems/find-the-maximum-number-of-fruits-collected/) | Hard | [C++](./algorithms/max_collected_fruits.cpp) | `Dynamic Programming` |
 | 3392 | [Count Subarrays of Length Three With a Condition](https://leetcode.com/problems/count-subarrays-of-length-three-with-a-condition/) | Easy | [C++](./algorithms/count_subarrays.cpp) | `Array` |
 | 3432 | [Count Partitions with Even Sum Difference](https://leetcode.com/problems/count-partitions-with-even-sum-difference/) | Easy | [C++](./algorithms/count_partitions.cpp) | `Array` `Math` |
 | 3479 | [Fruits Into Baskets III](https://leetcode.com/problems/fruits-into-baskets-iii/) | Medium | [C++](./algorithms/fruits_into_baskets3.cpp) | `Segment Tree` `Binary Search` |
