@@ -99,7 +99,7 @@ cmake --build build
 | 77 | [Combinations](https://leetcode.com/problems/combinations) | Medium | [C++](./algorithms/combinations.cpp) |
 | 78 | [Subsets](https://leetcode.com/problems/subsets) | Medium | [C++](./algorithms/subsets.cpp) |
 | 79 | [Word Search](https://leetcode.com/problems/word-search) | Medium | [C++](./algorithms/word_search.cpp) | `Backtracking` |
-| 80 | [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii) | Medium | [C++](./algorithms/remove_duplicates_from_array2.cpp) | `Array` |
+| 80 | [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii) | Medium | [C++](./algorithms/remove_duplicates_from_array2.cpp) | `Array` `Two Pointers` |
 | 81 | [Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii) | Medium | [C++](./algorithms/search_in_rotated_sorted_array2.cpp) |
 | 82 | [Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii) | Medium | [C++](./algorithms/remove_duplicates_from_list2.cpp) [Python3](./algorithms/remove_duplicates_from_list2.py) | `Linked List` `Two Pointers` |
 | 83 | [Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list) | Easy | [C++](./algorithms/remove_duplicates_from_list.cpp) |

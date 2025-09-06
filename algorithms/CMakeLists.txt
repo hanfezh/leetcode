@@ -88,6 +88,7 @@ set(TEST_SOURCES
     range_sum_query.cpp
     recover_binary_search_tree.cpp
     remove_duplicates.cpp
+    remove_duplicates_from_array2.cpp
     remove_occurrences.cpp
     remove_element.cpp
     rotated_digits.cpp
