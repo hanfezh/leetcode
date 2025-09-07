@@ -91,6 +91,7 @@ set(TEST_SOURCES
     remove_duplicates_from_array2.cpp
     remove_occurrences.cpp
     remove_element.cpp
+    rotate_array.cpp
     rotated_digits.cpp
     same_tree.cpp
     sample_stats.cpp

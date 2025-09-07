@@ -183,7 +183,7 @@ cmake --build build
 | 177 | [Nth Highest Salary](https://leetcode.com/problems/nth-highest-salary) | Medium | [MySQL](./database/nth_highest_salary.sql) | Database |
 | 178 | [Rank Scores](https://leetcode.com/problems/rank-scores/) | Medium | [MySQL](./database/rank_scores.sql) | Database |
 | 179 | [Largest Number](https://leetcode.com/problems/largest-number) | Medium | [Python](./algorithms/largest_number.py) |
-| 189 | [Rotate Array](https://leetcode.com/problems/rotate-array) | Easy | [C](./algorithms/rotate_array.c) | `Array` |
+| 189 | [Rotate Array](https://leetcode.com/problems/rotate-array) | Medium | [C](./algorithms/rotate_array.c) [C++](./algorithms/rotate_array.cpp) | `Array` |
 | 197 | [Rising Temperature](https://leetcode.com/problems/rising-temperature) | Easy | [MySQL](./database/rising_temperature.sql) |
 | 190 | [Reverse Bits](https://leetcode.com/problems/reverse-bits) | Easy | [C++](./algorithms/reverse_bits.cpp) | `Bit Manipulation` |
 | 191 | [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits) | Easy | [C++](./algorithms/number_of_bits.cpp) | `Bit Manipulation` |
