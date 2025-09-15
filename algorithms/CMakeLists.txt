@@ -44,6 +44,7 @@ set(TEST_SOURCES
     h_index.cpp
     implement_trie.cpp
     insert_interval.cpp
+    is_subsequence.cpp
     kth_missing_positive_number.cpp
     kth_smallest_element.cpp
     k_closest_points.cpp

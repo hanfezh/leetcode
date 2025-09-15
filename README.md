@@ -256,7 +256,7 @@ cmake --build build
 | 386 | [Lexicographical Numbers](https://leetcode.com/problems/lexicographical-numbers) | Medium | [C++](./algorithms/lexicographical_numbers.cpp) | `DFS` |
 | 387 | [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string) | Easy | [C++](./algorithms/first_unique_character.cpp) | `Hash Table` |
 | 389 | [Find the Difference](https://leetcode.com/problems/find-the-difference/) | Easy | [C++](./algorithms/find_the_difference.cpp) | `Hash Table` `Bit Manipulation` |
-| 392 | [Is Subsequence](https://leetcode.com/problems/is-subsequence/) | Easy | [C++](./algorithms/is_subsequence.cpp) [Python3](./algorithms/is_subsequence.py) | `String` |
+| 392 | [Is Subsequence](https://leetcode.com/problems/is-subsequence/) | Easy | [C++](./algorithms/is_subsequence.cpp) [Python3](./algorithms/is_subsequence.py) | `String` `Two Pointers`|
 | 397 | [Integer Replacement](https://leetcode.com/problems/integer-replacement) | Medium | [C++](./algorithms/integer_replacement.cpp) |
 | 404 | [Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves) | Easy | [C++](./algorithms/sum_of_left_leaves.cpp) | `Tree` |
 | 409 | [Longest Palindrome](https://leetcode.com/problems/longest-palindrome/) | Easy | [C++](./algorithms/longest_palindrome.cpp) | `String` `Hash Table` |

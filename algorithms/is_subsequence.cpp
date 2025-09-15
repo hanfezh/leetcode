@@ -15,12 +15,15 @@
  *
  * =====================================================================================
  */
-#include <cstdio>
 #include <string>
+#include <tuple>
+#include <vector>
 
-class Solution {
+#include "gtest/gtest.h"
+
+class Solution1 {
  public:
-  bool isSubsequence(const std::string& s, const std::string& t) {
+  bool isSubsequence(std::string s, std::string t) {
     int i = 0;
     int j = s.size() - 1;
     int l = 0;
@@ -39,15 +42,31 @@ class Solution {
   }
 };
 
-int main(int argc, char* argv[]) {
-  std::string s = "abc";
-  std::string t = "ahbgdc";
-  if (argc > 2) {
-    s = argv[1];
-    t = argv[2];
+class Solution2 {
+ public:
+  bool isSubsequence(std::string s, std::string t) {
+    int i = 0;
+    int j = 0;
+    while (j < t.length()) {
+      if (i < s.length() && s[i] == t[j]) {
+        i++;
+      }
+      if (i == s.length()) {
+        break;
+      }
+      j++;
+    }
+    return (i == s.length());
   }
-  const bool is_subseq = Solution().isSubsequence(s, t);
-  printf("s = %s, t = %s\n", s.c_str(), t.c_str());
-  printf("%s\n", (is_subseq ? "true" : "false"));
-  return 0;
+};
+
+TEST(Solution, isSubsequence) {
+  std::vector<std::tuple<std::string, std::string, bool>> cases = {
+      {"abc", "ahbgdc", true}, {"axc", "ahbgdc", false}, {"", "ahbgdc", true},
+      {"", "", true},          {"aza", "abzba", true},
+  };
+  for (auto& [s, t, ret] : cases) {
+    EXPECT_EQ(Solution1().isSubsequence(s, t), ret);
+    EXPECT_EQ(Solution2().isSubsequence(s, t), ret);
+  }
 }
