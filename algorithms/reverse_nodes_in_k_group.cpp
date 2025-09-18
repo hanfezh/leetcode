@@ -122,6 +122,41 @@ class Solution2 {
   }
 };
 
+// Recursion
+class Solution3 {
+ public:
+  ListNode* reverseKGroup(ListNode* head, int k) {
+    int count = 0;
+    ListNode* p = head;
+    while (p != nullptr) {
+      p = p->next;
+      if (++count >= k) {
+        break;
+      }
+    }
+    if (count < k) {
+      return head;
+    }
+
+    // Keep the rest list and reverse later
+    ListNode* rest = p;
+
+    // Reverse k nodes from head
+    ListNode dummy;
+    ListNode* tail = head;
+    while (count-- > 0) {
+      p = head->next;
+      head->next = dummy.next;
+      dummy.next = head;
+      head = p;
+    }
+
+    // Reverse the rest
+    tail->next = reverseKGroup(rest, k);
+    return dummy.next;
+  }
+};
+
 using Solution = Solution2;
 
 int main(int argc, char* argv[]) {
