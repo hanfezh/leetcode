@@ -25,7 +25,7 @@
 
 using std::vector;
 
-class Solution {
+class Solution1 {
  public:
   vector<vector<int>> insert(vector<vector<int>>& intervals, vector<int>& new_interval) {
     vector<vector<int>> merged_intervals;
@@ -58,6 +58,34 @@ class Solution {
   }
 };
 
+// Time complexity: O(n)
+class Solution2 {
+ public:
+  vector<vector<int>> insert(vector<vector<int>>& intervals, vector<int>& new_interval) {
+    std::vector<std::vector<int>> merges;
+    int i = 0;
+
+    // No overlapping before merging the new interval
+    while (i < intervals.size() && intervals[i][1] < new_interval[0]) {
+      merges.push_back(intervals[i++]);
+    }
+
+    // Overlapping
+    while (i < intervals.size() && intervals[i][0] <= new_interval[1]) {
+      new_interval[0] = std::min(new_interval[0], intervals[i][0]);
+      new_interval[1] = std::max(new_interval[1], intervals[i][1]);
+      i++;
+    }
+    merges.push_back(new_interval);
+
+    // No overlapping after merge
+    while (i < intervals.size()) {
+      merges.push_back(intervals[i++]);
+    }
+    return merges;
+  }
+};
+
 TEST(Solution, insert) {
   vector<std::tuple<vector<vector<int>>, vector<int>, vector<vector<int>>>> cases = {
       std::make_tuple(vector<vector<int>>{vector<int>{1, 3}, vector<int>{6, 9}}, vector<int>{2, 5},
@@ -68,8 +96,9 @@ TEST(Solution, insert) {
           vector<int>{4, 8},
           vector<vector<int>>{vector<int>{1, 2}, vector<int>{3, 10}, vector<int>{12, 16}}),
   };
-  for (auto& c : cases) {
-    EXPECT_THAT(Solution().insert(std::get<0>(c), std::get<1>(c)),
-                testing::ElementsAreArray(std::get<2>(c)));
+  for (auto& [intervals, new_interval1, merges] : cases) {
+    auto new_interval2 = new_interval1;
+    EXPECT_THAT(Solution1().insert(intervals, new_interval1), testing::ElementsAreArray(merges));
+    EXPECT_THAT(Solution2().insert(intervals, new_interval2), testing::ElementsAreArray(merges));
   }
 }
