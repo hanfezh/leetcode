@@ -11,73 +11,51 @@
  *       Compiler:  gcc
  *
  *         Author:  Zhu Xianfeng (), xianfeng.zhu@gmail.com
- *   Organization:  
+ *   Organization:
  *
  * =====================================================================================
  */
-#include <stdio.h>
-#include <stdlib.h>
+#include <cstdio>
+#include <cstdlib>
 
-struct ListNode
-{
-    int val;
-    ListNode *next;
-    ListNode(int x) : val(x), next(NULL) {}
+struct ListNode {
+  int val;
+  ListNode* next;
+  ListNode() : val(0), next(nullptr) {}
+  ListNode(int x) : val(x), next(nullptr) {}
+  ListNode(int x, ListNode* next) : val(x), next(next) {}
 };
 
-class Solution
-{
-public:
-    ListNode* deleteDuplicates(ListNode* head)
-    {
-        ListNode fake(0);
-        ListNode* last = &fake;
-        ListNode* prev = head;
-        ListNode* curr = (prev != NULL ? prev->next : NULL);
-        bool is_dup = false;
-
-        while (curr != NULL)
-        {
-            if (curr->val == prev->val)
-            {
-                prev->next = curr->next;
-                delete curr;
-                curr = prev->next;
-                is_dup = true;
-                continue;
-            }
-
-            // curr->val != prev->val
-            if (is_dup)
-            {
-                delete prev;
-                prev = curr;
-                curr = curr->next;
-                is_dup = false;
-            }
-            else
-            {
-                last->next = prev;
-                last = prev;
-                last->next = NULL;
-                prev = curr;
-                curr = prev->next;
-            }
-        }
-
-        if (!is_dup && prev != NULL)
-        {
-            last->next = prev;
-        }
-
-        return fake.next;
+// Two pointers
+class Solution {
+ public:
+  ListNode* deleteDuplicates(ListNode* head) {
+    ListNode dummy(0, head);
+    ListNode* p = &dummy;
+    ListNode* left = p->next;
+    ListNode* right = nullptr;
+    bool duplicate = false;
+    while (left != nullptr) {
+      right = left->next;
+      if (right != nullptr && left->val == right->val) {
+        left->next = right->next;
+        duplicate = true;
+      } else if (duplicate) {
+        p->next = left->next;
+        left = left->next;
+        duplicate = false;
+      } else {
+        p = p->next;
+        left = left->next;
+      }
     }
+    return dummy.next;
+  }
 };
 
-int main(int argc, char* argv[])
-{
-    ListNode* root = NULL;
-    root = Solution().deleteDuplicates(root);
+int main(int argc, char* argv[]) {
+  ListNode* root = NULL;
+  root = Solution().deleteDuplicates(root);
 
-    return 0;
+  return 0;
 }
