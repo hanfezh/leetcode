@@ -111,6 +111,7 @@ set(TEST_SOURCES
     sort_list.cpp
     special_array1.cpp
     stable_mountains.cpp
+    summary_ranges.cpp
     third_maximum_number.cpp
     three_sum.cpp
     tic_tac_toe.cpp
