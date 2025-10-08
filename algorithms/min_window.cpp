@@ -22,7 +22,7 @@
 
 #include <gtest/gtest.h>
 
-class Solution {
+class Solution1 {
  public:
   std::string minWindow(std::string s, std::string t) {
     std::unordered_map<char, int> t_char_counts;
@@ -67,6 +67,46 @@ class Solution {
   }
 };
 
+// Time complexity: O(n)
+// Space complexity: O(1)
+class Solution2 {
+ public:
+  std::string minWindow(std::string s, std::string t) {
+    if (s.empty() || t.empty() || s.length() < t.length()) {
+      return "";
+    }
+
+    std::vector<int> t_char_counts(256, 0);
+    for (char c : t) {
+      t_char_counts[c]++;
+    }
+
+    int count = t.length();
+    int left = 0, right = 0;
+    int min_len = INT_MAX;
+    int start_idx = 0;
+
+    while (right < s.length()) {
+      if (t_char_counts[s[right++]]-- > 0) {
+        count--;
+      }
+
+      while (count == 0) {
+        if (right - left < min_len) {
+          start_idx = left;
+          min_len = right - left;
+        }
+
+        if (t_char_counts[s[left++]]++ == 0) {
+          count++;
+        }
+      }
+    }
+
+    return min_len == INT_MAX ? "" : s.substr(start_idx, min_len);
+  }
+};
+
 TEST(Solution, minWindow) {
   std::vector<std::tuple<std::string, std::string, std::string>> cases = {
       {"ADOBECODEBANC", "ABC", "BANC"},
@@ -74,6 +114,7 @@ TEST(Solution, minWindow) {
       {"a", "aa", ""},
   };
   for (auto& [a, b, c] : cases) {
-    EXPECT_EQ(Solution().minWindow(a, b), c);
+    EXPECT_EQ(Solution1().minWindow(a, b), c);
+    EXPECT_EQ(Solution2().minWindow(a, b), c);
   }
 }
