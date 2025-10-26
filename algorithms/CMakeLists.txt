@@ -42,6 +42,7 @@ set(TEST_SOURCES
     flood_fill.cpp
     fruits_into_baskets3.cpp
     highest_peak.cpp
+    house_robber.cpp
     h_index.cpp
     implement_trie.cpp
     insert_interval.cpp
