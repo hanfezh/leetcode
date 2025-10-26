@@ -68,7 +68,26 @@ class Solution2 {
   }
 };
 
-using Solution = Solution2;
+// Time complexity: O(n)
+// Space complexity: O(1)
+class Solution3 {
+ public:
+  int climbStairs(int n) {
+    if (n <= 2) {
+      return n;
+    }
+
+    int a = 1;
+    int b = 2;
+    int c = 0;
+    for (int i = 2; i < n; i++) {
+      c = a + b;
+      a = b;
+      b = c;
+    }
+    return c;
+  }
+};
 
 TEST(Solution, climbStairs) {
   std::vector<std::pair<int, int>> cases = {
@@ -79,6 +98,7 @@ TEST(Solution, climbStairs) {
   };
   for (auto& c : cases) {
     EXPECT_EQ(Solution1().climbStairs(c.first), c.second);
-    EXPECT_EQ(Solution1().climbStairs(c.first), c.second);
+    EXPECT_EQ(Solution2().climbStairs(c.first), c.second);
+    EXPECT_EQ(Solution3().climbStairs(c.first), c.second);
   }
 }
