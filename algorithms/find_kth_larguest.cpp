@@ -2,10 +2,11 @@
 // URL: https://leetcode.com/problems/kth-largest-element-in-an-array
 // Author: xianfeng.zhu@gmail.com
 
-#include <cstdio>
-#include <iostream>
 #include <queue>
+#include <tuple>
 #include <vector>
+
+#include "gtest/gtest.h"
 
 // Partition and sort
 class Solution1 {
@@ -137,12 +138,60 @@ class Solution3 {
   }
 };
 
-using Solution = Solution3;
+// Time complexity: O(nlogn)
+// Space complexity: O(1)
+class Solution4 {
+ public:
+  int findKthLargest(std::vector<int>& nums, int k) {
+    int n = nums.size();
+    if (n < k) {
+      return 0;
+    }
 
-int main(int argc, char* argv[]) {
-  std::vector<int> nums = {3, 2, 3, 1, 2, 4, 5, 5, 6};
-  const int k = 4;
-  const int kth = Solution().findKthLargest(nums, k);
-  printf("Kth largest is %d\n", kth);
-  return 0;
+    // Build max heap
+    for (int i = 0; i < n; i++) {
+      heapifyUp(nums, i);
+    }
+
+    while (--k > 0) {
+      std::swap(nums[0], nums[--n]);
+      heapifyDown(nums, 0, n);
+    }
+
+    return nums[0];
+  }
+
+  void heapifyUp(std::vector<int>& nums, int i) {
+    if (i == 0) {
+      return;
+    }
+    int p = (i - 1) / 2;
+    if (nums[p] < nums[i]) {
+      std::swap(nums[p], nums[i]);
+      heapifyUp(nums, p);
+    }
+  }
+
+  void heapifyDown(std::vector<int>& nums, int i, int n) {
+    int l = i * 2 + 1;
+    int r = l + 1;
+    int c = l;
+    if (r < n && nums[c] < nums[r]) {
+      c = r;
+    }
+    if (c < n && nums[i] < nums[c]) {
+      std::swap(nums[i], nums[c]);
+      heapifyDown(nums, c, n);
+    }
+  }
+};
+
+TEST(Solution, findKthLargest) {
+  std::vector<std::tuple<std::vector<int>, int, int>> cases = {
+      {{3, 2, 1, 5, 6, 4}, 2, 5},
+      {{3, 2, 3, 1, 2, 4, 5, 5, 6}, 4, 4},
+  };
+  for (auto& [nums, k, ret] : cases) {
+    EXPECT_EQ(Solution4().findKthLargest(nums, k), ret);
+  }
 }
