@@ -345,6 +345,7 @@ cmake --build build
 | 1207 | [Unique Number of Occurrences](https://leetcode.com/problems/unique-number-of-occurrences/) | Easy | [C++](./algorithms/unique_occurrences.cpp) | `Hash Table` |
 | 1247 | [Minimum Swaps to Make Strings Equal](https://leetcode.com/problems/minimum-swaps-to-make-strings-equal) | Medium | [C++](./algorithms/minimum_swaps_equal.cpp) | `Math` `String` |
 | 1288 | [Remove Covered Intervals](https://leetcode.com/problems/remove-covered-intervals/) | Medium | [C++](./algorithms/remove_covered_intervals.cpp) | `Array` `Sorting` |
+| 1293 | [Shortest Path in a Grid with Obstacles Elimination](https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/) | Hard | [C++](./algorithms/shortest_path_with_obstacles.cpp) | `BFS` |
 | 1365 | [How Many Numbers Are Smaller Than the Current Number]()https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/ | Easy | [C++](./algorithms/smaller_numbers.cpp) | `Sorting` `Hash Table` |
 | 1366 | [Rank Teams by Votes](https://leetcode.com/problems/rank-teams-by-votes) | Medium | [C++](./algorithms/rank_teams.cpp) | `Array` `Sorting` |
 | 1381 | [Design a Stack With Increment Operation](https://leetcode.com/problems/design-a-stack-with-increment-operation/) | Medium | [C++](./algorithms/custom_stack.cpp) | `Array` `Stack` |
