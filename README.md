@@ -359,6 +359,7 @@ cmake --build build
 | 1765 | [Map of Highest Peak](https://leetcode.com/problems/map-of-highest-peak/) | Medium | [C++](./algorithms/highest_peak.cpp) | `BFS` |
 | 1769 | [Minimum Number of Operations to Move All Balls to Each Box](https://leetcode.com/problems/minimum-number-of-operations-to-move-all-balls-to-each-box/) | Medium | [C++](./algorithms/min_operations.cpp) | `Prefix Sum` |
 | 1910 | [Remove All Occurrences of a Substring](https://leetcode.com/problems/remove-all-occurrences-of-a-substring/) | Medium | [C++](./algorithms/remove_occurrences.cpp) | `String` |
+| 1937 | [Maximum Number of Points with Cost](https://leetcode.com/problems/maximum-number-of-points-with-cost/) | Medium | [C++](./algorithms/max_points_with_cost.cpp) | `Dynamic Programming` |
 | 2032 | [Two Out of Three](https://leetcode.com/problems/two-out-of-three) | Easy | [C++](./algorithms/two_out_of_three.cpp) | `Set` `Map` |
 | 2092 | [Find All People With Secret](https://leetcode.com/problems/find-all-people-with-secret/) | Hard | [C++](./algorithms/find_all_people.cpp) | `Union Find` |
 | 2108 | [Find First Palindromic String in the Array](https://leetcode.com/problems/find-first-palindromic-string-in-the-array/) | Easy | [C++](./algorithms/first_palindrome.cpp) | `Two Pointers` |

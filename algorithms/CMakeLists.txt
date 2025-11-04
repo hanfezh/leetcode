@@ -69,6 +69,7 @@ set(TEST_SOURCES
     max_consecutive_ones.cpp
     max_consecutive_ones3.cpp
     max_points.cpp
+    max_points_with_cost.cpp
     max_stack.cpp
     median_sorted_arrays.cpp
     merge_intervals.cpp
