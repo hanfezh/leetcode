@@ -284,6 +284,7 @@ cmake --build build
 | 509 | [Fibonacci Number](https://leetcode.com/problems/fibonacci-number) | Easy | [C++](./algorithms/fibonacci_number.cpp) | `Array` `Dynamic Programming` |
 | 523 | [Continuous Subarray Sum](https://leetcode.com/problems/continuous-subarray-sum) | Medium | [C++](./algorithms/continuous_subarray_sum.cpp) | |
 | 524 | [Longest Word in Dictionary through Deleting](https://leetcode.com/problems/longest-word-in-dictionary-through-deleting) | Medium | [C++](./algorithms/longest_word_through_deleting.cpp) | `Sorting` `Two Pointers` |
+| 528 | [Random Pick with Weight](https://leetcode.com/problems/random-pick-with-weight/) | Medium | [C++](./algorithms/random_pick_index.cpp) | `Prefix Sum` `Binary Search` |
 | 540 | [Single Element in a Sorted Array](https://leetcode.com/problems/single-element-in-a-sorted-array) | Medium | [C++](./algorithms/single_non_duplicate.cpp) | `Bit Manipulation` `Binary Search` |
 | 541 | [Reverse String II](https://leetcode.com/problems/reverse-string-ii) | Easy | [C++](./algorithms/reverse_string2.cpp) | |
 | 542 | [01 Matrix](https://leetcode.com/problems/01-matrix/) | Medium | [C++](./algorithms/update_matrix.cpp) | `BFS` `Dynamic Programming` |
