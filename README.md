@@ -317,6 +317,7 @@ cmake --build build
 | 765 | [Couples Holding Hands](https://leetcode.com/problems/couples-holding-hands) | Hard | [C++](./algorithms/couples_holding_hands.cpp) | `Union Find` |
 | 769 | [Max Chunks To Make Sorted](https://leetcode.com/problems/max-chunks-to-make-sorted/) | Medium | [C++](./algorithms/max_chunks_to_sorted.cpp) | `Array` |
 | 772 | [772. Basic Calculator III](https://leetcode.com/problems/basic-calculator-iii/) | Hard | [C++](./algorithms/basic_calculator3.cpp) | `String` `Stack` |
+| 777 | [Swap Adjacent in LR String](https://leetcode.com/problems/swap-adjacent-in-lr-string/) | Medium | [C++](./algorithms/swap_adjacent_lr_string.cpp) | `Two Pointers` |
 | 779 | [K-th Symbol in Grammar](https://leetcode.com/problems/k-th-symbol-in-grammar) | Medium | [C++](./algorithms/kth_symbol_in_grammar.cpp) | `Recursion` |
 | 788 | [Rotated Digits](https://leetcode.com/problems/rotated-digits) | Easy | [C++](./algorithms/rotated_digits.cpp) | `Dynamic Programming` |
 | 796 | [Rotate String](https://leetcode.com/problems/rotate-string) | Easy | [C++](./algorithms/rotate_string.cpp) | `String` |
