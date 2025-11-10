@@ -82,6 +82,7 @@ set(TEST_SOURCES
     min_operations.cpp
     min_stack.cpp
     min_subarray_len.cpp
+    min_time_difference.cpp
     min_window.cpp
     missing_number.cpp
     missing_ranges.cpp
