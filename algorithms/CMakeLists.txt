@@ -68,6 +68,7 @@ set(TEST_SOURCES
     max_collected_fruits.cpp
     max_consecutive_ones.cpp
     max_consecutive_ones3.cpp
+    max_detonation.cpp
     max_points.cpp
     max_points_with_cost.cpp
     max_stack.cpp

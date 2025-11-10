@@ -366,6 +366,7 @@ cmake --build build
 | 1937 | [Maximum Number of Points with Cost](https://leetcode.com/problems/maximum-number-of-points-with-cost/) | Medium | [C++](./algorithms/max_points_with_cost.cpp) | `Dynamic Programming` |
 | 2032 | [Two Out of Three](https://leetcode.com/problems/two-out-of-three) | Easy | [C++](./algorithms/two_out_of_three.cpp) | `Set` `Map` |
 | 2092 | [Find All People With Secret](https://leetcode.com/problems/find-all-people-with-secret/) | Hard | [C++](./algorithms/find_all_people.cpp) | `Union Find` |
+| 2101 | [Detonate the Maximum Bombs](https://leetcode.com/problems/detonate-the-maximum-bombs/) | Medium | [C++](./algorithms/max_detonation.cpp) | `DFS` |
 | 2108 | [Find First Palindromic String in the Array](https://leetcode.com/problems/find-first-palindromic-string-in-the-array/) | Easy | [C++](./algorithms/first_palindrome.cpp) | `Two Pointers` |
 | 2177 | [Find Three Consecutive Integers That Sum to a Given Number](https://leetcode.com/problems/find-three-consecutive-integers-that-sum-to-a-given-number/) | Medium | [C++](./algorithms/sum_of_three.cpp) | `Math` |
 | 2293 | [Min Max Game](https://leetcode.com/problems/min-max-game/) | Easy | [C++](./algorithms/min_max_game.cpp) | `Array` |
