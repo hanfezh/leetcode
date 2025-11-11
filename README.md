@@ -265,6 +265,7 @@ cmake --build build
 | 412 | [Fizz Fuzz](https://leetcode.com/problems/fizz-buzz) | Easy | [C++](./algorithms/fizz_buzz.cpp) | `Math` |
 | 414 | [Third Maximum Number](https://leetcode.com/problems/third-maximum-number/) | Easy | [C++](./algorithms/third_maximum_number.cpp) | `Sorting` |
 | 415 | [Add Strings](https://leetcode.com/problems/add-strings) | Easy | [C++](./algorithms/add_strings.cpp) |
+| 419 | [Battleships in a Board](https://leetcode.com/problems/battleships-in-a-board/) | Medium | [C++](./algorithms/count_battleships.cpp) | `Matrix` |
 | 429 | [N-ary Tree Level Order Traversal](https://leetcode.com/problems/n-ary-tree-level-order-traversal) | Medium | [C++](./algorithms/nary_tree_level_order_traversal.cpp) | `Tree` `BFS` |
 | 430 | [Flatten a Multilevel Doubly Linked List](https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list) | Medium | [C++](./algorithms/flatten_multilevel_linked_list.cpp) | `Linked List` |
 | 437 | [Path Sum III](https://leetcode.com/problems/path-sum-iii) | Easy | [C++](./algorithms/path_sum3.cpp) |

@@ -21,6 +21,7 @@ set(TEST_SOURCES
     coin_change.cpp
     contains_duplicate.cpp
     contains_pattern.cpp
+    count_battleships.cpp
     count_complete_tree_nodes.cpp
     count_partitions.cpp
     count_subarrays.cpp
