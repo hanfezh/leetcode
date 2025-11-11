@@ -291,7 +291,8 @@ cmake --build build
 | 541 | [Reverse String II](https://leetcode.com/problems/reverse-string-ii) | Easy | [C++](./algorithms/reverse_string2.cpp) | |
 | 542 | [01 Matrix](https://leetcode.com/problems/01-matrix/) | Medium | [C++](./algorithms/update_matrix.cpp) | `BFS` `Dynamic Programming` |
 | 543 | [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/) | Easy | [C++](./algorithms/diameter_of_binary_tree.cpp) | `Tree` `DFS` |
-| 551 | [Student Attendance Record I](https://leetcode.com/problems/student-attendance-record-i/) | Easy | [C++](./algorithms/diameter_of_binary_tree.cpp) | `Tree` `DFS` |
+| 551 | [Student Attendance Record I](https://leetcode.com/problems/student-attendance-record-i/) | Easy | [C++](./algorithms/attendance_record1.cpp) | `String` |
+| 552 | [Student Attendance Record II](https://leetcode.com/problems/student-attendance-record-ii/) | Hard | [C++](./algorithms/attendance_record2.cpp) | `Dynamic Programming` |
 | 560 | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k) | Medium | [C++](./algorithms/subarray_sum_equals_k.cpp) | `Array` |
 | 563 | [Binary Tree Tilt](https://leetcode.com/problems/binary-tree-tilt/) | Easy | [C++](./algorithms/binary_tree_tilt.cpp) | `Tree` `DFS` |
 | 567 | [Permutation in String](https://leetcode.com/problems/permutation-in-string/) | Medium | [C++](./algorithms/permutation_in_string.cpp) | `Sorting` |

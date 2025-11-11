@@ -8,6 +8,7 @@ set(TEST_SOURCES
     add_to_array_form.cpp
     armstrong_number.cpp
     attendance_record1.cpp
+    attendance_record2.cpp
     average_of_levels.cpp
     balanced_binary_tree.cpp
     balance_bst.cpp
