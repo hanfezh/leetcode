@@ -325,6 +325,7 @@ cmake --build build
 | 778 | [Swim in Rising Water](https://leetcode.com/problems/swim-in-rising-water/) | Hard | [C++](./algorithms/swim_in_water.cpp) | `Priority Queue` |
 | 779 | [K-th Symbol in Grammar](https://leetcode.com/problems/k-th-symbol-in-grammar) | Medium | [C++](./algorithms/kth_symbol_in_grammar.cpp) | `Recursion` |
 | 788 | [Rotated Digits](https://leetcode.com/problems/rotated-digits) | Easy | [C++](./algorithms/rotated_digits.cpp) | `Dynamic Programming` |
+| 792 | [Number of Matching Subsequences](https://leetcode.com/problems/number-of-matching-subsequences/) | Medium | [C++](./algorithms/num_matching_subseq.cpp) | `Binary Search` |
 | 796 | [Rotate String](https://leetcode.com/problems/rotate-string) | Easy | [C++](./algorithms/rotate_string.cpp) | `String` |
 | 799 | [Champagne Tower](https://leetcode.com/problems/champagne-tower/) | Medium| [C++](./algorithms/champagne_tower.cpp) | `Dynamic Programming` |
 | 855 | [Exam Room](https://leetcode.com/problems/exam-room/) | Medium | [C++](./algorithms/exam_room.cpp) | `Ordered Set` |

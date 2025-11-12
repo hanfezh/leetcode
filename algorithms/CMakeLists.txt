@@ -92,6 +92,7 @@ set(TEST_SOURCES
     missing_ranges.cpp
     next_permutation.cpp
     number_containers.cpp
+    num_matching_subseq.cpp
     palindrome_number.cpp
     partition_labels.cpp
     permutation_in_string.cpp
