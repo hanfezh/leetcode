@@ -33,6 +33,7 @@ set(TEST_SOURCES
     eval_rpn.cpp
     exam_room.cpp
     fibonacci_number.cpp
+    filling_shelves.cpp
     find_all_people.cpp
     find_judge.cpp
     find_lhs.cpp
