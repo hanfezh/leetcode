@@ -35,6 +35,7 @@ set(TEST_SOURCES
     fibonacci_number.cpp
     filling_shelves.cpp
     find_all_people.cpp
+    find_all_recipes.cpp
     find_judge.cpp
     find_lhs.cpp
     find_minimum.cpp
