@@ -79,6 +79,7 @@ set(TEST_SOURCES
     max_points_with_cost.cpp
     max_stack.cpp
     median_sorted_arrays.cpp
+    meeting_room3.cpp
     merge_intervals.cpp
     merge_sorted_array.cpp
     middle_node.cpp

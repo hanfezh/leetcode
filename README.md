@@ -381,6 +381,7 @@ cmake --build build
 | 2379 | [Minimum Recolors to Get K Consecutive Black Blocks](https://leetcode.com/problems/minimum-recolors-to-get-k-consecutive-black-blocks/) | Easy | [C++](./algorithms/minimum_recolors.cpp) | `Sliding Window` |
 | 2381 | [Shifting Letters II](https://leetcode.com/problems/shifting-letters-ii/) | Medium | [C++](./algorithms/shifting_letters2.cpp) | `Array` |
 | 2359 | [Find Closest Node to Given Two Nodes](https://leetcode.com/problems/find-closest-node-to-given-two-nodes/) | Medium | [C++](./algorithms/cloest_meeting_node.cpp) | `BFS` |
+| 2402 | [Meeting Rooms III](https://leetcode.com/problems/meeting-rooms-iii/) | Hard | [C++](./algorithms/meeting_room3.cpp) | `Sorting` `Priority Queue` |
 | 2657 | [Find the Prefix Common Array of Two Arrays]()https://leetcode.com/problems/find-the-prefix-common-array-of-two-arrays/ | Medium | [C++](./algorithms/prefix_common_array.cpp) | `Array` |
 | 2864 | [Maximum Odd Binary Number](https://leetcode.com/problems/maximum-odd-binary-number/) | Easy | [C++](./algorithms/maximum_odd_number.cpp) | `Math` `String` |
 | 2951 | [Find the Peaks](https://leetcode.com/problems/find-the-peaks/) | Easy | [C++](./algorithms/find_the_peaks.cpp) | `Array` |
