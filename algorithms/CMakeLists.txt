@@ -69,6 +69,7 @@ set(TEST_SOURCES
     maximum_odd_number.cpp
     maximum_profit.cpp
     maximum_profit2.cpp
+    maximum_score.cpp
     maximum_swap.cpp
     max_chunks_to_sorted.cpp
     max_collected_fruits.cpp

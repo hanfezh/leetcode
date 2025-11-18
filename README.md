@@ -377,6 +377,7 @@ cmake --build build
 | 2108 | [Find First Palindromic String in the Array](https://leetcode.com/problems/find-first-palindromic-string-in-the-array/) | Easy | [C++](./algorithms/first_palindrome.cpp) | `Two Pointers` |
 | 2115 | [Find All Possible Recipes from Given Supplies](https://leetcode.com/problems/find-all-possible-recipes-from-given-supplies/) | Medium | [C++](./algorithms/find_all_recipes.cpp) | `DFS` |
 | 2177 | [Find Three Consecutive Integers That Sum to a Given Number](https://leetcode.com/problems/find-three-consecutive-integers-that-sum-to-a-given-number/) | Medium | [C++](./algorithms/sum_of_three.cpp) | `Math` |
+| 2242 | [Maximum Score of a Node Sequence](https://leetcode.com/problems/maximum-score-of-a-node-sequence/) | Hard | [C++](./algorithms/maximum_score.cpp) | `Sorting` |
 | 2293 | [Min Max Game](https://leetcode.com/problems/min-max-game/) | Easy | [C++](./algorithms/min_max_game.cpp) | `Array` |
 | 2349 | [Design a Number Container System](https://leetcode.com/problems/design-a-number-container-system/) | Medium | [C++](./algorithms/number_containers.cpp) | `Hash Table` `Ordered Set` `Priority Queue` |
 | 2379 | [Minimum Recolors to Get K Consecutive Black Blocks](https://leetcode.com/problems/minimum-recolors-to-get-k-consecutive-black-blocks/) | Easy | [C++](./algorithms/minimum_recolors.cpp) | `Sliding Window` |
