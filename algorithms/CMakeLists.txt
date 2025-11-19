@@ -103,6 +103,7 @@ set(TEST_SOURCES
     permutation_in_string.cpp
     prefix_common_array.cpp
     product_except_self.cpp
+    race_car.cpp
     range_sum_query.cpp
     recover_binary_search_tree.cpp
     remove_duplicates.cpp
