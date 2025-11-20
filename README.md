@@ -239,6 +239,7 @@ cmake --build build
 | 322 | [Coin Change](https://leetcode.com/problems/coin-change/) | Medium | [C++](./algorithms/coin_change.cpp) | `Dynamic Programming` |
 | 326 | [Power of Three](https://leetcode.com/problems/power-of-three) | Easy | [C++](./algorithms/power_of_three.cpp) | `Math` |
 | 328 | [Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list) | Medium | [C++](./algorithms/odd_even_linked_list.cpp) | `Linked List` |
+| 329 | [Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/) | Hard | [C++](./algorithms/longest_increasing_path.cpp) | `Dynamic Programming` |
 | 334 | [Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence) | Medium | [C++](./algorithms/increasing_triplet_subsequence.cpp) | |
 | 338 | [Counting Bits](https://leetcode.com/problems/counting-bits/) | Easy | [C++](./algorithms/count_bits.cpp) | `Dynamic Programming` |
 | 344 | [Reverse String](https://leetcode.com/problems/reverse-string) | Easy | [C++](./algorithms/reverse_string.cpp) | `Two Pointers` |

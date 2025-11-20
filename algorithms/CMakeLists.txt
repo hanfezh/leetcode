@@ -60,6 +60,7 @@ set(TEST_SOURCES
     largest_divisible_subset.cpp
     lexicographical_numbers.cpp
     linked_list_random_node.cpp
+    longest_increasing_path.cpp
     longest_palindrome.cpp
     longest_substring.cpp
     length_of_last_word.cpp
