@@ -64,7 +64,7 @@ class Solution1 {
   }
 };
 
-// DFS + Priority Queue
+// BFS + Priority Queue
 class Solution2 {
  public:
   int networkDelayTime(std::vector<std::vector<int>>& times, int n, int k) {
@@ -83,7 +83,7 @@ class Solution2 {
       auto [delay, cur] = pq.top();
       pq.pop();
 
-      if (delay > dp[cur]) {
+      if (delay >= dp[cur]) {
         continue;
       }
       dp[cur] = std::min(dp[cur], delay);
