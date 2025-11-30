@@ -143,7 +143,7 @@ cmake --build build
 | 125 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome) | Easy | [C++](./algorithms/valid_palindrome.cpp) | `String` `Two Pointers` |
 | 126 | [Word Ladder II](https://leetcode.com/problems/word-ladder-ii) | Hard | [C++](./algorithms/word_ladder2.cpp) | `BFS` |
 | 127 | [Word Ladder](https://leetcode.com/problems/word-ladder) | Medium | [C++](./algorithms/word_ladder.cpp) | `BFS` |
-| 128 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence) | Medium | [C++](./algorithms/longest_consecutive_sequence.cpp) | `Array` |
+| 128 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence) | Medium | [C++](./algorithms/longest_consecutive_sequence.cpp) | `Array` `Hash Set` |
 | 129 | [Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers) | Medium | [C++](./algorithms/sum_root_to_leaf_numbers.cpp) | `DFS` |
 | 130 | [Surrounded Regions](https://leetcode.com/problems/surrounded-regions) | Medium | [C++](./algorithms/surrounded_regions.cpp) | `Union Find` |
 | 131 | [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning) | Medium | [C++](./algorithms/palindrome_partitioning.cpp) | `DFS` |
