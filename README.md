@@ -208,6 +208,7 @@ cmake --build build
 | 217 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate) | Easy | [C++](./algorithms/contains_duplicate.cpp) | `Hash Table` `Sorting` |
 | 219 | [Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii) | Easy | [C++](./algorithms/contains_duplicate2.cpp) |
 | 220 | [Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii) | Medium | [C++](./algorithms/contains_duplicate3.cpp) |
+| 221 | [Maximal Square](https://leetcode.com/problems/maximal-square/) | Medium | [C++](./algorithms/maximal_square.cpp) | `Dynamic Programming` |
 | 222 | [Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes/) | Medium | [C++](./algorithms/count_complete_tree_nodes.cpp) | `Tree` `DFS` |
 | 224 | [Basic Calculator](https://leetcode.com/problems/basic-calculator/) | Hard | [C++](./algorithms/basic_calculator.cpp) | `String` `Stack` |
 | 225 | [Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues) | Easy | [C++](./algorithms/implement_stack_using_queues.cpp) | `Stack` `Queue` |

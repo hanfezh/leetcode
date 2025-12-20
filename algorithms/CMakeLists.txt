@@ -67,6 +67,7 @@ set(TEST_SOURCES
     length_of_last_word.cpp
     lowest_common_ancestor_bst.cpp
     majority_element.cpp
+    maximal_square.cpp
     maximum_gap.cpp
     maximum_odd_number.cpp
     maximum_profit.cpp
