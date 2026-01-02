@@ -320,6 +320,7 @@ cmake --build build
 | 739 | [Daily Temperatures](https://leetcode.com/problems/daily-temperatures) | Medium | [C++](./algorithms/daily_temperatures.cpp) | `Stack` |
 | 743 | [Network Delay Time](https://leetcode.com/problems/network-delay-time/description/) | Medium | [C++](./algorithms/network_delay_time.cpp) | `BFS` `Priority Queue` |
 | 744 | [Find Smallest Letter Greater Than Target](https://leetcode.com/problems/find-smallest-letter-greater-than-target) | Easy | [C++](./algorithms/find_smallest_letter.cpp) | `Binary Search` |
+| 756 | [Pyramid Transition Matrix](https://leetcode.com/problems/pyramid-transition-matrix/) | Medium | [C++](./algorithms/pyramid_transition.cpp) | `Backtracking` |
 | 763 | [Partition Labels](https://leetcode.com/problems/partition-labels/) | Medium | [C++](./algorithms/partition_labels.cpp) | `Hash Table` |
 | 765 | [Couples Holding Hands](https://leetcode.com/problems/couples-holding-hands) | Hard | [C++](./algorithms/couples_holding_hands.cpp) | `Union Find` |
 | 769 | [Max Chunks To Make Sorted](https://leetcode.com/problems/max-chunks-to-make-sorted/) | Medium | [C++](./algorithms/max_chunks_to_sorted.cpp) | `Array` |
