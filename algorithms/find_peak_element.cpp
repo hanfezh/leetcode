@@ -10,40 +10,45 @@
 //       Compiler:  g++
 //
 //         Author:  Zhu Xianfeng (), xianfeng.zhu@gmail.com
-//   Organization:  
+//   Organization:
 //
 // =====================================================================================
-#include <stdio.h>
 #include <vector>
 
-class Solution
-{
-public:
-    int findPeakElement(std::vector<int>& nums)
-    {
-        int left = 0;
-        int right = nums.size() - 1;
-        while (left < right)
-        {
-            int mid = (left + right) / 2;
-            if (nums[mid] > nums[mid + 1])
-            {
-                right = mid;
-            }
-            else
-            {
-                left = mid + 1;
-            }
-        }
+#include "gtest/gtest.h"
 
-        return left;
+using namespace std;
+
+// Time complexity: O(logn)
+// Constraints:
+//   nums[i] != nums[i + 1]
+class Solution {
+ public:
+  int findPeakElement(vector<int>& nums) {
+    const int n = nums.size();
+    int l = 0, r = n - 1, m = -1;
+    while (l <= r) {
+      m = l + (r - l) / 2;
+      if (m > 0 && nums[m] < nums[m - 1]) {
+        r = m - 1;
+      } else if (m < n - 1 && nums[m] < nums[m + 1]) {
+        l = m + 1;
+      } else {
+        return m;
+      }
     }
+    return -1;
+  }
 };
 
-int main(int argc, char* argv[])
-{
-    std::vector<int> nums = {1, 2, 1, 3, 5, 6, 4};
-    int idx = Solution().findPeakElement(nums);
-    printf("Index of one peak element: %d\n", idx);
-    return 0;
+TEST(Solution, findPeakElement) {
+  vector<vector<int>> cases = {
+      {1, 2, 3, 1},
+      {1, 2, 1, 3, 5, 6, 4},
+  };
+  for (auto& nums : cases) {
+    int i = Solution().findPeakElement(nums);
+    EXPECT_TRUE(i == 0 || (i > 0 && nums[i] > nums[i - 1]));
+    EXPECT_TRUE(i == nums.size() - 1 || (i < nums.size() - 1 && nums[i] > nums[i + 1]));
+  }
 }

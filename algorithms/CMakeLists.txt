@@ -40,6 +40,7 @@ set(TEST_SOURCES
     find_judge.cpp
     find_lhs.cpp
     find_minimum.cpp
+    find_peak_element.cpp
     find_kth_larguest.cpp
     find_the_difference.cpp
     find_the_duplicate_number.cpp
